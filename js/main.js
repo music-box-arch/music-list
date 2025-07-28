@@ -4,12 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
     .then(csvText => {
       const parsed = Papa.parse(csvText, { header: true });
       const rows = parsed.data;
-      const fields = parsed.meta.fields;
       const thead = document.querySelector('#music-table thead');
       const tbody = document.querySelector('#music-table tbody');
-      //  欲しいカラムをここで指定
-      const displayColumns = ['✔', '曲名', '種別', '発売日', '円盤タイトル'];
-      // ヘッダー行を動的に生成
+
+      // 表示するカラム名（列ヘッダー）
+      const displayColumns = ['✔', 'CD', '曲順', '曲名', 'ダミー', '発売日', 'MV/♪', 'LV', 'Spf', 'Apl', 'iTn', 'm/s'];
+
+      // ヘッダー行
       const trHead = document.createElement('tr');
       displayColumns.forEach(col => {
         const th = document.createElement('th');
@@ -18,19 +19,29 @@ document.addEventListener('DOMContentLoaded', function () {
       });
       thead.innerHTML = '';
       thead.appendChild(trHead);
-      // 本文行を生成
+
+      // 本文行
       tbody.innerHTML = '';
-      rows.forEach((row, idx) => {
+      rows.forEach(row => {
         if (!row['曲名']) return;
-        const id = (row['曲ID'] + '_' + row['曲名']).replace(/\s+/g, '').toLowerCase();
+
+        const makeLink = (label, url) =>
+          url ? `<a href="${url}" target="_blank">${label}</a>` : '';
+
         const tr = document.createElement('tr');
-        tr.setAttribute('data-id', id);
         tr.innerHTML = `
           <td><input type="checkbox" class="chk"></td>
-          <td>${row['曲名']}</td>
-          <td>${row['種別']}</td>
-          <td>${row['発売日']}</td>
-          <td>${row['円盤タイトル']}</td>
+          <td>${row['CD'] || ''}</td>
+          <td>${row['曲順'] || ''}</td>
+          <td>${row['曲名'] || ''}</td>
+          <td>${row['ダミー'] || ''}</td>
+          <td>${row['発売日'] || ''}</td>
+          <td>${makeLink(row['YT1'], row['YT1URL'])}</td>
+          <td>${makeLink('LV', row['LV'])}</td>
+          <td>${makeLink('Spf', row['Spf'])}</td>
+          <td>${makeLink('Apl', row['Apl'])}</td>
+          <td>${makeLink('iTn', row['iTn'])}</td>
+          <td>${row['m/s'] || ''}</td>
         `;
         tbody.appendChild(tr);
       });
