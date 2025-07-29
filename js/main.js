@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const tbody = document.querySelector('#music-table tbody');
 
       // 表示するカラム名（列ヘッダー）
-      const displayColumns = ['✔', '曲名', 'ダミー', '発売日', 'MV♪', 'LV', 'Spf', 'Apl', 'iTn', 'm/s', 'CD', '曲順'];
+      const displayColumns = ['✔', '曲名', 'MV♪', 'LV', 'Spf', 'Apl', 'iTn', 'm/s', 'CD', '曲順', '発売日'];
 
       // ヘッダー行
       const trHead = document.createElement('tr');
@@ -32,8 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
         tr.innerHTML = `
           <td><input type="checkbox" class="chk"></td>
           <td>${row['曲名'] || ''}</td>
-          <td>${row['ダミー'] || ''}</td>
-          <td>${row['発売日'] || ''}</td>
           <td>${makeLink(row['YT1'], row['YT1URL'])}</td>
           <td>${makeLink('LV', row['LV'])}</td>
           <td>${makeLink('Spf', row['Spf'])}</td>
@@ -42,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <td>${row['m/s'] || ''}</td>
           <td>${row['CD'] || ''}</td>
           <td>${row['曲順'] || ''}</td>
+          <td>${row['発売日'] || ''}</td>
         `;
         tbody.appendChild(tr);
       });
