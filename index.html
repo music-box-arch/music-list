@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>自分用・曲一覧まとめ</title>
   <link rel="stylesheet" href="css/style.css">
   <!-- PapaParse（CSV読み込み用ライブラリ）CDN -->
@@ -11,13 +12,34 @@
 
 <body>
   <h1>自分用・曲一覧まとめ</h1>
-  <p style="color:#777;font-size:small;">
-    好きなアーティストの曲リストを自分用にまとめてます。
-  </p>
-  <table id="music-table">
-    <thead></thead>
-    <tbody></tbody>
-  </table>
+  <p>好きなアーティストの曲リストを自分用にまとめてます。</p>
+  <button class="clearAllChecksBtn">チェックをオールクリア</button>
+  <p>※ 表は横にスクロールできます</p>
+  <div id="checklistArea">
+    <div id="songChecklist"></div>
+    <label>
+      <input type="checkbox" id="checkSubNoOnly"> サブスク無しのみにチェック
+    </label>
+    <button id="showDiscsButton" disabled>チェックした曲が含まれるCDを見る</button>
+  </div>
+  <div class="table-wrapper">
+    <table id="music-table">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div id="resultArea">
+    <h3>含まれるCD一覧：</h3>
+    <div id="resultCdTypeFilter">
+      <label><input type="radio" name="resultCdType" value="both" checked> 両方表示</label>
+      <label><input type="radio" name="resultCdType" value="album"> アルバムのみ</label>
+      <label><input type="radio" name="resultCdType" value="single"> シングルのみ</label>
+    </div>
+    <button class="clearAllChecksBtn">チェックをオールクリア</button>
+    <div class="table-wrapper">
+      <div id="discsTable"></div>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
