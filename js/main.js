@@ -86,35 +86,33 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* サブスク用チェック云々のやつここまで */
-
   // 2-3. ボタン有効化とイベントリスナー設定
   function enableButtons() {
     // CDを見るボタンを有効化してイベント設定
-    const showDiscsBtn = document.getElementById('showDiscsButton');
-    showDiscsBtn.disabled = false;
-    showDiscsBtn.addEventListener('click', async () => {
-      const { loadDataIfNeeded, buildMatrix, generateHTMLTable, setupCdTypeFilter } = await import('./main-lazy.js'); // ファイル読み込み
-      setupCdTypeFilter(); // 初回のみ実行
-      const checked = document.querySelectorAll('.chk:checked');
-      const rawSongIDs = Array.from(checked).map(chk => Number(chk.dataset.id));
-      const songIDs = [...new Set(rawSongIDs)]; // 重複なし
+    document.querySelectorAll('.showDiscsButton').forEach(btn => {
+      btn.disabled = false;
+      btn.addEventListener('click', async () => {
+        const { loadDataIfNeeded, buildMatrix, generateHTMLTable, setupCdTypeFilter } = await import('./main-lazy.js');
+        setupCdTypeFilter();
+        const checked = document.querySelectorAll('.chk:checked');
+        const rawSongIDs = Array.from(checked).map(chk => Number(chk.dataset.id));
+        const songIDs = [...new Set(rawSongIDs)];
 
-      if (songIDs.length === 0) {
-        alert('1曲以上チェックしてね');
-        return;
-      }
+        if (songIDs.length === 0) {
+          alert('1曲以上チェックしてね');
+          return;
+        }
 
-      const { allDiscs, musicMap } = await loadDataIfNeeded();
-      const { headers, rows } = buildMatrix(songIDs, allDiscs, musicMap);
-      const table = generateHTMLTable(headers, rows);
+        const { allDiscs, musicMap } = await loadDataIfNeeded();
+        const { headers, rows } = buildMatrix(songIDs, allDiscs, musicMap);
+        const table = generateHTMLTable(headers, rows);
 
-      const container = document.getElementById('discsTable');
-      container.innerHTML = '';
-      container.appendChild(table);
+        const container = document.getElementById('discsTable');
+        container.innerHTML = '';
+        container.appendChild(table);
 
-      // 表を下にスクロール
-      document.getElementById('resultArea').scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('resultArea').scrollIntoView({ behavior: 'smooth' });
+      });
     });
 
     // クリアボタンのイベント設定
