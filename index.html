@@ -20,7 +20,7 @@
     <label>
       <input type="checkbox" id="checkSubNoOnly"> サブスク無しのみにチェック
     </label>
-    <button id="showDiscsButton" disabled>チェックした曲が含まれるCDを見る</button>
+    <button class="showDiscsButton" disabled>チェックした曲が含まれるCDを見る</button>
   </div>
   <div class="table-wrapper">
     <table id="music-table">
@@ -28,6 +28,7 @@
       <tbody></tbody>
     </table>
   </div>
+  <button class="showDiscsButton" disabled>チェックした曲が含まれるCDを見る</button>
   <div id="resultArea">
     <h3>含まれるCD一覧：</h3>
     <div id="resultCdTypeFilter">
@@ -35,7 +36,6 @@
       <label><input type="radio" name="resultCdType" value="album"> アルバムのみ</label>
       <label><input type="radio" name="resultCdType" value="single"> シングルのみ</label>
     </div>
-    <button class="clearAllChecksBtn">チェックをオールクリア</button>
     <div class="table-wrapper">
       <div id="discsTable"></div>
     </div>
