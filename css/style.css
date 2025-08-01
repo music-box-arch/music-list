@@ -31,6 +31,7 @@ tr:nth-child(even) {
   background: #f7fafd;
 }
 
+#music-table td:nth-child(8),
 #music-table td:nth-child(9),
 #music-table td:nth-child(10),
 #music-table th:nth-child(10),
@@ -41,6 +42,7 @@ tr:nth-child(even) {
 input[type="checkbox"] {
   width: 16px;
   height: 16px;
+  vertical-align: middle;
 }
 
 #back-to-top {
