@@ -1,3 +1,68 @@
+export async function loadSmDataIfNeeded() {
+    if (!smData) {
+        const response = await fetch('data/music-list-sm.json');
+        smData = await response.json();
+    }
+    return smData;
+}
+
+export async function toggleSmDisplay(showStyle, showMix) {
+    const data = await loadSmDataIfNeeded();
+    const tbody = document.querySelector('#music-table tbody');
+
+    // 既存のstyle/mix行を削除
+    tbody.querySelectorAll('.sm-row').forEach(row => row.remove());
+    if (!showStyle && !showMix) return;
+
+    // 追加する行をフィルター
+    const toAdd = Object.values(data).filter(song => {
+        if (showStyle && song.smType.includes('style')) return true;
+        if (showMix && song.smType.includes('mix')) return true;
+        return false;
+    }).sort((a, b) => a.mID - b.mID);
+
+    // 各行を適切な位置に挿入
+    toAdd.forEach(song => {
+        const newRow = createSongRow(song);
+        newRow.classList.add('sm-row');
+        insertRowAtCorrectPosition(tbody, newRow, song.mID);
+    });
+}
+
+function createSongRow(song) {
+    const tr = document.createElement('tr');
+    // mID 93の曲だけ12pxに設定
+    const titleStyle = song.mID === 93 ? ' style="font-size: 12px;"' : '';
+    // const smallFontMIDs = [93, 150, 200]; // 最終的に拡張することもできる
+    //const titleStyle = smallFontMIDs.includes(song.mID) ? ' style="font-size: 12px;"' : '';
+    tr.innerHTML = `
+        <td><input type="checkbox" class="chk" data-id="${song.mID}"></td>
+        <td${titleStyle}>${song.title}</td>
+        <td>${song.yt}</td>
+        <td>${song.lv}</td>
+        <td>${song.spf}</td>
+        <td>${song.apl}</td>
+        <td>${song.itn}</td>
+        <td>${song.exsm || ''}</td>
+        <td>${song.firstCd}</td>
+        <td>${song.order || ''}</td>
+        <td>${song.cdDate}</td>
+    `;
+    return tr;
+}
+
+function insertRowAtCorrectPosition(tbody, newRow, mID) {
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    for (let i = 0; i < rows.length; i++) {
+        const currentMID = parseInt(rows[i].querySelector('.chk').dataset.id);
+        if (currentMID > mID) {
+            tbody.insertBefore(newRow, rows[i]);
+            return;
+        }
+    }
+    tbody.appendChild(newRow);
+}
+
 // 2-5. データ遅延読み込み関数
 export async function loadDataIfNeeded() {
     if (!allDiscs || !musicMap) {
@@ -84,8 +149,18 @@ export function buildMatrix(songIDs, discs, musicMap) {
 
     const rows = sortedSongIDs.map(songID => {
         const songName = musicMap[songID] || `ID:${songID}`;
-        const truncatedSongName = songName.length > songNameMaxLength ?
-            songName.slice(0, songNameMaxLength) : songName;
+        const specialTitle = createSpecialTitle(songName);
+
+        let truncatedSongName;
+        if (specialTitle !== songName) {
+            // 特別処理が適用された場合は切り詰めない
+            truncatedSongName = specialTitle;
+        } else {
+            // 通常の曲名のみ画面幅に応じて切り詰め
+            truncatedSongName = specialTitle.length > songNameMaxLength ?
+                specialTitle.slice(0, songNameMaxLength) : specialTitle;
+        }
+
         const row = [truncatedSongName];
         filteredDiscs.forEach(disc => {
             row.push(disc.tracks.includes(songID) ? '◯' : '');
@@ -94,6 +169,47 @@ export function buildMatrix(songIDs, discs, musicMap) {
     });
 
     return { headers, rows };
+}
+
+export function createSpecialTitle(title) {
+    // 特別処理対象の曲（完全一致で判定）
+    if (title === 'アナザーワールドエンド') {
+        return 'アナザー…エンド';
+    }
+    if (title === 'アナザーワールド') {
+        return 'アナザー…ルド';
+    }
+    if (title === 'プログラムcontinued (15th style)') {
+        return 'プログラム…15th';
+    }
+    if (title === 'プログラムcontinued') {
+        return 'プログラム…ed';
+    }
+
+    // style/mix処理
+    if (title.includes('(') && (title.includes('style)') || title.includes('mix)'))) {
+        const baseTitle = title.split('(')[0].trim();
+        const styleMatch = title.match(/\((.+?)\)/);
+        if (styleMatch) {
+            const styleText = styleMatch[1];
+            let shortStyle = '';
+
+            if (styleText === 'B.C mix') shortStyle = '…BCmx';
+            else if (styleText === 'B.C style') shortStyle = '…BCst';
+            else if (styleText === 'D.A mix') shortStyle = '…DAmx';
+            else if (styleText === 'D.A style') shortStyle = '…DAst';
+            else if (styleText === 'S.B mix') shortStyle = '…SBmx';
+            else if (styleText === 'S.B style') shortStyle = '…SBst';
+            else if (styleText === 'party style') shortStyle = '…party';
+
+            if (shortStyle) {
+                const baseShort = baseTitle.length > 5 ? baseTitle.slice(0, 5) : baseTitle;
+                return baseShort + shortStyle;
+            }
+        }
+    }
+
+    return title;
 }
 
 // 2-7. HTMLテーブル生成
@@ -110,7 +226,7 @@ export function generateHTMLTable(headers, rows) {
         const cell = document.createElement(tag);
         cell.textContent = content;
         cell.style.border = '1px solid #ccc';
-        cell.style.padding = '2px 4px';
+        cell.style.padding = '2px';
         cell.style.textAlign = 'center';
         return cell;
     };

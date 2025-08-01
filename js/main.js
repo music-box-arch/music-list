@@ -3,6 +3,7 @@ let allDiscs = null;
 let musicMap = null;
 let subNoMap = null;
 let checkStateBackup = null; // サブスクフィルター用のバックアップ
+let smData = null;
 
 // DOM表でリンクを作る関数を定義
 const makeLink = (label, url) =>
@@ -10,7 +11,7 @@ const makeLink = (label, url) =>
 
 // 2. DOMContentLoaded後の処理
 document.addEventListener('DOMContentLoaded', function () {
-
+  /*
   // 2-1. 曲リスト表生成（最優先）
   fetch('data/music-list.csv')
     .then(response => response.text())
@@ -57,7 +58,53 @@ document.addEventListener('DOMContentLoaded', function () {
     .catch(error => {
       console.error('CSV読み込みエラー:', error);
     });
+  */
+  // 2-1. 曲リスト表生成（最優先）
+  fetch('data/music-list.json')
+    .then(response => response.json())
+    .then(musicData => {
+      // ヘッダー作成
+      const thead = document.querySelector('#music-table thead');
+      thead.innerHTML = '';
+      const trHead = document.createElement('tr');
+      ['✔︎', '曲名', 'YT', 'LV', 'Spf', 'Apl', 'iTn', 's/m', '初収録', '曲順', '発売日'].forEach(col => {
+        const th = document.createElement('th');
+        th.textContent = col;
+        trHead.appendChild(th);
+      });
+      thead.appendChild(trHead);
 
+      // テーブル本体作成
+      const tbody = document.querySelector('#music-table tbody');
+      tbody.innerHTML = '';
+
+      // mIDでソートしてから表示
+      const sortedEntries = Object.entries(musicData).sort((a, b) => a[1].mID - b[1].mID);
+
+      sortedEntries.forEach(([id, song]) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+        <td><input type="checkbox" class="chk" data-id="${song.mID}"></td>
+        <td>${song.title}</td>
+        <td>${song.yt}</td>
+        <td>${song.lv}</td>
+        <td>${song.spf}</td>
+        <td>${song.apl}</td>
+        <td>${song.itn}</td>
+        <td>${song.exsm || ''}</td>
+        <td>${song.firstCd}</td>
+        <td>${song.order || ''}</td>
+        <td>${song.cdDate}</td>
+      `;
+        tbody.appendChild(tr);
+      });
+
+      // 表生成完了後、即座にボタンを有効化
+      enableButtons();
+    })
+    .catch(error => {
+      console.error('JSON読み込みエラー:', error);
+    });
   /* ↓サブスク用チェック云々のやつここから↓ */
 
   // 2-2. サブスクフィルターチェックボックスのイベント設定（1回だけ）
@@ -85,6 +132,8 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+
+
 
   // 2-3. ボタン有効化とイベントリスナー設定
   function enableButtons() {
@@ -119,11 +168,25 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.clearAllChecksBtn').forEach(btn => {
       btn.addEventListener('click', clearAllChecks);
     });
+
+    // style/mix表示チェックボックスのイベント設定
+    const styleCheckbox = document.getElementById('showStyleCheck');
+    const mixCheckbox = document.getElementById('showMixCheck');
+
+    if (styleCheckbox && mixCheckbox) {
+      const handleSmToggle = async () => {
+        const { toggleSmDisplay } = await import('./main-lazy.js');
+        await toggleSmDisplay(styleCheckbox.checked, mixCheckbox.checked);
+      };
+
+      styleCheckbox.addEventListener('change', handleSmToggle);
+      mixCheckbox.addEventListener('change', handleSmToggle);
+    }
   }
 
   // 2-4. トップに戻るボタン生成
   const backToTop = document.createElement('a');
-  backToTop.href = '#checklistArea';
+  backToTop.href = '#top';
   backToTop.id = 'back-to-top';
   backToTop.textContent = '▲ TOP';
   document.body.appendChild(backToTop);
