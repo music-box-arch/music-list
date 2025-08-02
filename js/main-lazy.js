@@ -35,6 +35,12 @@ function applyCheckStateToDisplay() {
             checkbox.checked = true;
         }
     });
+    
+    // チェック付き行のみ表示が有効の場合、表示を更新
+    const showCheckedOnlyCheckbox = document.getElementById('showCheckedOnly');
+    if (showCheckedOnlyCheckbox && showCheckedOnlyCheckbox.checked) {
+        handleShowCheckedOnly(true);
+    }
 }
 
 // 現在チェックされているIDを配列で取得
@@ -75,16 +81,19 @@ export function setupAllEventListeners() {
     // 手動チェック変更のイベントリスナー
     setupCheckboxSync();
     
-    // 3つのボタンの実際の処理を設定
+    // 4つのボタンの実際の処理を設定
     setupSubNoCheckListener();
     setupStyleCheckListener();
     setupMixCheckListener();
+    setupShowCheckedOnlyListener();
     
     // グローバルアクセス用
     window.applyCheckStateToDisplay = applyCheckStateToDisplay;
     window.handleSubNoCheck = handleSubNoCheck;
     window.handleStyleCheck = handleStyleCheck;
     window.handleMixCheck = handleMixCheck;
+    window.handleShowCheckedOnly = handleShowCheckedOnly;
+    window.enableSongNameSearch = enableSongNameSearch;
     
     console.log('全イベントリスナー設定完了');
 }
@@ -116,6 +125,13 @@ function setupCheckboxSync() {
                     checkStateBackup = checkStateBackup.filter(id => id !== changedId);
                 }
             }
+            
+            // チェック付き行のみ表示が有効の場合、表示を更新
+            const showCheckedOnlyCheckbox = document.getElementById('showCheckedOnly');
+            if (showCheckedOnlyCheckbox && showCheckedOnlyCheckbox.checked) {
+                handleShowCheckedOnly(true);
+            }
+            
             logCurrentStates('手動チェック変更');
         }
     });
@@ -193,6 +209,19 @@ function setupMixCheckListener() {
     });
 }
 
+// チェック付き行のみ表示の実際の処理
+function setupShowCheckedOnlyListener() {
+    const showCheckedOnlyCheckbox = document.getElementById('showCheckedOnly');
+    if (!showCheckedOnlyCheckbox) return;
+    
+    const newCheckbox = showCheckedOnlyCheckbox.cloneNode(true);
+    showCheckedOnlyCheckbox.parentNode.replaceChild(newCheckbox, showCheckedOnlyCheckbox);
+    
+    newCheckbox.addEventListener('change', async function () {
+        await handleShowCheckedOnly(this.checked);
+    });
+}
+
 // サブスク無しデータの遅延読み込み
 async function loadSubNoDataIfNeeded() {
     if (!subNoMap) {
@@ -245,6 +274,111 @@ async function handleMixCheck(isStyleChecked, isMixChecked) {
     await toggleSmDisplay(isStyleChecked, isMixChecked);
 }
 
+async function handleShowCheckedOnly(showCheckedOnly) {
+    const tbody = document.querySelector('#music-table tbody');
+    const allRows = tbody.querySelectorAll('tr');
+    
+    // 現在の検索語を取得
+    const searchInput = document.getElementById('songNameSearch');
+    const searchTerm = searchInput ? searchInput.value.trim() : '';
+    
+    if (showCheckedOnly) {
+        // チェック付き行のみ表示（検索フィルターも考慮）
+        allRows.forEach(row => {
+            const checkbox = row.querySelector('.chk');
+            let shouldShow = checkbox && checkbox.checked;
+            
+            // 検索フィルターも適用
+            if (shouldShow && searchTerm) {
+                const titleCell = row.querySelector('td:nth-child(2)');
+                if (titleCell) {
+                    const titleText = titleCell.textContent.toLowerCase();
+                    shouldShow = titleText.includes(searchTerm.toLowerCase());
+                }
+            }
+            
+            row.style.display = shouldShow ? '' : 'none';
+        });
+    } else {
+        // 検索フィルターのみ考慮して表示
+        if (searchTerm) {
+            performSongNameSearch(searchTerm);
+        } else {
+            allRows.forEach(row => {
+                row.style.display = '';
+            });
+        }
+    }
+    
+    // 検索中の場合は自動で検索をやり直し
+    reapplySearchIfNeeded();
+    
+    logCurrentStates('チェック付き行のみ表示切り替え');
+}
+
+// 5. 曲名検索機能
+function enableSongNameSearch() {
+    const searchInput = document.getElementById('songNameSearch');
+    if (!searchInput) return;
+    
+    console.log('曲名検索機能を有効化');
+    
+    // リアルタイム検索のイベントリスナー
+    searchInput.addEventListener('input', function() {
+        performSongNameSearch(this.value.trim());
+    });
+    
+    // 検索機能有効化後、フォーカスを戻す
+    searchInput.focus();
+}
+
+function performSongNameSearch(searchTerm) {
+    const tbody = document.querySelector('#music-table tbody');
+    const allRows = tbody.querySelectorAll('tr');
+    
+    if (!searchTerm) {
+        // 検索語が空の場合、全行表示（ただし他のフィルターは考慮）
+        allRows.forEach(row => {
+            row.style.display = '';
+        });
+        
+        // チェック付き行のみ表示が有効の場合は再適用
+        const showCheckedOnlyCheckbox = document.getElementById('showCheckedOnly');
+        if (showCheckedOnlyCheckbox && showCheckedOnlyCheckbox.checked) {
+            handleShowCheckedOnly(true);
+        }
+        return;
+    }
+    
+    // 大文字小文字を区別しない検索
+    const searchTermLower = searchTerm.toLowerCase();
+    
+    allRows.forEach(row => {
+        const titleCell = row.querySelector('td:nth-child(2)'); // 曲名は2番目のセル
+        if (titleCell) {
+            const titleText = titleCell.textContent.toLowerCase();
+            const matchesSearch = titleText.includes(searchTermLower);
+            
+            // 検索時は検索結果のみを表示（チェック状態は無視）
+            row.style.display = matchesSearch ? '' : 'none';
+        }
+    });
+    
+    console.log('曲名検索実行:', searchTerm, '(チェック付きフィルターを一時無効化)');
+}
+
+// 検索中の場合は自動で検索をやり直し
+function reapplySearchIfNeeded() {
+    const searchInput = document.getElementById('songNameSearch');
+    if (searchInput) {
+        const currentSearchTerm = searchInput.value.trim();
+        if (currentSearchTerm) {
+            console.log('フィルター変更により検索を自動再実行:', currentSearchTerm);
+            performSongNameSearch(currentSearchTerm);
+        }
+    }
+}
+
 export async function loadSmDataIfNeeded() {
     if (!smData) {
         const response = await fetch('data/music-list-sm.json');
@@ -277,6 +411,9 @@ export async function toggleSmDisplay(showStyle, showMix) {
     });
     // checkStateを表示に反映
     applyCheckStateToDisplay();
+    
+    // 検索中の場合は自動で検索をやり直し
+    reapplySearchIfNeeded();
 }
 
 function createSongRow(song) {

@@ -73,10 +73,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // 2-2. 最小限のボタン有効化
   function enableMinimalButtons() {
-    // 3つの重要ボタンに初回lazyload検出を設定
+    // 4つの重要ボタンに初回lazyload検出を設定
     const filterCheckbox = document.getElementById('checkSubNoOnly');
     const styleCheckbox = document.getElementById('showStyleCheck');
     const mixCheckbox = document.getElementById('showMixCheck');
+    const showCheckedOnlyCheckbox = document.getElementById('showCheckedOnly');
 
     if (filterCheckbox) {
       filterCheckbox.addEventListener('change', async function () {
@@ -114,6 +115,32 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         }
       });
+    }
+
+    if (showCheckedOnlyCheckbox) {
+      showCheckedOnlyCheckbox.addEventListener('change', async function () {
+        if (!lazyLoaded) {
+          await initializeLazyFeatures();
+          // lazyload後、実際の処理を手動実行
+          if (window.handleShowCheckedOnly) {
+            window.handleShowCheckedOnly(this.checked);
+          }
+        }
+      });
+    }
+
+    // 曲名検索の初回フォーカス時lazyload検出
+    const songNameSearch = document.getElementById('songNameSearch');
+    if (songNameSearch) {
+      songNameSearch.addEventListener('focus', async function () {
+        if (!lazyLoaded) {
+          await initializeLazyFeatures();
+          // lazyload後、検索機能を有効化
+          if (window.enableSongNameSearch) {
+            window.enableSongNameSearch();
+          }
+        }
+      }, { once: true }); // 一回だけ実行
     }
 
     // CDを見るボタンは通常通り（既にlazyload済み）
