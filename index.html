@@ -12,7 +12,7 @@
   <div id="top">
     <h1>自分用・曲一覧まとめ</h1>
   </div>
-  <p>好きなアーティストの曲リストを自分用にまとめてます。</p>
+  <p>好きなアーティストの曲リストを自分用にまとめてます。機能整備中です。</p>
   <button class="clearAllChecksBtn">チェックをオールクリア</button>
   <p>※ 表は横にスクロールできます</p>
   <div id="checklistArea">
@@ -24,6 +24,13 @@
         <input type="checkbox" id="showStyleCheck">style(再録音)を表示</label>
       <label>　
         <input type="checkbox" id="showMixCheck"> mix(リミックス)を表示</label>　
+    </div>
+    <div><label>
+        <input type="checkbox" id="showCheckedOnly">チェック付き行のみ表示</label>
+    </div>
+    <div>
+      <label>曲名検索: </label>
+      <input type="text" id="songNameSearch" placeholder="曲名で絞り込み...">
     </div>
   </div>
   <div class="table-wrapper">
