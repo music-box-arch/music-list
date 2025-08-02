@@ -1,3 +1,250 @@
+// 1. グローバル変数（lazy側）
+let allDiscs = null;
+let musicMap = null;
+let subNoMap = null;
+let checkStateBackup = null;
+let checkState = [];
+let smData = null;
+
+// 2. checkState管理系関数
+export async function initializeCheckState() {
+    // DOM状態を一括取得してcheckStateに初期化
+    const checkedIds = [];
+    document.querySelectorAll('.chk:checked').forEach(chk => {
+        checkedIds.push(Number(chk.dataset.id));
+    });
+    checkState = checkedIds.sort((a, b) => a - b);
+    window.checkState = checkState;
+    
+    // checkStateBackupも初期化（現在の状態をバックアップとして保持）
+    checkStateBackup = [...checkState];
+    
+    console.log('checkState初期化:', checkState);
+    console.log('checkStateBackup初期化:', checkStateBackup);
+}
+
+// グローバルcheckStateを画面の表示されているチェックボックスに反映
+function applyCheckStateToDisplay() {
+    document.querySelectorAll('#music-table .chk').forEach(chk => {
+        chk.checked = false;
+    });
+    
+    checkState.forEach(id => {
+        const checkbox = document.querySelector(`#music-table .chk[data-id="${id}"]`);
+        if (checkbox) {
+            checkbox.checked = true;
+        }
+    });
+}
+
+// 現在チェックされているIDを配列で取得
+function getCurrentCheckState() {
+    const checkedIds = [];
+    document.querySelectorAll('.chk:checked').forEach(chk => {
+        checkedIds.push(Number(chk.dataset.id));
+    });
+    return checkedIds.sort((a, b) => a - b);
+}
+
+// 研究用コンソールログ出力関数
+function logCurrentStates(action) {
+    console.log(`=== ${action} ===`);
+    console.log('グローバルcheckState:', checkState);
+    console.log('バックアップ状態:', checkStateBackup || 'なし');
+    console.log('現在のチェック状態:', getCurrentCheckState());
+    console.log('================================');
+}
+
+// クリア機能をグローバルアクセス可能に
+window.clearCheckState = function() {
+    checkState = [];
+    window.checkState = checkState;
+    checkStateBackup = null;
+    
+    // サブスク無しチェックボックスも外す
+    const subNoCheckbox = document.getElementById('checkSubNoOnly');
+    if (subNoCheckbox && subNoCheckbox.checked) {
+        subNoCheckbox.checked = false;
+    }
+    
+    applyCheckStateToDisplay();
+};
+
+// 3. 動的イベントリスナー設定
+export function setupAllEventListeners() {
+    // 手動チェック変更のイベントリスナー
+    setupCheckboxSync();
+    
+    // 3つのボタンの実際の処理を設定
+    setupSubNoCheckListener();
+    setupStyleCheckListener();
+    setupMixCheckListener();
+    
+    // グローバルアクセス用
+    window.applyCheckStateToDisplay = applyCheckStateToDisplay;
+    window.handleSubNoCheck = handleSubNoCheck;
+    window.handleStyleCheck = handleStyleCheck;
+    window.handleMixCheck = handleMixCheck;
+    
+    console.log('全イベントリスナー設定完了');
+}
+
+// 手動チェック変更のイベントリスナー
+function setupCheckboxSync() {
+    document.addEventListener('change', function (e) {
+        if (e.target.classList.contains('chk')) {
+            const changedId = Number(e.target.dataset.id);
+            if (e.target.checked) {
+                // チェックON: checkStateとcheckStateBackup両方に追加
+                if (!checkState.includes(changedId)) {
+                    checkState.push(changedId);
+                    checkState.sort((a, b) => a - b);
+                    window.checkState = checkState;
+                }
+                if (!checkStateBackup) {
+                    checkStateBackup = [];
+                }
+                if (!checkStateBackup.includes(changedId)) {
+                    checkStateBackup.push(changedId);
+                    checkStateBackup.sort((a, b) => a - b);
+                }
+            } else {
+                // チェックOFF: checkStateとcheckStateBackup両方から削除
+                checkState = checkState.filter(id => id !== changedId);
+                window.checkState = checkState;
+                if (checkStateBackup) {
+                    checkStateBackup = checkStateBackup.filter(id => id !== changedId);
+                }
+            }
+            logCurrentStates('手動チェック変更');
+        }
+    });
+}
+
+// サブスク無しチェックの実際の処理
+function setupSubNoCheckListener() {
+    const filterCheckbox = document.getElementById('checkSubNoOnly');
+    if (!filterCheckbox) return;
+    
+    // 既存のイベントリスナーを削除して新しいのを設定
+    const newCheckbox = filterCheckbox.cloneNode(true);
+    filterCheckbox.parentNode.replaceChild(newCheckbox, filterCheckbox);
+    
+    newCheckbox.addEventListener('change', async function () {
+        if (this.checked) {
+            // サブスク無し曲を追加
+            await loadSubNoDataIfNeeded();
+            Object.keys(subNoMap).forEach(id => {
+                const numId = Number(id);
+                if (!checkState.includes(numId)) {
+                    checkState.push(numId);
+                }
+            });
+            checkState.sort((a, b) => a - b);
+            window.checkState = checkState;
+        } else {
+            // サブスク無し曲を削除後、backupとの和集合
+            await loadSubNoDataIfNeeded();
+            const subNoIds = Object.keys(subNoMap).map(id => Number(id));
+            
+            checkState = checkState.filter(id => !subNoIds.includes(id));
+            
+            if (checkStateBackup) {
+                checkStateBackup.forEach(id => {
+                    if (!checkState.includes(id)) {
+                        checkState.push(id);
+                    }
+                });
+                checkState.sort((a, b) => a - b);
+            }
+            window.checkState = checkState;
+        }
+        
+        applyCheckStateToDisplay();
+        logCurrentStates('サブスク無しチェック');
+    });
+}
+
+// style表示チェックの実際の処理
+function setupStyleCheckListener() {
+    const styleCheckbox = document.getElementById('showStyleCheck');
+    if (!styleCheckbox) return;
+    
+    const newCheckbox = styleCheckbox.cloneNode(true);
+    styleCheckbox.parentNode.replaceChild(newCheckbox, styleCheckbox);
+    
+    newCheckbox.addEventListener('change', async function () {
+        const mixCheckbox = document.getElementById('showMixCheck');
+        await toggleSmDisplay(this.checked, mixCheckbox ? mixCheckbox.checked : false);
+    });
+}
+
+// mix表示チェックの実際の処理
+function setupMixCheckListener() {
+    const mixCheckbox = document.getElementById('showMixCheck');
+    if (!mixCheckbox) return;
+    
+    const newCheckbox = mixCheckbox.cloneNode(true);
+    mixCheckbox.parentNode.replaceChild(newCheckbox, mixCheckbox);
+    
+    newCheckbox.addEventListener('change', async function () {
+        const styleCheckbox = document.getElementById('showStyleCheck');
+        await toggleSmDisplay(styleCheckbox ? styleCheckbox.checked : false, this.checked);
+    });
+}
+
+// サブスク無しデータの遅延読み込み
+async function loadSubNoDataIfNeeded() {
+    if (!subNoMap) {
+        const res = await fetch('data/sub-no.json');
+        subNoMap = await res.json();
+        console.log('sub-no.json 読み込み完了', Object.keys(subNoMap).length, '件');
+    }
+}
+
+// 4. グローバルアクセス用ハンドラー関数
+async function handleSubNoCheck(isChecked) {
+    if (isChecked) {
+        // サブスク無し曲を追加
+        await loadSubNoDataIfNeeded();
+        Object.keys(subNoMap).forEach(id => {
+            const numId = Number(id);
+            if (!checkState.includes(numId)) {
+                checkState.push(numId);
+            }
+        });
+        checkState.sort((a, b) => a - b);
+        window.checkState = checkState;
+    } else {
+        // サブスク無し曲を削除後、backupとの和集合
+        await loadSubNoDataIfNeeded();
+        const subNoIds = Object.keys(subNoMap).map(id => Number(id));
+        
+        checkState = checkState.filter(id => !subNoIds.includes(id));
+        
+        if (checkStateBackup) {
+            checkStateBackup.forEach(id => {
+                if (!checkState.includes(id)) {
+                    checkState.push(id);
+                }
+            });
+            checkState.sort((a, b) => a - b);
+        }
+        window.checkState = checkState;
+    }
+    
+    applyCheckStateToDisplay();
+    logCurrentStates('サブスク無しチェック');
+}
+
+async function handleStyleCheck(isStyleChecked, isMixChecked) {
+    await toggleSmDisplay(isStyleChecked, isMixChecked);
+}
+
+async function handleMixCheck(isStyleChecked, isMixChecked) {
+    await toggleSmDisplay(isStyleChecked, isMixChecked);
+}
+
 export async function loadSmDataIfNeeded() {
     if (!smData) {
         const response = await fetch('data/music-list-sm.json');
@@ -9,24 +256,27 @@ export async function loadSmDataIfNeeded() {
 export async function toggleSmDisplay(showStyle, showMix) {
     const data = await loadSmDataIfNeeded();
     const tbody = document.querySelector('#music-table tbody');
-
     // 既存のstyle/mix行を削除
     tbody.querySelectorAll('.sm-row').forEach(row => row.remove());
-    if (!showStyle && !showMix) return;
-
+    if (!showStyle && !showMix) {
+        // style/mixを非表示にした場合も、checkStateを表示に反映
+        applyCheckStateToDisplay();
+        return;
+    }
     // 追加する行をフィルター
     const toAdd = Object.values(data).filter(song => {
         if (showStyle && song.smType.includes('style')) return true;
         if (showMix && song.smType.includes('mix')) return true;
         return false;
     }).sort((a, b) => a.mID - b.mID);
-
     // 各行を適切な位置に挿入
     toAdd.forEach(song => {
         const newRow = createSongRow(song);
         newRow.classList.add('sm-row');
         insertRowAtCorrectPosition(tbody, newRow, song.mID);
     });
+    // checkStateを表示に反映
+    applyCheckStateToDisplay();
 }
 
 function createSongRow(song) {
@@ -252,9 +502,8 @@ export function generateHTMLTable(headers, rows) {
 export function setupCdTypeFilter() {
     document.addEventListener('change', async function (e) {
         if (e.target.name === 'resultCdType') {
-            const checked = document.querySelectorAll('.chk:checked');
-            const rawSongIDs = Array.from(checked).map(chk => Number(chk.dataset.id));
-            const songIDs = [...new Set(rawSongIDs)];
+            // checkStateを使用（lazyload後はこちらが正確）
+            const songIDs = checkState ? [...checkState] : [];
 
             const { allDiscs, musicMap } = await loadDataIfNeeded();
             const { headers, rows } = buildMatrix(songIDs, allDiscs, musicMap);
