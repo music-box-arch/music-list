@@ -1,6 +1,6 @@
 [
   {
-    "cd-group-id": "period_1st_Single_20080723",
+    "cd-group-id": "S01sen_080723",
     "cd-type": "single",
     "cd-name": "センチメンタルピリオド",
     "cd-name-sh": "センチ",
@@ -22,7 +22,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "mastervolume_2nd_Single_20090128",
+    "cd-group-id": "S02mas_090128",
     "cd-type": "single",
     "cd-name": "マスターボリューム",
     "cd-name-sh": "マスタ",
@@ -44,7 +44,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "UNISON_SQUARE_GARDEN_1st_Album_20090415",
+    "cd-group-id": "A01USG_090415",
     "cd-type": "album",
     "cd-name": "UNISON SQUARE GARDEN",
     "cd-name-sh": "USG",
@@ -74,7 +74,7 @@
     "TR": "https://tower.jp/item/2537639"
   },
   {
-    "cd-group-id": "cody_beats_3rd_Single_20100210",
+    "cd-group-id": "S03cod_100210",
     "cd-type": "single",
     "cd-name": "cody beats",
     "cd-name-sh": "cdb",
@@ -96,7 +96,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "JET_CO_2nd_Album_20100407",
+    "cd-group-id": "A02JET_100407",
     "cd-type": "album",
     "cd-name": "JET CO.",
     "cd-name-sh": "JET",
@@ -127,7 +127,7 @@
     "TR": "https://tower.jp/item/2674263"
   },
   {
-    "cd-group-id": "Scarsdale_4th_Single_20101124",
+    "cd-group-id": "S04Sca_101124",
     "cd-type": "single",
     "cd-name": "スカースデイル",
     "cd-name-sh": "スカデ",
@@ -154,7 +154,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "Orion_5th_Single_20110511",
+    "cd-group-id": "S05Ori_110511",
     "cd-type": "single",
     "cd-name": "オリオンをなぞる",
     "cd-name-sh": "オリオ",
@@ -180,7 +180,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "Populus_Populus_3rd_Full_Album_20110706",
+    "cd-group-id": "A03PoP_110706",
     "cd-type": "album",
     "cd-name": "Populus Populus",
     "cd-name-sh": "PoPo",
@@ -212,7 +212,7 @@
     "TR": "https://tower.jp/item/2882349"
   },
   {
-    "cd-group-id": "RyuuseiNoSquall6th_Single_20120725",
+    "cd-group-id": "S06RSq_120725",
     "cd-type": "single",
     "cd-name": "流星のスコール",
     "cd-name-sh": "流ス",
@@ -237,7 +237,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "LinearBlue_7th_Single_20120919",
+    "cd-group-id": "S07Lin_120919",
     "cd-type": "single",
     "cd-name": "リニアブルーを聴きながら",
     "cd-name-sh": "リニア",
@@ -260,7 +260,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "CIDERROAD_4th_Album_20130206",
+    "cd-group-id": "A04CID_130206",
     "cd-type": "album",
     "cd-name": "CIDER ROAD",
     "cd-name-sh": "CDR",
@@ -292,7 +292,7 @@
     "TR": "https://tower.jp/item/3190489"
   },
   {
-    "cd-group-id": "SakuraNo_8th_Single_20131106",
+    "cd-group-id": "S08Sak_131106",
     "cd-type": "single",
     "cd-name": "桜のあと（all quartets lead to the?）",
     "cd-name-sh": "桜の",
@@ -314,7 +314,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "harmonizedfinale_9th_Single_20140205",
+    "cd-group-id": "S09har_140205",
     "cd-type": "single",
     "cd-name": "harmonized finale",
     "cd-name-sh": "haf",
@@ -337,7 +337,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "CatcherInTheSpy_5th_Album_20140827",
+    "cd-group-id": "A05Cat_140827",
     "cd-type": "album",
     "cd-name": "Catcher In The Spy",
     "cd-name-sh": "CTS",
@@ -368,7 +368,7 @@
     "TR": "https://tower.jp/item/3652031"
   },
   {
-    "cd-group-id": "SugarSongAnd_10th_Single_20150520",
+    "cd-group-id": "S10Sug_150520",
     "cd-type": "single",
     "cd-name": "シュガーソングとビターステップ",
     "cd-name-sh": "シュガ",
@@ -390,7 +390,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "DUGOUTACCIDENT_20150722",
+    "cd-group-id": "As01DA_150722",
     "cd-type": "album",
     "cd-name": "DUGOUT ACCIDENT",
     "cd-name-sh": "DA",
@@ -425,7 +425,7 @@
     "TR": "https://tower.jp/item/3865799"
   },
   {
-    "cd-group-id": "DrIzzy_6th_Album_20160706",
+    "cd-group-id": "A06DrI_160706",
     "cd-type": "album",
     "cd-name": "Dr.Izzy",
     "cd-name-sh": "DrIz",
@@ -456,7 +456,7 @@
     "TR": "https://tower.jp/item/4258382"
   },
   {
-    "cd-group-id": "10roll10romance_11th_Single_20170809",
+    "cd-group-id": "S1110r_170809",
     "cd-type": "single",
     "cd-name": "10% roll, 10% romance",
     "cd-name-sh": "10",
@@ -478,7 +478,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "InvisibleSensation_12th_Single_20171108",
+    "cd-group-id": "S12Inv_171108",
     "cd-type": "single",
     "cd-name": "Invisible Sensation",
     "cd-name-sh": "InS",
@@ -500,7 +500,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "faketownbaby_13th_Single_20171115",
+    "cd-group-id": "S13fak_171115",
     "cd-type": "single",
     "cd-name": "fake town baby",
     "cd-name-sh": "ftb",
@@ -522,7 +522,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "MODEMOODMODE_7th_Album_20180124",
+    "cd-group-id": "A07MMM_180124",
     "cd-type": "album",
     "cd-name": "MODE MOOD MODE",
     "cd-name-sh": "MMM",
@@ -553,7 +553,7 @@
     "TR": "https://tower.jp/item/4670263"
   },
   {
-    "cd-group-id": "HarugaKite_14th_Single_20180307",
+    "cd-group-id": "S14bkr_180307",
     "cd-type": "single",
     "cd-name": "春が来てぼくら",
     "cd-name-sh": "春が",
@@ -575,7 +575,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "Catchuplatency_15th_Single_20181107",
+    "cd-group-id": "S15Cul_181107",
     "cd-type": "single",
     "cd-name": "Catch up, latency",
     "cd-name-sh": "Cul",
@@ -597,7 +597,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "BeesideSeaside_20190703",
+    "cd-group-id": "Am1RZ_190703",
     "cd-type": "album",
     "cd-name": "Bee side Sea side ～B-side Collection Album～",
     "cd-name-sh": "BsSs",
@@ -648,7 +648,7 @@
     "TR": "https://tower.jp/item/4886671"
   },
   {
-    "cd-group-id": "RyuseiZennya_MINI_ALBUM_20190703",
+    "cd-group-id": "Am2sn_190703",
     "cd-type": "album",
     "cd-name": "流星前夜",
     "cd-name-sh": "流前",
@@ -673,7 +673,7 @@
     "TR": "https://tower.jp/item/4886679"
   },
   {
-    "cd-group-id": "ShinnSekaiNote_MINI_ALBUM_20190703",
+    "cd-group-id": "As02BS_190703",
     "cd-type": "album",
     "cd-name": "新世界ノート",
     "cd-name-sh": "新世",
@@ -698,7 +698,7 @@
     "TR": "https://tower.jp/item/4886675"
   },
   {
-    "cd-group-id": "PhantomJoke_16th_Single_20191011",
+    "cd-group-id": "S16Pha_191011",
     "cd-type": "single",
     "cd-name": "Phantom Joke",
     "cd-name-sh": "PhJ",
@@ -720,7 +720,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "PatrickVegee_8th_Album_20200930",
+    "cd-group-id": "A08Pat_200930",
     "cd-type": "album",
     "cd-name": "Patrick Vegee",
     "cd-name-sh": "PaV",
@@ -751,7 +751,7 @@
     "TR": "https://tower.jp/item/5075757"
   },
   {
-    "cd-group-id": "kaleidoproudfiesta_17th_Single_20220413",
+    "cd-group-id": "S17kpf_220413",
     "cd-type": "single",
     "cd-name": "kaleido proud fiesta",
     "cd-name-sh": "kpf",
@@ -772,7 +772,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "ChaosGaKiwamaru_18th_Single_20221019",
+    "cd-group-id": "S18Cha_221019",
     "cd-type": "single",
     "cd-name": "カオスが極まる",
     "cd-name-sh": "カオス",
@@ -793,7 +793,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "Ninth_Peel_9th_Album_20230412",
+    "cd-group-id": "A09NP_230412",
     "cd-type": "album",
     "cd-name": "Ninth Peel",
     "cd-name-sh": "NiP",
@@ -823,7 +823,7 @@
     "TR": "https://tower.jp/item/5638564"
   },
   {
-    "cd-group-id": "Ikenaifoollogic_19th_Single_20230927",
+    "cd-group-id": "S19ike_230927",
     "cd-type": "single",
     "cd-name": "いけないfool logic",
     "cd-name-sh": "いけな",
@@ -844,7 +844,7 @@
     "TR": ""
   },
   {
-    "cd-group-id": "SUBMACHINEBESTMACHINE_20240724",
+    "cd-group-id": "As03SB_240724",
     "cd-type": "album",
     "cd-name": "SUB MACHINE, BEST MACHINE",
     "cd-name-sh": "SMBM",
@@ -897,7 +897,7 @@
     "TR": "https://tower.jp/item/6316363"
   },
   {
-    "cd-group-id": "BoujakuNo_20th_Single_20241002",
+    "cd-group-id": "S20Boj_241002",
     "cd-type": "single",
     "cd-name": "傍若のカリスマ",
     "cd-name-sh": "傍若",
