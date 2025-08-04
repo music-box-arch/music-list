@@ -8,16 +8,16 @@ const makeLink = (label, url) =>
 // 初回ボタン押下時のlazyload処理
 async function initializeLazyFeatures() {
   if (lazyLoaded) return;
-  
+
   console.log('lazyload開始...');
   const { initializeCheckState, setupAllEventListeners } = await import('./main-lazy.js');
-  
+
   // DOM状態を一括取得してcheckStateに初期化
   await initializeCheckState();
-  
+
   // イベントリスナー設定
   setupAllEventListeners();
-  
+
   lazyLoaded = true;
   console.log('lazyload完了');
 }
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const thead = document.querySelector('#music-table thead');
       thead.innerHTML = '';
       const trHead = document.createElement('tr');
-      ['✔︎', '曲名', 'YT', 'LV', 'Spf', 'Apl', 'iTn', 's/m', '初収録', '曲順', '発売日'].forEach(col => {
+      ['✔︎', '曲名', 'YT', 'LV', 'Spf', 'Apl', 'iTn', 's/m有無', '初収録', '曲順', '発売日'].forEach(col => {
         const th = document.createElement('th');
         th.textContent = col;
         trHead.appendChild(th);
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.addEventListener('click', async () => {
         const { loadDataIfNeeded, buildMatrix, generateHTMLTable, setupCdTypeFilter } = await import('./main-lazy.js');
         setupCdTypeFilter();
-        
+
         // DOM状態から直接取得（checkStateは使わない）
         const checked = document.querySelectorAll('.chk:checked');
         const songIDs = Array.from(checked).map(chk => Number(chk.dataset.id));
@@ -173,17 +173,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // クリアボタンは最小限の機能のみ
     document.querySelectorAll('.clearAllChecksBtn').forEach(btn => {
-      btn.addEventListener('click', function() {
+      btn.addEventListener('click', function () {
         document.querySelectorAll('.chk:checked').forEach(chk => {
           chk.checked = false;
         });
-        
+
         // サブスク無しチェックボックスも外す
         const subNoCheckbox = document.getElementById('checkSubNoOnly');
         if (subNoCheckbox && subNoCheckbox.checked) {
           subNoCheckbox.checked = false;
         }
-        
+
         // checkStateのクリアはlazyload後に担当
         if (lazyLoaded && window.clearCheckState) {
           window.clearCheckState();
