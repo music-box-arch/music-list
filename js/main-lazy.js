@@ -516,8 +516,13 @@ export function buildMatrix(songIDs, discs, musicMap) {
     const maxLength = getHeaderMaxLength(filteredDiscs.length);
     const songNameMaxLength = getSongNameMaxLength(filteredDiscs.length);
 
-    const headers = ['曲名'].concat(
-        filteredDiscs.map(d => d['cd-name'].length > maxLength ? d['cd-name'].slice(0, maxLength) : d['cd-name'])
+    const headers = [''].concat(
+        filteredDiscs.map(d => {
+            const cdName = d['cd-name'].length > maxLength ? d['cd-name'].slice(0, maxLength) : d['cd-name'];
+            const songCount = d.tracks.filter(id => songIDs.includes(id)).length;
+            const amznLink = d.Amzn ? `\n<a href="${d.Amzn}" target="_blank" style="color: #0066cc; text-decoration: underline;">Amz</a>` : '';
+            return `${cdName}\n(${songCount})${amznLink}`;
+        })
     );
 
     // 行データ（曲順もCDの重要度順に並べ替え）
@@ -611,10 +616,17 @@ export function generateHTMLTable(headers, rows) {
 
     const makeCell = (tag, content) => {
         const cell = document.createElement(tag);
-        cell.textContent = content;
+        if (content.includes('\n') || content.includes('<a')) {
+            // 改行文字やHTMLタグがある場合はHTMLとして設定
+            cell.innerHTML = content.replace(/\n/g, '<br>');
+        } else {
+            cell.textContent = content;
+        }
         cell.style.border = '1px solid #ccc';
         cell.style.padding = '2px';
         cell.style.textAlign = 'center';
+        
+        
         return cell;
     };
 
