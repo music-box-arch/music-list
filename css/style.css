@@ -46,11 +46,13 @@ h1 {
   background: #f7fafd;
 }
 
+/* thはヘッダ、tdはその下 */
+.tbl th:nth-child(10),
 .tbl td:nth-child(8),
 .tbl td:nth-child(9),
 .tbl td:nth-child(10),
-.tbl th:nth-child(10),
-.tbl td:nth-child(11) {
+.tbl td:nth-child(11),
+.tbl td:nth-child(12) {
   font-size: 12px;
 }
 
