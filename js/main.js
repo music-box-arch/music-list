@@ -10,22 +10,18 @@ const makeLink = (label, url) =>
 async function initLazy() {
   if (lazy) return;
 
-
   // 各モジュールから必要な機能をimport
-  const { setupGlobals } = await import('./main-lazy.js');
-  const { initChkState, setGlobals, syncChk, syncSetlistChk } = await import('./checkstate.js');
+  const { setupGlb } = await import('./main-lazy.js');
+  const { initChkState, setGlobals, syncChk } = await import('./checkstate.js');
 
   // チェック状態管理を初期化
   await initChkState();
 
   // グローバル関数を設定
-  setupGlobals();
+  setupGlb();
 
-  // 曲一覧チェックボックス同期を設定（リアルタイム同期開始）
+  // チェックボックス同期を設定（リアルタイム同期開始）
   syncChk();
-
-  // セットリスト用チェックボックス同期を設定
-  syncSetlistChk();
 
   // グローバル関数を設定
   setGlobals();
@@ -67,12 +63,12 @@ document.addEventListener('DOMContentLoaded', function () {
       tbody.innerHTML = '';
 
       // mIDでソートしてから表示
-      const sortedEntries = Object.entries(musicData).sort((a, b) => a[1].mID - b[1].mID);
+      const sorted = Object.entries(musicData).sort((a, b) => a[1].mID - b[1].mID);
 
-      sortedEntries.forEach(([id, song]) => {
+      sorted.forEach(([id, song]) => {
         const tr = document.createElement('tr');
         tr.innerHTML = `
-        <td><input type="checkbox" class="chk" data-id="${song.mID}"></td>
+        <td><input type="checkbox" class="chk" data-context="ml" data-id="${song.mID}"></td>
         <td>${song.title}</td>
         <td>${song.yt}</td>
         <td>${song.lv}</td>
@@ -88,24 +84,24 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
       // 表生成完了後、最小限のボタン有効化とタブ機能初期化
-      enableMinimalButtons();
-      enableCdButtons(); // CDボタンをすぐに有効化
-      initializeTabFunctionality();
+      enblMinimalBtns();
+      enblCdBtns(); // CDボタンをすぐに有効化
+      initTabFunc();
     })
     .catch(error => {
       console.error('JSON読み込みエラー:', error);
     });
 
   // 2-2. 最小限のボタン有効化
-  function enableMinimalButtons() {
+  function enblMinimalBtns() {
     // 4つの重要ボタンに初回lazyload検出を設定
-    const filterCheckbox = document.getElementById('chkSb');
-    const styleCheckbox = document.getElementById('shStChk');
-    const mixCheckbox = document.getElementById('shMxChk');
-    const showCheckedOnlyCheckbox = document.getElementById('shChkOnly');
+    const filterCB = document.getElementById('chkSb');
+    const stCB = document.getElementById('shStChk');
+    const mxCB = document.getElementById('shMxChk');
+    const chkOnly = document.getElementById('shChkOnly');
 
-    if (filterCheckbox) {
-      filterCheckbox.addEventListener('change', async function () {
+    if (filterCB) {
+      filterCB.addEventListener('change', async function () {
         if (!lazy) {
           await initLazy();
         }
@@ -116,34 +112,34 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
 
-    if (styleCheckbox) {
-      styleCheckbox.addEventListener('change', async function () {
+    if (stCB) {
+      stCB.addEventListener('change', async function () {
         if (!lazy) {
           await initLazy();
         }
         // lazyload後、実際の処理を実行
         if (window.style) {
-          const mixCheckbox = document.getElementById('shMxChk');
-          window.style(this.checked, mixCheckbox ? mixCheckbox.checked : false);
+          const mxCB = document.getElementById('shMxChk');
+          window.style(this.checked, mxCB ? mxCB.checked : false);
         }
       });
     }
 
-    if (mixCheckbox) {
-      mixCheckbox.addEventListener('change', async function () {
+    if (mxCB) {
+      mxCB.addEventListener('change', async function () {
         if (!lazy) {
           await initLazy();
         }
         // lazyload後、実際の処理を実行
         if (window.mix) {
-          const styleCheckbox = document.getElementById('shStChk');
-          window.mix(styleCheckbox ? styleCheckbox.checked : false, this.checked);
+          const stCB = document.getElementById('shStChk');
+          window.mix(stCB ? stCB.checked : false, this.checked);
         }
       });
     }
 
-    if (showCheckedOnlyCheckbox) {
-      showCheckedOnlyCheckbox.addEventListener('change', async function () {
+    if (chkOnly) {
+      chkOnly.addEventListener('change', async function () {
         if (!lazy) {
           await initLazy();
         }
@@ -155,9 +151,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // 曲名検索のフォーカス時lazyload検出
-    const songNameSearch = document.getElementById('sngSrch');
-    if (songNameSearch) {
-      songNameSearch.addEventListener('focus', async function () {
+    const songSrch = document.getElementById('sngSrch');
+    if (songSrch) {
+      songSrch.addEventListener('focus', async function () {
         if (!lazy) {
           await initLazy();
         }
@@ -178,12 +174,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         // サブスク無しチェックボックスも外す
-        const subNoCheckbox = document.getElementById('chkSb');
-        if (subNoCheckbox && subNoCheckbox.checked) {
-          subNoCheckbox.checked = false;
+        const subCB = document.getElementById('chkSb');
+        if (subCB && subCB.checked) {
+          subCB.checked = false;
         }
 
-        // checkStateのクリアはlazyload後に担当
+        // lazy済みの場合、表示フィルター系のチェックボックスもクリア
+        if (lazy && window.clrDispFilt) {
+          window.clrDispFilt();
+        }
+
+        // cSのクリアはlazyload後に担当
         if (lazy && window.clrCS) {
           window.clrCS();
         }
@@ -192,19 +193,19 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // 2-3. CDボタンの有効化（イベントリスナーのみ設置）
-  function enableCdButtons() {
+  function enblCdBtns() {
     document.querySelectorAll('.showDiscsButton').forEach(btn => {
       btn.disabled = false;
       btn.addEventListener('click', async () => {
-        // 1. 先にcheckState記録のためにmain-lazy.js + checkstate.jsを読み込み
+        // 1. 先にcS記録のためにmain-lazy.js + checkstate.jsを読み込み
         if (!lazy) {
           await initLazy();
         }
 
         // 2. result.jsを動的読み込みしてCD処理実行
         const { initCdFeats } = await import('./result.js');
-        await initCdFeats();
-        
+        initCdFeats();
+
         if (window.cdBtn) {
           window.cdBtn();
         }
@@ -213,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // 2-4. タブ機能の初期化
-  function initializeTabFunctionality() {
+  function initTabFunc() {
     document.querySelectorAll('.tab-btn').forEach(btn => {
       btn.addEventListener('click', async function () {
         const targetTab = this.dataset.tab;
@@ -230,14 +231,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // タブ切り替え時のチェック状態同期
         if (targetTab === 'setlist') {
-          // セットリストタブに切り替える時、checkStateを反映
-          if (window.applyCSSet) {
-            window.applyCSSet();
+          // セットリストタブに切り替える時、cSを反映
+          if (window.aplCsCxt) {
+            window.aplCsCxt('sl');
           }
         } else if (targetTab === 'songlist') {
-          // 曲一覧タブに切り替える時、checkStateを反映
-          if (window.applyCS) {
-            window.applyCS();
+          // 曲一覧タブに切り替える時、cSを反映
+          if (window.aplCsCxt) {
+            window.aplCsCxt('ml');
           }
         }
 

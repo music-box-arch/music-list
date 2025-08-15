@@ -3,13 +3,13 @@
 // セットリスト機能の初期化
 export async function initSL() {
   try {
-    const { initSL, setupGlobals } = await import('./fest.js');
+    const { initSL, setupGlb } = await import('./fest.js');
 
     // セットリスト機能を初期化
     await initSL();
 
     // グローバル関数を設定
-    setupGlobals();
+    setupGlb();
 
   } catch (error) {
   }

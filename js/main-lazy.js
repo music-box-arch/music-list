@@ -1,8 +1,6 @@
 // 各種機能ボタン用のlazy import処理
-
 let subNoMap = null;
 let smData = null;
-
 
 // サブスク無しデータの読み込み
 async function loadSubNo() {
@@ -32,7 +30,7 @@ export async function SubNoFn(isChecked) {
         const subNoData = await loadSubNo();
         const subNoIds = Object.keys(subNoData).map(id => Number(id));
 
-        // checkState操作用の関数を呼び出し
+        // cS操作用の関数を呼び出し
         if (window.setCSsub) {
             window.setCSsub(subNoIds, currentIds);
         }
@@ -43,21 +41,17 @@ export async function SubNoFn(isChecked) {
         }
     }
 
-    // 画面に反映
-    if (window.applyCS) {
-        window.applyCS();
-    }
-    if (window.applyCSSet) {
-        window.applyCSSet();
+    // 画面に反映とフィルター再適用
+    if (window.applyActv) {
+        window.applyActv();
     }
 
     // 検索中の場合は自動で検索をやり直し
     reapplySearch();
-
 }
 
-// 従来のhandleSubNoCheckも保持（下位互換性のため）
-async function handleSubNoCheck(showSubNoOnly) {
+// 従来のhdlSubNoChkも保持（下位互換性のため）
+async function hdlSubNoChk(showSubNoOnly) {
     return SubNoFn(showSubNoOnly);
 }
 
@@ -65,35 +59,35 @@ async function handleSubNoCheck(showSubNoOnly) {
 async function toggleSm(showStyle, showMix) {
     const data = await loadSm();
     const tbody = document.querySelector('#musicTbl tbody');
-    
+
     // 既存のstyle/mix行を削除
     tbody.querySelectorAll('.sm-row').forEach(row => row.remove());
-    
+
     if (!showStyle && !showMix) {
-        // style/mixを非表示にした場合も、checkStateを表示に反映
-        if (window.applyCS) {
-            window.applyCS();
+        // style/mixを非表示にした場合も、cSを表示に反映
+        if (window.aplCsCxt) {
+            window.aplCsCxt('ml');
         }
         return;
     }
-    
+
     // 追加する行をフィルター
     const toAdd = Object.values(data).filter(song => {
         if (showStyle && song.smType.includes('style')) return true;
         if (showMix && song.smType.includes('mix')) return true;
         return false;
     }).sort((a, b) => a.mID - b.mID);
-    
+
     // 各行を適切な位置に挿入
     toAdd.forEach(song => {
         const newRow = createRow(song);
         newRow.classList.add('sm-row');
         insertRow(tbody, newRow, song.mID);
     });
-    
-    // checkStateを表示に反映
-    if (window.applyCS) {
-        window.applyCS();
+
+    // cSを表示に反映
+    if (window.aplCsCxt) {
+        window.aplCsCxt('ml');
     }
 
     // 検索中の場合は自動で検索をやり直し
@@ -106,7 +100,7 @@ function createRow(song) {
     // mID 93の曲だけ12pxに設定
     const titleStyle = song.mID === 93 ? ' style="font-size: 12px;"' : '';
     tr.innerHTML = `
-        <td><input type="checkbox" class="chk" data-id="${song.mID}"></td>
+        <td><input type="checkbox" class="chk" data-context="ml" data-id="${song.mID}"></td>
         <td${titleStyle}>${song.title}</td>
         <td>${song.yt}</td>
         <td>${song.lv}</td>
@@ -135,13 +129,13 @@ function insertRow(tbody, newRow, mID) {
 }
 
 // チェック付き行のみ表示処理
-async function handleCheckedOnly(showCheckedOnly) {
+async function hdlMlChkOnly(showCheckedOnly) {
     const tbody = document.querySelector('#musicTbl tbody');
     const allRows = tbody.querySelectorAll('tr');
 
     // 現在の検索語を取得
-    const searchInput = document.getElementById('sngSrch');
-    const searchTerm = searchInput ? searchInput.value.trim() : '';
+    const srchInp = document.getElementById('sngSrch');
+    const searchTerm = srchInp ? srchInp.value.trim() : '';
 
     if (showCheckedOnly) {
         // チェック付き行のみ表示（検索フィルターも考慮）
@@ -154,8 +148,8 @@ async function handleCheckedOnly(showCheckedOnly) {
                 const titleCell = row.querySelector('td:nth-child(2)');
                 if (titleCell) {
                     const titleText = titleCell.textContent.toLowerCase();
-                    const searchTermLower = searchTerm.toLowerCase();
-                    shouldShow = titleText.includes(searchTermLower);
+                    const srchLower = searchTerm.toLowerCase();
+                    shouldShow = titleText.includes(srchLower);
                 }
             }
 
@@ -174,22 +168,21 @@ async function handleCheckedOnly(showCheckedOnly) {
 }
 
 // 曲名検索機能
-function enableSearch() {
-    const searchInput = document.getElementById('sngSrch');
-    if (!searchInput) return;
-
+function enblSrch() {
+    const srchInp = document.getElementById('sngSrch');
+    if (!srchInp) return;
 
     // リアルタイム検索のイベントリスナー
-    searchInput.addEventListener('input', function () {
-        performSearch(this.value.trim());
+    srchInp.addEventListener('input', function () {
+        pfmSrch(this.value.trim());
     });
 
     // 検索機能有効化後、フォーカスを戻す
-    searchInput.focus();
+    srchInp.focus();
 }
 
 // 曲名検索実行
-function performSearch(searchTerm) {
+function pfmSrch(searchTerm) {
     const tbody = document.querySelector('#musicTbl tbody');
     const allRows = tbody.querySelectorAll('tr');
 
@@ -200,24 +193,24 @@ function performSearch(searchTerm) {
         });
 
         // チェック付き行のみ表示が有効の場合は再適用
-        const showCheckedOnlyCheckbox = document.getElementById('shChkOnly');
-        if (showCheckedOnlyCheckbox && showCheckedOnlyCheckbox.checked) {
-            handleCheckedOnly(true);
+        const chkOnly = document.getElementById('shChkOnly');
+        if (chkOnly && chkOnly.checked) {
+            hdlMlChkOnly(true);
         }
         return;
     }
 
     // 大文字小文字を区別しない検索
-    const searchTermLower = searchTerm.toLowerCase();
+    const srchLower = searchTerm.toLowerCase();
 
     allRows.forEach(row => {
         const titleCell = row.querySelector('td:nth-child(2)'); // 曲名は2番目のセル
         if (titleCell) {
             const titleText = titleCell.textContent.toLowerCase();
-            const matchesSearch = titleText.includes(searchTermLower);
+            const matchSrch = titleText.includes(srchLower);
 
             // 検索時は検索結果のみを表示（チェック状態は無視）
-            row.style.display = matchesSearch ? '' : 'none';
+            row.style.display = matchSrch ? '' : 'none';
         }
     });
 
@@ -225,36 +218,53 @@ function performSearch(searchTerm) {
 
 // 検索中の場合は自動で検索をやり直し
 function reapplySearch() {
-    const searchInput = document.getElementById('sngSrch');
-    if (searchInput) {
-        const currentSearchTerm = searchInput.value.trim();
-        if (currentSearchTerm) {
-            performSearch(currentSearchTerm);
+    const srchInp = document.getElementById('sngSrch');
+    if (srchInp) {
+        const curSearch = srchInp.value.trim();
+        if (curSearch) {
+            pfmSrch(curSearch);
         }
     }
 }
 
-
 // ハンドラー関数（main.jsから呼ばれる）
-async function handleStyleCheck(isStyleChecked, isMixChecked) {
+async function hdlStChk(isStyleChecked, isMixChecked) {
     await toggleSm(isStyleChecked, isMixChecked);
 }
 
-async function handleMixCheck(isStyleChecked, isMixChecked) {
+async function hdlMxChk(isStyleChecked, isMixChecked) {
     await toggleSm(isStyleChecked, isMixChecked);
 }
 
+// 表示フィルター系のチェックボックスを全てクリア（クリアボタン用）
+export function clrDispFilt() {
+    // 曲タブの「チェックをつけた行だけ表示」を外す
+    const chkOnly = document.getElementById('shChkOnly');
+    if (chkOnly && chkOnly.checked) {
+        chkOnly.checked = false;
+        hdlMlChkOnly(false);
+    }
+
+    // セトリタブの「チェックをつけた行だけ表示」を外す
+    const slChkOnly = document.getElementById('slShChk');
+    if (slChkOnly && slChkOnly.checked) {
+        slChkOnly.checked = false;
+        // セトリタブ用の処理を呼び出し（fest.jsのhandleCheckedOnly）
+        if (window.slChk) {
+            window.slChk(false);
+        }
+    }
+}
 
 // グローバル関数を公開
-export function setupGlobals() {
+export function setupGlb() {
     // グローバルアクセス用
     window.subNo = SubNoFn;
-    window.subChk = handleSubNoCheck;
-    window.style = handleStyleCheck;
-    window.mix = handleMixCheck;
-    window.showChk = handleCheckedOnly;
-    window.enSrch = enableSearch;
-    window.doSrch = performSearch;
-
+    window.subChk = hdlSubNoChk;
+    window.style = hdlStChk;
+    window.mix = hdlMxChk;
+    window.showChk = hdlMlChkOnly;
+    window.enSrch = enblSrch;
+    window.doSrch = pfmSrch;
+    window.clrDispFilt = clrDispFilt;
 }
-

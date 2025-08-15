@@ -8,9 +8,19 @@
 }
 
 header {
-  border-bottom: 1.5px solid #2D5691;
-  margin-bottom: 1em;
-  padding-bottom: 0.5em;
+  border-bottom: 2px solid #2564ad;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+nav a {
+  color: #2564ad;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -18,40 +28,15 @@ main {
   margin-bottom: 3em;
 }
 
-#global-nav {
-  text-align: center;
-  padding-inline-start: 0px;
-}
-
-#global-nav ul {
-  padding-inline-start: 0px;
-}
-
-#global-nav .nav-item {
-  list-style: none;
-  display: inline-block;
-  margin: 0.2em;
-  padding: 1.2em 3em 0.8em;
-  /*
-  border: 1px solid;
-  border-color: #ccd;
-  border-radius: 3px;
-  */
-}
-
-#global-nav .nav-item a {
-  text-decoration: none;
-}
-
 .content h2 {
-  color: #2D5691;
+  color: #2564ad;
   border-bottom: 1px solid #ccd;
   padding-bottom: 0.5em;
   margin-top: 2em;
 }
 
 .content h3 {
-  color: #2D5691;
+  color: #2564ad;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
@@ -60,8 +45,7 @@ main {
   margin-bottom: 1em;
 }
 
-.content ul,
-.content ol {
+.content ul, .content ol {
   margin-bottom: 1em;
   padding-left: 2em;
 }
@@ -105,7 +89,7 @@ footer {
 .content h2:before {
   content: "●";
   color: #2564ad;
-  margin: 0em 0.3em;
+  margin-right: 0.5em;
   font-size: 0.8em;
 }
 
