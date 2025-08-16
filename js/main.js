@@ -1,6 +1,6 @@
 // 1. グローバル変数（最小限）
 let lazy = false; // lazyload済みフラグ
-let festLazy = false; // sl-lazy.js読み込み済みフラグ
+let slLazy = false; // sl-lazy.js読み込み済みフラグ
 
 // DOM表でリンクを作る関数を定義
 const makeLink = (label, url) =>
@@ -30,15 +30,15 @@ async function initLazy() {
 }
 
 // セットリスト機能のlazyload処理
-async function initFestLazy() {
-  if (festLazy) return;
+async function initSlLazy() {
+  if (slLazy) return;
 
   const { initSL } = await import('./sl-lazy.js');
 
   // セットリスト機能を初期化
   await initSL();
 
-  festLazy = true;
+  slLazy = true;
 }
 
 // 2. DOMContentLoaded後の処理
@@ -225,8 +225,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // セットリストタブが初回クリックされた場合
-        if (targetTab === 'setlist' && !festLazy) {
-          await initFestLazy();
+        if (targetTab === 'setlist' && !slLazy) {
+          await initSlLazy();
         }
 
         // タブ切り替え時のチェック状態同期

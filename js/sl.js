@@ -36,7 +36,7 @@ async function loadFileList() {
 async function loadMusic() {
   if (Object.keys(slMusicData).length > 0) return; // 既に読み込み済み
 
-  const response = await fetch('data/music-list.json');
+  const response = await fetch('data/music-list-SL.json');
   slMusicData = await response.json();
 }
 
@@ -48,7 +48,7 @@ async function loadAndBuild() {
   for (const fileObj of slFiles) {
     const filename = typeof fileObj === 'string' ? fileObj : fileObj.name;
     const flag = typeof fileObj === 'string' ? 1 : (fileObj.flag || 0);
-    
+
     if (flag >= 1) {
       try {
         const response = await fetch(`setlist/${filename}`);
@@ -76,6 +76,46 @@ async function loadAndBuild() {
   buildBody(slData);
 }
 
+// MC行を作成
+function createMCRow(colCount = 12) {
+  const tr = document.createElement('tr');
+  tr.style.backgroundColor = '#f0f0f0';
+  tr.innerHTML = `
+        <td colspan="${colCount}" style="text-align: center; color: #666; font-size: 12px; padding: 2px;">
+            MC
+        </td>
+    `;
+  return tr;
+}
+
+// MC行を後から挿入する関数
+async function insertMCRows(tbody, setlistData) {
+  // main-lazy.jsからinsertRowをimport
+  const { insertRow } = await import('./main-lazy.js');
+
+  // MC位置を特定
+  const mcPositions = [];
+  setlistData.setlist.forEach((songId, index) => {
+    if (songId === 0) {
+      // この位置より前にある「0でない曲」の数を数える
+      const songsBeforeCount = setlistData.setlist.slice(0, index).filter(id => id !== 0).length;
+      mcPositions.push({
+        originalIndex: index,
+        insertAfterSong: songsBeforeCount + 0.5 // 0.5, 1.5, 2.5...
+      });
+    }
+  });
+
+  // 各MC行を適切な位置に挿入
+  console.log('MC positions:', mcPositions);
+  mcPositions.forEach(pos => {
+    console.log('Inserting MC at position:', pos.insertAfterSong);
+    const mcRow = createMCRow(11); // セトリタブは11列
+
+    insertRow(tbody, mcRow, pos.insertAfterSong, 'setlistOrder');
+  });
+}
+
 // ファイル名から日付を抽出する関数
 function extractDateFromFilename(filename) {
   const match = filename.match(/(\d{2})(\d{2})(\d{2})\.json$/);
@@ -98,8 +138,7 @@ function buildBody(slData) {
 
   sortedSL.forEach((setlistData, setlistIndex) => {
     // セットリストごとに表を作成
-    const tableTitle = document.createElement('h4');
-    
+
     if (setlistData.isPlaceholder) {
       // プレースホルダの場合はボタンとして表示
       const dateText = formatDateForDisplay(setlistData.date);
@@ -118,18 +157,18 @@ function buildBody(slData) {
       container.appendChild(button);
       return; // プレースホルダの場合は表を作らずに終了
     }
-    
+
     let titleText = `${setlistData.date} - ${setlistData.site}`;
     if (setlistData.event) {
       titleText += ` - ${setlistData.event}`;
     }
-    
+
     // detailsとsummaryを使った開閉可能な表
     const details = document.createElement('details');
     details.open = true; // デフォルトで開いた状態
     details.style.marginTop = setlistIndex > 0 ? '2em' : '1em';
     details.style.marginBottom = '1em';
-    
+
     const summary = document.createElement('summary');
     summary.style.color = '#2564ad';
     summary.style.cursor = 'pointer';
@@ -139,13 +178,13 @@ function buildBody(slData) {
     summary.style.listStyle = 'none';
     summary.innerHTML = `<span style="font-weight: bold; margin-right: 8px; transform: rotate(90deg); display: inline-block;">＞</span>${titleText}`;
     details.appendChild(summary);
-    
+
     // 開閉時にアイコンを切り替え
     details.addEventListener('toggle', () => {
       const icon = summary.querySelector('span');
       icon.style.transform = details.open ? 'rotate(90deg)' : 'rotate(-90deg)';
     });
-    
+
     container.appendChild(details);
 
     const table = document.createElement('table');
@@ -154,10 +193,16 @@ function buildBody(slData) {
     // ヘッダー作成
     const thead = document.createElement('thead');
     const trHead = document.createElement('tr');
-    const headers = ['✔︎', 'セトリ順', '曲名', 'YT', 'LV', 'Spf', 'Apl', 'iTn', 's/m', '初収録', '曲順', '発売日'];
+    const headers = ['✔︎', 'セトリ順', '曲名', 'YT', 'LV', 'Spf', 'Apl', 'iTn', 'テンポ', '特徴・ハイライト', '歌詞'];
     headers.forEach(col => {
       const th = document.createElement('th');
       th.textContent = col;
+      
+      // セトリタブ専用のスタイル設定
+      if (col === 'テンポ' || col === '歌詞') {
+        th.style.fontSize = '12px';
+      }
+      
       trHead.appendChild(th);
     });
     thead.appendChild(trHead);
@@ -171,28 +216,7 @@ function buildBody(slData) {
 
     setlistData.setlist.forEach((songId, orderInSetlist) => {
       if (songId === 0) {
-        // MCの場合
-        const tr = document.createElement('tr');
-        tr.style.backgroundColor = '#f0f0f0';
-        tr.innerHTML = `
-          <td colspan="12" style="text-align: center; color: #666; font-size: 12px; padding: 2px;">
-            MC
-          </td>
-        `;
-        tbody.appendChild(tr);
-        return;
-      }
-
-      if (songId === 1000) {
-        // インストの場合
-        const tr = document.createElement('tr');
-        tr.style.backgroundColor = '#f0f0f0';
-        tr.innerHTML = `
-          <td colspan="12" style="text-align: center; color: #666;">
-            インスト
-          </td>
-        `;
-        tbody.appendChild(tr);
+        // MCの場合は飛ばす（後から挿入）
         return;
       }
 
@@ -215,10 +239,9 @@ function buildBody(slData) {
         <td>${song.spf || ''}</td>
         <td>${song.apl || ''}</td>
         <td>${song.itn || ''}</td>
-        <td>${song.exsm || ''}</td>
-        <td>${song.firstCd || ''}</td>
-        <td>${song.order || ''}</td>
-        <td>${song.cdDate || ''}</td>
+        <td style="font-size: 12px;">${song.tmp || ''}</td>
+        <td>${song.hlt || ''}</td>
+        <td style="font-size: 12px;">${song.lrc || ''}</td>
       `;
 
       tbody.appendChild(tr);
@@ -227,6 +250,9 @@ function buildBody(slData) {
 
     table.appendChild(tbody);
     details.appendChild(table);
+
+    // MC行を後から挿入
+    insertMCRows(tbody, setlistData);
   });
 }
 
@@ -320,18 +346,18 @@ async function loadSetlistOnDemand(filename) {
       filename,
       ...data
     };
-    
+
     // キャッシュに保存
     loadedSetlists.set(filename, setlistData);
-    
+
     // 表示を更新
     rebuildWithNewData();
-    
+
     // チェック状態をセットリストに反映
     if (window.aplCsCxt) {
       window.aplCsCxt('sl');
     }
-    
+
   } catch (error) {
     console.error(`セットリストの読み込みに失敗: ${filename}`, error);
   }
@@ -340,17 +366,17 @@ async function loadSetlistOnDemand(filename) {
 // 新しいデータで表示を再構築
 function rebuildWithNewData() {
   const allData = [];
-  
+
   // キャッシュされたデータを全て追加
   for (const setlistData of loadedSetlists.values()) {
     allData.push(setlistData);
   }
-  
+
   // まだ読み込まれていないプレースホルダも追加
   for (const fileObj of slFiles) {
     const filename = typeof fileObj === 'string' ? fileObj : fileObj.name;
     const flag = typeof fileObj === 'string' ? 1 : (fileObj.flag || 0);
-    
+
     if (flag < 1 && !loadedSetlists.has(filename)) {
       const dateFromFilename = extractDateFromFilename(filename);
       allData.push({
@@ -360,7 +386,7 @@ function rebuildWithNewData() {
       });
     }
   }
-  
+
   buildBody(allData);
 }
 
