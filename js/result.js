@@ -109,9 +109,8 @@ export function buildMatrix(songIDs, discs, musicMap) {
         const pureWinW = document.documentElement.clientWidth;
         // bodyのmarginを考慮した実際のテーブル利用可能幅
         const bodyStyle = getComputedStyle(document.body);
-        const marginLeft = parseInt(bodyStyle.marginLeft) || 0;
-        const marginR = parseInt(bodyStyle.marginR) || 0;
-        const tableWidth = pureWinW - marginLeft - marginR;
+        const marginEach = parseInt(bodyStyle.marginLeft) || 0;
+        const tableWidth = pureWinW - (marginEach * 2);
         const n = columnCount;
 
         // まず列ヘッダー幅を決定

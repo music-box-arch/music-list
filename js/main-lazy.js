@@ -115,16 +115,26 @@ function createRow(song) {
     return tr;
 }
 
+
 // 適切な位置に行を挿入
-function insertRow(tbody, newRow, mID) {
+export function insertRow(tbody, newRow, place, compareBy = 'mID') {
     const rows = Array.from(tbody.querySelectorAll('tr'));
+    console.log('insertRow: looking for position', place, 'compareBy', compareBy);
     for (let i = 0; i < rows.length; i++) {
-        const currentMID = parseInt(rows[i].querySelector('.chk').dataset.id);
-        if (currentMID > mID) {
+        let currentValue;
+        if (compareBy === 'mID') {
+            currentValue = parseInt(rows[i].querySelector('.chk').dataset.id);
+        } else if (compareBy === 'setlistOrder') {
+            currentValue = parseInt(rows[i].getAttribute('data-setlist-order'));
+        }
+        console.log(`Row ${i}: currentValue=${currentValue}, comparing ${currentValue} > ${place} = ${currentValue > place}`);
+        if (currentValue > place) {
+            console.log(`Inserting before row ${i}`);
             tbody.insertBefore(newRow, rows[i]);
             return;
         }
     }
+    console.log('Appending to end');
     tbody.appendChild(newRow);
 }
 
@@ -249,7 +259,7 @@ export function clrDispFilt() {
     const slChkOnly = document.getElementById('slShChk');
     if (slChkOnly && slChkOnly.checked) {
         slChkOnly.checked = false;
-        // セトリタブ用の処理を呼び出し（fest.jsのhandleCheckedOnly）
+        // セトリタブ用の処理を呼び出し（sl.jsのhandleCheckedOnly）
         if (window.slChk) {
             window.slChk(false);
         }
