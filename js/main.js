@@ -1,6 +1,6 @@
 // 1. グローバル変数（最小限）
 let lazy = false; // lazyload済みフラグ
-let festLazy = false; // fest-lazy.js読み込み済みフラグ
+let festLazy = false; // sl-lazy.js読み込み済みフラグ
 
 // DOM表でリンクを作る関数を定義
 const makeLink = (label, url) =>
@@ -33,7 +33,7 @@ async function initLazy() {
 async function initFestLazy() {
   if (festLazy) return;
 
-  const { initSL } = await import('./fest-lazy.js');
+  const { initSL } = await import('./sl-lazy.js');
 
   // セットリスト機能を初期化
   await initSL();

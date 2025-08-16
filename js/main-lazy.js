@@ -249,7 +249,7 @@ export function clrDispFilt() {
     const slChkOnly = document.getElementById('slShChk');
     if (slChkOnly && slChkOnly.checked) {
         slChkOnly.checked = false;
-        // セトリタブ用の処理を呼び出し（fest.jsのhandleCheckedOnly）
+        // セトリタブ用の処理を呼び出し（sl.jsのhandleCheckedOnly）
         if (window.slChk) {
             window.slChk(false);
         }

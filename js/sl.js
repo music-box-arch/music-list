@@ -48,7 +48,7 @@ async function loadAndBuild() {
   for (const fileObj of slFiles) {
     const filename = typeof fileObj === 'string' ? fileObj : fileObj.name;
     const flag = typeof fileObj === 'string' ? 1 : (fileObj.flag || 0);
-
+    
     if (flag >= 1) {
       try {
         const response = await fetch(`setlist/${filename}`);
@@ -99,7 +99,7 @@ function buildBody(slData) {
   sortedSL.forEach((setlistData, setlistIndex) => {
     // セットリストごとに表を作成
     const tableTitle = document.createElement('h4');
-
+    
     if (setlistData.isPlaceholder) {
       // プレースホルダの場合はボタンとして表示
       const dateText = formatDateForDisplay(setlistData.date);
@@ -118,18 +118,18 @@ function buildBody(slData) {
       container.appendChild(button);
       return; // プレースホルダの場合は表を作らずに終了
     }
-
+    
     let titleText = `${setlistData.date} - ${setlistData.site}`;
     if (setlistData.event) {
       titleText += ` - ${setlistData.event}`;
     }
-
+    
     // detailsとsummaryを使った開閉可能な表
     const details = document.createElement('details');
     details.open = true; // デフォルトで開いた状態
     details.style.marginTop = setlistIndex > 0 ? '2em' : '1em';
     details.style.marginBottom = '1em';
-
+    
     const summary = document.createElement('summary');
     summary.style.color = '#2564ad';
     summary.style.cursor = 'pointer';
@@ -139,13 +139,13 @@ function buildBody(slData) {
     summary.style.listStyle = 'none';
     summary.innerHTML = `<span style="font-weight: bold; margin-right: 8px; transform: rotate(90deg); display: inline-block;">＞</span>${titleText}`;
     details.appendChild(summary);
-
+    
     // 開閉時にアイコンを切り替え
     details.addEventListener('toggle', () => {
       const icon = summary.querySelector('span');
       icon.style.transform = details.open ? 'rotate(90deg)' : 'rotate(-90deg)';
     });
-
+    
     container.appendChild(details);
 
     const table = document.createElement('table');
@@ -320,18 +320,18 @@ async function loadSetlistOnDemand(filename) {
       filename,
       ...data
     };
-
+    
     // キャッシュに保存
     loadedSetlists.set(filename, setlistData);
-
+    
     // 表示を更新
     rebuildWithNewData();
-
+    
     // チェック状態をセットリストに反映
     if (window.aplCsCxt) {
       window.aplCsCxt('sl');
     }
-
+    
   } catch (error) {
     console.error(`セットリストの読み込みに失敗: ${filename}`, error);
   }
@@ -340,17 +340,17 @@ async function loadSetlistOnDemand(filename) {
 // 新しいデータで表示を再構築
 function rebuildWithNewData() {
   const allData = [];
-
+  
   // キャッシュされたデータを全て追加
   for (const setlistData of loadedSetlists.values()) {
     allData.push(setlistData);
   }
-
+  
   // まだ読み込まれていないプレースホルダも追加
   for (const fileObj of slFiles) {
     const filename = typeof fileObj === 'string' ? fileObj : fileObj.name;
     const flag = typeof fileObj === 'string' ? 1 : (fileObj.flag || 0);
-
+    
     if (flag < 1 && !loadedSetlists.has(filename)) {
       const dateFromFilename = extractDateFromFilename(filename);
       allData.push({
@@ -360,7 +360,7 @@ function rebuildWithNewData() {
       });
     }
   }
-
+  
   buildBody(allData);
 }
 
