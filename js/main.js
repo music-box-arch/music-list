@@ -1,6 +1,8 @@
 // 1. グローバル変数（最小限）
 let lazy = false; // lazyload済みフラグ
 let slLazy = false; // sl-lazy.js読み込み済みフラグ
+let tblProg = false; // テーブル作成中フラグ
+let remains = []; // 残りの曲データ
 
 // DOM表でリンクを作る関数を定義
 const makeLink = (label, url) =>
@@ -51,26 +53,30 @@ document.addEventListener('DOMContentLoaded', function () {
       const sorted = Object.entries(musicData).sort((a, b) => a[1].mID - b[1].mID);
       const songData = sorted.map(([id, song]) => song);
 
+      // 最初の40行だけ作成
+      const initBch = songData.slice(0, 40);
+      remains = songData.slice(40);
+
       // tbl.jsの汎用関数を使用してテーブル作成
-      const { createTable, createTd } = await import('./tbl.js');
-      
+      const { createTable } = await import('./tbl.js');
+
       const tableConfig = {
         headers: ['✔︎', '曲名', 'YT', 'LV', 'Spf', 'Apl', 'iTn', 's/m', '初収録', '曲順', '発売日'],
-        data: songData,
+        data: initBch,
         context: 'ml',
         columns: ['title', 'yt', 'lv', 'spf', 'apl', 'itn', 'exsm', 'firstCd', 'order', 'cdDate'],
         textOnlyColumns: [0, 6, 7, 8, 9] // title, exsm, firstCd, order, cdDate
       };
 
-      const { table, tbody } = createTable(tableConfig);
-      
+      const { table } = createTable(tableConfig);
+
       // 既存のテーブル要素を更新
       const existingTable = document.querySelector('#musicTbl');
-      
+
       if (existingTable) {
         const existingThead = existingTable.querySelector('thead');
         const existingTbody = existingTable.querySelector('tbody');
-        
+
         // ヘッダーとボディを置き換え
         if (existingThead && existingTbody) {
           existingThead.replaceWith(table.querySelector('thead'));
@@ -78,14 +84,83 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
 
-      // 表生成完了後、最小限のボタン有効化とタブ機能初期化
+      // ボタンを即座に有効化
       enblMinimalBtns();
-      enblCdBtns(); // CDボタンをすぐに有効化
+      enblCdBtns();
       initTabFunc();
+
+      // 初期表示後の行数をログ出力
+      const tbody = document.querySelector('#musicTbl tbody');
+      const initialRows = tbody ? tbody.querySelectorAll('tr').length : 0;
+      console.log(`Initial table rows: ${initialRows}, Remains: ${remains.length}`);
+
+      // 表作成完了フラグ
+      tblProg = true;
+      
+      // 残り行を非同期で即座に追加
+      setTimeout(() => {
+        tblCmp();
+      }, 0);
     })
     .catch(error => {
       console.error('JSON読み込みエラー:', error);
     });
+
+
+  // 指定行数追加（共通関数）
+  async function addRows(count = 0) {
+    if (remains.length === 0) return;
+    
+    const isFullTable = count === 0;
+    const timeLabel = isFullTable ? 'Table completion' : `Add ${count} rows`;
+    console.time(timeLabel);
+    
+    const tbody = document.querySelector('#musicTbl tbody');
+    const { createTable } = await import('./tbl.js');
+    
+    const batch = count > 0 ? remains.splice(0, count) : remains.splice(0);
+    
+    const config = {
+      headers: [],
+      data: batch,
+      context: 'ml',
+      columns: ['title', 'yt', 'lv', 'spf', 'apl', 'itn', 'exsm', 'firstCd', 'order', 'cdDate'],
+      textOnlyColumns: [0, 6, 7, 8, 9]
+    };
+    
+    const { table } = createTable(config);
+    const newRows = Array.from(table.querySelector('tbody').children);
+    newRows.forEach(row => tbody.appendChild(row));
+    
+    console.timeEnd(timeLabel);
+  }
+
+  // 表完成の確保
+  async function tblCmp() {
+    if (remains.length > 0) {
+      tblProg = false;
+      await addRows(); // 全行追加
+    }
+    
+    // 現在の表の行数をログ出力
+    const tbody = document.querySelector('#musicTbl tbody');
+    const rowCount = tbody ? tbody.querySelectorAll('tr').length : 0;
+    console.log(`Table rows: ${rowCount}, Remains: ${remains.length}`);
+  }
+
+  // セトリタブ用の40行追加関数
+  async function add40Rows() {
+    await addRows(40);
+  }
+
+  // tblCmpをグローバルに公開
+  window.tblCmp = tblCmp;
+
+  // 表完成とlazy初期化
+  async function initBoth() {
+    await tblCmp();
+    if (!lazy) await initLazy();
+  }
 
   // 2-2. 最小限のボタン有効化
   function enblMinimalBtns() {
@@ -97,9 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (filterCB) {
       filterCB.addEventListener('change', async function () {
-        if (!lazy) {
-          await initLazy();
-        }
+        await initBoth();
         // lazyload後、実際の処理を実行
         if (window.subNo) {
           window.subNo(this.checked);
@@ -109,9 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (stCB) {
       stCB.addEventListener('change', async function () {
-        if (!lazy) {
-          await initLazy();
-        }
+        await initBoth();
         // lazyload後、実際の処理を実行
         if (window.style) {
           const mxCB = document.getElementById('shMxChk');
@@ -122,9 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (mxCB) {
       mxCB.addEventListener('change', async function () {
-        if (!lazy) {
-          await initLazy();
-        }
+        await initBoth();
         // lazyload後、実際の処理を実行
         if (window.mix) {
           const stCB = document.getElementById('shStChk');
@@ -135,9 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (chkOnly) {
       chkOnly.addEventListener('change', async function () {
-        if (!lazy) {
-          await initLazy();
-        }
+        await initBoth();
         // lazyload後、実際の処理を実行
         if (window.showChk) {
           window.showChk(this.checked);
@@ -149,9 +216,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const songSrch = document.getElementById('sngSrch');
     if (songSrch) {
       songSrch.addEventListener('focus', async function () {
-        if (!lazy) {
-          await initLazy();
-        }
+        // 表を先に完成させる
+        await tblCmp();
+        await initBoth();
         // 検索機能を有効化（重複防止は関数内で処理）
         if (window.enSrch) {
           window.enSrch();
@@ -221,6 +288,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // セットリストタブが初回クリックされた場合
         if (targetTab === 'setlist' && !slLazy) {
+          // まず+40行を強制追加
+          if (remains.length > 0) {
+            await add40Rows();
+          }
+          
+          tblProg = false; // 残りの表作成を中断
           await initSlLazy();
         }
 
@@ -231,7 +304,8 @@ document.addEventListener('DOMContentLoaded', function () {
             window.aplCsCxt('sl');
           }
         } else if (targetTab === 'songlist') {
-          // 曲一覧タブに切り替える時、cSを反映
+          // 曲一覧タブに切り替える時、表を完成させてからcSを反映
+          await tblCmp();
           if (window.aplCsCxt) {
             window.aplCsCxt('ml');
           }
