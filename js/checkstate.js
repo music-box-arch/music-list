@@ -70,6 +70,10 @@ export function update(id, isChecked) {
             csBk = csBk.filter(checkId => checkId !== id);
         }
     }
+    
+    // cSとcsBkの値をコンソールに出力
+    console.log('cS updated:', cS.length, 'items -', cS);
+    console.log('csBk:', csBk ? csBk.length + ' items - ' + csBk : 'null');
 }
 
 // 統一されたチェック付きのみ表示関数
@@ -109,10 +113,15 @@ function applyActv() {
 
 // チェックボックスの統一同期処理
 export function syncChk() {
-    document.addEventListener('change', function (e) {
+    document.addEventListener('change', async function (e) {
         if (e.target.classList.contains('chk')) {
             const changedId = Number(e.target.dataset.id);
             const context = e.target.dataset.context;
+            
+            // 初回チェックボックス変更時に表を完成させる
+            if (window.tblCmp) {
+                await window.tblCmp();
+            }
             
             update(changedId, e.target.checked);
 
