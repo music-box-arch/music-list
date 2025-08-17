@@ -46,42 +46,37 @@ document.addEventListener('DOMContentLoaded', function () {
   // 2-1. 曲リスト表生成（最優先）
   fetch('data/music-list.json')
     .then(response => response.json())
-    .then(musicData => {
-      // ヘッダー作成
-      const thead = document.querySelector('#musicTbl thead');
-      thead.innerHTML = '';
-      const trHead = document.createElement('tr');
-      ['✔︎', '曲名', 'YT', 'LV', 'Spf', 'Apl', 'iTn', 's/m', '初収録', '曲順', '発売日'].forEach(col => {
-        const th = document.createElement('th');
-        th.textContent = col;
-        trHead.appendChild(th);
-      });
-      thead.appendChild(trHead);
-
-      // テーブル本体作成
-      const tbody = document.querySelector('#musicTbl tbody');
-      tbody.innerHTML = '';
-
+    .then(async musicData => {
       // mIDでソートしてから表示
       const sorted = Object.entries(musicData).sort((a, b) => a[1].mID - b[1].mID);
+      const songData = sorted.map(([id, song]) => song);
 
-      sorted.forEach(([id, song]) => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-        <td><input type="checkbox" class="chk" data-context="ml" data-id="${song.mID}"></td>
-        <td>${song.title}</td>
-        <td>${song.yt}</td>
-        <td>${song.lv}</td>
-        <td>${song.spf}</td>
-        <td>${song.apl}</td>
-        <td>${song.itn}</td>
-        <td>${song.exsm || ''}</td>
-        <td>${song.firstCd}</td>
-        <td>${song.order || ''}</td>
-        <td>${song.cdDate}</td>
-      `;
-        tbody.appendChild(tr);
-      });
+      // tbl.jsの汎用関数を使用してテーブル作成
+      const { createTable, createTd } = await import('./tbl.js');
+      
+      const tableConfig = {
+        headers: ['✔︎', '曲名', 'YT', 'LV', 'Spf', 'Apl', 'iTn', 's/m', '初収録', '曲順', '発売日'],
+        data: songData,
+        context: 'ml',
+        columns: ['title', 'yt', 'lv', 'spf', 'apl', 'itn', 'exsm', 'firstCd', 'order', 'cdDate'],
+        textOnlyColumns: [0, 6, 7, 8, 9] // title, exsm, firstCd, order, cdDate
+      };
+
+      const { table, tbody } = createTable(tableConfig);
+      
+      // 既存のテーブル要素を更新
+      const existingTable = document.querySelector('#musicTbl');
+      
+      if (existingTable) {
+        const existingThead = existingTable.querySelector('thead');
+        const existingTbody = existingTable.querySelector('tbody');
+        
+        // ヘッダーとボディを置き換え
+        if (existingThead && existingTbody) {
+          existingThead.replaceWith(table.querySelector('thead'));
+          existingTbody.replaceWith(table.querySelector('tbody'));
+        }
+      }
 
       // 表生成完了後、最小限のボタン有効化とタブ機能初期化
       enblMinimalBtns();

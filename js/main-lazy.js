@@ -79,10 +79,23 @@ async function toggleSm(showStyle, showMix) {
     }).sort((a, b) => a.mID - b.mID);
 
     // 各行を適切な位置に挿入
-    toAdd.forEach(song => {
-        const newRow = createRow(song);
-        newRow.classList.add('sm-row');
-        insertRow(tbody, newRow, song.mID);
+    const { createTable } = await import('./tbl.js');
+    const { table } = createTable({
+        headers: [], // ヘッダー不要
+        data: toAdd,
+        context: 'ml',
+        columns: ['title', 'yt', 'lv', 'spf', 'apl', 'itn', 'exsm', 'firstCd', 'order', 'cdDate'],
+        textOnlyColumns: [0, 6, 7, 8, 9],
+        cstmRow: (tr, song) => {
+            if (song.mID === 93) tr.cells[1].style.fontSize = '12px';
+            tr.classList.add('sm-row');
+        }
+    });
+    
+    // 作成された行を適切な位置に挿入
+    Array.from(table.querySelector('tbody').children).forEach(newRow => {
+        const songId = parseInt(newRow.querySelector('.chk').dataset.id);
+        insertRow(tbody, newRow, songId);
     });
 
     // cSを表示に反映
@@ -94,32 +107,11 @@ async function toggleSm(showStyle, showMix) {
     reapplySearch();
 }
 
-// 新しい曲行を作成
-function createRow(song) {
-    const tr = document.createElement('tr');
-    // mID 93の曲だけ12pxに設定
-    const titleStyle = song.mID === 93 ? ' style="font-size: 12px;"' : '';
-    tr.innerHTML = `
-        <td><input type="checkbox" class="chk" data-context="ml" data-id="${song.mID}"></td>
-        <td${titleStyle}>${song.title}</td>
-        <td>${song.yt}</td>
-        <td>${song.lv}</td>
-        <td>${song.spf}</td>
-        <td>${song.apl}</td>
-        <td>${song.itn}</td>
-        <td>${song.exsm || ''}</td>
-        <td>${song.firstCd}</td>
-        <td>${song.order || ''}</td>
-        <td>${song.cdDate}</td>
-    `;
-    return tr;
-}
 
 
 // 適切な位置に行を挿入
 export function insertRow(tbody, newRow, place, compareBy = 'mID') {
     const rows = Array.from(tbody.querySelectorAll('tr'));
-    console.log('insertRow: looking for position', place, 'compareBy', compareBy);
     for (let i = 0; i < rows.length; i++) {
         let currentValue;
         if (compareBy === 'mID') {
@@ -127,14 +119,11 @@ export function insertRow(tbody, newRow, place, compareBy = 'mID') {
         } else if (compareBy === 'setlistOrder') {
             currentValue = parseInt(rows[i].getAttribute('data-setlist-order'));
         }
-        console.log(`Row ${i}: currentValue=${currentValue}, comparing ${currentValue} > ${place} = ${currentValue > place}`);
         if (currentValue > place) {
-            console.log(`Inserting before row ${i}`);
             tbody.insertBefore(newRow, rows[i]);
             return;
         }
     }
-    console.log('Appending to end');
     tbody.appendChild(newRow);
 }
 
