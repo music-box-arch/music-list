@@ -2,26 +2,26 @@
   "1": {
     "mID": 1,
     "title": "センチメンタルピリオド",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=SjwMTno8IKc\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=SjwMTno8IKc\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/4f1zepqZ36gAWIQWWLIg21\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970402\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970402&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/4f1zepqZ36gAWIQWWLIg21\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970402\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970402&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/78826/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/78826/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "2": {
     "mID": 2,
     "title": "5分後のスターダスト",
     "yt": "",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=vztCV2vPQq4\" target=\"_blank\">LV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=vztCV2vPQq4\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/306069909?i=306069911&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/306069909?i=306069911&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "mid",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/186599/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/186599/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "3": {
     "mID": 3,
@@ -30,22 +30,22 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041505&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041505&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/186598/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/186598/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "4": {
     "mID": 4,
     "title": "マスターボリューム",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=06Y5m8ZODXo\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=06Y5m8ZODXo\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3Jf00gsLxnRbrIavnAQU6f\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970421\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970421&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/3Jf00gsLxnRbrIavnAQU6f\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970421\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970421&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/74488/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/74488/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "5": {
     "mID": 5,
@@ -54,10 +54,10 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/306067779?i=306067782&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/306067779?i=306067782&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/74487/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/74487/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "6": {
     "mID": 6,
@@ -66,118 +66,118 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/306067779?i=306067783&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/306067779?i=306067783&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/74486/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/74486/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "7": {
     "mID": 7,
     "title": "カラクリカルカレ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=zTB_n9nVGL0\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=zTB_n9nVGL0\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/6Q0OKR3DhSs48Mk7yuwJfn\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970400\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970400&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6Q0OKR3DhSs48Mk7yuwJfn\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970400\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970400&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/78835/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/78835/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "8": {
     "mID": 8,
     "title": "サンポサキマイライフ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=2efiC2AV1X4\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=2efiC2AV1X4\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/7bYyiOiLZi6mXXan4m09rU\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970404\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970404&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/7bYyiOiLZi6mXXan4m09rU\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970404\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970404&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/78834/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/78834/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "9": {
     "mID": 9,
     "title": "デイライ協奏楽団",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=UJFE3bM8hWU\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=UJFE3bM8hWU\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/7qg8xFrQnAr3gVYuWyA5Ju\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970417\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970417&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/7qg8xFrQnAr3gVYuWyA5Ju\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970417\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970417&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/78833/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/78833/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "10": {
     "mID": 10,
     "title": "等身大の地球",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=OPSzOCG8F5k\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=OPSzOCG8F5k\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/7LayWBcvsChldu9SbeEEBM\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970418\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970418&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/7LayWBcvsChldu9SbeEEBM\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970418\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970418&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/78832/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/78832/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "12": {
     "mID": 12,
     "title": "WINDOW開ける",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=o9_tSRZYJ0I\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=o9_tSRZYJ0I\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/2gP3OEEUlQktRjOrPHIEqX\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970420\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970420&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/2gP3OEEUlQktRjOrPHIEqX\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970420\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970420&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/78830/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/78830/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "13": {
     "mID": 13,
     "title": "いつかの少年",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=WmStbOGVDMg\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=WmStbOGVDMg\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/6wueFg5ZaydGTwvSaKN9Fa\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970423\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970423&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6wueFg5ZaydGTwvSaKN9Fa\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970423\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970423&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "slow",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/78829/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/78829/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "14": {
     "mID": 14,
     "title": "箱庭ロック・ショー",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=MCgoNcksoMo\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=MCgoNcksoMo\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/1GOwXY0yEwA8Uwal7h1JUV\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970424\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970424&app=itunes\" target=\"_blank\">iTn</a>",
-    "tmp": "up",
+    "spf": "<a href=\"https://open.spotify.com/track/1GOwXY0yEwA8Uwal7h1JUV\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970424\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970424&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
+    "tmp": "mid",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/78828/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/78828/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "15": {
     "mID": 15,
     "title": "クローバー",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=MR3RKPdIJpo\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=MR3RKPdIJpo\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/5enVGk4woAT2f7LFGodS5W\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970425\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970425&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5enVGk4woAT2f7LFGodS5W\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970425\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970425&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/78827/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/78827/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "16": {
     "mID": 16,
     "title": "cody beats",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=uW3ItcV9MLE\" target=\"_blank\">MV</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=6eQQ4jAsXC8\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/2FPZxdQ9Ij6iE9jrHveyL0\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561976\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/352924360?i=352924362&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=uW3ItcV9MLE\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=6eQQ4jAsXC8\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/2FPZxdQ9Ij6iE9jrHveyL0\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561976\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/352924360?i=352924362&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/90298/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/90298/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "17": {
     "mID": 17,
@@ -186,10 +186,10 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093269&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093269&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/90297/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/90297/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "18": {
     "mID": 18,
@@ -198,166 +198,166 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093270&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093270&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/90296/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/90296/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "19": {
     "mID": 19,
     "title": "メッセンジャーフロム全世界",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=fKSWp2a4LDM\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=fKSWp2a4LDM\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/6DUN82lS61zXWTp6Hw4k5e\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561925\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561925&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6DUN82lS61zXWTp6Hw4k5e\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561925\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561925&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/93439/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/93439/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "20": {
     "mID": 20,
     "title": "コーヒーカップシンドローム",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=PcKVmnJULHk\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=PcKVmnJULHk\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/1eWEZ4uaQcjVPFzptyh2oU\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561973\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561973&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/1eWEZ4uaQcjVPFzptyh2oU\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561973\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561973&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/93438/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/93438/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "21": {
     "mID": 21,
     "title": "チャイルドフッド・スーパーノヴァ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=-0p8lQcZ8mY\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=-0p8lQcZ8mY\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/11EHSjVU2JiydcW6mPqDGk\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561974\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561974&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/11EHSjVU2JiydcW6mPqDGk\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561974\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561974&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/93437/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/93437/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "22": {
     "mID": 22,
     "title": "気まぐれ雑踏",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=-nwtrTIm--M\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=-nwtrTIm--M\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3WmvwgGnDfLtv2uHiyEm3Z\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561977\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561977&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/3WmvwgGnDfLtv2uHiyEm3Z\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561977\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561977&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/93436/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/93436/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "23": {
     "mID": 23,
     "title": "キライ＝キライ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=31W7psYbQRM\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=31W7psYbQRM\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/054hqdZC73md5dZTRtmpTQ\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561979\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561979&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/054hqdZC73md5dZTRtmpTQ\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561979\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561979&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/93435/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/93435/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "24": {
     "mID": 24,
     "title": "ライドオンタイム",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=8QH-Cxkmvmk\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=8QH-Cxkmvmk\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/1ersqroFUaKJL1n2pCFcIb\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561980\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561980&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/1ersqroFUaKJL1n2pCFcIb\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561980\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561980&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/93434/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/93434/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "25": {
     "mID": 25,
     "title": "meet the world time",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=mmDCVQ0FMjo\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=mmDCVQ0FMjo\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/5EUsPuWSMOSXou4QWRS7Cf\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561981\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561981&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5EUsPuWSMOSXou4QWRS7Cf\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561981\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561981&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/93433/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/93433/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "26": {
     "mID": 26,
     "title": "夜が揺れている",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=NUExQ2g8lGg\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=NUExQ2g8lGg\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/1le0RcQefOKjnvHo6vxbvP\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561982\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561982&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/1le0RcQefOKjnvHo6vxbvP\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561982\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561982&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/93432/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/93432/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "27": {
     "mID": 27,
     "title": "アイラブニージュー",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=weukMUbpsow\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=weukMUbpsow\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/1ZeQZ69r6u9QAZHgyHdRSd\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561983\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561983&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/1ZeQZ69r6u9QAZHgyHdRSd\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561983\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561983&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/93431/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/93431/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "28": {
     "mID": 28,
     "title": "スノウアンサー",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=eC64l8KbmzA\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=eC64l8KbmzA\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/0VWx6FyvSCtNnw9AlGIuRR\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561984\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561984&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/0VWx6FyvSCtNnw9AlGIuRR\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561984\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561984&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/93430/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/93430/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "29": {
     "mID": 29,
     "title": "23:25",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=Dd8cY0wEk0Y\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=Dd8cY0wEk0Y\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/4efOA7G19lQc39m241X5pZ\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561996\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561996&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/4efOA7G19lQc39m241X5pZ\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/364561824?i=364561996\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/364561824?i=364561996&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/93429/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/93429/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "30": {
     "mID": 30,
     "title": "スカースデイル",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=3Wn-XCQl1os\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=3Wn-XCQl1os\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/1OOLTJ1XzBHFSiy4TlwF8g\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040437\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/404722001?i=404722015&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/1OOLTJ1XzBHFSiy4TlwF8g\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040437\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/404722001?i=404722015&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "そして今が　薄れないように　ほんの少しの",
-    "lrc": "<a href=\"https://www.uta-net.com/song/105347/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/105347/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "31": {
     "mID": 31,
     "title": "カウンターアイデンティティ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=wHMMzb_TYGk\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=wHMMzb_TYGk\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/2f68MffIx8TcF9m71EI768\" target=\"_blank\">Spf</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/2f68MffIx8TcF9m71EI768\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040448&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040448&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/105346/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/105346/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "32": {
     "mID": 32,
@@ -366,34 +366,34 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041536&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041536&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/185436/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/185436/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "33": {
     "mID": 33,
     "title": "オリオンをなぞる",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=Lw5o2pSrVbQ\" target=\"_blank\">MV</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=0fTxmlSYIrA\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/0opkjjC7nn6YO8NXzkDAPP\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040450\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/432476549?i=432476550&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=Lw5o2pSrVbQ\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=0fTxmlSYIrA\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/0opkjjC7nn6YO8NXzkDAPP\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040450\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/432476549?i=432476550&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/112591/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/112591/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "34": {
     "mID": 34,
     "title": "僕は君になりたい",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=7mW7eEgFwRc\" target=\"_blank\">♪</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=7mW7eEgFwRc\" target=\"_blank\">LV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=7mW7eEgFwRc\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=7mW7eEgFwRc\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/432476549?i=432476551&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/432476549?i=432476551&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "mid",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/112590/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/112590/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "35": {
     "mID": 35,
@@ -402,166 +402,166 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093272&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093272&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/112589/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/112589/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "36": {
     "mID": 36,
     "title": "over driver",
     "yt": "",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=ysESQ1Ci110\" target=\"_blank\">LV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=ysESQ1Ci110\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093273&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093273&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/112588/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/112588/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "37": {
     "mID": 37,
     "title": "3 minutes replay",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=0rbtxVtIGaw\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=0rbtxVtIGaw\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/6zzJwGAriBiJbMGMoCVtPv\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040430\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040430&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6zzJwGAriBiJbMGMoCVtPv\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040430\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040430&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/115481/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/115481/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "38": {
     "mID": 38,
     "title": "kid,I like quartet",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=RnQuWy32Xkk\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=RnQuWy32Xkk\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/7CWKzHSwqBCaSXalAwKkC2\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040431\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040431&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/7CWKzHSwqBCaSXalAwKkC2\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040431\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040431&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "(オブラートに包んだら食べられておしまい)",
-    "lrc": "<a href=\"https://www.uta-net.com/song/115480/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/115480/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "39": {
     "mID": 39,
     "title": "プロトラクト・カウントダウン",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=mh_SINKt338\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=mh_SINKt338\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/7gBdtyfhffTRugKHcajuPY\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040433\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040433&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/7gBdtyfhffTRugKHcajuPY\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040433\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040433&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/115479/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/115479/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "40": {
     "mID": 40,
     "title": "きみのもとへ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=R_xfwmF-210\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=R_xfwmF-210\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/2Rbn9fr6Ff9laFzijyfckz\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040434\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040434&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/2Rbn9fr6Ff9laFzijyfckz\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040434\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040434&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/115478/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/115478/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "41": {
     "mID": 41,
     "title": "僕らのその先",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=_Ts7BRdWR2A\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=_Ts7BRdWR2A\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/30iZob6RUJltjIQ95oWfUt\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040436\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040436&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/30iZob6RUJltjIQ95oWfUt\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040436\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040436&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/115477/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/115477/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "42": {
     "mID": 42,
     "title": "ワールドワイド・スーパーガール",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=x6DsCvvozaQ\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=x6DsCvvozaQ\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3aYqLRugkDsNP6pzl5aNKD\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040441\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040441&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/3aYqLRugkDsNP6pzl5aNKD\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040441\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040441&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/115476/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/115476/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "43": {
     "mID": 43,
     "title": "CAPACITY超える",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=oomOdRtnRRQ\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=oomOdRtnRRQ\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/0lCWLfnD36eAoe1iICU8HQ\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040442\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040442&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/0lCWLfnD36eAoe1iICU8HQ\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040442\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040442&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/115475/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/115475/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "44": {
     "mID": 44,
     "title": "場違いハミングバード",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=A0tfcozLEmI\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=A0tfcozLEmI\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/6O4bcP0E4z0nq5WxLN8ski\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1476041503?i=1476041515\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041515&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6O4bcP0E4z0nq5WxLN8ski\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1476041503?i=1476041515\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041515&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "ああ僕はまたつまらないことで君を泣かせたりしてるの",
-    "lrc": "<a href=\"https://www.uta-net.com/song/115474/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/115474/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "45": {
     "mID": 45,
     "title": "未完成デイジー",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=bWKpaa2Twrk\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=bWKpaa2Twrk\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3z0huRfhLtwxaeErmwCIw0\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040449\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040449&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/3z0huRfhLtwxaeErmwCIw0\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040449\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040449&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/115473/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/115473/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "46": {
     "mID": 46,
     "title": "シュプレヒコール〜世界が終わる前に〜",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=E6G74NmuNZM\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=E6G74NmuNZM\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/7L1H9eWVLb727nLmlP1rPy\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040451\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040451&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/7L1H9eWVLb727nLmlP1rPy\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/446040428?i=446040451\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/446040428?i=446040451&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/115472/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/115472/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "47": {
     "mID": 47,
     "title": "流星のスコール",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=LlYwKcKNPhs\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=LlYwKcKNPhs\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/1mLramLVll0UemJa6mvh1x\" target=\"_blank\">Spf</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/1mLramLVll0UemJa6mvh1x\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/543515060?i=543515063&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/543515060?i=543515063&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/132912/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/132912/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "48": {
     "mID": 48,
     "title": "さよならサマータイムマシン",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=JPJG-uTno4E\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=JPJG-uTno4E\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093274&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093274&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/132911/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/132911/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "49": {
     "mID": 49,
@@ -570,46 +570,46 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1016336570?i=1016336581&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1016336570?i=1016336581&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/132910/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/132910/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "50": {
     "mID": 50,
     "title": "フルカラープログラム",
     "yt": "",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=iNtA7YgE8D8\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/789qMWni5aMixbI4E5bSbN\" target=\"_blank\">Spf</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=iNtA7YgE8D8\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/789qMWni5aMixbI4E5bSbN\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041530&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041530&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/78825/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/78825/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "51": {
     "mID": 51,
     "title": "リニアブルーを聴きながら",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=vAOBQtKyqW8\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=vAOBQtKyqW8\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3pK2AiyPVlUMhEsMef1z3G\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575666\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/560462902?i=560462903&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/3pK2AiyPVlUMhEsMef1z3G\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575666\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/560462902?i=560462903&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/135468/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/135468/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "52": {
     "mID": 52,
     "title": "さわれない歌",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=-JrT6INV3fc\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=-JrT6INV3fc\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/4E6VpEnKgXIi0sFHYFEUtZ\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1016336570?i=1016336650\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093276&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/4E6VpEnKgXIi0sFHYFEUtZ\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1016336570?i=1016336650\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093276&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/135588/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/135588/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "53": {
     "mID": 53,
@@ -618,178 +618,178 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093277&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093277&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/135587/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/135587/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "54": {
     "mID": 54,
     "title": "ラブソングは突然に ~What is the name of that mystery?~",
     "yt": "",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=wnYttk2Jt3E\" target=\"_blank\">LV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=wnYttk2Jt3E\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093278&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093278&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "冒頭シャウト「knock and knock もっともっと」",
-    "lrc": "<a href=\"https://www.uta-net.com/song/135586/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/135586/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "55": {
     "mID": 55,
     "title": "to the CIDER ROAD",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=NNDqwqlui7Y\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=NNDqwqlui7Y\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/6E9u08JoTmobb2gRglkvKO\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575664\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575664&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6E9u08JoTmobb2gRglkvKO\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575664\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575664&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/141419/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/141419/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "56": {
     "mID": 56,
     "title": "ため息 shooting the MOON",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=DcdhaBA4iQg\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=DcdhaBA4iQg\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/2pnAagSnHL3b9d7imVvDRi\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575665\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575665&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/2pnAagSnHL3b9d7imVvDRi\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575665\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575665&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/141418/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/141418/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "57": {
     "mID": 57,
     "title": "like coffeeのおまじない",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=DihOkJj8TLM\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=DihOkJj8TLM\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/4WMIpIlBVJIIUxZywSyqBi\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575667\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575667&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/4WMIpIlBVJIIUxZywSyqBi\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575667\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575667&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/141417/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/141417/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "58": {
     "mID": 58,
     "title": "お人好しカメレオン",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=GZWgwHTbKhg\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=GZWgwHTbKhg\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/2RGD9prgLDXkvp7ibgO4ar\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575668\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575668&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/2RGD9prgLDXkvp7ibgO4ar\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575668\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575668&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/141416/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/141416/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "59": {
     "mID": 59,
     "title": "光のどけき春の日に",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=o6nIH_HASFQ\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=o6nIH_HASFQ\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3gKiFYpMgtOWN7ewTtDGCd\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575729\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575729&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/3gKiFYpMgtOWN7ewTtDGCd\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575729\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575729&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/141415/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/141415/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "60": {
     "mID": 60,
     "title": "クロスハート1号線(advantage in a long time)",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=frm_eJCPv8M\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=frm_eJCPv8M\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/5DmreR05ybSXWVMTUD7tmd\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575730\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575730&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5DmreR05ybSXWVMTUD7tmd\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575730\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575730&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/141414/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/141414/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "61": {
     "mID": 61,
     "title": "セレナーデが止まらない",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=RbXYZj_GwBA\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=RbXYZj_GwBA\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3yLHETt2gGetPCMl1IswW5\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575731\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575731&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/3yLHETt2gGetPCMl1IswW5\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575731\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575731&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/141413/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/141413/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "62": {
     "mID": 62,
     "title": "Miss.サンディ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=4iaJAZM4mlE\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=4iaJAZM4mlE\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/1yqukkt1v000brrO1i1MGi\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575733\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575733&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/1yqukkt1v000brrO1i1MGi\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575733\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575733&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/141412/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/141412/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "63": {
     "mID": 63,
     "title": "crazy birthday",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=Ul6zqJg0R0s\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=Ul6zqJg0R0s\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/1Lllh1omCfYRJyRplujAFR\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575734\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575734&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/1Lllh1omCfYRJyRplujAFR\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575734\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575734&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
-    "hlt": "(せーの、バカ！)",
-    "lrc": "<a href=\"https://www.uta-net.com/song/141411/\" target=\"_blank\">歌詞</a>"
+    "hlt": "Happy Birthdayの発音が良い。(せーの、バカ！)",
+    "lrc": "<a href=\"https://www.uta-net.com/song/141411/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "64": {
     "mID": 64,
     "title": "君はともだち",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=7Zv_HHSmZs8\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=7Zv_HHSmZs8\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/22Zu1xTakRpyyH5iHeU8Cz\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575735\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575735&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/22Zu1xTakRpyyH5iHeU8Cz\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/595575657?i=595575735\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/595575657?i=595575735&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/141410/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/141410/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "65": {
     "mID": 65,
     "title": "シャンデリア・ワルツ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=TJZH4dofY-8\" target=\"_blank\">♪</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=ruwn5TqX87s\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/0fOq8IETOgXteHpm0sMMNq\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1476041503?i=1476041537\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041537&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=TJZH4dofY-8\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=ruwn5TqX87s\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/0fOq8IETOgXteHpm0sMMNq\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1476041503?i=1476041537\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041537&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
-    "hlt": "ハローグッバイ×2／大事な約束をしよう さあ、ワルツワルツで",
-    "lrc": "<a href=\"https://www.uta-net.com/song/141409/\" target=\"_blank\">歌詞</a>"
+    "hlt": "ハローグッバイ×2／大事な約束をしよう",
+    "lrc": "<a href=\"https://www.uta-net.com/song/141409/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "66": {
     "mID": 66,
     "title": "桜のあと (all quartets lead to the?)",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=nNf_zW-tTrg\" target=\"_blank\">MV</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=9zluQwPBMWM\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/11Dh1gTFD9QcmmzwNusHTk\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382322\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/756450780?i=756450835&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=nNf_zW-tTrg\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=9zluQwPBMWM\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/11Dh1gTFD9QcmmzwNusHTk\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382322\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/756450780?i=756450835&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/154661/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/154661/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "67": {
     "mID": 67,
     "title": "ノンフィクションコンパス",
     "yt": "",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=E4sq2rBnmpE\" target=\"_blank\">LV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=E4sq2rBnmpE\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093279&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093279&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/154660/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/154660/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "68": {
     "mID": 68,
@@ -798,34 +798,34 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093280&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093280&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/154659/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/154659/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "69": {
     "mID": 69,
     "title": "harmonized finale",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=h8lAl9kejYU\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=h8lAl9kejYU\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/2L7CbheAwtkzVdmlS3PIfQ\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382328\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/805984247?i=805984250&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/2L7CbheAwtkzVdmlS3PIfQ\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382328\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/805984247?i=805984250&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/158980/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/158980/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "70": {
     "mID": 70,
     "title": "ピストルギャラクシー",
     "yt": "",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=ysESQ1Ci110\" target=\"_blank\">LV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=ysESQ1Ci110\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093281&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093281&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/158979/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/158979/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "71": {
     "mID": 71,
@@ -834,10 +834,10 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093282&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093282&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/158978/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/158978/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "72": {
     "mID": 72,
@@ -846,142 +846,142 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/805984247?i=805984253&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/805984247?i=805984253&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/158977/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/158977/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "73": {
     "mID": 73,
     "title": "サイレンインザスパイ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=m9PLx4erEpU\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=m9PLx4erEpU\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/0k3dUdecwv2V9SejvxIBLb\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382319\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382319&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/0k3dUdecwv2V9SejvxIBLb\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382319\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382319&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/169164/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/169164/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "74": {
     "mID": 74,
     "title": "シューゲイザースピーカー",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=NR7DZGbYThg\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=NR7DZGbYThg\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/1maoYTEYZgVSHw1zAEZQ9i\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1476041503?i=1476041528\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041528&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/1maoYTEYZgVSHw1zAEZQ9i\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1476041503?i=1476041528\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041528&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/169163/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/169163/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "75": {
     "mID": 75,
     "title": "蒙昧termination",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=GoqdlgLAWX0\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=GoqdlgLAWX0\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/2lpsqnkobAaBQhaAPqbZBP\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1476041503?i=1476041512\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041512&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/2lpsqnkobAaBQhaAPqbZBP\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1476041503?i=1476041512\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041512&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/169162/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/169162/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "76": {
     "mID": 76,
     "title": "君が大人になってしまう前に",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=ocIMFdKrwP8\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=ocIMFdKrwP8\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/395nnqivlA2UMaNTmRnwqt\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382324\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382324&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/395nnqivlA2UMaNTmRnwqt\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382324\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382324&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/169161/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/169161/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "77": {
     "mID": 77,
     "title": "メカトル時空探検隊",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=g-J7NgANcLg\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=g-J7NgANcLg\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/62iWacK1qKL5ISm82OFggG\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382325\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382325&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/62iWacK1qKL5ISm82OFggG\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382325\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382325&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/169160/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/169160/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "78": {
     "mID": 78,
     "title": "流れ星を撃ち落せ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=9FwIe2vpcMk\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=9FwIe2vpcMk\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/0ZEGYmVSPMIyAsdYun5W0u\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382326\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382326&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/0ZEGYmVSPMIyAsdYun5W0u\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382326\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382326&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/169159/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/169159/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "79": {
     "mID": 79,
     "title": "何かが変わりそう",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=4PMKUJzx6n8\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=4PMKUJzx6n8\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/16znQXE8L2LT9c8i9krRNr\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382327\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382327&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/16znQXE8L2LT9c8i9krRNr\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382327\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382327&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/169158/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/169158/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "80": {
     "mID": 80,
     "title": "天国と地獄",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=WIrfel05FMQ\" target=\"_blank\">MV</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=KGdrQkYgNko\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/61WIiThJRu8ses32U31dcM\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382330\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382330&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=WIrfel05FMQ\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=KGdrQkYgNko\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/61WIiThJRu8ses32U31dcM\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382330\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382330&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/169157/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/169157/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "81": {
     "mID": 81,
     "title": "instant EGOIST",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=PK3I9jC7mMA\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=PK3I9jC7mMA\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/5WVuZDGVw0DPD9hHr9JCQm\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382331\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382331&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5WVuZDGVw0DPD9hHr9JCQm\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382331\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382331&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/169156/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/169156/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "82": {
     "mID": 82,
     "title": "黄昏インザスパイ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=eZ8J_cwqW1Q\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=eZ8J_cwqW1Q\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3yiTCIyK8xCs3TjACtPawR\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382335\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382335&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/3yiTCIyK8xCs3TjACtPawR\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/899382318?i=899382335\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/899382318?i=899382335&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/169155/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/169155/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "83": {
     "mID": 83,
     "title": "シュガーソングとビターステップ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=JpCyeo_kNA0\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=JpCyeo_kNA0\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/6bfjEGSR7DyC8MK8cp3ZCp\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654728\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/993140033?i=993140034&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6bfjEGSR7DyC8MK8cp3ZCp\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654728\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/993140033?i=993140034&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/186190/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/186190/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "84": {
     "mID": 84,
@@ -990,10 +990,10 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/993140033?i=993140035&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/993140033?i=993140035&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/186189/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/186189/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "85": {
     "mID": 85,
@@ -1002,202 +1002,202 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093285&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093285&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/186188/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/186188/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "86": {
     "mID": 86,
     "title": "アンドロメダ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=kAwMMva-Vfs\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=kAwMMva-Vfs\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3VJGOtDuqfQ631RWvSYt1l\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1016336570?i=1016336574\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1016336570?i=1016336574&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/3VJGOtDuqfQ631RWvSYt1l\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1016336570?i=1016336574\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1016336570?i=1016336574&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/190613/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/190613/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "88": {
     "mID": 88,
     "title": "徹頭徹尾夜な夜なドライブ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=1Ns0LgzQJG8\" target=\"_blank\">MV</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=Gpt9IXmUT8g\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/1KSeENRM4AI7AnguJjJZaV\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1454801516?i=1454801549\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1454801516?i=1454801549&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=1Ns0LgzQJG8\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=Gpt9IXmUT8g\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/1KSeENRM4AI7AnguJjJZaV\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1454801516?i=1454801549\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1454801516?i=1454801549&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "ワタシドコ　ココハダレ　ダアレ？",
-    "lrc": "<a href=\"https://www.uta-net.com/song/190612/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/190612/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "91": {
     "mID": 91,
     "title": "夕凪、アンサンブル",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=SFkSjyhd-eI\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=SFkSjyhd-eI\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/6PgBfWNc9eFAOjICQtXKyx\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1016336570?i=1016336579\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1016336570?i=1016336579&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6PgBfWNc9eFAOjICQtXKyx\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1016336570?i=1016336579\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1016336570?i=1016336579&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/190611/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/190611/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "98": {
     "mID": 98,
     "title": "プログラムcontinued",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=mLYeKzbLn0I\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=mLYeKzbLn0I\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/5iwFZriNHNlyIuyZk5Ounh\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1471093264?i=1471093356\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093356&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5iwFZriNHNlyIuyZk5Ounh\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1471093264?i=1471093356\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093356&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/190610/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/190610/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "100": {
     "mID": 100,
     "title": "エアリアルエイリアン",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=huaMkKqyERw\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=huaMkKqyERw\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/6isLzwny8GICuIfSdqTIt9\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654722\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654722&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6isLzwny8GICuIfSdqTIt9\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654722\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654722&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/210569/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/210569/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "101": {
     "mID": 101,
     "title": "アトラクションがはじまる（they call it “NO.6”）",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=w7x0_xXm3Qc\" target=\"_blank\">MV</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=Ky67uL397js\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/6rXxRsIMIqdUmdaKZxa35j\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654723\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654723&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=w7x0_xXm3Qc\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=Ky67uL397js\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6rXxRsIMIqdUmdaKZxa35j\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654723\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654723&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/210568/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/210568/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "102": {
     "mID": 102,
     "title": "マイノリティ・リポート（darling, I love you）",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=7FaIQMEVYDE\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=7FaIQMEVYDE\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/5XwQGXfBSDbUTjRyjl1Sla\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654729\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654729&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5XwQGXfBSDbUTjRyjl1Sla\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654729\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654729&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/210567/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/210567/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "103": {
     "mID": 103,
     "title": "オトノバ中間試験",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=EOMq14iwvLs\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=EOMq14iwvLs\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/5nxYL6AXPIok5Td6jLRRlJ\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654730\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654730&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5nxYL6AXPIok5Td6jLRRlJ\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654730\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654730&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/210566/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/210566/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "104": {
     "mID": 104,
     "title": "マジョリティ・リポート（darling, I love you）",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=TIevJaR04Qc\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=TIevJaR04Qc\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/4zXbI0HuAPp7ppOetJCKUT\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654731\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654731&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/4zXbI0HuAPp7ppOetJCKUT\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654731\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654731&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/210565/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/210565/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "105": {
     "mID": 105,
     "title": "BUSTER DICE MISERY",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=qzspB4mWxUk\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=qzspB4mWxUk\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/6o0HGTE3EjQlZUlaEjybNH\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654732\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654732&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6o0HGTE3EjQlZUlaEjybNH\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654732\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654732&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/210564/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/210564/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "106": {
     "mID": 106,
     "title": "パンデミックサドンデス",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=UskIzcitIGw\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=UskIzcitIGw\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3OTaB74SN4Km2oF5Gt4KE1\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654733\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654733&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/3OTaB74SN4Km2oF5Gt4KE1\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654733\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654733&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/210563/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/210563/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "107": {
     "mID": 107,
     "title": "8月、昼中の流れ星と飛行機雲",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=Ohwy4CYaBCQ\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=Ohwy4CYaBCQ\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/6x3BWYTKvA7RDYNMthiVZK\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654734\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654734&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6x3BWYTKvA7RDYNMthiVZK\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654734\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654734&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/210562/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/210562/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "108": {
     "mID": 108,
     "title": "フライデイノベルス",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=M8cDER19PNc\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=M8cDER19PNc\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/76sl1YklCJYlVNsOJEKKQt\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654735\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654735&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/76sl1YklCJYlVNsOJEKKQt\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654735\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654735&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/210561/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/210561/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "109": {
     "mID": 109,
     "title": "mix juiceのいうとおり",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=MnOpUI6p6Jk\" target=\"_blank\">MV</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=VKLkeOmxim4\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/5VdrYyn9wFGnYAAVpM9bNi\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654736\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654736&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=MnOpUI6p6Jk\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=VKLkeOmxim4\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5VdrYyn9wFGnYAAVpM9bNi\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654736\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654736&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "冒頭ピアノソロのインストを流して始まる曲。",
-    "lrc": "<a href=\"https://www.uta-net.com/song/210560/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/210560/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "110": {
     "mID": 110,
     "title": "Cheap Cheap Endroll",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=EJyaQ4GTZpc\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=EJyaQ4GTZpc\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/5PjrZoDfBXmMN0RDpdYuAp\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654737\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654737&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5PjrZoDfBXmMN0RDpdYuAp\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1128654606?i=1128654737\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1128654606?i=1128654737&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/210559/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/210559/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "111": {
     "mID": 111,
     "title": "10% roll, 10% romance",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=4yQN8Dt0nWQ\" target=\"_blank\">MV</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=K2CU5pwqQy8\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/28qFJh4a5a8sh96JkIFY8q\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044729\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1281389670?i=1281389673&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=4yQN8Dt0nWQ\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=K2CU5pwqQy8\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/28qFJh4a5a8sh96JkIFY8q\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044729\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1281389670?i=1281389673&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
-    "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/234475/\" target=\"_blank\">歌詞</a>"
+    "hlt": "早口。",
+    "lrc": "<a href=\"https://www.uta-net.com/song/234475/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "112": {
     "mID": 112,
@@ -1206,10 +1206,10 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093346&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093346&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/234474/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/234474/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "113": {
     "mID": 113,
@@ -1218,22 +1218,22 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093347&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093347&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/234473/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/234473/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "114": {
     "mID": 114,
     "title": "Invisible Sensation",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=zQi4988_7Qo\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=zQi4988_7Qo\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/2bQ4E3XRBLBnJMd8iSm59b\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044727\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1304973334?i=1304973654&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/2bQ4E3XRBLBnJMd8iSm59b\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044727\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1304973334?i=1304973654&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/239225/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/239225/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "115": {
     "mID": 115,
@@ -1242,10 +1242,10 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093348&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093348&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/239224/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/239224/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "116": {
     "mID": 116,
@@ -1254,22 +1254,22 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093349&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093349&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/239223/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/239223/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "117": {
     "mID": 117,
     "title": "fake town baby",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=9AGMvhn__XU\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=9AGMvhn__XU\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/69U2Iv4hyQi3cGCEJ8LM0H\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044722\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1304978420?i=1304978423&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/69U2Iv4hyQi3cGCEJ8LM0H\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044722\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1304978420?i=1304978423&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "英語の高速詠唱で始まる。神様はいない要らない／さあ喝采万来、お待たせ",
-    "lrc": "<a href=\"https://www.uta-net.com/song/239594/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/239594/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "118": {
     "mID": 118,
@@ -1278,10 +1278,10 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093350&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093350&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/239593/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/239593/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "119": {
     "mID": 119,
@@ -1290,166 +1290,166 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093351&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093351&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/239592/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/239592/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "120": {
     "mID": 120,
     "title": "OwnCivilization (nano-mile met)",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=4gzBS7avfNg\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=4gzBS7avfNg\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
     "spf": "",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044719\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044719&app=itunes\" target=\"_blank\">iTn</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044719\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044719&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/243087/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/243087/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "121": {
     "mID": 121,
     "title": "Dizzy Trickster",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=ED3mOp85K3U\" target=\"_blank\">♪</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=9zluQwPBMWM\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/6ARFjvAcg1zqxcVtHI5tZy\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044720\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044720&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=ED3mOp85K3U\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=9zluQwPBMWM\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6ARFjvAcg1zqxcVtHI5tZy\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044720\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044720&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/243086/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/243086/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "122": {
     "mID": 122,
     "title": "オーケストラを観にいこう",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=-UFDSHNtNRo\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=-UFDSHNtNRo\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3TA5gzW0KWpowkuJ934nqo\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044721\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044721&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/3TA5gzW0KWpowkuJ934nqo\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044721\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044721&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/243085/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/243085/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "123": {
     "mID": 123,
     "title": "静謐甘美秋暮抒情",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=kuuAtRMZGd4\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=kuuAtRMZGd4\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/5hFro351wW9rRBU4DZiSIs\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044723\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044723&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5hFro351wW9rRBU4DZiSIs\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044723\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044723&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/243084/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/243084/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "124": {
     "mID": 124,
     "title": "Silent Libre Mirage",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=s-3LjElKl_M\" target=\"_blank\">♪</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=nPKl93s2o1M\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/7iRhjeX954hj3wSyfCV6Og\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1198102015?i=1198102017\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1198102015?i=1198102017&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=s-3LjElKl_M\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=nPKl93s2o1M\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/7iRhjeX954hj3wSyfCV6Og\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1198102015?i=1198102017\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1198102015?i=1198102017&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/243083/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/243083/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "125": {
     "mID": 125,
     "title": "MIDNIGHT JUNGLE",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=h6nnzD_RWq8\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=h6nnzD_RWq8\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/7sMYLyMApHngtUjAGgFtTD\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044725\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044725&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/7sMYLyMApHngtUjAGgFtTD\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044725\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044725&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/243082/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/243082/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "126": {
     "mID": 126,
     "title": "フィクションフリーククライシス",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=6ZG6wmiN9z4\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=6ZG6wmiN9z4\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/6JVhKqqnBsRwTVgPgtVzLE\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044726\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044726&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6JVhKqqnBsRwTVgPgtVzLE\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044726\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044726&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/243081/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/243081/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "127": {
     "mID": 127,
     "title": "夢が覚めたら(at that river)",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=QApAkmpDwTs\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=QApAkmpDwTs\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/7drM5HwTqNagGhn6QbZxEs\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044728\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044728&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/7drM5HwTqNagGhn6QbZxEs\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044728\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044728&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/243080/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/243080/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "128": {
     "mID": 128,
     "title": "君の瞳に恋してない",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=OnM6tu5I0uI\" target=\"_blank\">MV</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=K2CU5pwqQy8\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/5pOkBPwiJmEsaubkCyAsne\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044730\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044730&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=OnM6tu5I0uI\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=K2CU5pwqQy8\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5pOkBPwiJmEsaubkCyAsne\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1339044581?i=1339044730\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1339044581?i=1339044730&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/243079/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/243079/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "129": {
     "mID": 129,
     "title": "春が来てぼくら",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=vrd95QQe6Gc\" target=\"_blank\">MV</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=rEpXhN89wIM\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/4hSzDIzXXsyIWvAkwZtn7h\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418218\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1354852402?i=1354852404&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=vrd95QQe6Gc\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=rEpXhN89wIM\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/4hSzDIzXXsyIWvAkwZtn7h\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418218\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1354852402?i=1354852404&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/245229/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/245229/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "130": {
     "mID": 130,
     "title": "ラディアルナイトチェイサー",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=OjJJjqkDkb4\" target=\"_blank\">♪</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=OjJJjqkDkb4\" target=\"_blank\">LV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=OjJJjqkDkb4\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=OjJJjqkDkb4\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093352&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093352&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/245228/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/245228/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "131": {
     "mID": 131,
     "title": "Micro Paradiso!",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=SBe4mPXXMOo\" target=\"_blank\">♪</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=SBe4mPXXMOo\" target=\"_blank\">LV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=SBe4mPXXMOo\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=SBe4mPXXMOo\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093353&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093353&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "prrrr fooooo!パラディッソー／ご覧のスポンサーの提供で",
-    "lrc": "<a href=\"https://www.uta-net.com/song/245227/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/245227/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "132": {
     "mID": 132,
     "title": "Catch up, latency",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=an6sDPGRCyg\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=an6sDPGRCyg\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/1OS3kgxIBgYqkCfUCkfakM\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418212\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1440580724?i=1440580725&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/1OS3kgxIBgYqkCfUCkfakM\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418212\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1440580724?i=1440580725&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/258299/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/258299/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "133": {
     "mID": 133,
@@ -1458,10 +1458,10 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093354&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093354&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/258298/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/258298/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "134": {
     "mID": 134,
@@ -1470,10 +1470,10 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093355&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093355&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/258297/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/258297/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "135": {
     "mID": 135,
@@ -1492,12 +1492,12 @@
     "title": "水と雨について",
     "yt": "",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/5GoTwFDeeAjamT89TvFB1T\" target=\"_blank\">Spf</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5GoTwFDeeAjamT89TvFB1T\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1712428440?i=1712428442&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1712428440?i=1712428442&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/78824/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/78824/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "137": {
     "mID": 137,
@@ -1509,19 +1509,19 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/78823/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/78823/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "138": {
     "mID": 138,
     "title": "MR. アンディ",
     "yt": "",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=B009Nj-DzPU\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/5x3Y7IScRTij6kgWmJOCUV\" target=\"_blank\">Spf</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=B009Nj-DzPU\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5x3Y7IScRTij6kgWmJOCUV\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041513&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1476041503?i=1476041513&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/78822/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/78822/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "139": {
     "mID": 139,
@@ -1533,7 +1533,7 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/78821/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/78821/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "140": {
     "mID": 140,
@@ -1545,7 +1545,7 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/185437/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/185437/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "141": {
     "mID": 141,
@@ -1557,7 +1557,7 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/185435/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/185435/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "142": {
     "mID": 142,
@@ -1569,31 +1569,31 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/185434/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/185434/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "155": {
     "mID": 155,
     "title": "プログラムcontinued (15th style)",
     "yt": "",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=e9mkPCO1rxk\" target=\"_blank\">LV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=e9mkPCO1rxk\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093356&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093356&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/272291/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/272291/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "156": {
     "mID": 156,
     "title": "Phantom Joke",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=3KGjAw0fGX0\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=3KGjAw0fGX0\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/7tmRSzIL7JNYnIXCLTY1zF\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418215\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1480479449?i=1480479450&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/7tmRSzIL7JNYnIXCLTY1zF\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418215\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1480479449?i=1480479450&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/275519/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/275519/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "157": {
     "mID": 157,
@@ -1602,10 +1602,10 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1480479449?i=1480479451&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1480479449?i=1480479451&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/275518/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/275518/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "158": {
     "mID": 158,
@@ -1614,130 +1614,130 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1480479449?i=1480479452&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1480479449?i=1480479452&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/275517/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/275517/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "159": {
     "mID": 159,
     "title": "Hatch I need",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=02_mSUv3v8A\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=02_mSUv3v8A\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/1onXbe3reEzSLvRfph6dzE\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418209\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418209&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/1onXbe3reEzSLvRfph6dzE\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418209\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418209&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/291616/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/291616/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "160": {
     "mID": 160,
     "title": "マーメイドスキャンダラス",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=ODj-0bFf_4w\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=ODj-0bFf_4w\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/5hSUr0FTrWvhGsXlxbsmLU\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418210\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418210&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5hSUr0FTrWvhGsXlxbsmLU\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418210\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418210&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/291615/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/291615/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "161": {
     "mID": 161,
     "title": "スロウカーヴは打てない (that made me crazy)",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=mAloHYu4Meg\" target=\"_blank\">♪</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=P8dgRcuCbhM\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/6h2qlrlBwZxhTQNivKqZ8f\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418211\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418211&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=mAloHYu4Meg\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=P8dgRcuCbhM\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6h2qlrlBwZxhTQNivKqZ8f\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418211\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418211&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/291614/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/291614/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "162": {
     "mID": 162,
     "title": "摂食ビジランテ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=rncLcu7zR14\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=rncLcu7zR14\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/7HtyN9x8DGdxe80yGMdbBU\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418213\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418213&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/7HtyN9x8DGdxe80yGMdbBU\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418213\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418213&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/291613/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/291613/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "163": {
     "mID": 163,
     "title": "夏影テールライト",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=KO2y0Yr7tAY\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=KO2y0Yr7tAY\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/0ISgaf4IDF5qnJFo3v8J9w\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418214\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418214&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/0ISgaf4IDF5qnJFo3v8J9w\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418214\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418214&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/291612/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/291612/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "164": {
     "mID": 164,
     "title": "世界はファンシー",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=FHUHKIrUH6Y\" target=\"_blank\">MV</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=P8dgRcuCbhM\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/4pZ8zDEbWdMgKRck7cb0Dq\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418216\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418216&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=FHUHKIrUH6Y\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=P8dgRcuCbhM\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/4pZ8zDEbWdMgKRck7cb0Dq\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418216\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418216&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/291611/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/291611/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "165": {
     "mID": 165,
     "title": "弥生町ロンリープラネット",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=vzExEa0l8YM\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=vzExEa0l8YM\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/0KqdJuzNS6NpAKu2zdRIxo\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418217\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418217&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/0KqdJuzNS6NpAKu2zdRIxo\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418217\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418217&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/291610/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/291610/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "166": {
     "mID": 166,
     "title": "Simple Simple Anecdote",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=oeANadSwZT8\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=oeANadSwZT8\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/6jVEBrLJrIloifud4KSd9i\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418219\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418219&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6jVEBrLJrIloifud4KSd9i\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418219\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418219&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/291609/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/291609/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "167": {
     "mID": 167,
     "title": "101回目のプロローグ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=MMUIXYRoUzw\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=MMUIXYRoUzw\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/58U3YcWjHB2B613KkvillC\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418220\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418220&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/58U3YcWjHB2B613KkvillC\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1531418208?i=1531418220\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1531418208?i=1531418220&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/291608/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/291608/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "168": {
     "mID": 168,
     "title": "kaleido proud fiesta",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=-7zYPOvPABo\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=-7zYPOvPABo\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3Gl8jfnr5qHzVoWCWc9tV3\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774507\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1616993125?i=1616993126&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/3Gl8jfnr5qHzVoWCWc9tV3\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774507\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1616993125?i=1616993126&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "かくしてまたストーリーは始まる／祝祭の鐘は鳴る",
-    "lrc": "<a href=\"https://www.uta-net.com/song/317221/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/317221/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "169": {
     "mID": 169,
@@ -1749,19 +1749,19 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/317220/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/317220/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "170": {
     "mID": 170,
     "title": "カオスが極まる",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=ejzfqXA-bYY\" target=\"_blank\">MV</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=ixg-bJxY5gY\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/3HOOzsN7ypLG53pyBq9eeL\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774049\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1648654053?i=1648654054&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=ejzfqXA-bYY\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=ixg-bJxY5gY\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/3HOOzsN7ypLG53pyBq9eeL\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774049\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1648654053?i=1648654054&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "ぶちかましてくれ／やばすぎんだろ／邪魔だ、すっこんでろ",
-    "lrc": "<a href=\"https://www.uta-net.com/song/326437/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/326437/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "171": {
     "mID": 171,
@@ -1773,127 +1773,127 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/326436/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/326436/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "172": {
     "mID": 172,
     "title": "スペースシャトル・ララバイ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=jHKe6ZAE1Ug\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=jHKe6ZAE1Ug\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/4bdSB9Ysz0DERAcwZ8DcfT\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679773785\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679773785&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/4bdSB9Ysz0DERAcwZ8DcfT\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679773785\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679773785&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/335760/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/335760/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "173": {
     "mID": 173,
     "title": "恋する惑星",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=-rsCYSZ5rS4\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=-rsCYSZ5rS4\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/5aSItqgApJoIaIZu77L9Zu\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774039\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774039&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5aSItqgApJoIaIZu77L9Zu\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774039\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774039&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/335759/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/335759/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "174": {
     "mID": 174,
     "title": "ミレニアムハッピー・チェーンソーエッヂ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=2ntghdgE_h8\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=2ntghdgE_h8\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/4QeoZcK6Qyi4RpKfkYuB5H\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774041\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774041&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/4QeoZcK6Qyi4RpKfkYuB5H\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774041\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774041&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/335758/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/335758/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "175": {
     "mID": 175,
     "title": "City peel",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=fYC_TwaMjwM\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=fYC_TwaMjwM\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/5XdnqJxxh0M535ALwUYkBd\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774054\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774054&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5XdnqJxxh0M535ALwUYkBd\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774054\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774054&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "mid",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/335757/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/335757/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "176": {
     "mID": 176,
     "title": "Nihil Pip Viper",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=vD46C5nNvS8\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=vD46C5nNvS8\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/5qko3Om0sSANw6k1pe97GT\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774362\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774362&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5qko3Om0sSANw6k1pe97GT\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774362\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774362&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/308699/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/308699/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "177": {
     "mID": 177,
     "title": "Numbness like a ginger",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=jYqZVpM1EJU\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=jYqZVpM1EJU\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/6WmH150zngZw8mNenyWY5o\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774368\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774368&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6WmH150zngZw8mNenyWY5o\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774368\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774368&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "mid",
     "hlt": "ナムネス ライカ ジンジャー(ナムネス ライクァ ジンジャー)",
-    "lrc": "<a href=\"https://www.uta-net.com/song/335756/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/335756/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "178": {
     "mID": 178,
     "title": "もう君に会えない",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=B7mlOmTJDIY\" target=\"_blank\">♪</a>",
-    "lv": "<a href=\"https://www.youtube.com/watch?v=K2CU5pwqQy8\" target=\"_blank\">LV</a>",
-    "spf": "<a href=\"https://open.spotify.com/track/5QXfKCYswvbgEXYY4yzpJo\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774372\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774372&app=itunes\" target=\"_blank\">iTn</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=B7mlOmTJDIY\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
+    "lv": "<a href=\"https://www.youtube.com/watch?v=K2CU5pwqQy8\" target=\"_blank\" rel=\"noopener noreferrer\">LV</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/5QXfKCYswvbgEXYY4yzpJo\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774372\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774372&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/335755/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/335755/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "179": {
     "mID": 179,
     "title": "アンチ・トレンディ・クラブ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=D4VmcoWEXJo\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=D4VmcoWEXJo\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/4NhvNRtcVMChZMs66EE1eq\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774382\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774382&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/4NhvNRtcVMChZMs66EE1eq\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774382\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774382&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/335754/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/335754/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "180": {
     "mID": 180,
     "title": "フレーズボトル・バイバイ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=tNhP4KUahCc\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=tNhP4KUahCc\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/42x1LIKLFOzMcYWIsS5CEr\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774511\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774511&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/42x1LIKLFOzMcYWIsS5CEr\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1679773768?i=1679774511\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1679773768?i=1679774511&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/335753/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/335753/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "181": {
     "mID": 181,
     "title": "いけないfool logic",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=gtyP2BzDlLs\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=gtyP2BzDlLs\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/7bssqLtlFKC3DZXoUCzsAo\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1758029307?i=1758030098\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1707507238?i=1707507240&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/7bssqLtlFKC3DZXoUCzsAo\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1758029307?i=1758030098\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1707507238?i=1707507240&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "君の心が必要で　僕の心は執拗だ",
-    "lrc": "<a href=\"https://www.uta-net.com/song/344421/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/344421/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "182": {
     "mID": 182,
@@ -1905,7 +1905,7 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/344420/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/344420/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "183": {
     "mID": 183,
@@ -1917,7 +1917,7 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/357660/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/357660/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "184": {
     "mID": 184,
@@ -1929,7 +1929,7 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/357659/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/357659/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "185": {
     "mID": 185,
@@ -1941,7 +1941,7 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/357658/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/357658/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "186": {
     "mID": 186,
@@ -1953,7 +1953,7 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/357657/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/357657/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "187": {
     "mID": 187,
@@ -1965,7 +1965,7 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/357656/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/357656/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "188": {
     "mID": 188,
@@ -1977,7 +1977,7 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/357655/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/357655/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "189": {
     "mID": 189,
@@ -1989,7 +1989,7 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/357654/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/357654/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "190": {
     "mID": 190,
@@ -2001,7 +2001,7 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/357653/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/357653/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "191": {
     "mID": 191,
@@ -2013,7 +2013,7 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/357652/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/357652/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "192": {
     "mID": 192,
@@ -2025,7 +2025,7 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/357651/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/357651/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "193": {
     "mID": 193,
@@ -2037,31 +2037,31 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/357650/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/357650/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "194": {
     "mID": 194,
     "title": "アナザーワールドエンド",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=kaew4bcxdtU\" target=\"_blank\">♪</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=kaew4bcxdtU\" target=\"_blank\" rel=\"noopener noreferrer\">♪</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3XkGAnx7i8OcFTIEcmVOUP\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1758029307?i=1758029313\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1758029307?i=1758029313&app=itunes\" target=\"_blank\">iTn</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/3XkGAnx7i8OcFTIEcmVOUP\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
+    "apl": "<a href=\"https://music.apple.com/jp/album/1758029307?i=1758029313\" target=\"_blank\" rel=\"noopener noreferrer\">Apl</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1758029307?i=1758029313&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/357649/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/357649/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "202": {
     "mID": 202,
     "title": "傍若のカリスマ",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=cxK_rMG2uhw\" target=\"_blank\">MV</a>",
+    "yt": "<a href=\"https://www.youtube.com/watch?v=cxK_rMG2uhw\" target=\"_blank\" rel=\"noopener noreferrer\">MV</a>",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/6ubI9ALQi6TQYZm7tVPDAi\" target=\"_blank\">Spf</a>",
+    "spf": "<a href=\"https://open.spotify.com/track/6ubI9ALQi6TQYZm7tVPDAi\" target=\"_blank\" rel=\"noopener noreferrer\">Spf</a>",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1769179790?i=1769179797&app=itunes\" target=\"_blank\">iTn</a>",
+    "itn": "<a href=\"https://itunes.apple.com/jp/album/1769179790?i=1769179797&app=itunes\" target=\"_blank\" rel=\"noopener noreferrer\">iTn</a>",
     "tmp": "up",
     "hlt": "激しく鳴ってる心臓に沿ってく／邪魔すんじゃねえよ",
-    "lrc": "<a href=\"https://www.uta-net.com/song/361244/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/361244/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   },
   "203": {
     "mID": 203,
@@ -2073,6 +2073,6 @@
     "itn": "",
     "tmp": "",
     "hlt": "",
-    "lrc": "<a href=\"https://www.uta-net.com/song/361243/\" target=\"_blank\">歌詞</a>"
+    "lrc": "<a href=\"https://www.uta-net.com/song/361243/\" target=\"_blank\" rel=\"noopener noreferrer\">歌詞</a>"
   }
 }
