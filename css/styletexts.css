@@ -45,7 +45,8 @@ main {
   margin-bottom: 1em;
 }
 
-.content ul, .content ol {
+.content ul,
+.content ol {
   margin-bottom: 1em;
   padding-left: 2em;
 }
@@ -62,6 +63,7 @@ footer {
   font-size: 12px;
 }
 
+/* プライバシーポリシー用の特別なスタイル */
 /* プライバシーポリシー用の特別なスタイル */
 .privacy-section {
   margin-bottom: 2em;
@@ -98,6 +100,7 @@ footer {
   color: #28a745;
 }
 
+/* 更新情報ページ用のスタイル */
 /* 更新情報ページ用のスタイル */
 .toc-nav {
   background: #f8f9fa;
