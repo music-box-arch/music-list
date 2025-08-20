@@ -321,8 +321,8 @@ export function createDisplayTitle(title, maxDisplayWidth) {
 // HTML表生成
 export function generateHTMLTable(headers, rows, rowHeaderW, colHeaderW) {
     const table = document.createElement('table');
-    table.style.borderCollapse = 'collapse';
-    table.style.width = '100%';
+    table.className = 'tbl';
+    // borderCollapse, width削除: CSSで.tblで指定済み
     table.style.fontSize = '12px';
     table.style.tableLayout = 'fixed';
 
@@ -332,10 +332,10 @@ export function generateHTMLTable(headers, rows, rowHeaderW, colHeaderW) {
 
     headers.forEach((header, index) => {
         const th = document.createElement('th');
-        th.style.border = '1px solid #ccd';
+        // border削除: CSSで.tbl thで指定済み
         th.style.padding = '6px 0';
         th.style.textAlign = 'center';
-        th.style.backgroundColor = '#f3f8fc';
+        // backgroundColor削除: CSSで.tbl thで指定済み
         th.style.fontSize = '10px';
         th.style.lineHeight = '1.2';
         th.style.whiteSpace = 'pre-line';
@@ -380,13 +380,11 @@ export function generateHTMLTable(headers, rows, rowHeaderW, colHeaderW) {
     const tbody = document.createElement('tbody');
     rows.forEach((row, rowIndex) => {
         const tr = document.createElement('tr');
-        if (rowIndex % 2 === 1) {
-            tr.style.backgroundColor = '#f7fafd';
-        }
+        // backgroundColor削除: CSSで.tbl tr:nth-child(even)で指定済み
 
         row.forEach((cell, cellIndex) => {
             const td = document.createElement('td');
-            td.style.border = '1px solid #ccd';
+            // border削除: CSSで.tbl tdで指定済み  
             td.style.textAlign = cellIndex === 0 ? 'left' : 'center';
             td.style.fontSize = cellIndex === 0 ? '11px' : '12px';
 

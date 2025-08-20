@@ -101,7 +101,7 @@ async function toggleSm(showStyle, showMix) {
         columns: ['title', 'yt', 'lv', 'spf', 'apl', 'itn', 'exsm', 'firstCd', 'order', 'cdDate'],
         textOnlyColumns: [0, 6, 7, 8, 9], // title, exsm, firstCd, order, cdDate
         cstmRow: (tr, song) => {
-            if (song.mID === 93) tr.cells[1].style.fontSize = '12px';
+            if (song.mID === 93) tr.cells[1].classList.add('smltxt');
             tr.classList.add('sm-row');
         }
     });

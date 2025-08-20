@@ -321,8 +321,8 @@ async function buildOneSl(container, setlistData, setlistIndex) {
     textOnlyColumns: [0, 1, 7, 8], // orderNum, title, tmp, hlt
     cstmRow: (tr, song) => {
       tr.cells[1].style.cssText = 'text-align: center; font-weight: bold; color: #2564ad;';
-      tr.cells[8].style.fontSize = '12px';
-      tr.cells[10].style.fontSize = '12px';
+      tr.cells[8].classList.add('smltxt');
+      tr.cells[10].classList.add('smltxt');
       tr.setAttribute('data-song-id', song.songId);
       tr.setAttribute('data-setlist-order', song.orderNum);
     }
