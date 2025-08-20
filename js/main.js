@@ -4,9 +4,18 @@ let slLazy = false; // sl-lazy.js読み込み済みフラグ
 let tblProg = false; // テーブル作成中フラグ
 let remains = []; // 残りの曲データ
 
-// DOM表でリンクを作る関数を定義
-const makeLink = (label, url) =>
-  url ? `<a href="${url}" target="_blank">${label}</a>` : '';
+// DOM表でリンクを作る関数を定義（安全化）
+const makeLink = async (label, url) => {
+  const { isValidUrl } = await import('./tbl.js');
+  if (!url || !isValidUrl(url)) return '';
+  
+  const a = document.createElement('a');
+  a.href = url;
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+  a.textContent = label;
+  return a.outerHTML;
+};
 
 // 初回ボタン押下時のlazyload処理
 async function initLazy() {
@@ -46,7 +55,16 @@ async function initSlLazy() {
 // 2. DOMContentLoaded後の処理
 document.addEventListener('DOMContentLoaded', function () {
   // 2-1. 曲リスト表生成（最優先）
-  fetch('data/music-list.json')
+  // リソース完全性検証
+  import('./tbl.js').then(({ isValidResource }) => {
+    const musicUrl = 'data/music-list.json';
+    
+    if (!isValidResource(musicUrl)) {
+      throw new Error('Invalid resource URL detected');
+    }
+    
+    return fetch(musicUrl);
+  })
     .then(response => response.json())
     .then(async musicData => {
       // mIDでソートしてから表示
@@ -125,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
       data: batch,
       context: 'ml',
       columns: ['title', 'yt', 'lv', 'spf', 'apl', 'itn', 'exsm', 'firstCd', 'order', 'cdDate'],
-      textOnlyColumns: [0, 6, 7, 8, 9]
+      textOnlyColumns: [0, 6, 7, 8, 9] // title, exsm, firstCd, order, cdDate
     };
     
     const { table } = createTable(config);

@@ -3,13 +3,39 @@ let slMusicData = {}; // 曲データをキャッシュ
 let slFiles = []; // 読み込むセットリストファイル一覧
 let loadedSetlists = new Map(); // 読み込み済みセットリストのキャッシュ
 
+// ファイル名サニタイズ関数（パストラバーサル攻撃防止）
+function sanitizeFilename(filename) {
+  if (!filename || typeof filename !== 'string') {
+    return null;
+  }
+  
+  // パストラバーサル文字列を除去
+  const sanitized = filename.replace(/\.\./g, '').replace(/[\/\\]/g, '');
+  
+  // 基本的なファイル名形式チェック（6桁数字.json）
+  if (!/^\d{6}\.json$/.test(sanitized)) {
+    return null;
+  }
+  
+  return sanitized;
+}
+
 // セットリスト機能の初期化
 export async function initSL() {
   try {
+    // リソース完全性検証
+    const { isValidResource } = await import('./tbl.js');
+    const musicUrl = 'data/music-list-SL.json';
+    const indexUrl = 'setlist/index.json';
+    
+    if (!isValidResource(musicUrl) || !isValidResource(indexUrl)) {
+      throw new Error('Invalid resource URLs detected');
+    }
+    
     // 曲データとファイル一覧を並列fetch
     const [musicData, indexData] = await Promise.all([
-      fetch('data/music-list-SL.json').then(r => r.json()),
-      fetch('setlist/index.json').then(r => r.json())
+      fetch(musicUrl).then(r => r.json()),
+      fetch(indexUrl).then(r => r.json())
     ]);
 
     slMusicData = musicData;
@@ -27,7 +53,12 @@ export async function initSL() {
 
       if (flag >= 1) {
         try {
-          const response = await fetch(`setlist/${filename}`);
+          const safeFilename = sanitizeFilename(filename);
+          if (!safeFilename) {
+            console.warn(`Invalid filename: ${filename}`);
+            continue;
+          }
+          const response = await fetch(`setlist/${safeFilename}`);
           const data = await response.json();
           const setlistData = { filename, ...data };
           slData.push(setlistData);
@@ -56,11 +87,13 @@ export async function initSL() {
 function createMCRow(colCount = 12) {
   const tr = document.createElement('tr');
   tr.style.backgroundColor = '#f0f0f0';
-  tr.innerHTML = `
-        <td colspan="${colCount}" style="text-align: center; color: #666; font-size: 12px; padding: 2px;">
-            MC
-        </td>
-    `;
+  
+  const td = document.createElement('td');
+  td.setAttribute('colspan', colCount.toString());
+  td.style.cssText = 'text-align: center; color: #666; font-size: 12px; padding: 2px;';
+  td.textContent = 'MC';
+  tr.appendChild(td);
+  
   return tr;
 }
 
@@ -103,7 +136,7 @@ function extractDateFromFilename(filename) {
 // セットリスト表の内容を構築
 async function buildBody(slData) {
   const container = document.querySelector('#setlist-tab .table-wrapper');
-  container.innerHTML = '';
+  container.textContent = '';
 
   // 日付の新しい順にソート、最新5個まで
   const sortedSL = slData
@@ -230,7 +263,13 @@ async function buildOneSl(container, setlistData, setlistIndex) {
 
   const summary = document.createElement('summary');
   summary.style.cssText = 'color: #2564ad; cursor: pointer; margin: 0 0 0.5em 8px; font-size: 16px; list-style: none;';
-  summary.innerHTML = `<span style="font-weight: bold; margin-right: 8px; transform: rotate(90deg); display: inline-block;">＞</span>${titleText}`;
+  
+  const iconSpan = document.createElement('span');
+  iconSpan.style.cssText = 'font-weight: bold; margin-right: 8px; transform: rotate(90deg); display: inline-block;';
+  iconSpan.textContent = '＞';
+  
+  summary.appendChild(iconSpan);
+  summary.appendChild(document.createTextNode(titleText));
   details.appendChild(summary);
 
   // 開閉時にアイコンを切り替え
@@ -279,7 +318,7 @@ async function buildOneSl(container, setlistData, setlistIndex) {
     context: 'sl',
     className: 'setlistTbl tbl',
     columns: ['orderNum', 'title', 'yt', 'lv', 'spf', 'apl', 'itn', 'tmp', 'hlt', 'lrc'],
-    textOnlyColumns: [0, 1, 7], // orderNum, title, tmp
+    textOnlyColumns: [0, 1, 7, 8], // orderNum, title, tmp, hlt
     cstmRow: (tr, song) => {
       tr.cells[1].style.cssText = 'text-align: center; font-weight: bold; color: #2564ad;';
       tr.cells[8].style.fontSize = '12px';
@@ -309,7 +348,13 @@ async function loadSetlistOnDemand(filename) {
       return;
     }
 
-    const response = await fetch(`setlist/${filename}`);
+    const safeFilename = sanitizeFilename(filename);
+    if (!safeFilename) {
+      console.error(`Invalid filename: ${filename}`);
+      return;
+    }
+
+    const response = await fetch(`setlist/${safeFilename}`);
     const data = await response.json();
     const setlistData = {
       filename,

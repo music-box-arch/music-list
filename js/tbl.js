@@ -1,13 +1,87 @@
 // 汎用テーブル作成モジュール
 
-// td要素作成ヘルパー関数
-export function createTd(content, style = '', useHTML = false) {
-  const td = document.createElement('td');
-  if (useHTML) {
-    td.innerHTML = content;
-  } else {
-    td.textContent = content;
+// リソース完全性検証関数
+export function isValidResource(url) {
+  if (!url || typeof url !== 'string') return false;
+  
+  // 自己ドメイン/相対パスのみ許可
+  const allowedOrigins = [
+    window.location.origin, // 現在のドメイン
+    '', // 相対パス
+    '.' // 相対パス
+  ];
+  
+  try {
+    const parsedUrl = new URL(url, window.location.href);
+    return parsedUrl.origin === window.location.origin;
+  } catch {
+    // 相対パスの場合
+    return /^(\.\/|\.\.\/|\/|[^:\/]+\.(json|js|css)$)/.test(url);
   }
+}
+
+// URL検証関数（XSS防止）
+export function isValidUrl(url) {
+  if (!url || typeof url !== 'string') return false;
+  
+  // 危険なスキームを禁止
+  const dangerousSchemes = ['javascript:', 'data:', 'vbscript:', 'file:', 'about:'];
+  const lowercaseUrl = url.toLowerCase().trim();
+  
+  if (dangerousSchemes.some(scheme => lowercaseUrl.startsWith(scheme))) {
+    return false;
+  }
+  
+  // 基本的なURL形式チェック
+  try {
+    new URL(url);
+    return true;
+  } catch {
+    // 相対URLの場合もチェック
+    return /^(\/|\.\/|\.\.\/)/.test(url) || /^[a-zA-Z0-9\-._~:/?#[\]@!$&'()*+,;=%]+$/.test(url);
+  }
+}
+
+// リンク作成関数（安全）
+function genLink(url, text, target = '_blank', rel = 'noopener noreferrer') {
+  if (!url || !isValidUrl(url)) return '';
+  
+  const a = document.createElement('a');
+  a.href = url;
+  a.textContent = text;
+  if (target) a.target = target;
+  if (rel) a.rel = rel;
+  return a.outerHTML;
+}
+
+// 音楽サービスリンク作成関数
+function genMscLink(item, prop) {
+  switch (prop) {
+    case 'yt':
+      if (item.ytUrl) {
+        const text = item.yt === 'MV' ? 'MV' : '♪';
+        return genLink(item.ytUrl, text);
+      }
+      return '';
+    case 'spf':
+      return item.spf ? genLink(item.spf, 'Spf') : '';
+    case 'apl':
+      return item.apl ? genLink(item.apl, 'Apl') : '';
+    case 'lv':
+      return item.lv ? genLink(item.lv, 'LV') : '';
+    case 'itn':
+      return item.itn ? genLink(item.itn, 'iTn') : '';
+    case 'lrc':
+      return item.lrc ? genLink(item.lrc, '歌詞') : '';
+    default:
+      return item[prop] || '';
+  }
+}
+
+// td要素作成ヘルパー関数（innerHTML使用を廃止）
+export function createTd(content, style = '') {
+  const td = document.createElement('td');
+  td.textContent = content;
   if (style) td.style.cssText = style;
   return td;
 }
@@ -48,20 +122,38 @@ export function createTable(config) {
     
     // 共通チェックボックス
     const checkboxTd = document.createElement('td');
-    checkboxTd.innerHTML = `<input type="checkbox" class="chk" data-context="${context}" data-id="${item.mID}">`;
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.className = 'chk';
+    checkbox.setAttribute('data-context', context);
+    checkbox.setAttribute('data-id', item.mID);
+    checkboxTd.appendChild(checkbox);
     tr.appendChild(checkboxTd);
     
     // 新方式: columns配列が指定されている場合
     if (columns.length > 0) {
       columns.forEach((prop, columnIndex) => {
-        const value = item[prop] || '';
         const td = document.createElement('td');
         
-        // textOnlyColumnsに含まれていない場合はHTML扱い
+        // textOnlyColumnsに含まれていない場合は音楽リンク処理
         if (textOnlyColumns.includes(columnIndex)) {
-          td.textContent = value;
+          td.textContent = item[prop] || '';
         } else {
-          td.innerHTML = value;
+          // 音楽サービスリンク列の場合は安全なリンク生成
+          const linkHtml = genMscLink(item, prop);
+          if (linkHtml) {
+            // innerHTML廃止：DOMParserを使用して安全に挿入
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(linkHtml, 'text/html');
+            const link = doc.querySelector('a');
+            if (link) {
+              td.appendChild(link);
+            } else {
+              td.textContent = '';
+            }
+          } else {
+            td.textContent = '';
+          }
         }
         
         tr.appendChild(td);
@@ -74,11 +166,7 @@ export function createTable(config) {
       
       if (customResult.tds) {
         customResult.tds.forEach((td, tdIndex) => {
-          const columnIndex = tdIndex + 1;
-          if (htmlColumns.includes(columnIndex)) {
-            const content = td.textContent;
-            td.innerHTML = content;
-          }
+          // innerHTML使用を廃止：すべてDOM APIで処理
           tr.appendChild(td);
         });
       }

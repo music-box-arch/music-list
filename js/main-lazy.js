@@ -5,7 +5,14 @@ let smData = null;
 // サブスク無しデータの読み込み
 async function loadSubNo() {
     if (!subNoMap) {
-        const response = await fetch('data/sub-no.json');
+        const { isValidResource } = await import('./tbl.js');
+        const url = 'data/sub-no.json';
+        
+        if (!isValidResource(url)) {
+            throw new Error('Invalid resource URL detected');
+        }
+        
+        const response = await fetch(url);
         subNoMap = await response.json();
     }
     return subNoMap;
@@ -14,7 +21,14 @@ async function loadSubNo() {
 // style/mixデータの読み込み
 async function loadSm() {
     if (!smData) {
-        const response = await fetch('data/music-list-sm.json');
+        const { isValidResource } = await import('./tbl.js');
+        const url = 'data/music-list-sm.json';
+        
+        if (!isValidResource(url)) {
+            throw new Error('Invalid resource URL detected');
+        }
+        
+        const response = await fetch(url);
         smData = await response.json();
     }
     return smData;
@@ -85,7 +99,7 @@ async function toggleSm(showStyle, showMix) {
         data: toAdd,
         context: 'ml',
         columns: ['title', 'yt', 'lv', 'spf', 'apl', 'itn', 'exsm', 'firstCd', 'order', 'cdDate'],
-        textOnlyColumns: [0, 6, 7, 8, 9],
+        textOnlyColumns: [0, 6, 7, 8, 9], // title, exsm, firstCd, order, cdDate
         cstmRow: (tr, song) => {
             if (song.mID === 93) tr.cells[1].style.fontSize = '12px';
             tr.classList.add('sm-row');
