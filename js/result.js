@@ -70,9 +70,19 @@ function truncateByDisplayWidth(str, maxWidth, suffix = '') {
 // データ遅延読み込み関数
 export async function loadData() {
     if (!allDiscs || !musicMap) {
+        // リソース完全性検証を追加
+        const { isValidResource } = await import('./tbl.js');
+        
+        const discUrl = 'data/all-discs.json';
+        const mapUrl = 'data/music-map.json';
+        
+        if (!isValidResource(discUrl) || !isValidResource(mapUrl)) {
+            throw new Error('Invalid resource URLs detected');
+        }
+        
         const [discs, map] = await Promise.all([
-            fetch('data/all-discs.json').then(res => res.json()),
-            fetch('data/music-map.json').then(res => res.json())
+            fetch(discUrl).then(res => res.json()),
+            fetch(mapUrl).then(res => res.json())
         ]);
         allDiscs = discs;
         musicMap = map;
@@ -81,7 +91,7 @@ export async function loadData() {
 }
 
 // Result表構築ロジック
-export function buildMatrix(songIDs, discs, musicMap) {
+export async function buildMatrix(songIDs, discs, musicMap) {
     // 含まれるCDだけ抽出
     const usedDiscs = discs.filter(disc => {
         if (!Array.isArray(disc.tracks) || disc.tracks.length === 0) {
@@ -158,13 +168,19 @@ export function buildMatrix(songIDs, discs, musicMap) {
     const songCharW = Math.floor(songDisplayW / avgCharPx);
     const cdCharW = Math.floor(cdDisplayW / avgCharPx);
 
+    // URL検証関数を取得
+    const { isValidUrl } = await import('./tbl.js');
 
     const headers = [''].concat(
         filtDiscs.map(d => {
             const cdName = truncateByDisplayWidth(d['cd-name'], cdCharW, '…');
             const songCount = d.tracks.filter(id => songIDs.includes(id)).length;
-            const amznLink = d.Amzn ? `\n<a href="${d.Amzn}" target="_blank" style="color: #0066cc; text-decoration: underline;">Amz</a>` : '';
-            return `${cdName}\n(${songCount})${amznLink}`;
+            // ヘッダーオブジェクトとして返す（テキスト + リンク情報）
+            return {
+                cdName,
+                songCount,
+                amznUrl: d.Amzn && isValidUrl(d.Amzn) ? d.Amzn : null
+            };
         })
     );
 
@@ -331,14 +347,29 @@ export function generateHTMLTable(headers, rows, rowHeaderW, colHeaderW) {
             th.style.minWidth = `${rowHeaderW}px`;
             th.style.maxWidth = `${rowHeaderW}px`;
             th.style.fontSize = '11px';
+            th.textContent = header;
         } else {
             th.style.width = `${colHeaderW}px`;
             th.style.minWidth = `${colHeaderW}px`;
             th.style.maxWidth = `${colHeaderW}px`;
             th.style.overflow = 'hidden';
+            
+            // ヘッダーコンテンツを安全に構築
+            const cdText = document.createTextNode(header.cdName + '\n(' + header.songCount + ')');
+            th.appendChild(cdText);
+            
+            if (header.amznUrl) {
+                th.appendChild(document.createTextNode('\n'));
+                const amznLink = document.createElement('a');
+                amznLink.href = header.amznUrl;
+                amznLink.target = '_blank';
+                amznLink.rel = 'noopener noreferrer';
+                amznLink.style.cssText = 'color: #0066cc; text-decoration: underline;';
+                amznLink.textContent = 'Amz';
+                th.appendChild(amznLink);
+            }
         }
 
-        th.innerHTML = header;
         headerRow.appendChild(th);
     });
 
@@ -407,11 +438,11 @@ export function setupFilter() {
 // 結果テーブルの再構築
 async function rebuildTable(songIDs) {
     const { allDiscs, musicMap } = await loadData();
-    const { headers, rows, rowHeaderW, colHeaderW } = buildMatrix(songIDs, allDiscs, musicMap);
+    const { headers, rows, rowHeaderW, colHeaderW } = await buildMatrix(songIDs, allDiscs, musicMap);
     const table = generateHTMLTable(headers, rows, rowHeaderW, colHeaderW);
 
     const container = document.getElementById('discsTbl');
-    container.innerHTML = '';
+    container.textContent = '';
     container.appendChild(table);
 }
 
@@ -432,11 +463,11 @@ export function setupBtn() {
             }
 
             const { allDiscs, musicMap } = await loadData();
-            const { headers, rows, rowHeaderW, colHeaderW } = buildMatrix(songIDs, allDiscs, musicMap);
+            const { headers, rows, rowHeaderW, colHeaderW } = await buildMatrix(songIDs, allDiscs, musicMap);
             const table = generateHTMLTable(headers, rows, rowHeaderW, colHeaderW);
 
             const container = document.getElementById('discsTbl');
-            container.innerHTML = '';
+            container.textContent = '';
             container.appendChild(table);
 
             document.getElementById('resultArea').scrollIntoView({ behavior: 'smooth' });
@@ -458,26 +489,26 @@ async function handleClick() {
     }
 
     const { allDiscs, musicMap } = await loadData();
-    const { headers, rows, rowHeaderW, colHeaderW } = buildMatrix(songIDs, allDiscs, musicMap);
+    const { headers, rows, rowHeaderW, colHeaderW } = await buildMatrix(songIDs, allDiscs, musicMap);
     const table = generateHTMLTable(headers, rows, rowHeaderW, colHeaderW);
 
     const container = document.getElementById('discsTbl');
-    container.innerHTML = '';
+    container.textContent = '';
     container.appendChild(table);
 
     document.getElementById('resultArea').scrollIntoView({ behavior: 'smooth' });
 }
 
 // 現在の表を再描画（リサイズ時用）
-function redraw() {
+async function redraw() {
     if (!curTblData) return;
 
     const { songIDs, allDiscs, musicMap, selType } = curTblData;
-    const { headers, rows, rowHeaderW, colHeaderW } = buildMatrix(songIDs, allDiscs, musicMap);
+    const { headers, rows, rowHeaderW, colHeaderW } = await buildMatrix(songIDs, allDiscs, musicMap);
     const table = generateHTMLTable(headers, rows, rowHeaderW, colHeaderW);
 
     const container = document.getElementById('discsTbl');
-    container.innerHTML = '';
+    container.textContent = '';
     container.appendChild(table);
 }
 

@@ -8,11 +8,12 @@
     "order": 6,
     "exsm": "",
     "smType": "style",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=I79m_otKgJI\" target=\"_blank\">MV</a>",
+    "yt": "MV",
+    "ytUrl": "https://www.youtube.com/watch?v=I79m_otKgJI",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/0PsWoWbnsjQWnak0ESfYTB\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/310970395?i=310970419\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/310970395?i=310970419&app=itunes\" target=\"_blank\">iTn</a>"
+    "spf": "https://open.spotify.com/track/0PsWoWbnsjQWnak0ESfYTB",
+    "apl": "https://music.apple.com/jp/album/310970395?i=310970419",
+    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970419&app=itunes"
   },
   "87": {
     "mID": 87,
@@ -23,11 +24,12 @@
     "order": 2,
     "exsm": "",
     "smType": "style",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=nPC05glMMtQ\" target=\"_blank\">♪</a>",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=nPC05glMMtQ",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/789qMWni5aMixbI4E5bSbN\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1016336570?i=1016336575\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1016336570?i=1016336575&app=itunes\" target=\"_blank\">iTn</a>"
+    "spf": "https://open.spotify.com/track/789qMWni5aMixbI4E5bSbN",
+    "apl": "https://music.apple.com/jp/album/1016336570?i=1016336575",
+    "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336575&app=itunes"
   },
   "89": {
     "mID": 89,
@@ -38,11 +40,12 @@
     "order": 4,
     "exsm": "",
     "smType": "style",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=UXWp5BqsEQM\" target=\"_blank\">♪</a>",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=UXWp5BqsEQM",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/75s2DIRY0jFfkJRI0VwIVJ\" target=\"_blank\">Spf</a>",
+    "spf": "https://open.spotify.com/track/75s2DIRY0jFfkJRI0VwIVJ",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093266&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093266&app=itunes"
   },
   "90": {
     "mID": 90,
@@ -53,11 +56,12 @@
     "order": 5,
     "exsm": "",
     "smType": "mix",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=bpbRRITMYSI\" target=\"_blank\">♪</a>",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=bpbRRITMYSI",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/2fhHVtxrKSSo2riQU69bjB\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1016336570?i=1016336578\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1016336570?i=1016336578&app=itunes\" target=\"_blank\">iTn</a>"
+    "spf": "https://open.spotify.com/track/2fhHVtxrKSSo2riQU69bjB",
+    "apl": "https://music.apple.com/jp/album/1016336570?i=1016336578",
+    "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336578&app=itunes"
   },
   "92": {
     "mID": 92,
@@ -68,11 +72,12 @@
     "order": 7,
     "exsm": "",
     "smType": "mix",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=4Ha5-XLw2xI\" target=\"_blank\">♪</a>",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=4Ha5-XLw2xI",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/7rHfpEp66AMucKxNnzD3PN\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1016336570?i=1016336580\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1016336570?i=1016336580&app=itunes\" target=\"_blank\">iTn</a>"
+    "spf": "https://open.spotify.com/track/7rHfpEp66AMucKxNnzD3PN",
+    "apl": "https://music.apple.com/jp/album/1016336570?i=1016336580",
+    "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336580&app=itunes"
   },
   "93": {
     "mID": 93,
@@ -83,11 +88,12 @@
     "order": 8,
     "exsm": "",
     "smType": "mix",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=Of7KC-WQcpE\" target=\"_blank\">♪</a>",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=Of7KC-WQcpE",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/4lsr2reyebKMrEI6MygShD\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1016336570?i=1016336581\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1016336570?i=1016336581&app=itunes\" target=\"_blank\">iTn</a>"
+    "spf": "https://open.spotify.com/track/4lsr2reyebKMrEI6MygShD",
+    "apl": "https://music.apple.com/jp/album/1016336570?i=1016336581",
+    "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336581&app=itunes"
   },
   "94": {
     "mID": 94,
@@ -98,11 +104,12 @@
     "order": 10,
     "exsm": "",
     "smType": "mix",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=sGwwRjbeLWQ\" target=\"_blank\">♪</a>",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=sGwwRjbeLWQ",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/03XdlVWevtlnwyor1V0gOy\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1016336570?i=1016336584\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1016336570?i=1016336584&app=itunes\" target=\"_blank\">iTn</a>"
+    "spf": "https://open.spotify.com/track/03XdlVWevtlnwyor1V0gOy",
+    "apl": "https://music.apple.com/jp/album/1016336570?i=1016336584",
+    "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336584&app=itunes"
   },
   "95": {
     "mID": 95,
@@ -113,11 +120,12 @@
     "order": 12,
     "exsm": "",
     "smType": "mix",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=R-2ZA2MS7Yw\" target=\"_blank\">♪</a>",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=R-2ZA2MS7Yw",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3fS9dpr9PhIx4cGelrlaQl\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1016336570?i=1016336646\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1016336570?i=1016336646&app=itunes\" target=\"_blank\">iTn</a>"
+    "spf": "https://open.spotify.com/track/3fS9dpr9PhIx4cGelrlaQl",
+    "apl": "https://music.apple.com/jp/album/1016336570?i=1016336646",
+    "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336646&app=itunes"
   },
   "96": {
     "mID": 96,
@@ -128,11 +136,12 @@
     "order": 13,
     "exsm": "",
     "smType": "style",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=m1vDia2aSFE\" target=\"_blank\">♪</a>",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=m1vDia2aSFE",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/089OV4ewKgjWZYSmXq0ZMF\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1016336570?i=1016336647\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1016336570?i=1016336647&app=itunes\" target=\"_blank\">iTn</a>"
+    "spf": "https://open.spotify.com/track/089OV4ewKgjWZYSmXq0ZMF",
+    "apl": "https://music.apple.com/jp/album/1016336570?i=1016336647",
+    "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336647&app=itunes"
   },
   "97": {
     "mID": 97,
@@ -143,11 +152,12 @@
     "order": 14,
     "exsm": "",
     "smType": "mix",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=qIa_qjkOyuw\" target=\"_blank\">♪</a>",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=qIa_qjkOyuw",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/2Yh6S9FecdKx4inmBGJ2Zj\" target=\"_blank\">Spf</a>",
-    "apl": "<a href=\"https://music.apple.com/jp/album/1016336570?i=1016336648\" target=\"_blank\">Apl</a>",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1016336570?i=1016336648&app=itunes\" target=\"_blank\">iTn</a>"
+    "spf": "https://open.spotify.com/track/2Yh6S9FecdKx4inmBGJ2Zj",
+    "apl": "https://music.apple.com/jp/album/1016336570?i=1016336648",
+    "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336648&app=itunes"
   },
   "143": {
     "mID": 143,
@@ -159,10 +169,11 @@
     "exsm": "",
     "smType": "style",
     "yt": "",
+    "ytUrl": "",
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093265&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093265&app=itunes"
   },
   "144": {
     "mID": 144,
@@ -174,10 +185,11 @@
     "exsm": "",
     "smType": "mix",
     "yt": "",
+    "ytUrl": "",
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093267&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093267&app=itunes"
   },
   "145": {
     "mID": 145,
@@ -189,10 +201,11 @@
     "exsm": "",
     "smType": "style",
     "yt": "",
+    "ytUrl": "",
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093268&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093268&app=itunes"
   },
   "146": {
     "mID": 146,
@@ -204,10 +217,11 @@
     "exsm": "",
     "smType": "style",
     "yt": "",
+    "ytUrl": "",
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093269&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093269&app=itunes"
   },
   "147": {
     "mID": 147,
@@ -219,10 +233,11 @@
     "exsm": "",
     "smType": "mix",
     "yt": "",
+    "ytUrl": "",
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093270&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093270&app=itunes"
   },
   "148": {
     "mID": 148,
@@ -234,10 +249,11 @@
     "exsm": "",
     "smType": "mix",
     "yt": "",
+    "ytUrl": "",
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093271&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093271&app=itunes"
   },
   "149": {
     "mID": 149,
@@ -249,10 +265,11 @@
     "exsm": "",
     "smType": "mix",
     "yt": "",
+    "ytUrl": "",
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093272&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093272&app=itunes"
   },
   "150": {
     "mID": 150,
@@ -264,10 +281,11 @@
     "exsm": "",
     "smType": "mix",
     "yt": "",
+    "ytUrl": "",
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093273&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093273&app=itunes"
   },
   "151": {
     "mID": 151,
@@ -279,10 +297,11 @@
     "exsm": "",
     "smType": "mix",
     "yt": "",
+    "ytUrl": "",
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093274&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093274&app=itunes"
   },
   "152": {
     "mID": 152,
@@ -294,10 +313,11 @@
     "exsm": "",
     "smType": "mix",
     "yt": "",
+    "ytUrl": "",
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093277&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093277&app=itunes"
   },
   "153": {
     "mID": 153,
@@ -309,10 +329,11 @@
     "exsm": "",
     "smType": "mix",
     "yt": "",
+    "ytUrl": "",
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093279&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093279&app=itunes"
   },
   "154": {
     "mID": 154,
@@ -324,10 +345,11 @@
     "exsm": "",
     "smType": "mix",
     "yt": "",
+    "ytUrl": "",
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1471093264?i=1471093283&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093283&app=itunes"
   },
   "195": {
     "mID": 195,
@@ -338,11 +360,12 @@
     "order": 13,
     "exsm": "",
     "smType": "style",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=m5yzVQWU6wg\" target=\"_blank\">MV</a>",
+    "yt": "MV",
+    "ytUrl": "https://www.youtube.com/watch?v=m5yzVQWU6wg",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3XMVfayU5fdOonT3VCJ5uq\" target=\"_blank\">Spf</a>",
+    "spf": "https://open.spotify.com/track/3XMVfayU5fdOonT3VCJ5uq",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1758029307?i=1758029320&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029320&app=itunes"
   },
   "196": {
     "mID": 196,
@@ -353,11 +376,12 @@
     "order": 14,
     "exsm": "",
     "smType": "style",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=-Hq-n3Rf9fE\" target=\"_blank\">♪</a>",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=-Hq-n3Rf9fE",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/0UYflwgkLU7voQxgksOwPC\" target=\"_blank\">Spf</a>",
+    "spf": "https://open.spotify.com/track/0UYflwgkLU7voQxgksOwPC",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1758029307?i=1758029323&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029323&app=itunes"
   },
   "197": {
     "mID": 197,
@@ -368,11 +392,12 @@
     "order": 15,
     "exsm": "",
     "smType": "style",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=4EZb03NiJgs\" target=\"_blank\">♪</a>",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=4EZb03NiJgs",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/5x3Y7IScRTij6kgWmJOCUV\" target=\"_blank\">Spf</a>",
+    "spf": "https://open.spotify.com/track/5x3Y7IScRTij6kgWmJOCUV",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1758029307?i=1758029612&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029612&app=itunes"
   },
   "198": {
     "mID": 198,
@@ -383,11 +408,12 @@
     "order": 16,
     "exsm": "",
     "smType": "style",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=75h2eLe5or0\" target=\"_blank\">♪</a>",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=75h2eLe5or0",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/1CWJqdXIS7tAasX0DNhF12\" target=\"_blank\">Spf</a>",
+    "spf": "https://open.spotify.com/track/1CWJqdXIS7tAasX0DNhF12",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1758029307?i=1758029617&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029617&app=itunes"
   },
   "199": {
     "mID": 199,
@@ -398,11 +424,12 @@
     "order": 17,
     "exsm": "",
     "smType": "style",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=dPt45WmUlO8\" target=\"_blank\">♪</a>",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=dPt45WmUlO8",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/1WDV68IWZ8ZU0B5knIxBR2\" target=\"_blank\">Spf</a>",
+    "spf": "https://open.spotify.com/track/1WDV68IWZ8ZU0B5knIxBR2",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1758029307?i=1758029619&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029619&app=itunes"
   },
   "200": {
     "mID": 200,
@@ -413,11 +440,12 @@
     "order": 18,
     "exsm": "",
     "smType": "style",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=V99ydSIIEVc\" target=\"_blank\">♪</a>",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=V99ydSIIEVc",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/3vteFL2S37THxzPyKB6fOI\" target=\"_blank\">Spf</a>",
+    "spf": "https://open.spotify.com/track/3vteFL2S37THxzPyKB6fOI",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1758029307?i=1758029624&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029624&app=itunes"
   },
   "201": {
     "mID": 201,
@@ -428,10 +456,11 @@
     "order": 19,
     "exsm": "",
     "smType": "mix",
-    "yt": "<a href=\"https://www.youtube.com/watch?v=QBmSHrIaGpY\" target=\"_blank\">♪</a>",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=QBmSHrIaGpY",
     "lv": "",
-    "spf": "<a href=\"https://open.spotify.com/track/4dssz7UzzrhydlshdsTrB9\" target=\"_blank\">Spf</a>",
+    "spf": "https://open.spotify.com/track/4dssz7UzzrhydlshdsTrB9",
     "apl": "",
-    "itn": "<a href=\"https://itunes.apple.com/jp/album/1758029307?i=1758029693&app=itunes\" target=\"_blank\">iTn</a>"
+    "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029693&app=itunes"
   }
 }
