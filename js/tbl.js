@@ -109,7 +109,7 @@ export function createTable(config) {
   headers.forEach(header => {
     const th = document.createElement('th');
     th.textContent = header;
-    th.style.fontSize = '12px'; // 全部12px統一
+    // fontSize削除: CSSで.tbl thで指定済み
     tr.appendChild(th);
   });
   thead.appendChild(tr);

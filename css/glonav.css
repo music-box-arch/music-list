@@ -1,0 +1,100 @@
+#glo-nav {
+    margin-bottom: 2em;
+}
+
+#glnav-ul {
+    list-style: none;
+    padding: 0;
+    /*margin: 0.5em 0 3em 0;*/
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    justify-content: space-between;
+    /* 左右の"外側"の余白 */
+    margin: 0 4vw;
+    list-style: none;
+}
+
+/* 各ボタンの<li>要素 */
+#glnav-ul .glnav-li {
+    flex: 1;
+    margin: 0 0.5vw;
+    /* ボタン間の隙間 */
+}
+
+#glnav-ul .glnav-li:not(:last-child) {
+    margin-right: 0.5em;
+}
+
+/* 各ボタン：縦方向に配置して中央寄せ */
+.nav-btn {
+    display: flex;
+    /* 画像→テキストを縦に並べる */
+    flex-direction: column;
+    /* 横方向の中央寄せ */
+    align-items: center;
+    /* 縦方向の中央寄せ（必要なら） */
+    justify-content: center;
+    padding: 20px 20px 12px 20px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    /* 下線を消す */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    /* 文字の中央寄せ（念のため） */
+    text-align: center;
+    /* 画像と文字の間隔 */
+    gap: 3px;
+    height: 60%;
+}
+
+#glnav-ul .glnav-li a.nav-btn {
+    color: #222;
+}
+
+/* アイコンサイズ調整 */
+.nav-icon {
+    width: 28px;
+    height: 28px;
+    display: block;
+    /* inline img の余白を消す */
+}
+
+/* ホバー例 */
+.nav-btn:hover {
+    background-color: #f0f0f0;
+    text-decoration: none;
+}
+
+/* モバイルでの幅調整*/
+@media (max-width: 600px) {
+
+    main,
+    .content {
+        padding: 0 8px;
+        /* ← 青いエリアを広げる！ */
+    }
+
+    #glnav-ul {
+        gap: 6px;
+        /* ← ボタン同士の隙間をギュッと */
+        padding: 0;
+        /* ← glnav-ul の左右paddingがある場合も消す */
+    }
+
+    .nav-btn {
+        min-width: 60px;
+        width: 100%;
+        padding: 12px 5px 8px 5px;
+        font-size: 0.8rem;
+    }
+
+    .nav-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
