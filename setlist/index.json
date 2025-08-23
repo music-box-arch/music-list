@@ -6,11 +6,23 @@
         },
         {
             "name": "250726.json",
+            "flag": 1
+        },
+        {
+            "name": "250729.json",
+            "flag": 0
+        },
+        {
+            "name": "250805.json",
             "flag": 0
         },
         {
             "name": "250807.json",
             "flag": 1
+        },
+        {
+            "name": "250810.json",
+            "flag": 0
         }
     ]
 }

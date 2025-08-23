@@ -8,15 +8,15 @@ function sanitizeFilename(filename) {
   if (!filename || typeof filename !== 'string') {
     return null;
   }
-  
+
   // パストラバーサル文字列を除去
   const sanitized = filename.replace(/\.\./g, '').replace(/[\/\\]/g, '');
-  
+
   // 基本的なファイル名形式チェック（6桁数字.json）
   if (!/^\d{6}\.json$/.test(sanitized)) {
     return null;
   }
-  
+
   return sanitized;
 }
 
@@ -27,11 +27,11 @@ export async function initSL() {
     const { isValidResource } = await import('./tbl.js');
     const musicUrl = 'data/music-list-SL.json';
     const indexUrl = 'setlist/index.json';
-    
+
     if (!isValidResource(musicUrl) || !isValidResource(indexUrl)) {
       throw new Error('Invalid resource URLs detected');
     }
-    
+
     // 曲データとファイル一覧を並列fetch
     const [musicData, indexData] = await Promise.all([
       fetch(musicUrl).then(r => r.json()),
@@ -44,6 +44,7 @@ export async function initSL() {
       const bFile = typeof b === 'string' ? b : b.name;
       return (bFile.match(/(\d{6})/)?.[1] || '000000').localeCompare(aFile.match(/(\d{6})/)?.[1] || '000000');
     });
+    console.log('slFiles order:', slFiles.map(f => typeof f === 'string' ? f : f.name));
 
     // セットリストファイルを読み込んで表を構築
     const slData = [];
@@ -87,13 +88,13 @@ export async function initSL() {
 function createMCRow(colCount = 12) {
   const tr = document.createElement('tr');
   tr.style.backgroundColor = '#f0f0f0';
-  
+
   const td = document.createElement('td');
   td.setAttribute('colspan', colCount.toString());
   td.style.cssText = 'text-align: center; color: #666; font-size: 12px; padding: 2px;';
   td.textContent = 'MC';
   tr.appendChild(td);
-  
+
   return tr;
 }
 
@@ -138,10 +139,10 @@ async function buildBody(slData) {
   const container = document.querySelector('#setlist-tab .table-wrapper');
   container.textContent = '';
 
-  // 日付の新しい順にソート、最新5個まで
+  // 日付の新しい順にソート、最新10個まで
   const sortedSL = slData
     .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .slice(0, 5);
+    .slice(0, 10);
 
   for (const [setlistIndex, setlistData] of sortedSL.entries()) {
     await buildOneSl(container, setlistData, setlistIndex);
@@ -211,31 +212,20 @@ function formatDateForDisplay(dateStr) {
   return `${year}年${month.padStart(2, '0')}月${day.padStart(2, '0')}日`;
 }
 
-// 対応するボタンを削除
-function removeButton(setlistData) {
+// 対応するボタンを削除し、そのindexを返す
+function rmBtn(setlistData) {
   const container = document.querySelector('#setlist-tab .table-wrapper');
-  const buttons = container.querySelectorAll('button');
-  buttons.forEach(btn => {
-    if (btn.textContent.includes(formatDateForDisplay(setlistData.date))) {
-      btn.remove();
+  const children = Array.from(container.children);
+  for (let i = 0; i < children.length; i++) {
+    if (children[i].tagName === 'BUTTON' &&
+      children[i].textContent.includes(formatDateForDisplay(setlistData.date))) {
+      children[i].remove();
+      return i;
     }
-  });
+  }
+  return -1;
 }
 
-// 単一セットリスト表を追加
-async function addSlTbl(setlistData) {
-  const container = document.querySelector('#setlist-tab .table-wrapper');
-
-  // ファイル名の6桁で位置を計算
-  const newFileNum = setlistData.filename.match(/(\d{6})/)?.[1] || '000000';
-  const insertIndex = slFiles.findIndex(fileObj => {
-    const filename = typeof fileObj === 'string' ? fileObj : fileObj.name;
-    const fileNum = filename.match(/(\d{6})/)?.[1] || '000000';
-    return newFileNum > fileNum;
-  });
-
-  await buildOneSl(container, setlistData, insertIndex === -1 ? container.children.length : insertIndex);
-}
 
 // 単一セットリストの表を構築
 async function buildOneSl(container, setlistData, setlistIndex) {
@@ -244,7 +234,7 @@ async function buildOneSl(container, setlistData, setlistIndex) {
     const dateText = formatDateForDisplay(setlistData.date);
     const button = document.createElement('button');
     button.textContent = `${dateText}のセットリストを表示`;
-    button.style.cssText = `margin: ${setlistIndex > 0 ? '2em' : '1em'} 0 0.5em; padding: 4px 8px; background: white; color: #2564ad; border: 1px solid #2564ad; border-radius: 4px; cursor: pointer; font-size: 14px;`;
+    button.style.cssText = `display: block; margin: ${setlistIndex > 0 ? '2em' : '1em'} 0 0.5em; padding: 4px 8px; background: white; color: #2564ad; border: 1px solid #2564ad; border-radius: 4px; cursor: pointer; font-size: 14px;`;
     button.addEventListener('click', () => loadSetlistOnDemand(setlistData.filename));
     container.appendChild(button);
     return; // プレースホルダの場合は表を作らずに終了
@@ -263,11 +253,11 @@ async function buildOneSl(container, setlistData, setlistIndex) {
 
   const summary = document.createElement('summary');
   summary.style.cssText = 'color: #2564ad; cursor: pointer; margin: 0 0 0.5em 8px; font-size: 16px; list-style: none;';
-  
+
   const iconSpan = document.createElement('span');
   iconSpan.style.cssText = 'font-weight: bold; margin-right: 8px; transform: rotate(90deg); display: inline-block;';
   iconSpan.textContent = '＞';
-  
+
   summary.appendChild(iconSpan);
   summary.appendChild(document.createTextNode(titleText));
   details.appendChild(summary);
@@ -280,9 +270,12 @@ async function buildOneSl(container, setlistData, setlistIndex) {
 
   // 正しい位置に挿入
   const containerChildren = Array.from(container.children);
+  console.log('buildOneSl setlistIndex:', setlistIndex, 'containerChildren.length:', containerChildren.length);
   if (setlistIndex < containerChildren.length) {
+    console.log('insertBefore at index:', setlistIndex);
     container.insertBefore(details, containerChildren[setlistIndex]);
   } else {
+    console.log('appendChild');
     container.appendChild(details);
   }
 
@@ -342,9 +335,8 @@ async function loadSetlistOnDemand(filename) {
     if (loadedSetlists.has(filename)) {
       const cachedData = loadedSetlists.get(filename);
 
-      removeButton(cachedData);
-
-      await addSlTbl(cachedData);
+      const btnIdx = rmBtn(cachedData);
+      await buildOneSl(document.querySelector('#setlist-tab .table-wrapper'), cachedData, btnIdx);
       return;
     }
 
@@ -364,10 +356,8 @@ async function loadSetlistOnDemand(filename) {
     // キャッシュに保存
     loadedSetlists.set(filename, setlistData);
 
-    removeButton(setlistData);
-
-    // 新しいセットリストの表だけを追加
-    await addSlTbl(setlistData);
+    const btnIdx = rmBtn(setlistData);
+    await buildOneSl(document.querySelector('#setlist-tab .table-wrapper'), setlistData, btnIdx);
 
     // チェック状態をセットリストに反映
     if (window.aplCsCxt) {

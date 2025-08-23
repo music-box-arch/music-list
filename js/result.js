@@ -37,32 +37,32 @@ function getDisplayWidth(str) {
     return width;
 }
 
-function truncateByDisplayWidth(str, maxWidth, suffix = '') {
+function truncate(str, maxW, suffix = '') {
     const suffixW = getDisplayWidth(suffix);
 
-    // suffixが既にmaxWidthを超える場合
-    if (suffixW >= maxWidth) {
-        return suffix.length > 0 ? truncateByDisplayWidth(suffix, maxWidth, '') : '';
+    // suffixが既にmaxWを超える場合
+    if (suffixW >= maxW) {
+        return suffix.length > 0 ? truncate(suffix, maxW, '') : '';
     }
 
-    // 元の文字列がmaxWidth以内なら省略不要
+    // 元の文字列がmaxW以内なら省略不要
     const origW = getDisplayWidth(str);
-    if (origW <= maxWidth) {
+    if (origW <= maxW) {
         return str;
     }
 
     // 省略が必要な場合
-    const availW = maxWidth - suffixW;
-    let curWidth = 0;
+    const availW = maxW - suffixW;
+    let curW = 0;
     let result = '';
 
     for (const char of str) {
-        const charWidth = isFullwidth(char) ? 2 : 1;
-        if (curWidth + charWidth > availW) {
+        const charW = isFullwidth(char) ? 2 : 1;
+        if (curW + charW > availW) {
             break;
         }
         result += char;
-        curWidth += charWidth;
+        curW += charW;
     }
     return result + suffix;
 }
@@ -173,7 +173,7 @@ export async function buildMatrix(songIDs, discs, musicMap) {
 
     const headers = [''].concat(
         filtDiscs.map(d => {
-            const cdName = truncateByDisplayWidth(d['cd-name'], cdCharW, '…');
+            const cdName = truncate(d['cd-name'], cdCharW, '…');
             const songCount = d.tracks.filter(id => songIDs.includes(id)).length;
             // ヘッダーオブジェクトとして返す（テキスト + リンク情報）
             return {
@@ -201,8 +201,8 @@ export async function buildMatrix(songIDs, discs, musicMap) {
     const rows = sortedIDs.map(songID => {
         const songName = musicMap[songID] || `不明 (ID: ${songID})`;
 
-        // songCharWを表示幅としてcreateDisplayTitleに渡す
-        const dispName = createDisplayTitle(songName, songCharW);
+        // songCharWを表示幅としてcreateTtlに渡す
+        const dispName = createTtl(songName, songCharW);
 
         const row = [dispName].concat(
             filtDiscs.map(disc => disc.tracks.includes(songID) ? '○' : '')
@@ -215,7 +215,7 @@ export async function buildMatrix(songIDs, discs, musicMap) {
     return { headers, rows, rowHeaderW, colHeaderW };
 }
 
-export function createDisplayTitle(title, maxDisplayWidth) {
+export function createTtl(title, maxDispW) {
     // 1. style/mix系の曲名処理
     if (title.includes('(') && (title.includes('style)') || title.includes('mix)'))) {
         const baseTitle = title.split('(')[0].trim();
@@ -234,7 +234,7 @@ export function createDisplayTitle(title, maxDisplayWidth) {
 
             if (shortStyle) {
                 const shortStW = shortStyle === '…party' ? 7 : 6;
-                const truncBase = truncateByDisplayWidth(baseTitle, maxDisplayWidth - shortStW);
+                const truncBase = truncate(baseTitle, maxDispW - shortStW);
                 return truncBase + shortStyle;
             }
         }
@@ -242,25 +242,25 @@ export function createDisplayTitle(title, maxDisplayWidth) {
 
     // 2. 「アナザーワールド」処理
     if (title === 'アナザーワールド') {
-        if (maxDisplayWidth < 8) {
+        if (maxDispW < 8) {
             return 'アナザー…ルド';  // 8幅未満のときは固定表示
         } else {
             // 通常の省略処理
-            return truncateByDisplayWidth(title, maxDisplayWidth, '…');
+            return truncate(title, maxDispW, '…');
         }
     }
 
     // 3. 「アナザーワールドエンド」処理
     if (title === 'アナザーワールドエンド') {
         const origW = getDisplayWidth(title);  // 20幅
-        if (maxDisplayWidth >= origW) {
+        if (maxDispW >= origW) {
             // 幅に余裕がある場合は元のタイトルをそのまま表示
             return title;
         }
 
         const suffix = '…エンド';  // 8幅
         const basePart = 'アナザーワールド';
-        const truncBase = truncateByDisplayWidth(basePart, maxDisplayWidth - 8);
+        const truncBase = truncate(basePart, maxDispW - 8);
 
         // どんなに小さくても"アナザー…エンド"以上は切り詰めない
         if (getDisplayWidth(truncBase + suffix) < getDisplayWidth('アナザー…エンド')) {
@@ -272,19 +272,19 @@ export function createDisplayTitle(title, maxDisplayWidth) {
     // 4. 「プログラムcontinued (15th style)」処理
     if (title === 'プログラムcontinued (15th style)') {
         const origW = getDisplayWidth(title);  // 元のタイトルの幅
-        if (maxDisplayWidth >= origW) {
+        if (maxDispW >= origW) {
             // 幅に余裕がある場合は元のタイトルをそのまま表示
             return title;
         }
 
         const shortFormW = getDisplayWidth('プログラムcontinued15th');  // 23幅
-        if (maxDisplayWidth >= shortFormW) {
+        if (maxDispW >= shortFormW) {
             // 省略なしの短縮形が表示可能な場合
             return 'プログラムcontinued15th';
         } else {
             const suffix = '…15th';  // 6幅
             const basePart = 'プログラムcontinued';
-            const truncBase = truncateByDisplayWidth(basePart, maxDisplayWidth - 6);
+            const truncBase = truncate(basePart, maxDispW - 6);
 
             // どんなに小さくても"プログラム…15th"は表示
             if (getDisplayWidth(truncBase + suffix) < getDisplayWidth('プログラム…15th')) {
@@ -297,14 +297,14 @@ export function createDisplayTitle(title, maxDisplayWidth) {
     // 5. 「プログラムcontinued」処理
     if (title === 'プログラムcontinued') {
         const origW = getDisplayWidth(title);  // 18幅
-        if (maxDisplayWidth >= origW) {
+        if (maxDispW >= origW) {
             // 幅に余裕がある場合は元のタイトルをそのまま表示
             return title;
         }
 
         const suffix = '…ed';  // 4幅
         const basePart = 'プログラムcontinued';
-        const truncBase = truncateByDisplayWidth(basePart, maxDisplayWidth - 4);
+        const truncBase = truncate(basePart, maxDispW - 4);
 
         // 最小限の表示は保証
         if (getDisplayWidth(truncBase + suffix) < getDisplayWidth('プログラム…ed')) {
@@ -313,8 +313,32 @@ export function createDisplayTitle(title, maxDisplayWidth) {
         return truncBase + suffix;
     }
 
+    // 6. スノウ系曲名処理（4文字+…最小保証）
+    if (['スノウアンサー', 'スノウリバース', 'スノウループ'].includes(title)) {
+        const origW = getDisplayWidth(title);
+        if (maxDispW >= origW) return title;
+        
+        const minShow = title.slice(0, 4) + '…';  // 4文字+…
+        if (maxDispW < getDisplayWidth(minShow)) {
+            return minShow;
+        }
+        return truncate(title, maxDispW, '…');
+    }
+
+    // 7. さよなら系曲名処理（5文字+…最小保証）
+    if (['さよならサマータイムマシン', 'さよなら第九惑星'].includes(title)) {
+        const origW = getDisplayWidth(title);
+        if (maxDispW >= origW) return title;
+        
+        const minShow = title.slice(0, 5) + '…';  // 5文字+…
+        if (maxDispW < getDisplayWidth(minShow)) {
+            return minShow;
+        }
+        return truncate(title, maxDispW, '…');
+    }
+
     // デフォルト動作：特殊ルールに該当しない場合は末尾…(幅2)で省略
-    return truncateByDisplayWidth(title, maxDisplayWidth, '…');
+    return truncate(title, maxDispW, '…');
 }
 
 
