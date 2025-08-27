@@ -7,13 +7,28 @@
     <title>更新情報 - 自分用・曲一覧まとめ</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styletexts.css">
+    <link rel="stylesheet" href="css/glonav.css">
 </head>
 
 <body>
     <div class="page-container">
         <header>
             <h1>更新情報</h1>
-            <nav><a href="index.html">← トップに戻る</a></nav>
+            <!-- start:global-nav -->
+            <nav id="glo-nav">
+                <ul id="glnav-ul">
+                    <li class="glnav-li"><a href="index.html" class="nav-btn"><img src="img/home.svg" alt="ホーム"
+                                class="nav-icon">トップ</a>
+                    </li>
+                    <li class="glnav-li"><a href="updates.html" class="nav-btn"><img src="img/compose.svg" alt="更新"
+                                class="nav-icon">更新情報</a>
+                    </li>
+                    <li class="glnav-li"><a href="notes.html" class="nav-btn"><img src="img/clipboard.svg" alt="ひとりごと"
+                                class="nav-icon">ひとりごと</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- end:global-nav -->
         </header>
 
         <!-- 目次（自動生成される） -->
