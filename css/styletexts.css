@@ -9,7 +9,6 @@
 
 h1 {
   margin: .5em;
-  /* 下だけ余白、他ゼロ */
 }
 
 header {
@@ -42,14 +41,11 @@ main {
 }
 
 .content h3 {
-  color: #2564ad;
-  margin: 1.5em 0 .5em .2em;
   border-left: 4px double #2564ad;
-  padding: .1em 0 .1em .7em
-}
-
-.content p {
-  margin-bottom: 1em;
+  padding: .1em 0 .1em .7em;
+  color: #495057;
+  font-size: 1.1em;
+  margin: 1.5em 0 .8em;
 }
 
 .content ul,
@@ -99,19 +95,20 @@ footer {
 }
 
 /* 更新情報ページ用のスタイル */
+#table-of-contents::before {
+  content: "目次";
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
 .toc-nav {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 1.5em;
   margin-bottom: 2em;
-}
-
-.toc-nav h3 {
-  margin-top: 0;
-  margin-bottom: 1em;
-  color: #2564ad;
-  font-size: 1em;
 }
 
 .toc-nav ul {
@@ -158,23 +155,20 @@ footer {
   margin-bottom: 0;
 }
 
+.update-article :first-child {
+  margin-left: auto;
+  width: fit-content;
+}
+
 .update-date {
   background: #f8f9fa;
-  color: #6c757d;
+  color: #5e666d;
   font-size: .9em;
-  padding: .5em 1em;
+  padding: .5em .8em;
   border-radius: 4px;
-  display: inline-block;
-  margin-bottom: 1em;
   border-left: 3px solid #2564ad;
 }
 
 .update-content {
   margin-top: 1em;
-}
-
-.update-content h3 {
-  color: #495057;
-  font-size: 1.1em;
-  margin: 1.5em 0 .8em;
 }
