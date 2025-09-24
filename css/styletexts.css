@@ -155,7 +155,7 @@ footer {
   margin-bottom: 0;
 }
 
-.update-article :first-child {
+.update-article .update-date:first-child {
   margin-left: auto;
   width: fit-content;
 }
