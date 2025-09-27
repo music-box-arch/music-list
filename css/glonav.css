@@ -20,12 +20,6 @@
     margin: 2px;
 }
 
-/*
-#glnav-ul .glnav-li:not(:last-child) {
-    margin-right: clamp(4px, 0.5vw, 8px);
-}
-    */
-
 /* 各ボタン：縦方向に配置して中央寄せ */
 .nav-btn {
     display: flex;

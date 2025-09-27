@@ -5,15 +5,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>更新情報 - 自分用・曲一覧まとめ</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/styletexts.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/styletexts.css">
+    <style>
+        .site-name {
+            text-decoration: none;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #glo-nav {
+            flex-shrink: 0;
+            margin: 0;
+        }
+
+        #glnav-ul {
+            flex-shrink: 0;
+            list-style: none;
+            padding: 0;
+            /*margin: 0.5em 0 3em 0;*/
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 6px;
+            justify-content: space-between;
+            /* 左右の"外側"の余白 */
+            margin: 0 4vw;
+        }
+
+        /* 各ボタンの<li>要素 */
+        #glnav-ul .glnav-li {
+            flex-shrink: 0;
+            flex: 1;
+            margin: .2px;
+        }
+
+        /* 各ボタン：縦方向に配置して中央寄せ */
+        .nav-btn {
+            flex-shrink: 0;
+            display: flex;
+            /* 画像→テキストを縦に並べる */
+            flex-direction: column;
+            /* 横方向の中央寄せ */
+            align-items: center;
+            /* 縦方向の中央寄せ（必要なら） */
+            justify-content: center;
+            padding: 12px 5px 8px 5px;
+            border: 1px solid #000;
+            border-radius: 8px;
+            background-color: #fff;
+            color: #333;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-align: center;
+            /* 画像と文字の間隔 */
+            gap: 3px;
+            height: 60%;
+        }
+
+        #glnav-ul .glnav-li a.nav-btn {
+            color: #222;
+        }
+
+        /* アイコンサイズ調整 */
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+            display: block;
+            /* inline img の余白を消す */
+        }
+
+        /* ホバー例 */
+        .nav-btn:hover {
+            background-color: #f0f0f0;
+            text-decoration: none;
+        }
+
+        /* モバイルでの幅調整*/
+        @media (max-width: 600px) {
+
+            main,
+            .content {
+                padding: 0 8px;
+                /* ← 青いエリアを広げる！ */
+            }
+
+
+            .nav-btn {
+                min-width: 60px;
+                width: 100%;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="page-container">
         <header>
-            <h1>このサイトの設計について</h1>
-            <nav><a href="index.html">← トップに戻る</a></nav>
+            <div class="header-content">
+                <a href="" class="site-name">自分用・曲一覧まとめ</a>
+                <!-- start:global-nav -->
+                <nav id="glo-nav">
+                    <ul id="glnav-ul">
+                        <li class="glnav-li"><a href="/index.html" class="nav-btn"><img src="/img/home.svg" alt="ホーム"
+                                    class="nav-icon">トップ</a>
+                        </li>
+                        <li class="glnav-li"><a href="/about.html" class="nav-btn"><img src="/img/book.svg"
+                                    alt="このサイトについて" class="nav-icon">about</a>
+                        </li>
+                        <li class="glnav-li"><a href="/articles.html" class="nav-btn"><img src="/img/compose.svg"
+                                    alt="ひとりごと" class="nav-icon">ひとりごと</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end:global-nav -->
         </header>
 
         <!-- 目次（自動生成される） -->
