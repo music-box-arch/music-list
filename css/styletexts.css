@@ -66,11 +66,6 @@ footer {
   font-size: 12px;
 }
 
-/* プライバシーポリシー用の特別なスタイル */
-.privacy-section {
-  margin-bottom: 2em;
-}
-
 .effective-date {
   background: #f0f4f8;
   color: #666;
@@ -82,20 +77,8 @@ footer {
   border: 1px solid #e1e8ed;
 }
 
-.contact-info {
-  background: #f7fafd;
-  padding: 1em;
-  border-left: 3px solid #2564ad;
-  margin: 1em 0;
-}
-
-/* 最初のセクションは特別な色 */
-.privacy-section:first-of-type h2:before {
-  color: #2564ad;
-}
-
 /* 更新情報ページ用のスタイル */
-#table-of-contents::before {
+#toc-nav::before {
   content: "目次";
   display: block;
   font-weight: bold;
@@ -103,7 +86,7 @@ footer {
   text-align: center;
 }
 
-.toc-nav {
+#toc-nav {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 4px;
@@ -111,13 +94,13 @@ footer {
   margin-bottom: 2em;
 }
 
-.toc-nav ul {
+#toc-nav ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-.toc-nav li {
+#toc-nav li {
   margin: .5em;
 }
 
@@ -143,19 +126,12 @@ footer {
   padding-left: .5em;
 }
 
-/* 更新記事のスタイル */
-.update-article {
-  border-bottom: 1px solid #e9ecef;
+article {
   padding-bottom: 2em;
-  margin-bottom: 2em;
+  margin: 0 2em .5em;
 }
 
-.update-article:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-}
-
-.update-article .update-date:first-child {
+.update-date:first-child {
   margin-left: auto;
   width: fit-content;
 }

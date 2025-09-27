@@ -7,11 +7,11 @@ async function loadSubNo() {
     if (!subNoMap) {
         const { isValidResource } = await import('./tbl.js');
         const url = 'data/sub-no.json';
-        
+
         if (!isValidResource(url)) {
             throw new Error('Invalid resource URL detected');
         }
-        
+
         const response = await fetch(url);
         subNoMap = await response.json();
     }
@@ -23,11 +23,11 @@ async function loadSm() {
     if (!smData) {
         const { isValidResource } = await import('./tbl.js');
         const url = 'data/music-list-sm.json';
-        
+
         if (!isValidResource(url)) {
             throw new Error('Invalid resource URL detected');
         }
-        
+
         const response = await fetch(url);
         smData = await response.json();
     }
@@ -101,11 +101,11 @@ async function toggleSm(showStyle, showMix) {
         columns: ['title', 'yt', 'lv', 'spf', 'apl', 'itn', 'exsm', 'firstCd', 'order', 'cdDate'],
         textOnlyColumns: [0, 6, 7, 8, 9], // title, exsm, firstCd, order, cdDate
         cstmRow: (tr, song) => {
-            if (song.mID === 93) tr.cells[1].classList.add('smltxt');
+            if (song.mID === 93) tr.cells[1].classList.add('small');
             tr.classList.add('sm-row');
         }
     });
-    
+
     // 作成された行を適切な位置に挿入
     Array.from(table.querySelector('tbody').children).forEach(newRow => {
         const songId = parseInt(newRow.querySelector('.chk').dataset.id);
