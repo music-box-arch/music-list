@@ -161,7 +161,7 @@
     <main>
         <button class="btn clearAllChecksBtn">チェックをオールクリア</button>
         <p>※ 表は横にスクロールできます</p>
-        <div id="checklistArea">
+        <section id="checklistArea">
             <div id="songChecklist"></div>
             <button class="btn showDiscsButton" disabled>チェックした曲を含むCDを見る</button>
 
@@ -213,9 +213,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <button class="showDiscsButton" disabled>チェックした曲を含むCDを見る</button>
-        <div id="resultArea">
+        <section id="resultArea">
             <h2>含まれるCD一覧：</h2>
             <div id="resultCdTypeFilter">
                 <label><input type="radio" name="resultCdType" value="both" checked> 両方表示</label>
@@ -225,7 +225,7 @@
             <div class="table-wrapper">
                 <div id="discsTbl"></div>
             </div>
-        </div>
+        </section>
     </main>
     <script type="module" src="js/main.js"></script>
 </body>
