@@ -8,39 +8,39 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/styletexts.css">
     <style>
-        .site-name {
-            text-decoration: none;
-        }
-
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 1em;
+        }
+
+        .site-name {
+            text-decoration: none;
+            flex-shrink: 0;
         }
 
         #glo-nav {
             flex-shrink: 0;
-            margin: 0;
+            width: 40vw;
+            min-width: 100px;
+            max-width: 300px;
+            background-color: #fefefe;
         }
 
         #glnav-ul {
             flex-shrink: 0;
             list-style: none;
             padding: 0;
-            /*margin: 0.5em 0 3em 0;*/
             display: flex;
             flex-wrap: nowrap;
             gap: 6px;
-            /* 左右の"外側"の余白 */
             margin: 0;
-            width: 300px;
         }
 
         /* 各ボタンの<li>要素 */
         #glnav-ul .glnav-li {
-            flex-shrink: 0;
             flex: 1;
-            margin: .2px;
         }
 
         /* 各ボタン：縦方向に配置して中央寄せ */
@@ -51,22 +51,19 @@
             align-items: center;
             justify-content: center;
             padding: 12px 5px 8px 5px;
-            border: 1px solid #000;
-            border-radius: 8px;
-            background-color: #fff;
             color: #333;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 0 6px #ccc;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: 500;
             font-size: 0.9rem;
             text-align: center;
-            /* 画像と文字の間隔 */
             gap: 3px;
             height: 60%;
         }
 
         #glnav-ul .glnav-li a.nav-btn {
-            color: #222;
+            color: #444;
         }
 
         /* アイコンサイズ調整 */
@@ -79,6 +76,7 @@
         /* ホバー例 */
         .nav-btn:hover {
             background-color: #f0f0f0;
+            box-shadow: none;
             text-decoration: none;
         }
 
@@ -91,14 +89,32 @@
                 /* ← 青いエリアを広げる！ */
             }
 
+            .header-content {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 1rem;
+            }
+
+            #glo-nav {
+                width: 100%;
+                max-width: none;
+            }
+
             #glnav-ul {
-                width: 100px;
+                gap: 1px;
+            }
+
+            .nav-icon {
+                width: 18px;
+                height: 18px;
+                display: block;
             }
 
             .nav-btn {
-                min-width: 60px;
-                width: 100%;
+                min-width: 50px;
+                width: 80%;
                 font-size: 0.8rem;
+                line-height: 1.1em;
             }
         }
     </style>
@@ -119,7 +135,7 @@
                                     alt="このサイトについて" class="nav-icon">about</a>
                         </li>
                         <li class="glnav-li"><a href="/articles.html" class="nav-btn"><img src="/img/compose.svg"
-                                    alt="ひとりごと" class="nav-icon">ひとりごと</a>
+                                    alt="ひとりごと" class="nav-icon">記事</a>
                         </li>
                     </ul>
                 </nav>
@@ -131,14 +147,16 @@
             <h1>記事タイトル</h1>
             <!-- 目次（自動生成される） -->
             <nav id="toc-nav">
-                <h2>目次</h2>
+                <span id="toc-title">目次</span>
                 <ul id="toc-list"></ul>
             </nav>
             <section class="content">
 
                 <!-- 更新記事のテンプレート -->
                 <article class="update-article">
-                    <time datetime="2025-08-04" class="update-date">2025年8月4日</time>
+                    <div class="update-date">
+                        <time datetime="2025-08-04">2025年8月4日</time>
+                    </div>
                     <h2>全曲一覧から曲を探せて、さらに視聴方法がわかる！</h2>
                     <div class="update-content">
                         <p>チェックした曲を含むCDの表示で、各CDにアマゾンの購入リンクが表示されるようになりました。</p>
