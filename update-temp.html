@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記事タイトル - 自分用・曲一覧まとめ</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/styletexts.css">
+    <style>
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+        }
+
+        .site-name {
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        #glo-nav {
+            flex-shrink: 0;
+            width: 40vw;
+            min-width: 100px;
+            max-width: 300px;
+            background-color: #fefefe;
+        }
+
+        #glnav-ul {
+            flex-shrink: 0;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 6px;
+            margin: 0;
+        }
+
+        /* 各ボタンの<li>要素 */
+        #glnav-ul .glnav-li {
+            flex: 1;
+        }
+
+        /* 各ボタン：縦方向に配置して中央寄せ */
+        .nav-btn {
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 5px 8px 5px;
+            color: #333;
+            box-shadow: 0 0 6px #ccc;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-align: center;
+            gap: 3px;
+            height: 60%;
+        }
+
+        #glnav-ul .glnav-li a.nav-btn {
+            color: #444;
+        }
+
+        /* アイコンサイズ調整 */
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+            display: block;
+        }
+
+        /* ホバー例 */
+        .nav-btn:hover {
+            background-color: #f0f0f0;
+            box-shadow: none;
+            text-decoration: none;
+        }
+
+        /* モバイルでの幅調整*/
+        @media (max-width: 600px) {
+
+            main,
+            .content {
+                padding: 0 8px;
+                /* ← 青いエリアを広げる！ */
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 1rem;
+            }
+
+            #glo-nav {
+                width: 100%;
+                max-width: none;
+            }
+
+            #glnav-ul {
+                gap: 1px;
+            }
+
+            .nav-icon {
+                width: 18px;
+                height: 18px;
+                display: block;
+            }
+
+            .nav-btn {
+                min-width: 50px;
+                width: 80%;
+                font-size: 0.8rem;
+                line-height: 1.1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <header>
+            <div class="header-content">
+                <a href="" class="site-name">自分用・曲一覧まとめ</a>
+                <!-- start:global-nav -->
+                <nav id="glo-nav">
+                    <ul id="glnav-ul">
+                        <li class="glnav-li"><a href="/index.html" class="nav-btn"><img src="/img/home.svg" alt="ホーム"
+                                    class="nav-icon">トップ</a>
+                        </li>
+                        <li class="glnav-li"><a href="/about.html" class="nav-btn"><img src="/img/book.svg"
+                                    alt="このサイトについて" class="nav-icon">about</a>
+                        </li>
+                        <li class="glnav-li"><a href="/articles.html" class="nav-btn"><img src="/img/compose.svg"
+                                    alt="ひとりごと" class="nav-icon">記事</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end:global-nav -->
+        </header>
+
+        <main>
+            <h1>記事タイトル</h1>
+            <!-- 目次（自動生成される） -->
+            <nav id="toc-nav">
+                <span id="toc-title">目次</span>
+                <ul id="toc-list"></ul>
+            </nav>
+            <section class="content">
+
+                <!-- 更新記事のテンプレート -->
+                <article class="update-article">
+                    <div class="update-date">
+                        <time datetime="2025-08-04">2025年8月4日</time>
+                    </div>
+                    <h2>全曲一覧から曲を探せて、さらに視聴方法がわかる！</h2>
+                    <div class="update-content">
+                        <p>チェックした曲を含むCDの表示で、各CDにアマゾンの購入リンクが表示されるようになりました。</p>
+
+                        <h3>変更内容</h3>
+                        <ul>
+                            <li>CDテーブルのヘッダーに「Amz」リンクを追加</li>
+                            <li>含まれる曲数も括弧内に表示</li>
+                            <li>新しいタブで開くように設定</li>
+                        </ul>
+
+                        <h3>使い方</h3>
+                        <p>楽曲をチェックして「チェックした曲を含むCDを見る」ボタンを押すと、表の上部にCDごとのアマゾンリンクが表示されます。</p>
+                    </div>
+                    <h2>CDテーブルにアマゾンリンクを追加</h2>
+                    <div class="update-content">
+                        <p>チェックした曲を含むCDの表示で、各CDにアマゾンの購入リンクが表示されるようになりました。</p>
+
+                        <h3>変更内容</h3>
+                        <ul>
+                            <li>CDテーブルのヘッダーに「Amz」リンクを追加</li>
+                            <li>含まれる曲数も括弧内に表示</li>
+                            <li>新しいタブで開くように設定</li>
+                        </ul>
+
+                        <h3>使い方</h3>
+                        <p>楽曲をチェックして「チェックした曲を含むCDを見る」ボタンを押すと、表の上部にCDごとのアマゾンリンクが表示されます。</p>
+                    </div>
+                </article>
+                <!-- さらに記事を追加する場合はここに -->
+
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 自分用・曲一覧まとめ</p>
+        </footer>
+    </div>
+
+    <script src="js/toc-generator.js"></script>
+</body>
+
+</html>

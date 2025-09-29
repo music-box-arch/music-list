@@ -1,57 +1,51 @@
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-}
-
-.site-name {
-    text-decoration: none;
-    flex-shrink: 0;
-}
-
 #glo-nav {
-    flex-shrink: 0;
-    width: 40vw;
-    min-width: 100px;
-    max-width: 300px;
-    background-color: #fefefe;
+    margin: 0 2em 2em 2em;
 }
 
 #glnav-ul {
-    flex-shrink: 0;
     list-style: none;
     padding: 0;
+    /*margin: 0.5em 0 3em 0;*/
     display: flex;
     flex-wrap: nowrap;
     gap: 6px;
-    margin: 0;
+    justify-content: space-between;
+    /* 左右の"外側"の余白 */
+    margin: 0 4vw;
 }
 
+/* 各ボタンの<li>要素 */
 #glnav-ul .glnav-li {
     flex: 1;
+    margin: 2px;
 }
 
+/* 各ボタン：縦方向に配置して中央寄せ */
 .nav-btn {
-    flex-shrink: 0;
     display: flex;
+    /* 画像→テキストを縦に並べる */
     flex-direction: column;
+    /* 横方向の中央寄せ */
     align-items: center;
+    /* 縦方向の中央寄せ（必要なら） */
     justify-content: center;
     padding: 12px 5px 8px 5px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: #fff;
     color: #333;
-    box-shadow: 0 0 6px #ccc;
-    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9rem;
     text-align: center;
+    /* 画像と文字の間隔 */
     gap: 3px;
     height: 60%;
 }
 
 #glnav-ul .glnav-li a.nav-btn {
-    color: #444;
+    color: #222;
 }
 
 /* アイコンサイズ調整 */
@@ -59,12 +53,12 @@
     width: 24px;
     height: 24px;
     display: block;
+    /* inline img の余白を消す */
 }
 
 /* ホバー例 */
 .nav-btn:hover {
     background-color: #f0f0f0;
-    box-shadow: none;
     text-decoration: none;
 }
 
@@ -77,31 +71,10 @@
         /* ← 青いエリアを広げる！ */
     }
 
-    .header-content {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 1rem;
-    }
-
-    #glo-nav {
-        width: 100%;
-        max-width: none;
-    }
-
-    #glnav-ul {
-        gap: 1px;
-    }
-
-    .nav-icon {
-        width: 18px;
-        height: 18px;
-        display: block;
-    }
 
     .nav-btn {
-        min-width: 50px;
-        width: 80%;
+        min-width: 60px;
+        width: 100%;
         font-size: 0.8rem;
-        line-height: 1.1em;
     }
 }
