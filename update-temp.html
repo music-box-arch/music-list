@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>更新情報 - 自分用・曲一覧まとめ</title>
+    <title>記事タイトル - 自分用・曲一覧まとめ</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/styletexts.css">
     <style>
@@ -31,9 +31,9 @@
             display: flex;
             flex-wrap: nowrap;
             gap: 6px;
-            justify-content: space-between;
             /* 左右の"外側"の余白 */
-            margin: 0 4vw;
+            margin: 0;
+            width: 300px;
         }
 
         /* 各ボタンの<li>要素 */
@@ -47,11 +47,8 @@
         .nav-btn {
             flex-shrink: 0;
             display: flex;
-            /* 画像→テキストを縦に並べる */
             flex-direction: column;
-            /* 横方向の中央寄せ */
             align-items: center;
-            /* 縦方向の中央寄せ（必要なら） */
             justify-content: center;
             padding: 12px 5px 8px 5px;
             border: 1px solid #000;
@@ -77,7 +74,6 @@
             width: 24px;
             height: 24px;
             display: block;
-            /* inline img の余白を消す */
         }
 
         /* ホバー例 */
@@ -95,6 +91,9 @@
                 /* ← 青いエリアを広げる！ */
             }
 
+            #glnav-ul {
+                width: 100px;
+            }
 
             .nav-btn {
                 min-width: 60px;
@@ -128,13 +127,13 @@
             <!-- end:global-nav -->
         </header>
 
-        <!-- 目次（自動生成される） -->
-        <nav id="toc-nav">
-            <h2>目次</h2>
-            <ul id="toc-list"></ul>
-        </nav>
-
         <main>
+            <h1>記事タイトル</h1>
+            <!-- 目次（自動生成される） -->
+            <nav id="toc-nav">
+                <h2>目次</h2>
+                <ul id="toc-list"></ul>
+            </nav>
             <section class="content">
 
                 <!-- 更新記事のテンプレート -->
