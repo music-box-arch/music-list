@@ -8,7 +8,8 @@
 }
 
 h1 {
-  margin: .4em;
+  margin: .5em .3em;
+  font-size: 24px;
 }
 
 header {
@@ -26,9 +27,10 @@ nav a:hover {
   text-decoration: underline;
 }
 
-main {
-  line-height: 1.6;
-  margin-bottom: 3em;
+.content {
+  line-height: 1.7;
+  margin: 0 1em 3em;
+  padding-bottom: 2em;
 }
 
 .content h2 {
@@ -87,9 +89,9 @@ footer {
 #toc-nav {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 1.5em;
-  margin: 0 .2em 2em;
+  margin: 0 1.5em 2em;
 }
 
 #toc-nav ul {
@@ -99,7 +101,7 @@ footer {
 }
 
 #toc-nav li {
-  margin: 0;
+  margin: 0 0 .2em 1em;
 }
 
 .toc-link {
@@ -124,11 +126,6 @@ footer {
   padding-left: .5em;
 }
 
-article {
-  padding-bottom: 2em;
-  margin: 0 .2em 1em;
-}
-
 .update-date {
   margin-left: auto;
   width: fit-content;
@@ -142,4 +139,46 @@ article {
 
 .update-content {
   margin-top: 1em;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-container {
+    margin: 0;
+    padding: .2em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .content {
+    margin: .1em;
+    padding-bottom: 2em;
+  }
+
+  h1 {
+    line-height: 1.3;
+  }
+
+  #toc-nav {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: .5em;
+    margin: 0 1.5em 1em;
+  }
+
+  p {
+    margin: .5em;
+  }
 }
