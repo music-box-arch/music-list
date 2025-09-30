@@ -1,14 +1,14 @@
 .page-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 1.5em;
+  padding: 2em;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  margin: .5em;
+  margin: .4em;
 }
 
 header {
@@ -35,8 +35,8 @@ main {
   color: #2564ad;
   border-bottom: 1px solid #ccd;
   padding: .1em 0 .1em .6em;
-  margin-top: 1em;
-  border-left: 6px solid #2564ad;
+  margin: 1em .2em 0;
+  border-left: 4px solid #2564ad;
   border-radius: 4px;
 }
 
@@ -89,7 +89,7 @@ footer {
   border: 1px solid #e9ecef;
   border-radius: 4px;
   padding: 1.5em;
-  margin-bottom: 2em;
+  margin: 0 .2em 2em;
 }
 
 #toc-nav ul {
@@ -99,13 +99,13 @@ footer {
 }
 
 #toc-nav li {
-  margin: .5em;
+  margin: 0;
 }
 
 .toc-link {
   color: #495057;
   text-decoration: none;
-  padding: .3em 0;
+  padding: .2em 0;
   display: block;
   border-radius: 3px;
   transition: all .2s ease;
@@ -114,7 +114,7 @@ footer {
 .toc-link:hover {
   color: #2564ad;
   background: #e9ecef;
-  padding-left: .5em;
+  padding-left: .2em;
 }
 
 .toc-link.active {
