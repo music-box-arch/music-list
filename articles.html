@@ -43,18 +43,22 @@
 
         <main>
             <section class="content">
-                <h1>記事たち</h1>
-                <h2>今までに書いた記事を種類別に置いとく</h2>
-                <p>好きなアーティストの曲リストを自分用にまとめているサイトです。楽曲の検索やCD収録情報の確認などができます。</p>
-
+                <h1>今までに書いた記事を種類別に置いとく</h1>
+                <!-- 目次（自動生成される） -->
+                <nav id="toc-nav">
+                    <span id="toc-title">目次</span>
+                    <ul id="toc-list"></ul>
+                </nav>
                 <h2>ユニゾン楽曲系の記事</h2>
                 <ul>
                     <li>斎藤宏介が英語発音してる歌詞をピックアップした</li>
                 </ul>
                 <h2>田淵智也系の記事</h2>
                 <ul>
-                    <li>田淵智也の提供曲が気になった人へYouTube編</li>
-                    <li>田淵智也の提供曲が気になった人へApple Music編</li>
+                    <li><a href="articles/tabuchi-recommend-youtube.html" target="_blank"
+                            rel="noopener noreferrer">まずおすすめする田淵濃いめ曲 YouTube編</a></li>
+                    <li><a href="articles/tabuchi-recommend-applemusic.html" target="_blank"
+                            rel="noopener noreferrer">まずおすすめする田淵濃いめ曲 Apple Music編</a></li>
                 </ul>
             </section>
         </main>
@@ -63,6 +67,7 @@
             <p>&copy; 2025 自分用・曲一覧まとめ</p>
         </footer>
     </div>
+    <script src="js/toc-generator.js"></script>
 </body>
 
 </html>

@@ -12,7 +12,7 @@
                  img-src 'self' data:; 
                  font-src 'self';
                  object-src 'none';">
-    <title>このサイトについて - 自分用・曲一覧まとめ</title>
+    <title>このサイトについて・使い方 - 自分用・曲一覧まとめ</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styletexts.css">
     <link rel="stylesheet" href="css/glonav.css">
@@ -44,31 +44,32 @@
         <main>
             <div class="content">
                 <h1>このサイトについて</h1>
-                <section>
-                    <h2>サイトの概要</h2>
-                    <p>好きなアーティストの曲リストを自分用にまとめているサイトです。楽曲の検索やCD収録情報の確認などができます。</p>
+                <!-- 目次（自動生成される） -->
+                <nav id="toc-nav">
+                    <span id="toc-title">目次</span>
+                    <ul id="toc-list"></ul>
+                </nav>
 
-                    <h2>主な機能</h2>
-                    <ul>
-                        <li>楽曲一覧の表示・検索</li>
-                        <li>チェックボックスによる楽曲選択</li>
-                        <li>選択した楽曲を含むCDの一覧表示</li>
-                        <li>サブスクリプション配信なし楽曲の絞り込み</li>
-                        <li>スタイル・ミックス楽曲の表示切り替え</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>データについて</h2>
-                    <p>掲載されている情報は個人的な整理を目的としたものです。サイト制作者もまだ所持していないものもあり、記載にミスがある場合もあります。ご了承ください。収集し次第正しい情報に更新していく予定です。
-                    </p>
-                </section>
-                <section>
-                    <h2>関連ページ</h2>
-                    <ul>
-                        <li><a href="updates.html">更新情報</a> - サイトの新機能や変更内容</li>
-                        <li><a href="privacy.html">プライバシーポリシー</a> - 個人情報の取り扱いについて</li>
-                    </ul>
-                </section>
+                <h2>サイトの概要</h2>
+                <p>好きなアーティストの曲リストを自分用にまとめているサイトです。楽曲の検索やCD収録情報の確認などができます。</p>
+
+                <h2>主な機能</h2>
+                <ul>
+                    <li>楽曲一覧の表示・検索</li>
+                    <li>チェックボックスによる楽曲選択</li>
+                    <li>選択した楽曲を含むCDの一覧表示</li>
+                    <li>サブスクリプション配信なし楽曲の絞り込み</li>
+                    <li>スタイル・ミックス楽曲の表示切り替え</li>
+                </ul>
+                <h2>データについて</h2>
+                <p>掲載されている情報は個人的な整理を目的としたものです。サイト制作者もまだ所持していないものもあり、記載にミスがある場合もあります。ご了承ください。収集し次第正しい情報に更新していく予定です。
+                </p>
+
+                <h2>関連ページ</h2>
+                <ul>
+                    <li><a href="updates.html">更新情報</a> - サイトの新機能や変更内容</li>
+                    <li><a href="privacy.html">プライバシーポリシー</a> - 個人情報の取り扱いについて</li>
+                </ul>
             </div>
         </main>
 
@@ -76,6 +77,7 @@
             <p>&copy; 2025 自分用・曲一覧まとめ</p>
         </footer>
     </div>
+    <script src="js/toc-generator.js"></script>
 </body>
 
 </html>

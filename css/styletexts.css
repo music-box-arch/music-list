@@ -45,9 +45,9 @@ nav a:hover {
 .content h3 {
   border-left: 4px double #2564ad;
   padding: .1em 0 .1em .7em;
+  margin: 1em .4em .5em;
   color: #495057;
   font-size: 1.1em;
-  margin: 1.5em 0 .8em;
 }
 
 .content ul,
