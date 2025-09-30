@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- descriptionは以下を書き換え -->
     <meta name="description" content="好きなバンドの聴きたい曲がどこで入手できるか調べられるサイト">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
@@ -48,12 +49,13 @@
                 <!-- 下の記事タイトルを書き換え -->
                 <h1>記事タイトル</h1>
                 <div class="update-date">
+                    <!-- 投稿日を置き換え。datetimeの値も忘れずに -->
                     <time datetime="2025-08-17">2025年8月17日</time>
                 </div>
                 <!-- 目次前に何か書くならこの下 -->
 
                 <!-- 目次（自動生成される） -->
-                <nav id="toc-nav">
+                <nav id="toc-nav" aria-label="記事内目次">
                     <span id="toc-title">目次</span>
                     <ul id="toc-list"></ul>
                 </nav>
