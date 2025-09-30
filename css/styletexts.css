@@ -8,7 +8,7 @@
 }
 
 h1 {
-  margin: .5em .3em;
+  margin: .5em .3em .1em;
   font-size: 24px;
 }
 
@@ -37,7 +37,7 @@ nav a:hover {
   color: #2564ad;
   border-bottom: 1px solid #ccd;
   padding: .1em 0 .1em .6em;
-  margin: 1em .2em 0;
+  margin: 1em .2em .5em;
   border-left: 4px solid #2564ad;
   border-radius: 4px;
 }
@@ -91,7 +91,7 @@ footer {
   border: 1px solid #e9ecef;
   border-radius: 6px;
   padding: 1.5em;
-  margin: 0 1.5em 2em;
+  margin: .5em 1.5em 2em;
 }
 
 #toc-nav ul {
@@ -101,13 +101,13 @@ footer {
 }
 
 #toc-nav li {
-  margin: 0 0 .2em 1em;
+  margin: 0 0 2px 1em;
 }
 
 .toc-link {
   color: #495057;
   text-decoration: none;
-  padding: .2em 0;
+  padding: .1em 0;
   display: block;
   border-radius: 3px;
   transition: all .2s ease;
@@ -127,7 +127,7 @@ footer {
 }
 
 .update-date {
-  margin-left: auto;
+  margin: 0 .5em 1em auto;
   width: fit-content;
   background: #f8f9fa;
   color: #5e666d;
@@ -139,6 +139,30 @@ footer {
 
 .update-content {
   margin-top: 1em;
+}
+
+.video-outer {
+  width: 90%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 @media (max-width: 600px) {
