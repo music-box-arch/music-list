@@ -19,19 +19,19 @@ export async function initChkState() {
 
 // cSを指定コンテキストに反映する統一関数
 function aplCsCxt(cxt) {
-    const selector = cxt === 'ml' 
+    const selector = cxt === 'ml'
         ? '#musicTbl .chk'
         : `.chk[data-context="${cxt}"]`;
-    
+
     // 対象の全チェックボックスを一度に取得
     const allCb = document.querySelectorAll(selector);
-    
+
     // 各チェックボックスのIDをcSと照合してチェック状態を設定
     allCb.forEach(cb => {
         const id = Number(cb.dataset.id);
         cb.checked = cS.includes(id);
     });
-    
+
     // フィルター再適用も一緒に実行
     chkOnly(cxt);
 }
@@ -70,7 +70,7 @@ export function update(id, isChecked) {
             csBk = csBk.filter(checkId => checkId !== id);
         }
     }
-    
+
     // cSとcsBkの値をコンソールに出力
     console.log('cS updated:', cS.length, 'items -', cS);
     console.log('csBk:', csBk ? csBk.length + ' items - ' + csBk : 'null');
@@ -88,10 +88,10 @@ function chkOnly(context) {
             filterFn: () => window.slChk && window.slChk(true)
         }
     };
-    
+
     const config = configs[context];
     if (!config) return;
-    
+
     const filterCheck = document.getElementById(config.checkId);
     if (filterCheck && filterCheck.checked) {
         config.filterFn();
@@ -103,10 +103,10 @@ function applyActv() {
     // アクティブタブを判定
     const activeTab = document.querySelector('.tab-content.active');
     if (!activeTab) return;
-    
+
     const activeTabId = activeTab.id;
     const context = activeTabId === 'songlist-tab' ? 'ml' : 'sl';
-    
+
     // コンテキストに応じてチェック状態を更新（フィルター再適用も含む）
     aplCsCxt(context);
 }
@@ -117,12 +117,12 @@ export function syncChk() {
         if (e.target.classList.contains('chk')) {
             const changedId = Number(e.target.dataset.id);
             const context = e.target.dataset.context;
-            
+
             // 初回チェックボックス変更時に表を完成させる
             if (window.tblCmp) {
                 await window.tblCmp();
             }
-            
+
             update(changedId, e.target.checked);
 
             // セットリストの場合は同じmIDの他のセットリストチェックボックスも同期
@@ -137,7 +137,6 @@ export function syncChk() {
         }
     });
 }
-
 
 // クリア機能
 export function clear() {
