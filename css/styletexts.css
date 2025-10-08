@@ -43,13 +43,14 @@ nav a:hover {
   line-height: 1.7;
   margin: 0 1em 3em;
   padding-bottom: 2em;
+  color: #444;
 }
 
 .content h2 {
   color: #2564ad;
   border-bottom: 1px solid #ccd;
   padding: .1em 0 .1em .6em;
-  margin: 1em .2em .5em;
+  margin: .8em .2em .4em;
   border-left: 4px solid #2564ad;
   border-radius: 4px;
 }
@@ -57,19 +58,20 @@ nav a:hover {
 .content h3 {
   border-left: 4px double #2564ad;
   padding: .1em 0 .1em .7em;
-  margin: 1em .4em .5em;
+  margin: .8em .4em .5em;
   color: #495057;
   font-size: 1.1em;
 }
 
 .content ul,
 .content ol {
-  margin-bottom: 1em;
+  margin: .5em .6em 1em;
   padding-left: 2em;
 }
 
 .content li {
-  margin-bottom: .5em;
+  margin-bottom: 0;
+  padding-left: .4em;
 }
 
 footer {
