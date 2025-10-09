@@ -1,13 +1,7 @@
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2em;
-}
-
+/* ======== Global Navigation ======== */
 #glo-nav {
   flex-shrink: 0;
-  width: 40vw;
+  width: 50vw;
   min-width: 100px;
   max-width: 300px;
   background-color: #fefefe;
@@ -16,15 +10,14 @@
 #glnav-ul {
   flex-shrink: 0;
   list-style: none;
-  padding: 0;
   display: flex;
   flex-wrap: nowrap;
   gap: 6px;
-  margin: 0;
 }
 
 #glnav-ul .glnav-li {
   flex: 1;
+  align-items: stretch;
 }
 
 .nav-btn {
@@ -33,27 +26,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 12px 5px 8px 5px;
-  color: #333;
+  padding: 10px 12px 6px;
   box-shadow: 0 0 4px #ccc;
   border-radius: 6px;
+  gap: 3px;
+}
+
+.glnav-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 1px;
+  color: #333;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
   text-align: center;
-  gap: 3px;
-  height: 60%;
-}
-
-#glnav-ul .glnav-li a.nav-btn {
-  color: #444;
 }
 
 /* アイコンサイズ調整 */
 .nav-icon {
+  display: block;
   width: 24px;
   height: 24px;
-  display: block;
 }
 
 /* ホバー例 */
@@ -63,29 +60,27 @@
   text-decoration: none;
 }
 
+/* ======== Global Navigation ======== */
+
 /* モバイルでの幅調整*/
 @media (max-width: 600px) {
 
   #glo-nav {
-    max-width: 70vw;
     display: flex;
     justify-content: center;
   }
 
   #glnav-ul {
-    gap: 4px;
+    gap: 2px;
   }
 
   .nav-icon {
     width: 18px;
     height: 18px;
-    display: block;
   }
 
   .nav-btn {
     min-width: 80px;
-    width: 80%;
     font-size: 0.8rem;
-    line-height: 1.1em;
   }
 }

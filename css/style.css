@@ -1,7 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3,
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html {
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: system-ui, sans-serif;
+}
+
 body {
-  font: 14px sans-serif;
-  margin: 2em;
-  background: #fafcff;
+  padding: 0 .5rem;
+  background-color: #fafcff;
+  color: #333;
+  min-height: 100vh;
+}
+
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: .1rem;
+  gap: .8rem;
+}
+
+h1 {
+  padding: 0;
+  color: #2564ad;
+  font-size: 24px;
+}
+
+h2 {
+  margin: .5em 0 0;
+  padding: .1em .8em;
+  border-bottom: 1px solid #ccd;
+  border-left: 4px solid #2564ad;
+  border-radius: 4px;
+  font-size: 21px;
+  color: #2564ad;
 }
 
 a {
@@ -12,49 +70,7 @@ a:visited {
   color: #8A74A5;
 }
 
-p {
-  color: #444;
-  margin: .8em 1em;
-}
-
-h1 {
-  color: #2564ad;
-}
-
-.tbl {
-  border-collapse: collapse;
-  width: 100%;
-  background: #fff;
-  min-width: 600px;
-}
-
-.tbl th,
-.tbl td {
-  border: 1px solid #ccd;
-  padding: .4em;
-  text-align: left;
-}
-
-.tbl th {
-  background: #f3f8fc;
-  font-weight: normal;
-}
-
-.tbl tr:nth-child(even) {
-  background: #f7fafd;
-}
-
-/* 小さいフォント用クラス */
-.tbl .smltxt {
-  font-size: 12px;
-}
-
-input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  vertical-align: middle;
-}
-
+/* === △トップ === */
 #back-to-top {
   position: fixed;
   bottom: 20px;
@@ -72,53 +88,4 @@ input[type="checkbox"] {
 
 #back-to-top.show {
   display: inline-block;
-}
-
-.table-wrapper {
-  overflow-x: auto;
-  width: 100%;
-}
-
-.tab-container {
-  margin: 1em 0;
-}
-
-.tab-buttons {
-  display: flex;
-  border-bottom: 2px solid #ccd;
-  margin-bottom: 1em;
-}
-
-.tab-btn {
-  padding: 8px 16px;
-  border: 1px solid #ccd;
-  border-bottom: none;
-  background: #f3f8fc;
-  color: #2564ad;
-  cursor: pointer;
-  margin-right: 2px;
-  font-size: 14px;
-}
-
-.tab-btn.active {
-  background: #fff;
-  border-bottom: 2px solid #fff;
-  margin-bottom: -2px;
-  font-weight: bold;
-}
-
-.tab-btn:hover:not(.active) {
-  background: #e8f0fa;
-}
-
-.tab-content {
-  display: none;
-}
-
-.tab-content.active {
-  display: block;
-}
-
-#setlist-controls {
-  margin-bottom: 1em;
 }

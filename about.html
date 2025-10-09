@@ -28,14 +28,21 @@
                 <!-- start:global-nav -->
                 <nav id="glo-nav">
                     <ul id="glnav-ul">
-                        <li class="glnav-li"><a href="index.html" class="nav-btn"><img src="img/home.svg" alt="ホーム"
-                                    class="nav-icon">トップ</a>
+                        <li class="glnav-li">
+                            <a href="index.html" class="nav-btn">
+                                <div class="glnav-item-wrapper"><img src="img/home.svg" alt="ホーム" class="nav-icon">トップ
+                                </div>
+                            </a>
                         </li>
-                        <li class="glnav-li"><a href="about.html" class="nav-btn"><img src="img/book.svg"
-                                    alt="このサイトについて" class="nav-icon">about</a>
+                        <li class="glnav-li"><a href="about.html" class="nav-btn">
+                                <div class="glnav-item-wrapper"><img src="img/book.svg" alt="このサイトについて"
+                                        class="nav-icon">about</div>
+                            </a>
                         </li>
-                        <li class="glnav-li"><a href="articles.html" class="nav-btn"><img src="img/compose.svg" alt="記事"
-                                    class="nav-icon">記事</a>
+                        <li class="glnav-li"><a href="articles.html" class="nav-btn">
+                                <div class="glnav-item-wrapper"><img src="img/compose.svg" alt="記事" class="nav-icon">
+                                    記事</div>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -48,10 +55,12 @@
                 <h1>このサイトについて・使いかた</h1>
                 <p>好きなアーティストの曲リストをまとめている非公式サイトです。楽曲の検索やCD収録情報の確認などができます。</p>
                 <!-- 目次（自動生成される） -->
-                <nav id="toc-nav" aria-label="記事内目次">
-                    <span id="toc-title">目次</span>
-                    <ul id="toc-list"></ul>
-                </nav>
+                <div id="toc-wrapper">
+                    <nav id="toc-nav" aria-label="記事内目次">
+                        <span id="toc-title">目次</span>
+                        <ul id="toc-list"></ul>
+                    </nav>
+                </div>
 
                 <h2>主な機能①曲名一覧</h2>
                 <p>今までに発表された曲の一覧が確認できます（収録CD発売日順）。</p>
@@ -62,7 +71,6 @@
                     <li>曲名の検索機能</li>
                     <li>スタイル・ミックス楽曲の表示切り替え</li>
                     <li>「チェック付き行のみ表示」</li>
-                    <li><a href="articles.html">運営者の独断と偏見による記事</a></li>
                 </ul>
 
                 <h3>表の略記表示について</h3>
@@ -79,15 +87,20 @@
 
                 <p>「CDを買わなければ聞けない曲」、つまり「サブスクがない曲のうち、iTunesでの販売もない曲」のみを絞り込む機能は未実装です。<br>
                     お手数ですが、「サブスク無しにチェックを追加」→「チェック付き行のみ表示」ののち「iTn」欄をご覧いただき、手動でチェックを付け外ししてください。</p>
+                <p>今後、タイアップ情報も追加していく予定です。</p>
 
 
-                <h2>聞いてみたい曲、ほしい曲を多く含むCDを探せる</h2>
-                <p></p>
+                <h2>主な機能②聞いてみたい曲、ほしい曲を多く含むCDを探せる</h2>
+                <p>気になる曲にチェックを入れてから、「チェックした曲を含むCDを見る」ボタンをクリック。<br>
+                    画面下に、チェックを入れた曲を多くたくさん含んでいるCDを列記した表が生成されます。<br>
+                    結果が多すぎるとき（表が大きすぎるとき）は、アルバムのみやシングルのみのボタンもご利用ください。<br>
+                    style, mix以外の結果のみを見る機能は未実装です。今後実装したいと考えています。</p>
 
-                <h2>ツアー中のネタバレ無しで、最近のセットリストをご確認いただけます</h2>
+                <h2>主な機能③ネタバレ無しで、最近のセットリストを見る</h2>
                 <p>「セトリから探す」タブで、最近のセットリストを確認できます。<br>
+                    ツアーの日のセットリストは手動で「20XX年XX月XX日のセットリストを見る」ボタンを押すことで情報を取得します。<br>
                     更新は運営者の都合により前後します。</p>
-                <p>また、</p>
+                <p>また、フェスや対バンで初見の方にも印象で思い出していただけるよう、バンドや曲に敬意を払いつつ試行錯誤しています。（特徴・ハイライト欄）</p>
 
                 <h2>掲載しているデータについて</h2>
                 <p>掲載されている情報は個人的な整理を目的としたものです。サイト制作者もまだ所持していないものもあり、記載にミスがある場合もあります。ご了承ください。収集し次第正しい情報に更新していく予定です。
@@ -95,6 +108,7 @@
 
                 <h2>関連ページ</h2>
                 <ul>
+                    <li><a href="articles.html">記事</a> - 運営者の独断と偏見による記事</li>
                     <li><a href="updates.html">更新情報</a> - サイトの新機能や変更内容</li>
                     <li><a href="privacy.html">プライバシーポリシー</a> - 個人情報の取り扱いについて</li>
                 </ul>
