@@ -1,127 +1,76 @@
 #site-name {
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 550;
   text-decoration: none;
   color: #555d65;
   flex-shrink: 0;
-  padding: 1.1em .9em;
+  padding: 1em .9em;
   border-top: 1.5px solid #ccc;
   border-bottom: 1.5px solid #ccc;
-}
-
-.page-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2em;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  margin: .5em .3em .1em;
-  font-size: 24px;
-}
-
-header {
-  margin: .5em 0;
-  padding-bottom: .1em;
 }
 
 nav a {
   color: #2564ad;
   text-decoration: none;
-  font-size: 14px;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
-.content {
-  line-height: 1.7;
-  margin: 0 1em 3em;
-  padding-bottom: 2em;
-  color: #444;
-}
-
-.content h2 {
-  color: #2564ad;
-  border-bottom: 1px solid #ccd;
-  padding: .1em 0 .1em .6em;
-  margin: .8em .2em .4em;
-  border-left: 4px solid #2564ad;
-  border-radius: 4px;
-}
-
-.content h3 {
-  border-left: 4px double #2564ad;
-  padding: .1em 0 .1em .7em;
-  margin: .8em .4em .5em;
-  color: #495057;
-  font-size: 1.1em;
-}
-
-.content ul,
-.content ol {
-  margin: .5em .6em 1em;
-  padding-left: 2em;
-}
-
-.content li {
-  margin-bottom: 0;
-  padding-left: .4em;
-}
-
 footer {
+  margin: 2rem 0;
   border-top: 1px solid #ccd;
-  padding-top: 1em;
+  padding-top: 1rem;
   text-align: center;
   color: #666;
-  font-size: 12px;
+  font-size: .9rem;
 }
 
+/* プライバシーポリシーページのみ */
 .effective-date {
   background: #f0f4f8;
   color: #666;
-  font-size: 12px;
-  padding: 1.2em 1em;
+  padding: 1.2rem 1rem;
   border-radius: 6px;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
   text-align: center;
   border: 1px solid #e1e8ed;
 }
 
-#toc-title {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 1em;
-  text-align: center;
+#toc-wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1px;
 }
 
 #toc-nav {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 6px;
-  padding: 1.5em;
-  margin: .5em 1.5em 2em;
+  padding: 1.2rem 1rem;
 }
 
-#toc-nav ul {
+#toc-title {
+  display: block;
+  font-weight: bold;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+#toc-list {
+  padding-left: .8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
   list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-#toc-nav li {
-  margin: 0 0 2px 1em;
 }
 
 .toc-link {
   color: #495057;
   text-decoration: none;
-  padding: .1em 0;
   display: block;
   border-radius: 3px;
   transition: all .2s ease;
@@ -141,18 +90,11 @@ footer {
 }
 
 .update-date {
-  margin: 0 .5em 1em auto;
+  margin: 0 .5em 0 auto;
   width: fit-content;
-  background: #f8f9fa;
   color: #5e666d;
   font-size: .9em;
-  padding: .5em .8em;
-  border-radius: 4px;
-  border-left: 1px solid #2564ad;
-}
-
-.update-content {
-  margin-top: 1em;
+  padding: .8em;
 }
 
 .video-outer {
@@ -179,44 +121,48 @@ footer {
   border: 0;
 }
 
+@media (min-width: 600px) and (max-width: 660px) {
+  .page-container {
+    padding: 1rem 1.5rem;
+  }
+}
+
 @media (max-width: 600px) {
   body {
-    margin: 0;
     padding: 0;
   }
 
   .page-container {
-    margin: 0;
-    padding: .2em;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: .2rem;
   }
 
   .header-content {
     flex-direction: column;
-    align-items: stretch;
     gap: 1rem;
-  }
-
-  .content {
-    margin: .1em;
-    padding-bottom: 2em;
   }
 
   h1 {
     line-height: 1.3;
   }
 
-  #toc-nav {
-    background: #f8f9fa;
-    border: 1px solid #e9ecef;
-    border-radius: 6px;
-    padding: .5em;
-    margin: 0 1.5em 1em;
+  p {
+    padding: 0 .4rem;
   }
 
-  p {
-    margin: .5em;
+  .content ul {
+    padding-left: 1.6em;
+  }
+
+  #toc-nav {
+    padding: .4em;
+  }
+
+  #toc-list {
+    padding-left: 1rem;
+    gap: 1px;
+  }
+
+  #toc-wrapper {
+    width: 100%;
   }
 }
