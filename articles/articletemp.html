@@ -31,14 +31,26 @@
                 <!-- start:global-nav -->
                 <nav id="glo-nav">
                     <ul id="glnav-ul">
-                        <li class="glnav-li"><a href="../index.html" class="nav-btn"><img src="../img/home.svg"
-                                    alt="ホーム" class="nav-icon">トップ</a>
+                        <li class="glnav-li">
+                            <a href="../index.html" class="nav-btn">
+                                <div class="glnav-item-wrapper">
+                                    <img src="../img/home.svg" alt="ホーム" class="nav-icon">トップ
+                                </div>
+                            </a>
                         </li>
-                        <li class="glnav-li"><a href="../about.html" class="nav-btn"><img src="../img/book.svg"
-                                    alt="このサイトについて" class="nav-icon">about</a>
+                        <li class="glnav-li">
+                            <a href="../about.html" class="nav-btn">
+                                <div class="glnav-item-wrapper">
+                                    <img src="../img/book.svg" alt="このサイトについて" class="nav-icon">about
+                                </div>
+                            </a>
                         </li>
-                        <li class="glnav-li"><a href="../articles.html" class="nav-btn"><img src="../img/compose.svg"
-                                    alt="記事" class="nav-icon">記事</a>
+                        <li class="glnav-li">
+                            <a href="../articles.html" class="nav-btn">
+                                <div class="glnav-item-wrapper">
+                                    <img src="../img/compose.svg" alt="記事" class="nav-icon">記事
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -57,10 +69,12 @@
                 <!-- 目次前に何か書くならこの下 -->
 
                 <!-- 目次（自動生成される） -->
-                <nav id="toc-nav" aria-label="記事内目次">
-                    <span id="toc-title">目次</span>
-                    <ul id="toc-list"></ul>
-                </nav>
+                <div id="toc-wrapper">
+                    <nav id="toc-nav" aria-label="記事内目次">
+                        <span id="toc-title">目次</span>
+                        <ul id="toc-list"></ul>
+                    </nav>
+                </div>
                 <!-- 以下に記事本編　改行は<br> -->
                 <h2></h2>
                 <p>

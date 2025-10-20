@@ -32,6 +32,11 @@
   gap: 3px;
 }
 
+#glnav-ul a,
+#glnav-ul a:visited {
+  color: #333;
+}
+
 .glnav-item-wrapper {
   display: flex;
   flex-direction: column;
@@ -59,8 +64,6 @@
   box-shadow: none;
   text-decoration: none;
 }
-
-/* ======== Global Navigation ======== */
 
 /* モバイルでの幅調整*/
 @media (max-width: 600px) {

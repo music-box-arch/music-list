@@ -4,14 +4,9 @@
   box-sizing: border-box;
 }
 
-h3 {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
 html {
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.8;
   font-family: system-ui, sans-serif;
 }
 
@@ -42,27 +37,34 @@ body {
   display: flex;
   flex-direction: column;
   padding: .1rem;
-  gap: .8rem;
+  gap: .6rem;
 }
 
 h1 {
-  padding: 0;
   color: #2564ad;
-  font-size: 24px;
+  font-size: 1.7rem;
 }
 
 h2 {
-  margin: .5em 0 0;
-  padding: .1em .8em;
+  margin-top: .5em;
+  padding-left: .7em;
   border-bottom: 1px solid #ccd;
   border-left: 4px solid #2564ad;
   border-radius: 4px;
-  font-size: 21px;
+  font-size: 1.5rem;
   color: #2564ad;
 }
 
+h3 {
+  border-left: 4px double #2564ad;
+  color: #495057;
+  font-size: 1.2rem;
+  margin: .5em .2em 0;
+  padding: 0 .8em;
+}
+
 p {
-  padding: 0 1rem 0;
+  padding: 0 1rem;
 }
 
 a {
@@ -75,7 +77,6 @@ a:visited {
 
 .content ul {
   padding-left: 2.4em;
-  list-style: disc;
 }
 
 .content li {
