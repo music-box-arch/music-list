@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-h3,
-p {
+h3 {
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -26,7 +25,7 @@ body {
 .page-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1rem 2.5rem;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -62,12 +61,25 @@ h2 {
   color: #2564ad;
 }
 
+p {
+  padding: 0 1rem 0;
+}
+
 a {
   color: #005DEA;
 }
 
 a:visited {
   color: #8A74A5;
+}
+
+.content ul {
+  padding-left: 2.4em;
+  list-style: disc;
+}
+
+.content li {
+  padding-left: .1em;
 }
 
 /* === △トップ === */
