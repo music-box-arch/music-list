@@ -1,65 +1,55 @@
 /* ======== Global Navigation ======== */
 #gnav {
   flex-shrink: 0;
-  width: 50%;
-  min-width: 100px;
-  max-width: 300px;
+  inline-size: clamp(100px, 50%, 300px);
   background-color: #fefefe;
 }
 
 #gnav-ul {
-  flex-shrink: 0;
-  list-style: none;
   display: flex;
   flex-wrap: nowrap;
+  list-style: none;
+  align-items: stretch;
   gap: 6px;
 }
 
-#gnav-ul .gnav-li {
+#gnav-ul>.gnav-li {
   flex: 1;
-  align-items: stretch;
 }
 
 .gnav-btn {
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding: 10px 12px 6px;
   box-shadow: 0 0 4px #ccc;
   border-radius: 6px;
   gap: 3px;
-  text-decoration: none;
 }
 
-#gnav-ul a,
-#gnav-ul a:visited {
+#gnav-ul :any-link {
   color: #333;
+  text-decoration: none;
 }
 
 .gnav-item-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 2px;
+  align-items: center;
   padding: 1px;
-  color: #333;
-  text-decoration: none;
+  gap: 2px;
   font-weight: 500;
   font-size: 0.9rem;
-  text-align: center;
 }
 
-/* アイコンサイズ調整 */
 .gnav-icon {
   display: block;
   width: 24px;
   height: 24px;
 }
 
-/* ホバー例 */
 .gnav-btn:hover {
   background-color: #f0f0f0;
   box-shadow: none;
