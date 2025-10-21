@@ -1,5 +1,5 @@
 /* ======== Global Navigation ======== */
-#glo-nav {
+#gnav {
   flex-shrink: 0;
   width: 50%;
   min-width: 100px;
@@ -7,7 +7,7 @@
   background-color: #fefefe;
 }
 
-#glnav-ul {
+#gnav-ul {
   flex-shrink: 0;
   list-style: none;
   display: flex;
@@ -15,12 +15,12 @@
   gap: 6px;
 }
 
-#glnav-ul .glnav-li {
+#gnav-ul .gnav-li {
   flex: 1;
   align-items: stretch;
 }
 
-.nav-btn {
+.gnav-btn {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -30,14 +30,15 @@
   box-shadow: 0 0 4px #ccc;
   border-radius: 6px;
   gap: 3px;
+  text-decoration: none;
 }
 
-#glnav-ul a,
-#glnav-ul a:visited {
+#gnav-ul a,
+#gnav-ul a:visited {
   color: #333;
 }
 
-.glnav-item-wrapper {
+.gnav-item-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,14 +53,14 @@
 }
 
 /* アイコンサイズ調整 */
-.nav-icon {
+.gnav-icon {
   display: block;
   width: 24px;
   height: 24px;
 }
 
 /* ホバー例 */
-.nav-btn:hover {
+.gnav-btn:hover {
   background-color: #f0f0f0;
   box-shadow: none;
   text-decoration: none;
@@ -68,22 +69,22 @@
 /* モバイルでの幅調整*/
 @media (max-width: 600px) {
 
-  #glo-nav {
+  #gnav {
     display: flex;
     justify-content: center;
     width: 90%;
   }
 
-  #glnav-ul {
+  #gnav-ul {
     gap: 2px;
   }
 
-  .nav-icon {
+  .gnav-icon {
     width: 18px;
     height: 18px;
   }
 
-  .nav-btn {
+  .gnav-btn {
     min-width: 80px;
     font-size: 0.8rem;
   }

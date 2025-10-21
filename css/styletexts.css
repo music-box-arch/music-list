@@ -10,15 +10,6 @@
   border-bottom: 1.5px solid #ccc;
 }
 
-nav a {
-  color: #2564ad;
-  text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
 footer {
   margin: 2rem 0;
   border-top: 1px solid #ccd;
@@ -30,13 +21,13 @@ footer {
 
 /* プライバシーポリシーページのみ */
 .effective-date {
-  background: #f0f4f8;
-  color: #666;
-  padding: 1.2rem 1rem;
-  border-radius: 6px;
   margin-bottom: 2rem;
-  text-align: center;
+  padding: 1.2rem 1rem;
   border: 1px solid #e1e8ed;
+  border-radius: 6px;
+  background: #f0f4f8;
+  text-align: center;
+  color: #666;
 }
 
 #toc-wrapper {
@@ -78,6 +69,7 @@ footer {
 
 .toc-link:hover {
   color: #2564ad;
+  text-decoration: underline;
   background: #e9ecef;
   padding-left: .2em;
 }
