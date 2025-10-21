@@ -1,39 +1,7 @@
-#site-name {
-  display: inline-block;
-  font-size: 1.1rem;
-  font-weight: 550;
-  text-decoration: none;
-  color: #555d65;
-  flex-shrink: 0;
-  padding: 1em .9em;
-  border-top: 1.5px solid #ccc;
-  border-bottom: 1.5px solid #ccc;
-}
-
-footer {
-  margin: 2rem 0;
-  border-top: 1px solid #ccd;
-  padding-top: 1rem;
-  text-align: center;
-  color: #666;
-  font-size: .9rem;
-}
-
-/* プライバシーポリシーページのみ */
-.effective-date {
-  margin-bottom: 2rem;
-  padding: 1.2rem 1rem;
-  border: 1px solid #e1e8ed;
-  border-radius: 6px;
-  background: #f0f4f8;
-  text-align: center;
-  color: #666;
-}
-
+/* ここから　toc関連 */
 #toc-wrapper {
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 1px;
 }
 
@@ -46,105 +14,53 @@ footer {
 
 #toc-title {
   display: block;
-  font-weight: bold;
   padding-bottom: 1em;
+  font-weight: bold;
   text-align: center;
 }
 
 #toc-list {
-  padding-left: .8rem;
   display: flex;
   flex-direction: column;
+  padding-left: .8rem;
   gap: 4px;
   list-style: none;
 }
 
 .toc-link {
+  display: block;
   color: #495057;
   text-decoration: none;
-  display: block;
   border-radius: 3px;
   transition: all .2s ease;
 }
 
 .toc-link:hover {
+  padding-left: .2em;
+  background: #e9ecef;
   color: #2564ad;
   text-decoration: underline;
-  background: #e9ecef;
-  padding-left: .2em;
 }
 
 .toc-link.active {
+  padding-left: .5em;
+  background: #e3f2fd;
   color: #2564ad;
   font-weight: bold;
-  background: #e3f2fd;
-  padding-left: .5em;
 }
 
-.update-date {
-  margin: 0 .5em 0 auto;
-  width: fit-content;
-  color: #5e666d;
-  font-size: .9em;
-  padding: .8em;
-}
-
-.video-outer {
-  width: 90%;
-  max-width: 480px;
-  margin: 0 auto;
-}
-
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  /* 16:9 */
-  height: 0;
-  overflow: hidden;
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-@media (min-width: 600px) and (max-width: 660px) {
-  .page-container {
-    padding: 1rem 1.5rem;
-  }
+/* ここから　プライバシーポリシーページのみ */
+.effective-date {
+  margin-bottom: 2rem;
+  padding: 1.2rem 1rem;
+  border: 1px solid #e1e8ed;
+  border-radius: 6px;
+  background: #f0f4f8;
+  text-align: center;
+  color: #666;
 }
 
 @media (max-width: 600px) {
-  body {
-    padding: 0;
-  }
-
-  .page-container {
-    padding: .2rem;
-  }
-
-  .header-content {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  h1 {
-    line-height: 1.3;
-  }
-
-  p {
-    padding: 0 .4rem;
-  }
-
-  .content ul {
-    padding-left: 1.6em;
-  }
-
   #toc-nav {
     padding: .4em;
   }
