@@ -1,0 +1,3 @@
+# robots.txt (GitHub Pages用)
+User-agent: *
+Disallow: /
