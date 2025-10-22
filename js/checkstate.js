@@ -72,8 +72,8 @@ export function update(id, isChecked) {
     }
 
     // cSとcsBkの値をコンソールに出力
-    console.log('cS updated:', cS.length, 'items -', cS);
-    console.log('csBk:', csBk ? csBk.length + ' items - ' + csBk : 'null');
+    //console.log('cS updated:', cS.length, 'items -', cS);
+    //console.log('csBk:', csBk ? csBk.length + ' items - ' + csBk : 'null');
 }
 
 // 統一されたチェック付きのみ表示関数
