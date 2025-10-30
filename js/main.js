@@ -8,7 +8,7 @@ let remains = []; // 残りの曲データ
 const makeLink = async (label, url) => {
   const { isValidUrl } = await import('./tbl.js');
   if (!url || !isValidUrl(url)) return '';
-  
+
   const a = document.createElement('a');
   a.href = url;
   a.target = '_blank';
@@ -58,11 +58,11 @@ document.addEventListener('DOMContentLoaded', function () {
   // リソース完全性検証
   import('./tbl.js').then(({ isValidResource }) => {
     const musicUrl = 'data/music-list.json';
-    
+
     if (!isValidResource(musicUrl)) {
       throw new Error('Invalid resource URL detected');
     }
-    
+
     return fetch(musicUrl);
   })
     .then(response => response.json())
@@ -110,11 +110,11 @@ document.addEventListener('DOMContentLoaded', function () {
       // 初期表示後の行数をログ出力
       const tbody = document.querySelector('#musicTbl tbody');
       const initialRows = tbody ? tbody.querySelectorAll('tr').length : 0;
-      console.log(`Initial table rows: ${initialRows}, Remains: ${remains.length}`);
+      //console.log(`Initial table rows: ${initialRows}, Remains: ${remains.length}`);
 
       // 表作成完了フラグ
       tblProg = true;
-      
+
       // 残り行を非同期で即座に追加
       setTimeout(() => {
         tblCmp();
@@ -128,16 +128,16 @@ document.addEventListener('DOMContentLoaded', function () {
   // 指定行数追加（共通関数）
   async function addRows(count = 0) {
     if (remains.length === 0) return;
-    
+
     const isFullTable = count === 0;
     const timeLabel = isFullTable ? 'Table completion' : `Add ${count} rows`;
-    console.time(timeLabel);
-    
+    //console.time(timeLabel);
+
     const tbody = document.querySelector('#musicTbl tbody');
     const { createTable } = await import('./tbl.js');
-    
+
     const batch = count > 0 ? remains.splice(0, count) : remains.splice(0);
-    
+
     const config = {
       headers: [],
       data: batch,
@@ -145,12 +145,12 @@ document.addEventListener('DOMContentLoaded', function () {
       columns: ['title', 'yt', 'lv', 'spf', 'apl', 'itn', 'exsm', 'firstCd', 'order', 'cdDate'],
       textOnlyColumns: [0, 6, 7, 8, 9] // title, exsm, firstCd, order, cdDate
     };
-    
+
     const { table } = createTable(config);
     const newRows = Array.from(table.querySelector('tbody').children);
     newRows.forEach(row => tbody.appendChild(row));
-    
-    console.timeEnd(timeLabel);
+
+    //console.timeEnd(timeLabel);
   }
 
   // 表完成の確保
@@ -159,11 +159,11 @@ document.addEventListener('DOMContentLoaded', function () {
       tblProg = false;
       await addRows(); // 全行追加
     }
-    
+
     // 現在の表の行数をログ出力
     const tbody = document.querySelector('#musicTbl tbody');
     const rowCount = tbody ? tbody.querySelectorAll('tr').length : 0;
-    console.log(`Table rows: ${rowCount}, Remains: ${remains.length}`);
+    //console.log(`Table rows: ${rowCount}, Remains: ${remains.length}`);
   }
 
   // セトリタブ用の40行追加関数
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', function () {
           if (remains.length > 0) {
             await add40Rows();
           }
-          
+
           tblProg = false; // 残りの表作成を中断
           await initSlLazy();
         }

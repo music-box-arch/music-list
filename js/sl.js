@@ -44,7 +44,7 @@ export async function initSL() {
       const bFile = typeof b === 'string' ? b : b.name;
       return (bFile.match(/(\d{6})/)?.[1] || '000000').localeCompare(aFile.match(/(\d{6})/)?.[1] || '000000');
     });
-    console.log('slFiles order:', slFiles.map(f => typeof f === 'string' ? f : f.name));
+    //console.log('slFiles order:', slFiles.map(f => typeof f === 'string' ? f : f.name));
 
     // セットリストファイルを読み込んで表を構築
     const slData = [];
@@ -270,12 +270,12 @@ async function buildOneSl(container, setlistData, setlistIndex) {
 
   // 正しい位置に挿入
   const containerChildren = Array.from(container.children);
-  console.log('buildOneSl setlistIndex:', setlistIndex, 'containerChildren.length:', containerChildren.length);
+  //console.log('buildOneSl setlistIndex:', setlistIndex, 'containerChildren.length:', containerChildren.length);
   if (setlistIndex < containerChildren.length) {
-    console.log('insertBefore at index:', setlistIndex);
+    //console.log('insertBefore at index:', setlistIndex);
     container.insertBefore(details, containerChildren[setlistIndex]);
   } else {
-    console.log('appendChild');
+    //console.log('appendChild');
     container.appendChild(details);
   }
 
