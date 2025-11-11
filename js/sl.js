@@ -26,9 +26,8 @@ export async function initSL() {
     // リソース完全性検証
     const { isValidResource } = await import('./tbl.js');
     const musicUrl = 'data/music-list-SL.json';
-    // ●●●index.jsonのバージョン管理はこちらです●●●
-    const indexVer = '202511101';
-    const indexUrl = `setlist/index.json?v=${indexVer}`;
+
+    const indexUrl = `setlist/index.json?v=${window.updVer}`;
 
     if (!isValidResource(musicUrl) || !isValidResource(indexUrl)) {
       throw new Error('Invalid resource URLs detected');

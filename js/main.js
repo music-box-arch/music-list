@@ -1,3 +1,8 @@
+// バージョンがまだ定義されてなければここで定義（index.html側の保険）
+console.log("version:", window.updVer)
+window.updVer = window.updVer || '20251110';
+console.log("version:", window.updVer)
+
 // 1. グローバル変数（最小限）
 let lazy = false; // lazyload済みフラグ
 let slLazy = false; // sl-lazy.js読み込み済みフラグ
@@ -44,7 +49,7 @@ async function initLazy() {
 async function initSlLazy() {
   if (slLazy) return;
 
-  const { initSL } = await import('./sl-lazy.js');
+  const { initSL } = await import('./sl-lazy.js?v=${window.updVer}');
 
   // セットリスト機能を初期化
   await initSL();
