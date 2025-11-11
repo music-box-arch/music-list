@@ -3,7 +3,7 @@
 // セットリスト機能の初期化
 export async function initSL() {
   try {
-    const { initSL, setupGlb } = await import('./sl.js');
+    const { initSL, setupGlb } = await import('./sl.js?v=20251110');
 
     // セットリスト機能を初期化
     await initSL();

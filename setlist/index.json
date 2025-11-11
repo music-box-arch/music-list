@@ -25,7 +25,23 @@
             "flag": 0
         },
         {
+            "name": "250819.json",
+            "flag": 0
+        },
+        {
+            "name": "250821.json",
+            "flag": 0
+        },
+        {
             "name": "250826.json",
+            "flag": 0
+        },
+        {
+            "name": "250828.json",
+            "flag": 0
+        },
+        {
+            "name": "250902.json",
             "flag": 0
         },
         {
@@ -62,6 +78,10 @@
         },
         {
             "name": "251103.json",
+            "flag": 1
+        },
+        {
+            "name": "251108.json",
             "flag": 1
         }
     ]

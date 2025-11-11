@@ -27,7 +27,7 @@ export async function initSL() {
     const { isValidResource } = await import('./tbl.js');
     const musicUrl = 'data/music-list-SL.json';
     // ●●●index.jsonのバージョン管理はこちらです●●●
-    const indexVer = '20251110';
+    const indexVer = '202511101';
     const indexUrl = `setlist/index.json?v=${indexVer}`;
 
     if (!isValidResource(musicUrl) || !isValidResource(indexUrl)) {
