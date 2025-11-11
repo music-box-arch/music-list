@@ -1,7 +1,7 @@
 // バージョンがまだ定義されてなければここで定義（index.html側の保険）
-console.log("version:", window.updVer)
+//console.log("version:", window.updVer)
 window.updVer = window.updVer || '20251110';
-console.log("version:", window.updVer)
+//console.log("version:", window.updVer)
 
 // 1. グローバル変数（最小限）
 let lazy = false; // lazyload済みフラグ
