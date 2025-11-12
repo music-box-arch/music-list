@@ -1,14 +1,19 @@
-# macOS
+# OSごとの一時ファイル
 .DS_Store
 
-# VSCode
+# エディタ・IDE
 .vscode/
 
-# Logs
+# 言語やツールごとの依存ファイル・ログ
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Build
+# ビルド成果物
 dist/
 build/
+
+# 開発用スクリプトや一時ファイル
+gen_sitemap.py
+sitemap.xml
