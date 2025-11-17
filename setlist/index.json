@@ -1,48 +1,44 @@
 {
-    "files": [
-        {
-            "name": "251108.json",
-            "flag": 1
-        },
-        {
-            "name": "251103.json",
-            "flag": 1
-        },
-        {
-            "name": "251101.json",
-            "flag": 1
-        },
-        {
-            "name": "251011.json",
-            "flag": 1
-        },
-        {
-            "name": "251007.json",
-            "flag": 1
-        },
-        {
-            "name": "250919.json",
-            "flag": 1
-        },
-        {
-            "name": "250915.json",
-            "flag": 1
-        },
-        {
-            "name": "250913.json",
-            "flag": 1
-        },
-        {
-            "name": "250906.json",
-            "flag": 1
-        },
-        {
-            "name": "250904.json",
-            "flag": 0
-        },
-        {
-            "name": "250828.json",
-            "flag": 0
-        }
-    ]
+  "files": [
+    {
+      "name": "251116.json",
+      "flag": 1
+    },
+    {
+      "name": "251108.json",
+      "flag": 1
+    },
+    {
+      "name": "251103.json",
+      "flag": 1
+    },
+    {
+      "name": "251101.json",
+      "flag": 1
+    },
+    {
+      "name": "251011.json",
+      "flag": 1
+    },
+    {
+      "name": "251007.json",
+      "flag": 1
+    },
+    {
+      "name": "250919.json",
+      "flag": 1
+    },
+    {
+      "name": "250915.json",
+      "flag": 1
+    },
+    {
+      "name": "250913.json",
+      "flag": 1
+    },
+    {
+      "name": "250906.json",
+      "flag": 1
+    }
+  ]
 }
