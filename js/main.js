@@ -1,6 +1,6 @@
 // バージョンがまだ定義されてなければここで定義（index.html側の保険）
 //console.log("version:", window.updVer)
-window.updVer = window.updVer || '20251111';
+window.updVer = '20251112';
 //console.log("version:", window.updVer)
 
 // 1. グローバル変数（最小限）
