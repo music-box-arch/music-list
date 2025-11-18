@@ -49,17 +49,6 @@
   font-weight: bold;
 }
 
-/* ここから　プライバシーポリシーページのみ */
-.effective-date {
-  margin-bottom: 2rem;
-  padding: 1.2rem 1rem;
-  border: 1px solid #e1e8ed;
-  border-radius: 6px;
-  background: #f0f4f8;
-  text-align: center;
-  color: #666;
-}
-
 @media (max-width: 600px) {
   #toc-nav {
     padding: .4em;
