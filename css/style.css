@@ -1,3 +1,4 @@
+/* === RESET / 共通 === */
 *,
 *::before,
 *::after {
@@ -6,6 +7,7 @@
   box-sizing: border-box;
 }
 
+/* === ベースレイアウト === */
 html {
   font-size: 14px;
   line-height: 1.8;
@@ -19,6 +21,7 @@ body {
   color: #333;
 }
 
+/* === 全体レイアウト === */
 .page-container {
   max-width: 800px;
   margin: 0 auto;
@@ -42,6 +45,7 @@ body {
   gap: .6rem;
 }
 
+/* === タイポグラフィ === */
 h1 {
   color: #2564ad;
   font-size: 1.7rem;
@@ -77,6 +81,7 @@ a:visited {
   color: #8A74A5;
 }
 
+/* === コンテンツ内要素 === */
 .content ul {
   padding-left: 2.4em;
 }
@@ -118,6 +123,7 @@ a:visited {
   border: 0;
 }
 
+/* === サイト構成要素 === */
 /* ここから header */
 #site-name {
   display: inline-block;
@@ -141,6 +147,7 @@ footer {
   font-size: .9rem;
 }
 
+/* === メディアクエリ === */
 @media (min-width: 600px) and (max-width: 660px) {
   .page-container {
     padding: 1rem 1.5rem;
@@ -174,6 +181,7 @@ footer {
   }
 }
 
+/* === スクリプト連携要素 === */
 /* === △トップ === */
 #back-to-top {
   display: none;
@@ -192,4 +200,86 @@ footer {
 
 #back-to-top.show {
   display: inline-block;
+}
+
+/* ======== Global Navigation ======== */
+#gnav {
+  flex-shrink: 0;
+  inline-size: clamp(100px, 50%, 300px);
+  background-color: #fefefe;
+}
+
+#gnav-ul {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  align-items: stretch;
+  gap: 6px;
+}
+
+#gnav-ul>.gnav-li {
+  flex: 1;
+}
+
+.gnav-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px 6px;
+  box-shadow: 0 0 4px #ccc;
+  border-radius: 6px;
+  gap: 3px;
+}
+
+#gnav-ul :any-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.gnav-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  gap: 2px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.gnav-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.gnav-btn:hover {
+  background-color: #f0f0f0;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+/* グローバルナビのメディアクエリ */
+@media (max-width: 600px) {
+
+  #gnav {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+
+  #gnav-ul {
+    gap: 2px;
+  }
+
+  .gnav-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .gnav-btn {
+    min-width: 80px;
+    font-size: 0.8rem;
+  }
 }
