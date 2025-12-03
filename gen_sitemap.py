@@ -45,7 +45,12 @@ def generate_sitemap():
         if any(rel_path.endswith(excl) for excl in exclude_files):
             continue
 
-        url = BASE_URL + rel_path
+        # index.html → /
+        if rel_path == "index.html":
+            url = BASE_URL  # 例: "https://music-list.com/"
+        else:
+            url = BASE_URL + rel_path
+
         lastmod = get_lastmod(f)
         priority = get_priority(f.name)
         urls.append(f"""
