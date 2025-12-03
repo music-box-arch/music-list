@@ -18,12 +18,22 @@
     <link rel="canonical" href="https://music-list.com/">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
     <title>ユニゾン曲リスト(非公式)</title>
     <style>
+        /* === ベースレイアウト === */
+        html {
+            font-size: 14px;
+            line-height: 1.8;
+            font-family: system-ui, sans-serif;
+            color: #333;
+        }
+
         body {
-            font: 14px sans-serif;
+            min-height: 100vh;
             margin: 2em;
-            background: #fafcff;
+            padding: 0 .5rem;
+            background-color: #fafcff;
         }
 
         a {
@@ -34,16 +44,15 @@
             color: #8A74A5;
         }
 
-        p {
-            color: #444;
+        p,
+        .btn {
             margin: 5px 0;
         }
 
         h1 {
             display: inline-block;
             font-size: 16px;
-            font-weight: 550;
-            text-decoration: none;
+            font-weight: 500;
             color: #555d65;
             flex-shrink: 0;
             padding: 1.1em .9em;
@@ -52,12 +61,7 @@
         }
 
         h2 {
-            color: #222;
             font-size: 14px;
-            margin: 5px 0;
-        }
-
-        .btn {
             margin: 5px 0;
         }
 
@@ -175,6 +179,10 @@
     <main>
         <button class="btn clearAllChecksBtn">チェックをオールクリア</button>
         <p>※ 表は横にスクロールできます</p>
+        <div id="audioModeToggle">
+            <label><input type="checkbox" id="audioInfoMode">全ライブ音源情報モード(β版)</label>
+        </div>
+
         <section id="checklistArea">
             <div id="songChecklist"></div>
             <button class="btn showDiscsButton" disabled>チェックした曲を含むCDを見る</button>
