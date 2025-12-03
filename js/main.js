@@ -108,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // ボタンを即座に有効化
       enblMinimalBtns();
       enblCdBtns();
+      enblAudioBtn();
       initTabFunc();
 
       // 初期表示後の行数をログ出力
@@ -296,7 +297,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 2-4. タブ機能の初期化
+  // 2-4. 全音源モードボタン有効化
+  function enblAudioBtn() {
+    const audioCheckbox = document.getElementById("audioInfoMode");
+    if (!audioCheckbox) return;
+
+    audioCheckbox.addEventListener("change", async (e) => {
+      const { handleAudioMode } = await import('./all-audio-btn.js');
+      handleAudioMode(e.target.checked);
+    });
+  }
+
+  // 2-5. タブ機能の初期化
   function initTabFunc() {
     document.querySelectorAll('.tab-btn').forEach(btn => {
       btn.addEventListener('click', async function () {
@@ -342,7 +354,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 2-4. トップに戻るボタン生成
+  // 2-6. トップに戻るボタン生成
   const backToTop = document.createElement('a');
   backToTop.href = '#tp';
   backToTop.id = 'back-to-top';
