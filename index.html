@@ -163,6 +163,10 @@
             display: block;
         }
 
+        .modal {
+            z-index: 1000;
+        }
+
         #setlist-controls {
             margin-bottom: 1em;
         }
@@ -248,7 +252,20 @@
                 <div id="discsTbl"></div>
             </div>
         </section>
+
     </main>
+    <!-- 全ライブ音源表示モードオフ確認Modal -->
+    <div id="audioModeModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <p>「全ライブ音源情報モード」をオフにすると、表示中の情報がすべて閉じられます。<br>
+                このモードを終了してもよろしいですか？</p>
+            <div class="modal-buttons">
+                <button id="modeOffCancel">キャンセル</button>
+                <button id="modeOffConfirm">このモードをOFF</button>
+            </div>
+        </div>
+    </div>
+
     <!-- バージョン定義：キャッシュ対策としてクエリ付きで読み込む -->
     <!-- js/main.jsの最上行のバージョン記載も忘れずに -->
     <script type="module" src="js/main.js?v=20251116"></script>
