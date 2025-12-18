@@ -31,6 +31,8 @@ export async function handleAudioMode(isOn) {
         );
 
         if (shouldTurnOff) {
+            rstAudSt();   // 状態を戻す
+            enaUI();      // UIを戻す
             btnDisappear();
         } else {
             // チェックを戻す（ONのまま）
@@ -153,16 +155,33 @@ function btnAppear() {
         a.textContent = '▶';
         a.href = 'javascript:void(0)';
         a.style.marginRight = '4px';
-        a.style.fontSize = '0.9em';
+        a.style.fontSize = '1em';
         a.style.textDecoration = 'none';
 
         titleCell.insertBefore(a, titleCell.firstChild);
         titleCell.style.paddingLeft = '1em';
 
         a.addEventListener('click', async () => {
-            console.log(`▶ clicked: mID=${mID}`);
-            const { audioInfoOpen } = await import('./all-audio.js');
-            audioInfoOpen(mID);
+            const mIDNum = Number(mID);
+
+            const { audioInfoOpen, audioInfoClose } =
+                await import('./all-audio.js');
+
+            const idx = openAudioNumbers.indexOf(mIDNum);
+
+            if (idx === -1) {
+                // ===== 開く =====
+                audioInfoOpen(mIDNum);
+                openAudioNumbers.push(mIDNum);
+                console.log('[audioMode] opened:', mIDNum, 'now open:', openAudioNumbers);
+                a.textContent = '▼';
+            } else {
+                // ===== 閉じる =====
+                audioInfoClose(mIDNum);
+                openAudioNumbers.splice(idx, 1);
+                console.log('[audioMode] closed:', mIDNum, 'now open:', openAudioNumbers);
+                a.textContent = '▶';
+            }
         });
     });
 
