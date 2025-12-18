@@ -189,7 +189,7 @@
         <p>※ 表は横にスクロールできます</p>
 
         <section id="checklistArea">
-            <div id="songChecklist"></div>
+            <!-- <div id="songChecklist"></div> -->
             <button class="btn showDiscsButton" disabled>チェックした曲を含むCDを見る</button>
 
             <section class="tab-container">
@@ -199,19 +199,21 @@
                 </div>
 
                 <section id="songlist-tab" class="tab-content active">
-                    <div><label>
-                            <input type="checkbox" id="chkSb">サブスク無しにチェック</label>を追加
-                        <label>　
-                            <input type="checkbox" id="shStChk">style(再録音)を表示</label>
-                        <label>　
-                            <input type="checkbox" id="shMxChk"> mix(リミックス)を表示</label>　
-                    </div>
-                    <div><label>
-                            <input type="checkbox" id="shChkOnly">チェック付き行のみ表示</label>
-                    </div>
-                    <div>
-                        <label for="sngSrch">曲名検索: </label>
-                        <input type="text" id="sngSrch" placeholder="曲名で絞り込み...">
+                    <div class="auf">
+                        <div><label>
+                                <input type="checkbox" id="chkSb">サブスク無しにチェック</label>を追加
+                            <label>　
+                                <input type="checkbox" id="shStChk">style(再録音)を表示</label>
+                            <label>　
+                                <input type="checkbox" id="shMxChk"> mix(リミックス)を表示</label>　
+                        </div>
+                        <div><label>
+                                <input type="checkbox" id="shChkOnly">チェック付き行のみ表示</label>
+                        </div>
+                        <div>
+                            <label for="sngSrch">曲名検索: </label>
+                            <input type="text" id="sngSrch" placeholder="曲名で絞り込み...">
+                        </div>
                     </div>
                     <div class="table-wrapper">
                         <table id="musicTbl" class="tbl">
@@ -219,6 +221,7 @@
                             <tbody></tbody>
                         </table>
                     </div>
+
                 </section>
 
                 <section id="setlist-tab" class="tab-content">

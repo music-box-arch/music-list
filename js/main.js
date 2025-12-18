@@ -370,3 +370,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+// all-audio-btn.jsで使うために公開する
+window.initLazy = initLazy;
