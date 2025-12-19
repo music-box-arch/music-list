@@ -5,6 +5,7 @@
  * 指定された mID のライブ音源情報を開く（司令塔）
  */
 export async function audioInfoOpen(mID) {
+    console.log(`[audioInfoOpen] called: mID=${mID}`);
     // ===== 表示用の土台を作る =====
     const base = mkAudBase(mID);
     if (!base) return;
@@ -25,34 +26,50 @@ export async function audioInfoOpen(mID) {
 
 // 以下は audInfoOpen から呼ばれる内部用ヘルパー関数群
 
-// 音源情報表示用の土台DOM作成（対象行の直後に <tr> 挿入・既に開いていればnullを返す）
+// 曲の行の直後に、音源情報用の tr + td を用意する・既に開いていればnullを返す）
 function mkAudBase(mID) {
-    // 対象のチェックボックスを探す
-    const chk = document.querySelector(`input.chk[data-id="${mID}"]`);
-    if (!chk) return null;
+    console.log(`[mkAudBase] called: mID=${mID}`);
 
-    // チェックボックスが属する行を取得
-    const row = chk.closest('tr');
-    if (!row) return null;
-
-    // 二重描画防止
+    // すでに開いていたら何もしない
     if (document.querySelector(`[data-audio-info="${mID}"]`)) {
+        console.log(`[mkAudBase] already opened: mID=${mID}`);
         return null;
     }
 
-    // 情報表示用の行を作成
-    const infoRow = document.createElement('tr');
-    infoRow.dataset.audioInfo = mID;
+    // mIDを知っている唯一の要素：checkbox
+    const chk = document.querySelector(`input.chk[data-id="${mID}"]`);
+    console.log('[mkAudBase] checkbox:', chk);
+
+    if (!chk) {
+        console.warn(`[mkAudBase] checkbox not found for mID=${mID}`);
+        return null;
+    }
+
+    // checkbox から行を特定
+    const songRow = chk.closest('tr');
+    console.log('[mkAudBase] songRow:', songRow);
+
+    if (!songRow) {
+        console.warn(`[mkAudBase] tr not found via checkbox for mID=${mID}`);
+        return null;
+    }
+
+    // 展開用の行を作成
+    const tr = document.createElement('tr');
+    tr.className = 'audio-info-row';
+    tr.dataset.audioInfo = mID;
 
     const td = document.createElement('td');
-    td.colSpan = row.children.length;
+    td.colSpan = songRow.children.length;
+    td.style.padding = '0';
+    td.style.border = 'none';
 
-    infoRow.appendChild(td);
+    tr.appendChild(td);
+    songRow.after(tr);
 
-    // 元の曲行の直後に挿入
-    row.after(infoRow);
+    console.log('[mkAudBase] audio-info row inserted');
 
-    return { infoRow, td };
+    return { tr, td };
 }
 
 // ライブ音源データを取得する、ファイル無し / 空配列はエラー扱い
@@ -75,24 +92,48 @@ async function getAudData(mID) {
 }
 
 // ライブ音源データがある場合の表示
-function putAudData(td, data) {
-    data.forEach(item => {
-        const p = document.createElement('p');
+async function putAudData(td, data) {
+    const { mkMiniTbl } = await import('./tbl.js');
 
-        // 空文字は表示しない
-        const parts = [
-            item['event-date'],
-            item['event-name'],
-            item['event-venue'],
-            item['product-name'],
-            item['edition']
-        ].filter(Boolean);
+    const headers = [
+        '日時',
+        'イベント名',
+        'イベント会場',
+        '商品種別',
+        '収録円盤名',
+        '備考'
+    ];
 
-        p.textContent = parts.join(' / ');
-        p.style.fontSize = '0.9em';
+    const rows = data.map(d => [
+        d['event-date'],
+        d['event-name'],
+        d['event-venue'],
+        d['product-type'],
+        d['product-name'],
+        d['edition'] ?? ''
+    ]);
 
-        td.appendChild(p);
-    });
+    const tbl = mkMiniTbl(headers, rows);
+
+    tbl.style.maxWidth = '760px';
+    tbl.style.margin = '0 0 0 auto';
+    tbl.style.fontSize = '0.9em';
+
+    td.appendChild(tbl);
+    // ===== mini table の上下 border を消す（左右は残す）=====
+    const trList = tbl.querySelectorAll('tr');
+
+    if (trList.length > 0) {
+        // 上
+        trList[0].querySelectorAll('th, td').forEach(el => {
+            el.style.borderTop = '0';
+        });
+
+        // 下
+        trList[trList.length - 1].querySelectorAll('td').forEach(el => {
+            el.style.borderBottom = '0';
+        });
+    }
 }
 
 // ライブ音源データが無い場合の表示
@@ -104,7 +145,6 @@ function putNoAud(td) {
 
     td.appendChild(p);
 }
-
 
 /**
  * @param {number} mID - 曲ごとの一意なID

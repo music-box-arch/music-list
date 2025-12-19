@@ -3,14 +3,14 @@
 // リソース完全性検証関数
 export function isValidResource(url) {
   if (!url || typeof url !== 'string') return false;
-  
+
   // 自己ドメイン/相対パスのみ許可
   const allowedOrigins = [
     window.location.origin, // 現在のドメイン
     '', // 相対パス
     '.' // 相対パス
   ];
-  
+
   try {
     const parsedUrl = new URL(url, window.location.href);
     return parsedUrl.origin === window.location.origin;
@@ -23,15 +23,15 @@ export function isValidResource(url) {
 // URL検証関数（XSS防止）
 export function isValidUrl(url) {
   if (!url || typeof url !== 'string') return false;
-  
+
   // 危険なスキームを禁止
   const dangerousSchemes = ['javascript:', 'data:', 'vbscript:', 'file:', 'about:'];
   const lowercaseUrl = url.toLowerCase().trim();
-  
+
   if (dangerousSchemes.some(scheme => lowercaseUrl.startsWith(scheme))) {
     return false;
   }
-  
+
   // 基本的なURL形式チェック
   try {
     new URL(url);
@@ -45,7 +45,7 @@ export function isValidUrl(url) {
 // リンク作成関数（安全）
 function genLink(url, text, target = '_blank', rel = 'noopener noreferrer') {
   if (!url || !isValidUrl(url)) return '';
-  
+
   const a = document.createElement('a');
   a.href = url;
   a.textContent = text;
@@ -119,7 +119,7 @@ export function createTable(config) {
   const tbody = document.createElement('tbody');
   data.forEach((item, index) => {
     const tr = document.createElement('tr');
-    
+
     // 共通チェックボックス
     const checkboxTd = document.createElement('td');
     const checkbox = document.createElement('input');
@@ -129,12 +129,12 @@ export function createTable(config) {
     checkbox.setAttribute('data-id', item.mID);
     checkboxTd.appendChild(checkbox);
     tr.appendChild(checkboxTd);
-    
+
     // 新方式: columns配列が指定されている場合
     if (columns.length > 0) {
       columns.forEach((prop, columnIndex) => {
         const td = document.createElement('td');
-        
+
         // textOnlyColumnsに含まれていない場合は音楽リンク処理
         if (textOnlyColumns.includes(columnIndex)) {
           td.textContent = item[prop] || '';
@@ -155,22 +155,22 @@ export function createTable(config) {
             td.textContent = '';
           }
         }
-        
+
         tr.appendChild(td);
       });
-      
+
       if (cstmRow) cstmRow(tr, item, index);
     } else {
       // 旧方式: rowProcessor使用
       const customResult = rowProcessor(item, index, context);
-      
+
       if (customResult.tds) {
         customResult.tds.forEach((td, tdIndex) => {
           // innerHTML使用を廃止：すべてDOM APIで処理
           tr.appendChild(td);
         });
       }
-      
+
       // 属性設定
       if (customResult.attributes) {
         Object.entries(customResult.attributes).forEach(([key, value]) => {
@@ -178,11 +178,41 @@ export function createTable(config) {
         });
       }
     }
-    
+
     tbody.appendChild(tr);
   });
-  
+
   table.appendChild(tbody);
 
   return { table, tbody };
+}
+
+// 軽量な情報表示用テーブルを作る（音源モード用）
+export function mkMiniTbl(headers, rows) {
+  const table = document.createElement('table');
+  table.className = 'tbl mini';
+
+  const thead = document.createElement('thead');
+  const trh = document.createElement('tr');
+  headers.forEach(h => {
+    const th = document.createElement('th');
+    th.textContent = h;
+    trh.appendChild(th);
+  });
+  thead.appendChild(trh);
+  table.appendChild(thead);
+
+  const tbody = document.createElement('tbody');
+  rows.forEach(row => {
+    const tr = document.createElement('tr');
+    row.forEach(cell => {
+      const td = document.createElement('td');
+      td.textContent = cell || '';
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+  table.appendChild(tbody);
+
+  return table;
 }
