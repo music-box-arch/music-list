@@ -1,0 +1,45 @@
+/* 全ライブ音源表示モードでのみ使うcss */
+.dis {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+/* 音源トグルボタン */
+.aud-tgl {
+    margin-right: 4px;
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 曲名セルを少し右にずらす */
+.aud-shft {
+    padding-left: 1em;
+}
+
+.aud-bs {
+    padding: 0 !important;
+    border: none !important;
+}
+
+.aud-mn {
+    margin: 0 0 0 auto;
+    max-width: 760px;
+    font-size: .9em;
+}
+
+/* mini table：上下の border を消す（左右は残す） */
+.aud-mn tr:first-child th,
+.aud-mn tr:first-child td {
+    border-top: 0;
+}
+
+.aud-mn tr:last-child td {
+    border-bottom: 0;
+}
+
+/* ライブ音源データが無い場合の表示 */
+.aud-no {
+    color: #777;
+    font-style: italic;
+}

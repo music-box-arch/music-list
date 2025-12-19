@@ -29,6 +29,8 @@ export async function handleAudioMode(isOn) {
         // main.jsの関数。lazyloadがまだならloadされ、cSが保存される
         await window.initLazy();
 
+        loadAudCss();   // cssをロード
+
         bkAudSt();    // 音源モード専用UI状態をバックアップ
         forceDisp();  // 表示状態を強制調整（セトリ→曲一覧、style/mix OFF）
         disUI();      // UIを無効化
@@ -49,6 +51,20 @@ export async function handleAudioMode(isOn) {
             if (audioChk) audioChk.checked = true;
         }
     }
+}
+
+function loadAudCss() {
+    if (document.getElementById('aud-css')) {
+        return;
+    }
+
+    const link = document.createElement('link');
+    link.id = 'aud-css';
+    link.rel = 'stylesheet';
+    link.href = 'css/aud.css';
+
+    document.head.appendChild(link);
+    console.log('[audioMode] aud.css loaded');
 }
 
 // モードON直前の表のUIのチェック状態を保存する
@@ -91,32 +107,34 @@ function forceDisp() {
 
 // UIを無効化。ページ上部でconstした配列 AUD_UI_IDS, AUD_UI_SELECTORS を使用
 function disUI() {
+    console.log('[audioMode] disUI() called');
+
     // ===== 見た目：auf 配下をグレーアウト =====
     document.querySelectorAll('.auf').forEach(el => {
-        el.style.opacity = '0.5';
+        el.classList.add('dis');
     });
 
     // ===== 意味が強いUI（ID指定）=====
     AUD_UI_IDS.forEach(id => {
         const el = document.getElementById(id);
-        if (el) {
-            el.disabled = true;
-            el.style.cursor = 'not-allowed';
-        }
+        if (!el) return;
+
+        el.disabled = true;
+        el.classList.add('dis');
     });
 
     // ===== 構造的・複数存在するUI（セレクタ指定）=====
     AUD_UI_SELECTORS.forEach(selector => {
         document.querySelectorAll(selector).forEach(el => {
             el.disabled = true;
-            el.style.cursor = 'not-allowed';
+            el.classList.add('dis');
         });
     });
 
+    // ===== セトリタブ（見た目だけ無効化）=====
     const setlistTab = document.querySelector('.tab-btn[data-tab="setlist"]');
     if (setlistTab) {
-        setlistTab.style.setProperty('color', '#999');
-        setlistTab.style.setProperty('background', '#eee');
+        setlistTab.classList.add('dis');
     }
 
     console.log('[audioMode] UI disabled');
@@ -140,27 +158,27 @@ function btnAppear() {
         }
 
         // すでにボタンがある場合はスキップ
-        if (titleCell.querySelector('.audio-toggle')) {
+        if (titleCell.querySelector('.aud-tgl')) {
             return;
         }
 
+        // ▶ ボタンを作成
         const a = document.createElement('a');
-        a.className = 'audio-toggle';
+        a.className = 'aud-tgl'; // ← CSSに定義あり
         a.dataset.id = mID;
         a.textContent = '▶';
-        a.href = 'javascript:void(0)';
-        a.style.marginRight = '4px';
-        a.style.fontSize = '1em';
-        a.style.textDecoration = 'none';
+        a.href = '#';
 
+        // ボタンを挿入（曲名の左側）
         titleCell.insertBefore(a, titleCell.firstChild);
-        titleCell.style.paddingLeft = '1em';
+        titleCell.classList.add('aud-shft'); // ← 左余白を調整
 
-        a.addEventListener('click', async () => {
+        // クリックイベント
+        a.addEventListener('click', async (e) => {
+            e.preventDefault(); // ← href="#"のデフォルト動作抑制
+
             const mIDNum = Number(mID);
-
-            const { audioInfoOpen, audioInfoClose } =
-                await import('./all-audio.js');
+            const { audioInfoOpen, audioInfoClose } = await import('./all-audio.js');
 
             const idx = openAudioNumbers.indexOf(mIDNum);
 
@@ -179,7 +197,6 @@ function btnAppear() {
             }
         });
     });
-
 }
 
 // ▼ ボタン削除、表示中のライブ情報をすべて閉じる（audioInfoClose()）
@@ -209,36 +226,38 @@ function rstAudSt() {
 }
 
 function enaUI() {
-    console.log("enaUI() called");
-    // あとでここに「UIを戻す」処理を書く！
+    console.log('[audioMode] enaUI() called');
 
-    // auf の見た目を戻す
+    // ===== 見た目：auf 配下のグレーアウト解除 =====
     document.querySelectorAll('.auf').forEach(el => {
-        el.style.opacity = '';
+        el.classList.remove('dis');
     });
 
-    // disabledを戻す
+    // ===== 意味が強いUI（ID指定）=====
     AUD_UI_IDS.forEach(id => {
         const el = document.getElementById(id);
         if (!el) return;
+
         el.disabled = false;
-        el.style.cursor = '';
+        el.classList.remove('dis');
     });
+
+    // ===== 構造的・複数存在するUI（セレクタ指定）=====
     AUD_UI_SELECTORS.forEach(selector => {
         document.querySelectorAll(selector).forEach(el => {
             el.disabled = false;
-            el.style.cursor = '';
+            el.classList.remove('dis');
         });
     });
 
-    // セトリタブの hover時の挙動の冷凍を解除
+    // ===== セトリタブの見た目を戻す =====
     const setlistTab = document.querySelector('.tab-btn[data-tab="setlist"]');
     if (setlistTab) {
-        setlistTab.style.removeProperty('color');
-        setlistTab.style.removeProperty('background');
+        setlistTab.classList.remove('dis');
     }
-}
 
+    console.log('[audioMode] UI enabled');
+}
 
 async function closeInfos() {
     console.log("closeInfos() called");

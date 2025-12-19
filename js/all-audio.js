@@ -36,19 +36,15 @@ function mkAudBase(mID) {
         return null;
     }
 
-    // mIDを知っている唯一の要素：checkbox
+    // checkbox を探す
     const chk = document.querySelector(`input.chk[data-id="${mID}"]`);
-    console.log('[mkAudBase] checkbox:', chk);
-
     if (!chk) {
         console.warn(`[mkAudBase] checkbox not found for mID=${mID}`);
         return null;
     }
 
-    // checkbox から行を特定
+    // 行を特定
     const songRow = chk.closest('tr');
-    console.log('[mkAudBase] songRow:', songRow);
-
     if (!songRow) {
         console.warn(`[mkAudBase] tr not found via checkbox for mID=${mID}`);
         return null;
@@ -61,8 +57,7 @@ function mkAudBase(mID) {
 
     const td = document.createElement('td');
     td.colSpan = songRow.children.length;
-    td.style.padding = '0';
-    td.style.border = 'none';
+    td.className = 'aud-bs'; // ← スタイルをCSSで管理（padding: 0; border: none）
 
     tr.appendChild(td);
     songRow.after(tr);
@@ -93,6 +88,8 @@ async function getAudData(mID) {
 
 // ライブ音源データがある場合の表示
 async function putAudData(td, data) {
+    console.log('[putAudData] called');
+
     const { mkMiniTbl } = await import('./tbl.js');
 
     const headers = [
@@ -115,35 +112,24 @@ async function putAudData(td, data) {
 
     const tbl = mkMiniTbl(headers, rows);
 
-    tbl.style.maxWidth = '760px';
-    tbl.style.margin = '0 0 0 auto';
-    tbl.style.fontSize = '0.9em';
+    // ===== 見た目は class で指定 =====
+    tbl.classList.add('aud-mn');
 
     td.appendChild(tbl);
-    // ===== mini table の上下 border を消す（左右は残す）=====
-    const trList = tbl.querySelectorAll('tr');
 
-    if (trList.length > 0) {
-        // 上
-        trList[0].querySelectorAll('th, td').forEach(el => {
-            el.style.borderTop = '0';
-        });
-
-        // 下
-        trList[trList.length - 1].querySelectorAll('td').forEach(el => {
-            el.style.borderBottom = '0';
-        });
-    }
+    console.log('[putAudData] mini table appended');
 }
 
 // ライブ音源データが無い場合の表示
+// ライブ音源データが無い場合の表示
 function putNoAud(td) {
     const p = document.createElement('p');
+    p.className = 'aud-no';
     p.textContent = 'この曲のライブ音源データはありません';
-    p.style.color = '#777';
-    p.style.fontStyle = 'italic';
 
     td.appendChild(p);
+
+    console.log('[putNoAud] No data message inserted');
 }
 
 /**
