@@ -188,12 +188,14 @@ function btnAppear() {
                 openAudioNumbers.push(mIDNum);
                 console.log('[audioMode] opened:', mIDNum, 'now open:', openAudioNumbers);
                 a.textContent = '▼';
+                a.classList.add('is-open');   // ← これだけ
             } else {
                 // ===== 閉じる =====
                 audioInfoClose(mIDNum);
                 openAudioNumbers.splice(idx, 1);
                 console.log('[audioMode] closed:', mIDNum, 'now open:', openAudioNumbers);
                 a.textContent = '▶';
+                a.classList.remove('is-open'); // ← これだけ
             }
         });
     });

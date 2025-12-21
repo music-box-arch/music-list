@@ -4,21 +4,21 @@
 // 指定された mID のライブ音源情報を開く（司令塔）
 export async function audioInfoOpen(mID) {
     console.log(`[audioInfoOpen] called: mID=${mID}`);
+
     // ===== 表示用の土台を作る =====
     const base = mkAudBase(mID);
     if (!base) return;
 
-    const { td } = base;
+    const { wrap } = base;
 
     try {
         // ===== データを取得 =====
         const data = await getAudData(mID);
-
         // ===== データがある場合の描画 =====
-        putAudData(td, data);
+        putAudData(wrap, data);
     } catch {
         // ===== データが無い / 取得失敗 =====
-        putNoAud(td);
+        putNoAud(wrap);
     }
 }
 
@@ -34,35 +34,40 @@ function mkAudBase(mID) {
         return null;
     }
 
-    // checkbox を探す
+    // checkbox を探す（mIDを知っている唯一の手がかり）
     const chk = document.querySelector(`input.chk[data-id="${mID}"]`);
     if (!chk) {
         console.warn(`[mkAudBase] checkbox not found for mID=${mID}`);
         return null;
     }
 
-    // 行を特定
     const songRow = chk.closest('tr');
     if (!songRow) {
         console.warn(`[mkAudBase] tr not found via checkbox for mID=${mID}`);
         return null;
     }
 
-    // 展開用の行を作成
+    // 展開用の行
     const tr = document.createElement('tr');
     tr.className = 'audio-info-row';
     tr.dataset.audioInfo = mID;
 
     const td = document.createElement('td');
     td.colSpan = songRow.children.length;
-    td.className = 'aud-bs'; // ← スタイルをCSSで管理（padding: 0; border: none）
+    td.className = 'aud-bs';
 
+    // ★ ラッパーをここで作る
+    const wrap = document.createElement('div');
+    wrap.className = 'aud-wrap';
+
+    td.appendChild(wrap);
     tr.appendChild(td);
     songRow.after(tr);
 
     console.log('[mkAudBase] audio-info row inserted');
 
-    return { tr, td };
+    // ★ td ではなく wrap を返す
+    return { tr, wrap };
 }
 
 // ライブ音源データを取得する、ファイル無し / 空配列はエラー扱い
@@ -85,7 +90,7 @@ async function getAudData(mID) {
 }
 
 // ライブ音源データがある場合の表示
-async function putAudData(td, data) {
+async function putAudData(wrap, data) {
     console.log('[putAudData] called');
 
     const { mkMiniTbl } = await import('./tbl.js');
@@ -109,24 +114,20 @@ async function putAudData(td, data) {
     ]);
 
     const tbl = mkMiniTbl(headers, rows);
-
-    // ===== 見た目は class で指定 =====
     tbl.classList.add('aud-mn');
 
-    td.appendChild(tbl);
+    wrap.appendChild(tbl);
 
     console.log('[putAudData] mini table appended');
 }
 
 // ライブ音源データが無い場合の表示
-function putNoAud(td) {
+function putNoAud(wrap) {
     const p = document.createElement('p');
-    p.className = 'aud-no';
     p.textContent = 'この曲のライブ音源データはありません';
+    p.className = 'aud-no';
 
-    td.appendChild(p);
-
-    console.log('[putNoAud] No data message inserted');
+    wrap.appendChild(p);
 }
 
 // @param {number} mID - 曲ごとの一意なID
