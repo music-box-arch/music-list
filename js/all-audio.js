@@ -72,7 +72,7 @@ function mkAudBase(mID) {
 
 // ライブ音源データを取得する、ファイル無し / 空配列はエラー扱い
 async function getAudData(mID) {
-    const res = await fetch(`data/all-live-audio/${mID}.json`);
+    const res = await fetch(`data/all-live-audio/${mID}.json?v=${window.updVer}`);
 
     // ファイルが存在しない（404など）
     if (!res.ok) {
@@ -93,7 +93,7 @@ async function getAudData(mID) {
 async function putAudData(wrap, data) {
     console.log('[putAudData] called');
 
-    const { mkMiniTbl } = await import('./tbl.js');
+    const { mkMiniTbl } = await import('./tbl.js?v=${window.updVer}');
 
     const headers = [
         '日時',

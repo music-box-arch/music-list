@@ -61,7 +61,7 @@ function loadAudCss() {
     const link = document.createElement('link');
     link.id = 'aud-css';
     link.rel = 'stylesheet';
-    link.href = 'css/aud.css';
+    link.href = `css/aud.css?v=${window.updVer}`;
 
     document.head.appendChild(link);
     console.log('[audioMode] aud.css loaded');
@@ -178,7 +178,7 @@ function btnAppear() {
             e.preventDefault(); // ← href="#"のデフォルト動作抑制
 
             const mIDNum = Number(mID);
-            const { audioInfoOpen, audioInfoClose } = await import('./all-audio.js');
+            const { audioInfoOpen, audioInfoClose } = await import('./all-audio.js?v=${window.updVer}');
 
             const idx = openAudioNumbers.indexOf(mIDNum);
 
@@ -266,7 +266,7 @@ async function closeInfos() {
 
     if (openAudioNumbers.length === 0) return;
 
-    const { audioInfoClose } = await import('./all-audio.js');
+    const { audioInfoClose } = await import('./all-audio.js?v=${window.updVer}');
     openAudioNumbers.forEach(mID => {
         audioInfoClose(mID);
     });
@@ -278,12 +278,13 @@ async function closeInfos() {
 function btnDisappear() {
     console.log("btnDisappear() called");
     // あとでここに「▶たちを消す・ずらした曲名を戻す」処理を書く！
-    document.querySelectorAll('.audio-toggle').forEach(btn => {
+    document.querySelectorAll('.aud-tgl').forEach(btn => {
         const cell = btn.parentElement;
         btn.remove();
 
+        // 曲名セルの左ずらしを戻す
         if (cell) {
-            cell.style.paddingLeft = '';
+            cell.classList.remove('aud-shft');
         }
     });
 }

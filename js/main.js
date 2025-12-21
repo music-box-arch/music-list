@@ -1,5 +1,5 @@
 // バージョン定義
-window.updVer = '20251116';
+window.updVer = '20251220';
 
 // 1. グローバル変数（最小限）
 let lazy = false; // lazyload済みフラグ
@@ -9,7 +9,7 @@ let remains = []; // 残りの曲データ
 
 // DOM表でリンクを作る関数を定義（安全化）
 const makeLink = async (label, url) => {
-  const { isValidUrl } = await import('./tbl.js');
+  const { isValidUrl } = await import('./tbl.js?v=${window.updVer}');
   if (!url || !isValidUrl(url)) return '';
 
   const a = document.createElement('a');
@@ -25,8 +25,8 @@ async function initLazy() {
   if (lazy) return;
 
   // 各モジュールから必要な機能をimport
-  const { setupGlb } = await import('./main-lazy.js');
-  const { initChkState, setGlobals, syncChk } = await import('./checkstate.js');
+  const { setupGlb } = await import('./main-lazy.js?v=${window.updVer}');
+  const { initChkState, setGlobals, syncChk } = await import('./checkstate.js?v=${window.updVer}');
 
   // チェック状態管理を初期化
   await initChkState();
@@ -59,8 +59,8 @@ async function initSlLazy() {
 document.addEventListener('DOMContentLoaded', function () {
   // 2-1. 曲リスト表生成（最優先）
   // リソース完全性検証
-  import('./tbl.js').then(({ isValidResource }) => {
-    const musicUrl = 'data/music-list.json';
+  import('./tbl.js?v=${window.updVer}').then(({ isValidResource }) => {
+    const musicUrl = 'data/music-list.json?v=${window.updVer}';
 
     if (!isValidResource(musicUrl)) {
       throw new Error('Invalid resource URL detected');
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
       remains = songData.slice(40);
 
       // tbl.jsの汎用関数を使用してテーブル作成
-      const { createTable } = await import('./tbl.js');
+      const { createTable } = await import('./tbl.js?v=${window.updVer}');
 
       const tableConfig = {
         headers: ['✔︎', '曲名', 'YT', 'LV', 'Spf', 'Apl', 'iTn', 's/m', '初収録', '曲順', '発売日'],
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //console.time(timeLabel);
 
     const tbody = document.querySelector('#musicTbl tbody');
-    const { createTable } = await import('./tbl.js');
+    const { createTable } = await import('./tbl.js?v=${window.updVer}');
 
     const batch = count > 0 ? remains.splice(0, count) : remains.splice(0);
 
@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // 2. result.jsを動的読み込みしてCD処理実行
-        const { initCdFeats } = await import('./result.js');
+        const { initCdFeats } = await import('./result.js?v=${window.updVer}');
         initCdFeats();
 
         if (window.cdBtn) {
@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!audioCheckbox) return;
 
     audioCheckbox.addEventListener("change", async (e) => {
-      const { handleAudioMode } = await import('./all-audio-btn.js');
+      const { handleAudioMode } = await import('./all-audio-btn.js?v=${window.updVer}');
       handleAudioMode(e.target.checked);
     });
   }

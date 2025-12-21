@@ -71,15 +71,15 @@ function truncate(str, maxW, suffix = '') {
 export async function loadData() {
     if (!allDiscs || !musicMap) {
         // リソース完全性検証を追加
-        const { isValidResource } = await import('./tbl.js');
-        
-        const discUrl = 'data/all-discs.json';
-        const mapUrl = 'data/music-map.json';
-        
+        const { isValidResource } = await import('./tbl.js?v=${window.updVer}');
+
+        const discUrl = 'data/all-discs.json?v=${window.updVer}';
+        const mapUrl = 'data/music-map.json?v=${window.updVer}';
+
         if (!isValidResource(discUrl) || !isValidResource(mapUrl)) {
             throw new Error('Invalid resource URLs detected');
         }
-        
+
         const [discs, map] = await Promise.all([
             fetch(discUrl).then(res => res.json()),
             fetch(mapUrl).then(res => res.json())
@@ -169,7 +169,7 @@ export async function buildMatrix(songIDs, discs, musicMap) {
     const cdCharW = Math.floor(cdDisplayW / avgCharPx);
 
     // URL検証関数を取得
-    const { isValidUrl } = await import('./tbl.js');
+    const { isValidUrl } = await import('./tbl.js?v=${window.updVer}');
 
     const headers = [''].concat(
         filtDiscs.map(d => {
@@ -317,7 +317,7 @@ export function createTtl(title, maxDispW) {
     if (['スノウアンサー', 'スノウリバース', 'スノウループ'].includes(title)) {
         const origW = getDisplayWidth(title);
         if (maxDispW >= origW) return title;
-        
+
         const minShow = title.slice(0, 4) + '…';  // 4文字+…
         if (maxDispW < getDisplayWidth(minShow)) {
             return minShow;
@@ -329,7 +329,7 @@ export function createTtl(title, maxDispW) {
     if (['さよならサマータイムマシン', 'さよなら第九惑星'].includes(title)) {
         const origW = getDisplayWidth(title);
         if (maxDispW >= origW) return title;
-        
+
         const minShow = title.slice(0, 5) + '…';  // 5文字+…
         if (maxDispW < getDisplayWidth(minShow)) {
             return minShow;
@@ -377,11 +377,11 @@ export function generateHTMLTable(headers, rows, rowHeaderW, colHeaderW) {
             th.style.minWidth = `${colHeaderW}px`;
             th.style.maxWidth = `${colHeaderW}px`;
             th.style.overflow = 'hidden';
-            
+
             // ヘッダーコンテンツを安全に構築
             const cdText = document.createTextNode(header.cdName + '\n(' + header.songCount + ')');
             th.appendChild(cdText);
-            
+
             if (header.amznUrl) {
                 th.appendChild(document.createTextNode('\n'));
                 const amznLink = document.createElement('a');

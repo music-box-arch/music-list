@@ -24,8 +24,8 @@ function sanitizeFilename(filename) {
 export async function initSL() {
   try {
     // リソース完全性検証
-    const { isValidResource } = await import('./tbl.js');
-    const musicUrl = 'data/music-list-SL.json';
+    const { isValidResource } = await import('./tbl.js?v=${window.updVer}');
+    const musicUrl = 'data/music-list-SL.json?v=${window.updVer}';
 
     const indexUrl = `setlist/index.json?v=${window.updVer}`;
 
@@ -102,7 +102,7 @@ function createMCRow(colCount = 12) {
 // MC行を後から挿入する関数
 async function insertMCRows(tbody, setlistData) {
   // main-lazy.jsからinsertRowをimport
-  const { insertRow } = await import('./main-lazy.js');
+  const { insertRow } = await import('./main-lazy.js?v=${window.updVer}');
 
   // MC位置を特定
   const mcPositions = [];
@@ -304,7 +304,7 @@ async function buildOneSl(container, setlistData, setlistIndex) {
   });
 
   // tbl.jsの汎用関数を使用してテーブル作成
-  const { createTable } = await import('./tbl.js');
+  const { createTable } = await import('./tbl.js?v=${window.updVer}');
 
   const tableConfig = {
     headers: ['✔︎', 'セトリ順', '曲名', 'YT', 'LV', 'Spf', 'Apl', 'iTn', 'テンポ', '特徴・ハイライト', '歌詞'],

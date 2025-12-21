@@ -5,8 +5,8 @@ let smData = null;
 // サブスク無しデータの読み込み
 async function loadSubNo() {
     if (!subNoMap) {
-        const { isValidResource } = await import('./tbl.js');
-        const url = 'data/sub-no.json';
+        const { isValidResource } = await import('./tbl.js?v=${window.updVer}');
+        const url = 'data/sub-no.json?v=${window.updVer}';
 
         if (!isValidResource(url)) {
             throw new Error('Invalid resource URL detected');
@@ -21,8 +21,8 @@ async function loadSubNo() {
 // style/mixデータの読み込み
 async function loadSm() {
     if (!smData) {
-        const { isValidResource } = await import('./tbl.js');
-        const url = 'data/music-list-sm.json';
+        const { isValidResource } = await import('./tbl.js?v=${window.updVer}');
+        const url = 'data/music-list-sm.json?v=${window.updVer}';
 
         if (!isValidResource(url)) {
             throw new Error('Invalid resource URL detected');
@@ -93,7 +93,7 @@ async function toggleSm(showStyle, showMix) {
     }).sort((a, b) => a.mID - b.mID);
 
     // 各行を適切な位置に挿入
-    const { createTable } = await import('./tbl.js');
+    const { createTable } = await import('./tbl.js?v=${window.updVer}');
     const { table } = createTable({
         headers: [], // ヘッダー不要
         data: toAdd,
