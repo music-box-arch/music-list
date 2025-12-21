@@ -1,9 +1,7 @@
 // 全ライブ音源情報モード用
 // （UI状態管理はしない・mIDを受け取って「表示する / 消す」）
 
-/**
- * 指定された mID のライブ音源情報を開く（司令塔）
- */
+// 指定された mID のライブ音源情報を開く（司令塔）
 export async function audioInfoOpen(mID) {
     console.log(`[audioInfoOpen] called: mID=${mID}`);
     // ===== 表示用の土台を作る =====
@@ -121,7 +119,6 @@ async function putAudData(td, data) {
 }
 
 // ライブ音源データが無い場合の表示
-// ライブ音源データが無い場合の表示
 function putNoAud(td) {
     const p = document.createElement('p');
     p.className = 'aud-no';
@@ -132,9 +129,7 @@ function putNoAud(td) {
     console.log('[putNoAud] No data message inserted');
 }
 
-/**
- * @param {number} mID - 曲ごとの一意なID
- */
+// @param {number} mID - 曲ごとの一意なID
 // 指定された mID のライブ音源情報を閉じる
 export function audioInfoClose(mID) {
     console.log(`[audioInfoClose] called: mID=${mID}`);

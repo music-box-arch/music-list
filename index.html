@@ -19,10 +19,6 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
-        style-src 'self' 'sha256-bbGhaqQfasn+ZRvIyDf330SSROOos3oDzgflOwIhNU4=';
-        script-src 'self' 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE='">
-
     <title>ユニゾン曲リスト(非公式)</title>
     <style>
         /* === ベースレイアウト === */
@@ -48,9 +44,12 @@
             color: #8A74A5;
         }
 
-        p,
         .btn {
             margin: 5px 0;
+        }
+
+        p {
+            margin: 2px 0;
         }
 
         h1 {
@@ -169,6 +168,18 @@
 
         #back-to-top.show {
             display: inline-block;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 0;
+                padding: .2em;
+            }
+
+            .tbl th,
+            .tbl td {
+                padding: .2em .4em;
+            }
         }
     </style>
 </head>
