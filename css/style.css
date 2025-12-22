@@ -123,6 +123,23 @@ a:visited {
   border: 0;
 }
 
+/* シェアボタン */
+.shareWrap {
+  padding-top: 1em;
+  text-align: right;
+  font-size: 13px;
+}
+
+.shareWrap .shareBtn {
+  display: inline-block;
+  background-color: #4ca7e0;
+  color: white;
+  padding: .4em .6em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
 /* === サイト構成要素 === */
 /* ここから header */
 #site-name {

@@ -7,20 +7,21 @@
 /* 音源トグルボタン */
 .aud-tgl {
     margin-right: 4px;
-    font-size: 1em;
+    font-size: 16px;
     text-decoration: none;
     cursor: pointer;
+    color: #3f7bd5;
 }
 
 /* トグルが開いている状態 */
 .aud-tgl.is-open {
-    color: #c33;
-    /* 少し落ち着いた赤 */
+    color: #bc2f1a;
+    font-weight: 600;
 }
 
 /* 曲名セルを少し右にずらす */
 .aud-shft {
-    padding-left: 1em;
+    padding-left: 20px;
 }
 
 .aud-bs {
