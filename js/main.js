@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
 
-    // CDを見るボタンは別途initLazy()で設定済み
+    // CDを見るボタンはinitLazy()で設定済み
 
     // クリアボタンは最小限の機能のみ
     document.querySelectorAll('.clearAllChecksBtn').forEach(btn => {
@@ -353,6 +353,9 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+
+  // シェアボタン可視化
+  document.querySelector('.shareWrap')?.classList.remove('hidden');
 
   // 2-6. トップに戻るボタン生成
   const backToTop = document.createElement('a');

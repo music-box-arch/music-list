@@ -20,7 +20,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
-        style-src 'self' 'sha256-eDMwQY69vR4XSFJ0x+na+u3saufFYPKZLbAWWm8D+BM=' 'sha256-Wr9RI3VvOK3drBPYr/f9KRXpdT/nMv3HEOlTk4xf4YY=';
+        style-src 'self' 'sha256-LgAWy4RxP483FvuxOPgy7k7fR9K19uk1C0AQKHp2ns8=' 'sha256-eDMwQY69vR4XSFJ0x+na+u3saufFYPKZLbAWWm8D+BM=' 'sha256-Wr9RI3VvOK3drBPYr/f9KRXpdT/nMv3HEOlTk4xf4YY=';
         script-src 'self' 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE='">
 
     <title>ユニゾン曲リスト(非公式)</title>
@@ -184,6 +184,10 @@
             font-size: 13px;
         }
 
+        .hidden {
+            display: none;
+        }
+
         .shareWrap .shareBtn {
             display: inline-block;
             background-color: #4ca7e0;
@@ -278,9 +282,9 @@
             </section>
         </section>
         <button class="showDiscsButton" disabled>チェックした曲を含むCDを見る</button>
-        <div class="shareWrap">
+        <div class="shareWrap hidden">
             <p>もしよかったら
-                <a href="https://twitter.com/intent/tweet?url=https://music-list.com/articles/tabuchi-recommend-applemusic.html&text=まずおすすめする田淵濃いめ曲 Apple Music編 - ユニゾン曲リスト(非公式)"
+                <a href="https://twitter.com/intent/tweet?url=https://music-list.com&text=ユニゾン曲リスト(非公式)"
                     class="shareBtn" target="_blank" rel="noopener noreferrer">Twitter(X)でシェア</a> をお願いします！
             </p>
         </div>
