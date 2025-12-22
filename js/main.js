@@ -55,6 +55,13 @@ async function initSlLazy() {
   slLazy = true;
 }
 
+function shwShare() {
+  if (window.scrollY > 200) {
+    document.querySelector('.shareWrap')?.classList.remove('hidden');
+    window.removeEventListener('scroll', shwShare); // 二度目以降の無駄処理防止
+  }
+}
+
 // 2. DOMContentLoaded後の処理
 document.addEventListener('DOMContentLoaded', function () {
   // 2-1. 曲リスト表生成（最優先）
@@ -354,9 +361,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // シェアボタン可視化
-  document.querySelector('.shareWrap')?.classList.remove('hidden');
-
   // 2-6. トップに戻るボタン生成
   const backToTop = document.createElement('a');
   backToTop.href = '#tp';
@@ -372,7 +376,11 @@ document.addEventListener('DOMContentLoaded', function () {
       backToTop.classList.remove('show');
     }
   });
+
+  // シェアボタン可視化
+  window.addEventListener('scroll', shwShare);
+
 });
 
-// all-audio-btn.jsで使うために公開する
+// all-audio-btn.js用に公開する
 window.initLazy = initLazy;
