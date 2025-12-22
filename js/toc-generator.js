@@ -9,23 +9,31 @@ function generateTableOfContents() {
 
     if (!tocList || !tocNav) return;
 
-    // h2見出しを取得（記事タイトル）
-    const headings = document.querySelectorAll('.content h2');
+    // h2, h3 見出しを順番通り取得
+    const headings = document.querySelectorAll('.content h2, .content h3');
 
     if (headings.length === 0) {
-        // 見出しがない場合は目次を非表示
         tocNav.style.display = 'none';
         return;
     }
 
-    // 目次を生成
-    headings.forEach((heading, index) => {
+    let currentH2Li = null;
+    let h2Index = 0;
+    let h3Index = 0;
+
+    headings.forEach((heading) => {
         // 見出しにIDを付与（なければ）
         if (!heading.id) {
-            heading.id = `heading-${index + 1}`;
+            if (heading.tagName === 'H2') {
+                h2Index++;
+                h3Index = 0;
+                heading.id = `heading-${h2Index}`;
+            } else {
+                h3Index++;
+                heading.id = `heading-${h2Index}-${h3Index}`;
+            }
         }
 
-        // 目次項目を作成
         const li = document.createElement('li');
         const a = document.createElement('a');
 
@@ -34,7 +42,20 @@ function generateTableOfContents() {
         a.className = 'toc-link';
 
         li.appendChild(a);
-        tocList.appendChild(li);
+
+        if (heading.tagName === 'H2') {
+            // h2はそのまま追加
+            tocList.appendChild(li);
+            currentH2Li = li;
+        } else if (heading.tagName === 'H3' && currentH2Li) {
+            // h3は直前のh2配下に入れる
+            let subList = currentH2Li.querySelector('ul');
+            if (!subList) {
+                subList = document.createElement('ul');
+                currentH2Li.appendChild(subList);
+            }
+            subList.appendChild(li);
+        }
     });
 
     // スムーススクロール
@@ -53,30 +74,3 @@ function generateTableOfContents() {
         });
     });
 }
-
-// ページ内リンクのハイライト（オプション）
-function highlightCurrentSection() {
-    const headings = document.querySelectorAll('.content h2');
-    const tocLinks = document.querySelectorAll('.toc-link');
-
-    window.addEventListener('scroll', function () {
-        let current = '';
-
-        headings.forEach(heading => {
-            const rect = heading.getBoundingClientRect();
-            if (rect.top <= 100) {
-                current = heading.id;
-            }
-        });
-
-        tocLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
-        });
-    });
-}
-
-// ハイライト機能を有効化（お好みで）
-// highlightCurrentSection();

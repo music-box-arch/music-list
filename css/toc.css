@@ -49,6 +49,25 @@
   font-weight: bold;
 }
 
+#toc-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#toc-list ul li a {
+  position: relative;
+  padding-left: 2.5em;
+}
+
+#toc-list ul li a::before {
+  padding-left: 1.2em;
+  content: "- ";
+  position: absolute;
+  left: 0;
+}
+
+
 @media (max-width: 600px) {
   #toc-nav {
     padding: .4em;
