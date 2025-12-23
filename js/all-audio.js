@@ -1,7 +1,5 @@
 //指定mIDの音源情報を開く
 export async function audioInfoOpen(mID) {
-    console.log(`[audioInfoOpen] called: mID=${mID}`);
-
     // ===== 表示用の土台を作る =====
     const base = mkAudBase(mID);
     if (!base) return;
@@ -22,15 +20,12 @@ export async function audioInfoOpen(mID) {
 //audInfoOpen用ヘルパー関数群
 // 曲行の後に音源情報用のtr+tdを用意
 function mkAudBase(mID) {
-    console.log(`[mkAudBase] called: mID=${mID}`);
-
-    // すでに開いていたら何もしない
+    // すでに開いてたら何もしない
     if (document.querySelector(`[data-audio-info="${mID}"]`)) {
-        console.log(`[mkAudBase] already opened: mID=${mID}`);
         return null;
     }
 
-    // checkbox を探す（mIDを知っている唯一の手がかり）
+    // chkBx探し
     const chk = document.querySelector(`input.chk[data-id="${mID}"]`);
     if (!chk) {
         console.warn(`[mkAudBase] checkbox not found for mID=${mID}`);
@@ -59,8 +54,6 @@ function mkAudBase(mID) {
     td.appendChild(wrap);
     tr.appendChild(td);
     songRow.after(tr);
-
-    console.log('[mkAudBase] audio-info row inserted');
 
     // ★ td ではなく wrap を返す
     return { tr, wrap };
@@ -121,8 +114,6 @@ function putNoAud(wrap) {
 
 // 指定mIDの音源情報を閉じる
 export function audioInfoClose(mID) {
-    console.log(`[audioInfoClose] called: mID=${mID}`);
-
     const infoRow = document.querySelector(`[data-audio-info="${mID}"]`);
     if (!infoRow) return;
 
