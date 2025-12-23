@@ -64,10 +64,9 @@ function loadAudCss() {
     link.href = `css/aud.css?v=${window.updVer}`;
 
     document.head.appendChild(link);
-    console.log('[audioMode] aud.css loaded');
 }
 
-// モードON直前の表のUIのチェック状態を保存する
+// モードON直前のUIのchk状態を保存
 function bkAudSt() {
     audModeBkup = {
         chkSb: document.getElementById('chkSb')?.checked ?? false,
@@ -75,11 +74,9 @@ function bkAudSt() {
         shMxChk: document.getElementById('shMxChk')?.checked ?? false,
         shChkOnly: document.getElementById('shChkOnly')?.checked ?? false,
     };
-
-    console.log('[audioMode] backup saved:', audModeBkup);
 }
 
-// 表示状態を強制調整（セトリ→曲一覧、style/mix OFF）
+// 表示を強制調整（tab、s/m OFF）
 function forceDisp() {
     // 曲一覧タブを強制表示
     const songTabBtn = document.querySelector(
@@ -105,16 +102,14 @@ function forceDisp() {
     }
 }
 
-// UIを無効化。ページ上部でconstした配列 AUD_UI_IDS, AUD_UI_SELECTORS を使用
+// UI無効化
 function disUI() {
-    console.log('[audioMode] disUI() called');
-
-    // ===== 見た目：auf 配下をグレーアウト =====
+    //aufグレーアウト
     document.querySelectorAll('.auf').forEach(el => {
         el.classList.add('dis');
     });
 
-    // ===== 意味が強いUI（ID指定）=====
+    //ID指定
     AUD_UI_IDS.forEach(id => {
         const el = document.getElementById(id);
         if (!el) return;
@@ -123,7 +118,7 @@ function disUI() {
         el.classList.add('dis');
     });
 
-    // ===== 構造的・複数存在するUI（セレクタ指定）=====
+    //セレクタ指定
     AUD_UI_SELECTORS.forEach(selector => {
         document.querySelectorAll(selector).forEach(el => {
             el.disabled = true;
@@ -131,21 +126,17 @@ function disUI() {
         });
     });
 
-    // ===== セトリタブ（見た目だけ無効化）=====
+    //slタブ 見た目
     const setlistTab = document.querySelector('.tab-btn[data-tab="setlist"]');
     if (setlistTab) {
         setlistTab.classList.add('dis');
     }
 
-    console.log('[audioMode] UI disabled');
 }
 
-// ▶ ボタン追加、クリックイベントでall-audio.jsを読み込んでaudioInfoOpen(mID)、result.js関係のチェックボックスなどの操作をオフに
+// ▶btn追加、clickでimport(all-audio.js),audioInfoOpen(mID)、result.js関係chkBxなど操作off
 function btnAppear() {
-    console.log("btnAppear() called");
-
     const checkboxes = document.querySelectorAll('input.chk[data-id]');
-    console.log("checkboxes found:", checkboxes.length);
 
     checkboxes.forEach((chk, idx) => {
         const mID = chk.dataset.id;
@@ -157,25 +148,25 @@ function btnAppear() {
             return;
         }
 
-        // すでにボタンがある場合はスキップ
+        // 既にある場合はskip
         if (titleCell.querySelector('.aud-tgl')) {
             return;
         }
 
-        // ▶ ボタンを作成
+        // ▶btn作成
         const a = document.createElement('a');
-        a.className = 'aud-tgl'; // ← CSSに定義あり
+        a.className = 'aud-tgl';
         a.dataset.id = mID;
         a.textContent = '▶';
         a.href = '#';
 
-        // ボタンを挿入（曲名の左側）
+        // insert btn(曲名左)
         titleCell.insertBefore(a, titleCell.firstChild);
-        titleCell.classList.add('aud-shft'); // ← 左余白を調整
+        titleCell.classList.add('aud-shft'); // ← 左余白
 
-        // クリックイベント
+        // click event
         a.addEventListener('click', async (e) => {
-            e.preventDefault(); // ← href="#"のデフォルト動作抑制
+            e.preventDefault(); // href="#"の動作抑制
 
             const mIDNum = Number(mID);
             const { audioInfoOpen, audioInfoClose } = await import('./all-audio.js?v=${window.updVer}');
@@ -183,28 +174,25 @@ function btnAppear() {
             const idx = openAudioNumbers.indexOf(mIDNum);
 
             if (idx === -1) {
-                // ===== 開く =====
+                // open
                 audioInfoOpen(mIDNum);
                 openAudioNumbers.push(mIDNum);
-                console.log('[audioMode] opened:', mIDNum, 'now open:', openAudioNumbers);
                 a.textContent = '▼';
-                a.classList.add('is-open');   // ← これだけ
+                a.classList.add('is-open');
             } else {
-                // ===== 閉じる =====
+                // close
                 audioInfoClose(mIDNum);
                 openAudioNumbers.splice(idx, 1);
-                console.log('[audioMode] closed:', mIDNum, 'now open:', openAudioNumbers);
                 a.textContent = '▶';
-                a.classList.remove('is-open'); // ← これだけ
+                a.classList.remove('is-open');
             }
         });
     });
 }
 
-// ▼ ボタン削除、表示中のライブ情報をすべて閉じる（audioInfoClose()）
+// remove ▼btn, close infos(audioInfoClose())
 function rstAudSt() {
-    console.log("rstAudSt() called");
-    // あとでここに「状態を戻す」処理を書く！
+    // 状態を戻す
     if (!audModeBkup) return;
     const map = {
         chkSb: 'chkSb',
@@ -219,7 +207,7 @@ function rstAudSt() {
 
         el.checked = audModeBkup[key];
 
-        // 必要なら change を発火
+        // 必要ならchange発火
         if (el.checked !== audModeBkup[key]) {
             el.checked = audModeBkup[key];
             el.dispatchEvent(new Event('change'));
@@ -228,14 +216,12 @@ function rstAudSt() {
 }
 
 function enaUI() {
-    console.log('[audioMode] enaUI() called');
-
-    // ===== 見た目：auf 配下のグレーアウト解除 =====
+    // aufのグレーアウト解除
     document.querySelectorAll('.auf').forEach(el => {
         el.classList.remove('dis');
     });
 
-    // ===== 意味が強いUI（ID指定）=====
+    // ID指定
     AUD_UI_IDS.forEach(id => {
         const el = document.getElementById(id);
         if (!el) return;
@@ -244,7 +230,7 @@ function enaUI() {
         el.classList.remove('dis');
     });
 
-    // ===== 構造的・複数存在するUI（セレクタ指定）=====
+    // セレクタ指定
     AUD_UI_SELECTORS.forEach(selector => {
         document.querySelectorAll(selector).forEach(el => {
             el.disabled = false;
@@ -252,18 +238,14 @@ function enaUI() {
         });
     });
 
-    // ===== セトリタブの見た目を戻す =====
+    // slタブの見た目
     const setlistTab = document.querySelector('.tab-btn[data-tab="setlist"]');
     if (setlistTab) {
         setlistTab.classList.remove('dis');
     }
-
-    console.log('[audioMode] UI enabled');
 }
 
 async function closeInfos() {
-    console.log("closeInfos() called");
-
     if (openAudioNumbers.length === 0) return;
 
     const { audioInfoClose } = await import('./all-audio.js?v=${window.updVer}');
@@ -271,18 +253,16 @@ async function closeInfos() {
         audioInfoClose(mID);
     });
 
-    console.log('[audioMode] closed all:', openAudioNumbers);
     openAudioNumbers = [];
 }
 
 function btnDisappear() {
-    console.log("btnDisappear() called");
-    // あとでここに「▶たちを消す・ずらした曲名を戻す」処理を書く！
+
     document.querySelectorAll('.aud-tgl').forEach(btn => {
         const cell = btn.parentElement;
         btn.remove();
 
-        // 曲名セルの左ずらしを戻す
+        // 曲名の左ずらしを戻す
         if (cell) {
             cell.classList.remove('aud-shft');
         }

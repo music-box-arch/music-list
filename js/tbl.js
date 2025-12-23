@@ -1,6 +1,4 @@
-// 汎用テーブル作成モジュール
-
-// リソース完全性検証関数
+// リソース完全性検証
 export function isValidResource(url) {
   if (!url || typeof url !== 'string') return false;
 
@@ -20,11 +18,11 @@ export function isValidResource(url) {
   }
 }
 
-// URL検証関数（XSS防止）
+// URL検証 XSS防止
 export function isValidUrl(url) {
   if (!url || typeof url !== 'string') return false;
 
-  // 危険なスキームを禁止
+  // 危険なスキーム禁止
   const dangerousSchemes = ['javascript:', 'data:', 'vbscript:', 'file:', 'about:'];
   const lowercaseUrl = url.toLowerCase().trim();
 
@@ -32,17 +30,17 @@ export function isValidUrl(url) {
     return false;
   }
 
-  // 基本的なURL形式チェック
+  //URL形式chk
   try {
     new URL(url);
     return true;
   } catch {
-    // 相対URLの場合もチェック
+    // 相対URL chk
     return /^(\/|\.\/|\.\.\/)/.test(url) || /^[a-zA-Z0-9\-._~:/?#[\]@!$&'()*+,;=%]+$/.test(url);
   }
 }
 
-// リンク作成関数（安全）
+// link作成関数
 function genLink(url, text, target = '_blank', rel = 'noopener noreferrer') {
   if (!url || !isValidUrl(url)) return '';
 
@@ -78,7 +76,7 @@ function genMscLink(item, prop) {
   }
 }
 
-// td要素作成ヘルパー関数（innerHTML使用を廃止）
+// td要素作成ヘルパー関数
 export function createTd(content, style = '') {
   const td = document.createElement('td');
   td.textContent = content;
@@ -86,7 +84,7 @@ export function createTd(content, style = '') {
   return td;
 }
 
-// 汎用テーブル作成関数
+// 汎用テーブル作成
 export function createTable(config) {
   const {
     headers,           // ヘッダー配列
@@ -187,7 +185,7 @@ export function createTable(config) {
   return { table, tbody };
 }
 
-// 軽量な情報表示用テーブルを作る（音源モード用）
+// 軽量な情報表示テーブルを作る audMd
 export function mkMiniTbl(headers, rows) {
   const table = document.createElement('table');
   table.className = 'tbl mini';

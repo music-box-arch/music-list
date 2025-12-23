@@ -20,7 +20,7 @@ const makeLink = async (label, url) => {
   return a.outerHTML;
 };
 
-// 初回btn押下時のlazyload
+// 初回btn押時のlazyload
 async function initLazy() {
   if (lazy) return;
 
@@ -43,7 +43,7 @@ async function initLazy() {
   lazy = true;
 }
 
-// sl機能のlazyload処理
+// slのlazyload処理
 async function initSlLazy() {
   if (slLazy) return;
 
@@ -62,9 +62,9 @@ function shwShare() {
   }
 }
 
-// 2. DOMContentLoaded後の処理
+// 2. DOMContentLoaded後
 document.addEventListener('DOMContentLoaded', function () {
-  // 2-1. 曲リスト表生成（最優先）
+  // 2-1. 曲リスト表生成
   // リソース完全性検証
   import('./tbl.js?v=${window.updVer}').then(({ isValidResource }) => {
     const musicUrl = 'data/music-list.json?v=${window.updVer}';
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-  // 指定行数追加（共通関数）
+  // 指定行数追加
   async function addRows(count = 0) {
     if (remains.length === 0) return;
 
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //console.log(`Table rows: ${rowCount}, Remains: ${remains.length}`);
   }
 
-  // slタブ用の40行追加関数
+  // slタブ用の40行追加
   async function add40Rows() {
     await addRows(40);
   }
@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.showDiscsButton').forEach(btn => {
       btn.disabled = false;
       btn.addEventListener('click', async () => {
-        // 1. cS記録のためにmain-lazy.js, checkstate.jsを読込
+        // 1. cS記録にmain-lazy, checkstate.js読込
         if (!lazy) {
           await initLazy();
         }
@@ -315,7 +315,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 2-5. タブ機能の初期化
+  // 2-5. init タブ機能
   function initTabFunc() {
     document.querySelectorAll('.tab-btn').forEach(btn => {
       btn.addEventListener('click', async function () {
@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', function () {
           await initLazy();
         }
 
-        // slタブの初回クリック時
+        // slタブの初回click
         if (targetTab === 'setlist' && !slLazy) {
           // まず+40行を強制追加
           if (remains.length > 0) {
@@ -361,7 +361,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 2-6. TOPに戻るbtn
+  // 2-6. TOPに戻る
   const backToTop = document.createElement('a');
   backToTop.href = '#tp';
   backToTop.id = 'back-to-top';
@@ -377,10 +377,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // シェアボタン可視化
+  // シェアbtn可視化
   window.addEventListener('scroll', shwShare);
 
 });
 
-// all-audio-btn.js用に公開
+// all-audio-btnに公開
 window.initLazy = initLazy;

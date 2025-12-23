@@ -1,7 +1,4 @@
-// 全ライブ音源情報モード用
-// （UI状態管理はしない・mIDを受け取って「表示する / 消す」）
-
-// 指定された mID のライブ音源情報を開く（司令塔）
+//指定mIDの音源情報を開く
 export async function audioInfoOpen(mID) {
     console.log(`[audioInfoOpen] called: mID=${mID}`);
 
@@ -12,19 +9,18 @@ export async function audioInfoOpen(mID) {
     const { wrap } = base;
 
     try {
-        // ===== データを取得 =====
+        //get data
         const data = await getAudData(mID);
-        // ===== データがある場合の描画 =====
+        //exist
         putAudData(wrap, data);
     } catch {
-        // ===== データが無い / 取得失敗 =====
+        //not exist
         putNoAud(wrap);
     }
 }
 
-// 以下は audInfoOpen から呼ばれる内部用ヘルパー関数群
-
-// 曲の行の直後に、音源情報用の tr + td を用意する・既に開いていればnullを返す）
+//audInfoOpen用ヘルパー関数群
+// 曲行の後に音源情報用のtr+tdを用意
 function mkAudBase(mID) {
     console.log(`[mkAudBase] called: mID=${mID}`);
 
@@ -70,18 +66,17 @@ function mkAudBase(mID) {
     return { tr, wrap };
 }
 
-// ライブ音源データを取得する、ファイル無し / 空配列はエラー扱い
 async function getAudData(mID) {
     const res = await fetch(`data/all-live-audio/${mID}.json?v=${window.updVer}`);
 
-    // ファイルが存在しない（404など）
+    //if no data
     if (!res.ok) {
         throw new Error('no data');
     }
 
     const data = await res.json();
 
-    // 空 or 配列でない場合
+    //empty
     if (!Array.isArray(data) || data.length === 0) {
         throw new Error('empty data');
     }
@@ -89,10 +84,7 @@ async function getAudData(mID) {
     return data;
 }
 
-// ライブ音源データがある場合の表示
 async function putAudData(wrap, data) {
-    console.log('[putAudData] called');
-
     const { mkMiniTbl } = await import('./tbl.js?v=${window.updVer}');
 
     const headers = [
@@ -117,11 +109,8 @@ async function putAudData(wrap, data) {
     tbl.classList.add('aud-mn');
 
     wrap.appendChild(tbl);
-
-    console.log('[putAudData] mini table appended');
 }
 
-// ライブ音源データが無い場合の表示
 function putNoAud(wrap) {
     const p = document.createElement('p');
     p.textContent = 'この曲のライブ音源データはありません';
@@ -130,8 +119,7 @@ function putNoAud(wrap) {
     wrap.appendChild(p);
 }
 
-// @param {number} mID - 曲ごとの一意なID
-// 指定された mID のライブ音源情報を閉じる
+// 指定mIDの音源情報を閉じる
 export function audioInfoClose(mID) {
     console.log(`[audioInfoClose] called: mID=${mID}`);
 
