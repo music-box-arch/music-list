@@ -2,9 +2,9 @@
 window.updVer = '20251220';
 
 // 1. グローバル変数（最小限）
-let lazy = false; // lazyload済みフラグ
-let slLazy = false; // sl-lazy.js読み込み済みフラグ
-let tblProg = false; // テーブル作成中フラグ
+let lazy = false; // lazyload済フラグ
+let slLazy = false; // sl-lazy.js読込済フラグ
+let tblProg = false; // tbl作成中フラグ
 let remains = []; // 残りの曲データ
 
 // DOM表でリンクを作る関数を定義（安全化）
@@ -20,7 +20,7 @@ const makeLink = async (label, url) => {
   return a.outerHTML;
 };
 
-// 初回ボタン押下時のlazyload処理
+// 初回btn押下時のlazyload
 async function initLazy() {
   if (lazy) return;
 
@@ -43,7 +43,7 @@ async function initLazy() {
   lazy = true;
 }
 
-// セットリスト機能のlazyload処理
+// sl機能のlazyload処理
 async function initSlLazy() {
   if (slLazy) return;
 
@@ -58,7 +58,7 @@ async function initSlLazy() {
 function shwShare() {
   if (window.scrollY > 200) {
     document.querySelector('.shareWrap')?.classList.remove('hidden');
-    window.removeEventListener('scroll', shwShare); // 二度目以降の無駄処理防止
+    window.removeEventListener('scroll', shwShare); // 一度やったら削除
   }
 }
 
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //console.log(`Table rows: ${rowCount}, Remains: ${remains.length}`);
   }
 
-  // セトリタブ用の40行追加関数
+  // slタブ用の40行追加関数
   async function add40Rows() {
     await addRows(40);
   }
@@ -185,13 +185,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // tblCmpをグローバルに公開
   window.tblCmp = tblCmp;
 
-  // 表完成とlazy初期化
+  // 表完成とinit lazy
   async function initBoth() {
     await tblCmp();
     if (!lazy) await initLazy();
   }
 
-  // 2-2. 最小限のボタン有効化
+  // 2-2. 最小限のbtn有効化
   function enblMinimalBtns() {
     // 4つの重要ボタンに初回lazyload検出を設定
     const filterCB = document.getElementById('chkSb');
@@ -283,17 +283,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 2-3. CDボタンの有効化（イベントリスナーのみ設置）
+  // 2-3. CD btnの有効化（event lstnrのみ設置）
   function enblCdBtns() {
     document.querySelectorAll('.showDiscsButton').forEach(btn => {
       btn.disabled = false;
       btn.addEventListener('click', async () => {
-        // 1. 先にcS記録のためにmain-lazy.js + checkstate.jsを読み込み
+        // 1. cS記録のためにmain-lazy.js, checkstate.jsを読込
         if (!lazy) {
           await initLazy();
         }
 
-        // 2. result.jsを動的読み込みしてCD処理実行
+        // 2. result.jsを動的読込しCD処理実行
         const { initCdFeats } = await import('./result.js?v=${window.updVer}');
         initCdFeats();
 
@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 2-4. 全音源モードボタン有効化
+  // 2-4. enable audMd btn
   function enblAudioBtn() {
     const audioCheckbox = document.getElementById("audioInfoMode");
     if (!audioCheckbox) return;
@@ -321,12 +321,12 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.addEventListener('click', async function () {
         const targetTab = this.dataset.tab;
 
-        // main-lazyが未読み込みの場合、チェック状態を初期化
+        // main-lazyが未読込→chk状態を初期化
         if (!lazy) {
           await initLazy();
         }
 
-        // セットリストタブが初回クリックされた場合
+        // slタブの初回クリック時
         if (targetTab === 'setlist' && !slLazy) {
           // まず+40行を強制追加
           if (remains.length > 0) {
@@ -337,7 +337,7 @@ document.addEventListener('DOMContentLoaded', function () {
           await initSlLazy();
         }
 
-        // タブ切り替え時のチェック状態同期
+        // タブ切替時のchk状態同期
         if (targetTab === 'setlist') {
           // セットリストタブに切り替える時、cSを反映
           if (window.aplCsCxt) {
@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         }
 
-        // タブ切り替え処理
+        // タブ切替処理
         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
         document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
 
@@ -361,14 +361,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 2-6. トップに戻るボタン生成
+  // 2-6. TOPに戻るbtn
   const backToTop = document.createElement('a');
   backToTop.href = '#tp';
   backToTop.id = 'back-to-top';
   backToTop.textContent = '▲ TOP';
   document.body.appendChild(backToTop);
 
-  // スクロールイベント設定
+  // scroll event
   window.addEventListener('scroll', function () {
     if (window.scrollY > 300) {
       backToTop.classList.add('show');
@@ -382,5 +382,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-// all-audio-btn.js用に公開する
+// all-audio-btn.js用に公開
 window.initLazy = initLazy;
