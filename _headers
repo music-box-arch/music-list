@@ -1,5 +1,5 @@
 /*  
-  Content-Security-Policy: default-src 'self'; style-src 'self''sha256-1NcG3MF2h1dWNspLkF/xD6m3jceBo60Baowta3okOJ4=' 'sha256-PDfSAClxDQT9tOkgGhI9UZMvGOqqjjB8KduZwu7tkfQ='; script-src 'self'; connect-src 'self'; img-src 'self'; font-src 'self'; object-src 'none'; frame-ancestors 'none'; frame-src https://www.youtube-nocookie.com
+  Content-Security-Policy: default-src 'self'; style-src 'self' 'sha256-1NcG3MF2h1dWNspLkF/xD6m3jceBo60Baowta3okOJ4='; script-src 'self'; connect-src 'self'; img-src 'self'; font-src 'self'; object-src 'none'; frame-ancestors 'none'; frame-src https://www.youtube-nocookie.com
   X-Frame-Options: DENY
   Permissions-Policy: microphone=(), camera=(), geolocation=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains
