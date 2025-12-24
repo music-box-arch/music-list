@@ -23,33 +23,22 @@ const AUD_UI_SELECTORS = [
 
 // モードのON/OFF処理
 export async function handleAudioMode(isOn) {
-    const audioChk = document.getElementById('audioInfoMode');
-
     if (isOn) {
-        // main.jsの関数。lazyloadがまだならloadされ、cSが保存される
+        //lazyloadがload, cS保存
         await window.initLazy();
 
         loadAudCss();   // cssをロード
 
-        bkAudSt();    // 音源モード専用UI状態をバックアップ
-        forceDisp();  // 表示状態を強制調整（セトリ→曲一覧、style/mix OFF）
-        disUI();      // UIを無効化
-        btnAppear();  // ▶ ボタン描写＋ずらす＋イベント付与
+        bkAudSt();    //UI状態をBkup
+        forceDisp();  //状態を強制調整
+        disUI();      //UI無効化
+        btnAppear();  //btn描写, shift, listener
 
     } else {
-        const shouldTurnOff = confirm(
-            'このモードをオフにすると、表示中のライブ音源情報がすべて閉じられます。終了してもよろしいですか？\n（この操作がうまく動かない場合は画面を再読み込みしてください。）'
-        );
-
-        if (shouldTurnOff) {
-            rstAudSt();   // 状態を戻す
-            enaUI();      // UIを戻す
-            closeInfos(); // openAudioNumbersにmIDがあるinfoを全て閉じる
-            btnDisappear(); //▶たちを消す、ずらした曲名を戻す
-        } else {
-            // チェックを戻す（ONのまま）
-            if (audioChk) audioChk.checked = true;
-        }
+        rstAudSt();     //状態を戻
+        enaUI();        //UI戻
+        closeInfos();   //情報閉じ
+        btnDisappear(); //btn消し, shift戻
     }
 }
 
@@ -134,7 +123,7 @@ function disUI() {
 
 }
 
-// ▶btn追加、clickでimport(all-audio.js),audioInfoOpen(mID)、result.js関係chkBxなど操作off
+// ▶btn追加、clickでimport(all-audio.js),audioInfoOpen(mID),result.js関係など操作off
 function btnAppear() {
     const checkboxes = document.querySelectorAll('input.chk[data-id]');
 
@@ -148,7 +137,7 @@ function btnAppear() {
             return;
         }
 
-        // 既にある場合はskip
+        //既存→skip
         if (titleCell.querySelector('.aud-tgl')) {
             return;
         }
@@ -174,13 +163,11 @@ function btnAppear() {
             const idx = openAudioNumbers.indexOf(mIDNum);
 
             if (idx === -1) {
-                // open
                 audioInfoOpen(mIDNum);
                 openAudioNumbers.push(mIDNum);
                 a.textContent = '▼';
                 a.classList.add('is-open');
             } else {
-                // close
                 audioInfoClose(mIDNum);
                 openAudioNumbers.splice(idx, 1);
                 a.textContent = '▶';
