@@ -1,10 +1,9 @@
-/* 全ライブ音源表示モードでのみ使うcss */
 .dis {
     opacity: .5;
     cursor: not-allowed;
 }
 
-/* 音源トグルボタン */
+/* トグルボタン */
 .aud-tgl {
     margin-right: 4px;
     font-size: 16px;
@@ -13,13 +12,13 @@
     color: #3f7bd5;
 }
 
-/* トグルが開いている状態 */
+/* tgl open */
 .aud-tgl.is-open {
     color: #bc2f1a;
     font-weight: 600;
 }
 
-/* 曲名セルを少し右にずらす */
+/* 曲名を少し右に */
 .aud-shft {
     padding-left: 20px;
 }
@@ -30,36 +29,31 @@
 }
 
 .aud-wrap {
-    padding: 0 0 .3em 1em;
+    margin: 0 0 .3em 1em;
+    border-bottom: 1px solid #ccd;
 }
 
 /* ワイド画面 */
 @media (min-width: 920px) {
-    .aud-wrap {
-        padding-left: 48px;
+    .aud-bs {
+        padding: 0 0 0 48px !important;
+        border: none !important;
     }
 }
 
-/* =====小さい表のレイアウト・サイズ ===== */
+/* 小さい表 */
 .aud-mn {
     margin: 0 0 0 auto;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
     font-size: .9em;
 }
 
-/* 
-.aud-mn.tbl thead th {
-    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.08);
-}
-    */
-
-/* ===== 配色 ===== */
 /* ヘッダ行 */
 .aud-mn.tbl th {
     background: #f0f0f0;
 }
 
-/* 本文：白 / 薄グレーの交互 */
+/* 白/グレーの交互 */
 .aud-mn.tbl tbody tr:nth-child(odd) {
     background: #fff;
 }
@@ -68,19 +62,21 @@
     background: #f7f7f7;
 }
 
-/* mini table：上下の border を消す（左右は残す） */
+/* 上下borderを消す */
 .aud-mn tr:first-child th,
 .aud-mn tr:first-child td {
     border-top: 0;
 }
 
-/*
-.aud-mn tr:last-child td {
+.aud-mn tbody tr:last-child td {
     border-bottom: 0;
 }
-    */
 
-/* ライブ音源データが無い場合の表示 */
+.aud-mn th:nth-child(3),
+.aud-mn td:nth-child(3) {
+    border-right: 4px double #dde;
+}
+
 .aud-no {
     color: #777;
     font-style: italic;

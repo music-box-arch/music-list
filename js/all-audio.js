@@ -83,9 +83,9 @@ async function putAudData(wrap, data) {
     const headers = [
         '日時',
         'イベント名',
-        'イベント会場',
+        '会場',
         '商品種別',
-        '収録円盤名',
+        '円盤名',
         '備考'
     ];
 
