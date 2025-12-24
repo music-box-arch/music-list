@@ -20,7 +20,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
-        style-src 'self' 'sha256-PDfSAClxDQT9tOkgGhI9UZMvGOqqjjB8KduZwu7tkfQ=';
+        style-src 'self' 'sha256-1NcG3MF2h1dWNspLkF/xD6m3jceBo60Baowta3okOJ4=' 'sha256-PDfSAClxDQT9tOkgGhI9UZMvGOqqjjB8KduZwu7tkfQ=';
         script-src 'self' 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE='">
 
     <title>ユニゾン曲リスト(非公式)</title>
@@ -153,7 +153,12 @@
         }
 
         #audMdTgl {
-            padding-bottom: .5em;
+            padding-bottom: 1em;
+        }
+
+        #btns-wrap {
+            display: flex;
+            gap: 12px;
         }
 
         #setlist-controls {
@@ -209,6 +214,13 @@
                 padding: .2em .4em;
             }
         }
+
+        @media (max-width: 400px) {
+            #btns-wrap {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
     </style>
 </head>
 
@@ -226,8 +238,10 @@
         </div>
 
         <section id="checklistArea">
-            <button class="btn showDiscsButton" disabled>チェックした曲を含むCDを見る</button>　
-            <button class="btn clearAllChecksBtn">チェックをオールクリア</button>
+            <div id="btns-wrap">
+                <button class="btn showDiscsButton" disabled>チェックした曲を含むCDを見る</button>
+                <button class="btn clearAllChecksBtn">チェックをオールクリア</button>
+            </div>
             <p>※ 表は横にスクロールできます</p>
             <section class="tab-container">
                 <div class="tab-buttons">
