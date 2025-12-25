@@ -12,7 +12,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/4f1zepqZ36gAWIQWWLIg21",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970402",
-    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970402&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970402&app=itunes",
+    "lrc": "https://www.uta-net.com/song/78826/"
   },
   "2": {
     "mID": 2,
@@ -27,7 +28,8 @@
     "lv": "https://www.youtube.com/watch?v=vztCV2vPQq4",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/306069909?i=306069911&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/306069909?i=306069911&app=itunes",
+    "lrc": "https://www.uta-net.com/song/186599/"
   },
   "3": {
     "mID": 3,
@@ -42,7 +44,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041505&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041505&app=itunes",
+    "lrc": "https://www.uta-net.com/song/186598/"
   },
   "4": {
     "mID": 4,
@@ -57,7 +60,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/3Jf00gsLxnRbrIavnAQU6f",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970421",
-    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970421&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970421&app=itunes",
+    "lrc": "https://www.uta-net.com/song/74488/"
   },
   "5": {
     "mID": 5,
@@ -72,7 +76,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/306067779?i=306067782&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/306067779?i=306067782&app=itunes",
+    "lrc": "https://www.uta-net.com/song/74487/"
   },
   "6": {
     "mID": 6,
@@ -87,7 +92,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/306067779?i=306067783&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/306067779?i=306067783&app=itunes",
+    "lrc": "https://www.uta-net.com/song/74486/"
   },
   "7": {
     "mID": 7,
@@ -102,7 +108,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/6Q0OKR3DhSs48Mk7yuwJfn",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970400",
-    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970400&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970400&app=itunes",
+    "lrc": "https://www.uta-net.com/song/78835/"
   },
   "8": {
     "mID": 8,
@@ -117,7 +124,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/7bYyiOiLZi6mXXan4m09rU",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970404",
-    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970404&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970404&app=itunes",
+    "lrc": "https://www.uta-net.com/song/78834/"
   },
   "9": {
     "mID": 9,
@@ -132,7 +140,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/7qg8xFrQnAr3gVYuWyA5Ju",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970417",
-    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970417&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970417&app=itunes",
+    "lrc": "https://www.uta-net.com/song/78833/"
   },
   "10": {
     "mID": 10,
@@ -147,7 +156,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/7LayWBcvsChldu9SbeEEBM",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970418",
-    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970418&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970418&app=itunes",
+    "lrc": "https://www.uta-net.com/song/78832/"
   },
   "12": {
     "mID": 12,
@@ -162,7 +172,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/2gP3OEEUlQktRjOrPHIEqX",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970420",
-    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970420&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970420&app=itunes",
+    "lrc": "https://www.uta-net.com/song/78830/"
   },
   "13": {
     "mID": 13,
@@ -177,7 +188,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/6wueFg5ZaydGTwvSaKN9Fa",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970423",
-    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970423&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970423&app=itunes",
+    "lrc": "https://www.uta-net.com/song/78829/"
   },
   "14": {
     "mID": 14,
@@ -192,7 +204,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/1GOwXY0yEwA8Uwal7h1JUV",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970424",
-    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970424&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970424&app=itunes",
+    "lrc": "https://www.uta-net.com/song/78828/"
   },
   "15": {
     "mID": 15,
@@ -207,7 +220,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/5enVGk4woAT2f7LFGodS5W",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970425",
-    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970425&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/310970395?i=310970425&app=itunes",
+    "lrc": "https://www.uta-net.com/song/78827/"
   },
   "16": {
     "mID": 16,
@@ -222,7 +236,8 @@
     "lv": "https://www.youtube.com/watch?v=6eQQ4jAsXC8",
     "spf": "https://open.spotify.com/track/2FPZxdQ9Ij6iE9jrHveyL0",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561976",
-    "itn": "https://itunes.apple.com/jp/album/352924360?i=352924362&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/352924360?i=352924362&app=itunes",
+    "lrc": "https://www.uta-net.com/song/90298/"
   },
   "17": {
     "mID": 17,
@@ -237,7 +252,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093269&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093269&app=itunes",
+    "lrc": "https://www.uta-net.com/song/90297/"
   },
   "18": {
     "mID": 18,
@@ -252,7 +268,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093270&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093270&app=itunes",
+    "lrc": "https://www.uta-net.com/song/90296/"
   },
   "19": {
     "mID": 19,
@@ -267,7 +284,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/6DUN82lS61zXWTp6Hw4k5e",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561925",
-    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561925&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561925&app=itunes",
+    "lrc": "https://www.uta-net.com/song/93439/"
   },
   "20": {
     "mID": 20,
@@ -282,7 +300,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/1eWEZ4uaQcjVPFzptyh2oU",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561973",
-    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561973&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561973&app=itunes",
+    "lrc": "https://www.uta-net.com/song/93438/"
   },
   "21": {
     "mID": 21,
@@ -297,7 +316,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/11EHSjVU2JiydcW6mPqDGk",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561974",
-    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561974&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561974&app=itunes",
+    "lrc": "https://www.uta-net.com/song/93437/"
   },
   "22": {
     "mID": 22,
@@ -312,7 +332,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/3WmvwgGnDfLtv2uHiyEm3Z",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561977",
-    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561977&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561977&app=itunes",
+    "lrc": "https://www.uta-net.com/song/93436/"
   },
   "23": {
     "mID": 23,
@@ -327,7 +348,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/054hqdZC73md5dZTRtmpTQ",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561979",
-    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561979&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561979&app=itunes",
+    "lrc": "https://www.uta-net.com/song/93435/"
   },
   "24": {
     "mID": 24,
@@ -342,7 +364,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/1ersqroFUaKJL1n2pCFcIb",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561980",
-    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561980&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561980&app=itunes",
+    "lrc": "https://www.uta-net.com/song/93434/"
   },
   "25": {
     "mID": 25,
@@ -357,7 +380,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/5EUsPuWSMOSXou4QWRS7Cf",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561981",
-    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561981&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561981&app=itunes",
+    "lrc": "https://www.uta-net.com/song/93433/"
   },
   "26": {
     "mID": 26,
@@ -372,7 +396,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/1le0RcQefOKjnvHo6vxbvP",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561982",
-    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561982&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561982&app=itunes",
+    "lrc": "https://www.uta-net.com/song/93432/"
   },
   "27": {
     "mID": 27,
@@ -387,7 +412,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/1ZeQZ69r6u9QAZHgyHdRSd",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561983",
-    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561983&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561983&app=itunes",
+    "lrc": "https://www.uta-net.com/song/93431/"
   },
   "28": {
     "mID": 28,
@@ -402,7 +428,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/0VWx6FyvSCtNnw9AlGIuRR",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561984",
-    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561984&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561984&app=itunes",
+    "lrc": "https://www.uta-net.com/song/93430/"
   },
   "29": {
     "mID": 29,
@@ -417,7 +444,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/4efOA7G19lQc39m241X5pZ",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561996",
-    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561996&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/364561824?i=364561996&app=itunes",
+    "lrc": "https://www.uta-net.com/song/93429/"
   },
   "30": {
     "mID": 30,
@@ -432,7 +460,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/1OOLTJ1XzBHFSiy4TlwF8g",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040437",
-    "itn": "https://itunes.apple.com/jp/album/404722001?i=404722015&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/404722001?i=404722015&app=itunes",
+    "lrc": "https://www.uta-net.com/song/105347/"
   },
   "31": {
     "mID": 31,
@@ -447,7 +476,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/2f68MffIx8TcF9m71EI768",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040448&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040448&app=itunes",
+    "lrc": "https://www.uta-net.com/song/105346/"
   },
   "32": {
     "mID": 32,
@@ -462,7 +492,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041536&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041536&app=itunes",
+    "lrc": "https://www.uta-net.com/song/185436/"
   },
   "33": {
     "mID": 33,
@@ -477,7 +508,8 @@
     "lv": "https://www.youtube.com/watch?v=0fTxmlSYIrA",
     "spf": "https://open.spotify.com/track/0opkjjC7nn6YO8NXzkDAPP",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040450",
-    "itn": "https://itunes.apple.com/jp/album/432476549?i=432476550&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/432476549?i=432476550&app=itunes",
+    "lrc": "https://www.uta-net.com/song/112591/"
   },
   "34": {
     "mID": 34,
@@ -492,7 +524,8 @@
     "lv": "https://www.youtube.com/watch?v=7mW7eEgFwRc",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/432476549?i=432476551&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/432476549?i=432476551&app=itunes",
+    "lrc": "https://www.uta-net.com/song/112590/"
   },
   "35": {
     "mID": 35,
@@ -507,7 +540,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093272&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093272&app=itunes",
+    "lrc": "https://www.uta-net.com/song/112589/"
   },
   "36": {
     "mID": 36,
@@ -522,7 +556,8 @@
     "lv": "https://www.youtube.com/watch?v=ysESQ1Ci110",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093273&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093273&app=itunes",
+    "lrc": "https://www.uta-net.com/song/112588/"
   },
   "37": {
     "mID": 37,
@@ -537,7 +572,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/6zzJwGAriBiJbMGMoCVtPv",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040430",
-    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040430&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040430&app=itunes",
+    "lrc": "https://www.uta-net.com/song/115481/"
   },
   "38": {
     "mID": 38,
@@ -552,7 +588,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/7CWKzHSwqBCaSXalAwKkC2",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040431",
-    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040431&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040431&app=itunes",
+    "lrc": "https://www.uta-net.com/song/115480/"
   },
   "39": {
     "mID": 39,
@@ -567,7 +604,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/7gBdtyfhffTRugKHcajuPY",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040433",
-    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040433&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040433&app=itunes",
+    "lrc": "https://www.uta-net.com/song/115479/"
   },
   "40": {
     "mID": 40,
@@ -582,7 +620,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/2Rbn9fr6Ff9laFzijyfckz",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040434",
-    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040434&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040434&app=itunes",
+    "lrc": "https://www.uta-net.com/song/115478/"
   },
   "41": {
     "mID": 41,
@@ -597,7 +636,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/30iZob6RUJltjIQ95oWfUt",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040436",
-    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040436&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040436&app=itunes",
+    "lrc": "https://www.uta-net.com/song/115477/"
   },
   "42": {
     "mID": 42,
@@ -612,7 +652,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/3aYqLRugkDsNP6pzl5aNKD",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040441",
-    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040441&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040441&app=itunes",
+    "lrc": "https://www.uta-net.com/song/115476/"
   },
   "43": {
     "mID": 43,
@@ -627,7 +668,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/0lCWLfnD36eAoe1iICU8HQ",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040442",
-    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040442&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040442&app=itunes",
+    "lrc": "https://www.uta-net.com/song/115475/"
   },
   "44": {
     "mID": 44,
@@ -642,7 +684,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/6O4bcP0E4z0nq5WxLN8ski",
     "apl": "https://music.apple.com/jp/album/1476041503?i=1476041515",
-    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041515&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041515&app=itunes",
+    "lrc": "https://www.uta-net.com/song/115474/"
   },
   "45": {
     "mID": 45,
@@ -657,7 +700,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/3z0huRfhLtwxaeErmwCIw0",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040449",
-    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040449&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040449&app=itunes",
+    "lrc": "https://www.uta-net.com/song/115473/"
   },
   "46": {
     "mID": 46,
@@ -672,7 +716,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/7L1H9eWVLb727nLmlP1rPy",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040451",
-    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040451&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/446040428?i=446040451&app=itunes",
+    "lrc": "https://www.uta-net.com/song/115472/"
   },
   "47": {
     "mID": 47,
@@ -687,7 +732,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/1mLramLVll0UemJa6mvh1x",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/543515060?i=543515063&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/543515060?i=543515063&app=itunes",
+    "lrc": "https://www.uta-net.com/song/132912/"
   },
   "48": {
     "mID": 48,
@@ -702,7 +748,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093274&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093274&app=itunes",
+    "lrc": "https://www.uta-net.com/song/132911/"
   },
   "49": {
     "mID": 49,
@@ -717,7 +764,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336581&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336581&app=itunes",
+    "lrc": "https://www.uta-net.com/song/132910/"
   },
   "50": {
     "mID": 50,
@@ -732,7 +780,8 @@
     "lv": "https://www.youtube.com/watch?v=iNtA7YgE8D8",
     "spf": "https://open.spotify.com/track/789qMWni5aMixbI4E5bSbN",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041530&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041530&app=itunes",
+    "lrc": "https://www.uta-net.com/song/78825/"
   },
   "51": {
     "mID": 51,
@@ -747,7 +796,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/3pK2AiyPVlUMhEsMef1z3G",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575666",
-    "itn": "https://itunes.apple.com/jp/album/560462902?i=560462903&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/560462902?i=560462903&app=itunes",
+    "lrc": "https://www.uta-net.com/song/135468/"
   },
   "52": {
     "mID": 52,
@@ -762,7 +812,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/4E6VpEnKgXIi0sFHYFEUtZ",
     "apl": "https://music.apple.com/jp/album/1016336570?i=1016336650",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093276&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093276&app=itunes",
+    "lrc": "https://www.uta-net.com/song/135588/"
   },
   "53": {
     "mID": 53,
@@ -777,7 +828,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093277&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093277&app=itunes",
+    "lrc": "https://www.uta-net.com/song/135587/"
   },
   "54": {
     "mID": 54,
@@ -792,7 +844,8 @@
     "lv": "https://www.youtube.com/watch?v=wnYttk2Jt3E",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093278&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093278&app=itunes",
+    "lrc": "https://www.uta-net.com/song/135586/"
   },
   "55": {
     "mID": 55,
@@ -807,7 +860,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/6E9u08JoTmobb2gRglkvKO",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575664",
-    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575664&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575664&app=itunes",
+    "lrc": "https://www.uta-net.com/song/141419/"
   },
   "56": {
     "mID": 56,
@@ -822,7 +876,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/2pnAagSnHL3b9d7imVvDRi",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575665",
-    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575665&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575665&app=itunes",
+    "lrc": "https://www.uta-net.com/song/141418/"
   },
   "57": {
     "mID": 57,
@@ -837,7 +892,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/4WMIpIlBVJIIUxZywSyqBi",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575667",
-    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575667&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575667&app=itunes",
+    "lrc": "https://www.uta-net.com/song/141417/"
   },
   "58": {
     "mID": 58,
@@ -852,7 +908,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/2RGD9prgLDXkvp7ibgO4ar",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575668",
-    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575668&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575668&app=itunes",
+    "lrc": "https://www.uta-net.com/song/141416/"
   },
   "59": {
     "mID": 59,
@@ -867,7 +924,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/3gKiFYpMgtOWN7ewTtDGCd",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575729",
-    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575729&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575729&app=itunes",
+    "lrc": "https://www.uta-net.com/song/141415/"
   },
   "60": {
     "mID": 60,
@@ -882,7 +940,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/5DmreR05ybSXWVMTUD7tmd",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575730",
-    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575730&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575730&app=itunes",
+    "lrc": "https://www.uta-net.com/song/141414/"
   },
   "61": {
     "mID": 61,
@@ -897,7 +956,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/3yLHETt2gGetPCMl1IswW5",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575731",
-    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575731&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575731&app=itunes",
+    "lrc": "https://www.uta-net.com/song/141413/"
   },
   "62": {
     "mID": 62,
@@ -912,7 +972,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/1yqukkt1v000brrO1i1MGi",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575733",
-    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575733&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575733&app=itunes",
+    "lrc": "https://www.uta-net.com/song/141412/"
   },
   "63": {
     "mID": 63,
@@ -927,7 +988,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/1Lllh1omCfYRJyRplujAFR",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575734",
-    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575734&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575734&app=itunes",
+    "lrc": "https://www.uta-net.com/song/141411/"
   },
   "64": {
     "mID": 64,
@@ -942,7 +1004,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/22Zu1xTakRpyyH5iHeU8Cz",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575735",
-    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575735&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/595575657?i=595575735&app=itunes",
+    "lrc": "https://www.uta-net.com/song/141410/"
   },
   "65": {
     "mID": 65,
@@ -957,7 +1020,8 @@
     "lv": "https://www.youtube.com/watch?v=ruwn5TqX87s",
     "spf": "https://open.spotify.com/track/0fOq8IETOgXteHpm0sMMNq",
     "apl": "https://music.apple.com/jp/album/1476041503?i=1476041537",
-    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041537&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041537&app=itunes",
+    "lrc": "https://www.uta-net.com/song/141409/"
   },
   "66": {
     "mID": 66,
@@ -972,7 +1036,8 @@
     "lv": "https://www.youtube.com/watch?v=9zluQwPBMWM",
     "spf": "https://open.spotify.com/track/11Dh1gTFD9QcmmzwNusHTk",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382322",
-    "itn": "https://itunes.apple.com/jp/album/756450780?i=756450835&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/756450780?i=756450835&app=itunes",
+    "lrc": "https://www.uta-net.com/song/154661/"
   },
   "67": {
     "mID": 67,
@@ -987,7 +1052,8 @@
     "lv": "https://www.youtube.com/watch?v=E4sq2rBnmpE",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093279&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093279&app=itunes",
+    "lrc": "https://www.uta-net.com/song/154660/"
   },
   "68": {
     "mID": 68,
@@ -1002,7 +1068,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093280&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093280&app=itunes",
+    "lrc": "https://www.uta-net.com/song/154659/"
   },
   "69": {
     "mID": 69,
@@ -1017,7 +1084,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/2L7CbheAwtkzVdmlS3PIfQ",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382328",
-    "itn": "https://itunes.apple.com/jp/album/805984247?i=805984250&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/805984247?i=805984250&app=itunes",
+    "lrc": "https://www.uta-net.com/song/158980/"
   },
   "70": {
     "mID": 70,
@@ -1032,7 +1100,8 @@
     "lv": "https://www.youtube.com/watch?v=ysESQ1Ci110",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093281&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093281&app=itunes",
+    "lrc": "https://www.uta-net.com/song/158979/"
   },
   "71": {
     "mID": 71,
@@ -1047,7 +1116,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093282&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093282&app=itunes",
+    "lrc": "https://www.uta-net.com/song/158978/"
   },
   "72": {
     "mID": 72,
@@ -1062,7 +1132,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/805984247?i=805984253&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/805984247?i=805984253&app=itunes",
+    "lrc": "https://www.uta-net.com/song/158977/"
   },
   "73": {
     "mID": 73,
@@ -1077,7 +1148,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/0k3dUdecwv2V9SejvxIBLb",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382319",
-    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382319&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382319&app=itunes",
+    "lrc": "https://www.uta-net.com/song/169164/"
   },
   "74": {
     "mID": 74,
@@ -1092,7 +1164,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/1maoYTEYZgVSHw1zAEZQ9i",
     "apl": "https://music.apple.com/jp/album/1476041503?i=1476041528",
-    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041528&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041528&app=itunes",
+    "lrc": "https://www.uta-net.com/song/169163/"
   },
   "75": {
     "mID": 75,
@@ -1107,7 +1180,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/2lpsqnkobAaBQhaAPqbZBP",
     "apl": "https://music.apple.com/jp/album/1476041503?i=1476041512",
-    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041512&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041512&app=itunes",
+    "lrc": "https://www.uta-net.com/song/169162/"
   },
   "76": {
     "mID": 76,
@@ -1122,7 +1196,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/395nnqivlA2UMaNTmRnwqt",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382324",
-    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382324&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382324&app=itunes",
+    "lrc": "https://www.uta-net.com/song/169161/"
   },
   "77": {
     "mID": 77,
@@ -1137,7 +1212,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/62iWacK1qKL5ISm82OFggG",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382325",
-    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382325&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382325&app=itunes",
+    "lrc": "https://www.uta-net.com/song/169160/"
   },
   "78": {
     "mID": 78,
@@ -1152,7 +1228,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/0ZEGYmVSPMIyAsdYun5W0u",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382326",
-    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382326&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382326&app=itunes",
+    "lrc": "https://www.uta-net.com/song/169159/"
   },
   "79": {
     "mID": 79,
@@ -1167,7 +1244,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/16znQXE8L2LT9c8i9krRNr",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382327",
-    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382327&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382327&app=itunes",
+    "lrc": "https://www.uta-net.com/song/169158/"
   },
   "80": {
     "mID": 80,
@@ -1182,7 +1260,8 @@
     "lv": "https://www.youtube.com/watch?v=KGdrQkYgNko",
     "spf": "https://open.spotify.com/track/61WIiThJRu8ses32U31dcM",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382330",
-    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382330&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382330&app=itunes",
+    "lrc": "https://www.uta-net.com/song/169157/"
   },
   "81": {
     "mID": 81,
@@ -1197,7 +1276,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/5WVuZDGVw0DPD9hHr9JCQm",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382331",
-    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382331&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382331&app=itunes",
+    "lrc": "https://www.uta-net.com/song/169156/"
   },
   "82": {
     "mID": 82,
@@ -1212,7 +1292,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/3yiTCIyK8xCs3TjACtPawR",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382335",
-    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382335&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/899382318?i=899382335&app=itunes",
+    "lrc": "https://www.uta-net.com/song/169155/"
   },
   "83": {
     "mID": 83,
@@ -1227,7 +1308,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/6bfjEGSR7DyC8MK8cp3ZCp",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654728",
-    "itn": "https://itunes.apple.com/jp/album/993140033?i=993140034&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/993140033?i=993140034&app=itunes",
+    "lrc": "https://www.uta-net.com/song/186190/"
   },
   "84": {
     "mID": 84,
@@ -1242,7 +1324,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/993140033?i=993140035&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/993140033?i=993140035&app=itunes",
+    "lrc": "https://www.uta-net.com/song/186189/"
   },
   "85": {
     "mID": 85,
@@ -1257,7 +1340,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093285&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093285&app=itunes",
+    "lrc": "https://www.uta-net.com/song/186188/"
   },
   "86": {
     "mID": 86,
@@ -1272,7 +1356,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/3VJGOtDuqfQ631RWvSYt1l",
     "apl": "https://music.apple.com/jp/album/1016336570?i=1016336574",
-    "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336574&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336574&app=itunes",
+    "lrc": "https://www.uta-net.com/song/190613/"
   },
   "88": {
     "mID": 88,
@@ -1287,7 +1372,8 @@
     "lv": "https://www.youtube.com/watch?v=Gpt9IXmUT8g",
     "spf": "https://open.spotify.com/track/1KSeENRM4AI7AnguJjJZaV",
     "apl": "https://music.apple.com/jp/album/1454801516?i=1454801549",
-    "itn": "https://itunes.apple.com/jp/album/1454801516?i=1454801549&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1454801516?i=1454801549&app=itunes",
+    "lrc": "https://www.uta-net.com/song/190612/"
   },
   "91": {
     "mID": 91,
@@ -1302,7 +1388,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/6PgBfWNc9eFAOjICQtXKyx",
     "apl": "https://music.apple.com/jp/album/1016336570?i=1016336579",
-    "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336579&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336579&app=itunes",
+    "lrc": "https://www.uta-net.com/song/190611/"
   },
   "98": {
     "mID": 98,
@@ -1317,7 +1404,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/5iwFZriNHNlyIuyZk5Ounh",
     "apl": "https://music.apple.com/jp/album/1471093264?i=1471093356",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093356&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093356&app=itunes",
+    "lrc": "https://www.uta-net.com/song/190610/"
   },
   "100": {
     "mID": 100,
@@ -1332,7 +1420,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/6isLzwny8GICuIfSdqTIt9",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654722",
-    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654722&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654722&app=itunes",
+    "lrc": "https://www.uta-net.com/song/210569/"
   },
   "101": {
     "mID": 101,
@@ -1347,7 +1436,8 @@
     "lv": "https://www.youtube.com/watch?v=Ky67uL397js",
     "spf": "https://open.spotify.com/track/6rXxRsIMIqdUmdaKZxa35j",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654723",
-    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654723&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654723&app=itunes",
+    "lrc": "https://www.uta-net.com/song/210568/"
   },
   "102": {
     "mID": 102,
@@ -1362,7 +1452,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/5XwQGXfBSDbUTjRyjl1Sla",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654729",
-    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654729&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654729&app=itunes",
+    "lrc": "https://www.uta-net.com/song/210567/"
   },
   "103": {
     "mID": 103,
@@ -1377,7 +1468,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/5nxYL6AXPIok5Td6jLRRlJ",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654730",
-    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654730&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654730&app=itunes",
+    "lrc": "https://www.uta-net.com/song/210566/"
   },
   "104": {
     "mID": 104,
@@ -1392,7 +1484,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/4zXbI0HuAPp7ppOetJCKUT",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654731",
-    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654731&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654731&app=itunes",
+    "lrc": "https://www.uta-net.com/song/210565/"
   },
   "105": {
     "mID": 105,
@@ -1407,7 +1500,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/6o0HGTE3EjQlZUlaEjybNH",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654732",
-    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654732&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654732&app=itunes",
+    "lrc": "https://www.uta-net.com/song/210564/"
   },
   "106": {
     "mID": 106,
@@ -1422,7 +1516,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/3OTaB74SN4Km2oF5Gt4KE1",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654733",
-    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654733&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654733&app=itunes",
+    "lrc": "https://www.uta-net.com/song/210563/"
   },
   "107": {
     "mID": 107,
@@ -1437,7 +1532,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/6x3BWYTKvA7RDYNMthiVZK",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654734",
-    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654734&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654734&app=itunes",
+    "lrc": "https://www.uta-net.com/song/210562/"
   },
   "108": {
     "mID": 108,
@@ -1452,7 +1548,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/76sl1YklCJYlVNsOJEKKQt",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654735",
-    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654735&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654735&app=itunes",
+    "lrc": "https://www.uta-net.com/song/210561/"
   },
   "109": {
     "mID": 109,
@@ -1467,7 +1564,8 @@
     "lv": "https://www.youtube.com/watch?v=VKLkeOmxim4",
     "spf": "https://open.spotify.com/track/5VdrYyn9wFGnYAAVpM9bNi",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654736",
-    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654736&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654736&app=itunes",
+    "lrc": "https://www.uta-net.com/song/210560/"
   },
   "110": {
     "mID": 110,
@@ -1482,7 +1580,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/5PjrZoDfBXmMN0RDpdYuAp",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654737",
-    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654737&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654737&app=itunes",
+    "lrc": "https://www.uta-net.com/song/210559/"
   },
   "111": {
     "mID": 111,
@@ -1497,7 +1596,8 @@
     "lv": "https://www.youtube.com/watch?v=K2CU5pwqQy8",
     "spf": "https://open.spotify.com/track/28qFJh4a5a8sh96JkIFY8q",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044729",
-    "itn": "https://itunes.apple.com/jp/album/1281389670?i=1281389673&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1281389670?i=1281389673&app=itunes",
+    "lrc": "https://www.uta-net.com/song/234475/"
   },
   "112": {
     "mID": 112,
@@ -1512,7 +1612,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093346&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093346&app=itunes",
+    "lrc": "https://www.uta-net.com/song/234474/"
   },
   "113": {
     "mID": 113,
@@ -1527,7 +1628,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093347&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093347&app=itunes",
+    "lrc": "https://www.uta-net.com/song/234473/"
   },
   "114": {
     "mID": 114,
@@ -1542,7 +1644,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/2bQ4E3XRBLBnJMd8iSm59b",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044727",
-    "itn": "https://itunes.apple.com/jp/album/1304973334?i=1304973654&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1304973334?i=1304973654&app=itunes",
+    "lrc": "https://www.uta-net.com/song/239225/"
   },
   "115": {
     "mID": 115,
@@ -1557,7 +1660,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093348&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093348&app=itunes",
+    "lrc": "https://www.uta-net.com/song/239224/"
   },
   "116": {
     "mID": 116,
@@ -1572,7 +1676,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093349&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093349&app=itunes",
+    "lrc": "https://www.uta-net.com/song/239223/"
   },
   "117": {
     "mID": 117,
@@ -1587,7 +1692,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/69U2Iv4hyQi3cGCEJ8LM0H",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044722",
-    "itn": "https://itunes.apple.com/jp/album/1304978420?i=1304978423&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1304978420?i=1304978423&app=itunes",
+    "lrc": "https://www.uta-net.com/song/239594/"
   },
   "118": {
     "mID": 118,
@@ -1602,7 +1708,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093350&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093350&app=itunes",
+    "lrc": "https://www.uta-net.com/song/239593/"
   },
   "119": {
     "mID": 119,
@@ -1617,7 +1724,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093351&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093351&app=itunes",
+    "lrc": "https://www.uta-net.com/song/239592/"
   },
   "120": {
     "mID": 120,
@@ -1632,7 +1740,8 @@
     "lv": "",
     "spf": "",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044719",
-    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044719&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044719&app=itunes",
+    "lrc": "https://www.uta-net.com/song/243087/"
   },
   "121": {
     "mID": 121,
@@ -1647,7 +1756,8 @@
     "lv": "https://www.youtube.com/watch?v=9zluQwPBMWM",
     "spf": "https://open.spotify.com/track/6ARFjvAcg1zqxcVtHI5tZy",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044720",
-    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044720&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044720&app=itunes",
+    "lrc": "https://www.uta-net.com/song/243086/"
   },
   "122": {
     "mID": 122,
@@ -1662,7 +1772,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/3TA5gzW0KWpowkuJ934nqo",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044721",
-    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044721&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044721&app=itunes",
+    "lrc": "https://www.uta-net.com/song/243085/"
   },
   "123": {
     "mID": 123,
@@ -1677,7 +1788,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/5hFro351wW9rRBU4DZiSIs",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044723",
-    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044723&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044723&app=itunes",
+    "lrc": "https://www.uta-net.com/song/243084/"
   },
   "124": {
     "mID": 124,
@@ -1692,7 +1804,8 @@
     "lv": "https://www.youtube.com/watch?v=nPKl93s2o1M",
     "spf": "https://open.spotify.com/track/7iRhjeX954hj3wSyfCV6Og",
     "apl": "https://music.apple.com/jp/album/1198102015?i=1198102017",
-    "itn": "https://itunes.apple.com/jp/album/1198102015?i=1198102017&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1198102015?i=1198102017&app=itunes",
+    "lrc": "https://www.uta-net.com/song/243083/"
   },
   "125": {
     "mID": 125,
@@ -1707,7 +1820,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/7sMYLyMApHngtUjAGgFtTD",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044725",
-    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044725&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044725&app=itunes",
+    "lrc": "https://www.uta-net.com/song/243082/"
   },
   "126": {
     "mID": 126,
@@ -1722,7 +1836,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/6JVhKqqnBsRwTVgPgtVzLE",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044726",
-    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044726&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044726&app=itunes",
+    "lrc": "https://www.uta-net.com/song/243081/"
   },
   "127": {
     "mID": 127,
@@ -1737,7 +1852,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/7drM5HwTqNagGhn6QbZxEs",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044728",
-    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044728&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044728&app=itunes",
+    "lrc": "https://www.uta-net.com/song/243080/"
   },
   "128": {
     "mID": 128,
@@ -1752,7 +1868,8 @@
     "lv": "https://www.youtube.com/watch?v=K2CU5pwqQy8",
     "spf": "https://open.spotify.com/track/5pOkBPwiJmEsaubkCyAsne",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044730",
-    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044730&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044730&app=itunes",
+    "lrc": "https://www.uta-net.com/song/243079/"
   },
   "129": {
     "mID": 129,
@@ -1767,7 +1884,8 @@
     "lv": "https://www.youtube.com/watch?v=rEpXhN89wIM",
     "spf": "https://open.spotify.com/track/4hSzDIzXXsyIWvAkwZtn7h",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418218",
-    "itn": "https://itunes.apple.com/jp/album/1354852402?i=1354852404&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1354852402?i=1354852404&app=itunes",
+    "lrc": "https://www.uta-net.com/song/245229/"
   },
   "130": {
     "mID": 130,
@@ -1782,7 +1900,8 @@
     "lv": "https://www.youtube.com/watch?v=OjJJjqkDkb4",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093352&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093352&app=itunes",
+    "lrc": "https://www.uta-net.com/song/245228/"
   },
   "131": {
     "mID": 131,
@@ -1797,7 +1916,8 @@
     "lv": "https://www.youtube.com/watch?v=SBe4mPXXMOo",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093353&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093353&app=itunes",
+    "lrc": "https://www.uta-net.com/song/245227/"
   },
   "132": {
     "mID": 132,
@@ -1812,7 +1932,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/1OS3kgxIBgYqkCfUCkfakM",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418212",
-    "itn": "https://itunes.apple.com/jp/album/1440580724?i=1440580725&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1440580724?i=1440580725&app=itunes",
+    "lrc": "https://www.uta-net.com/song/258299/"
   },
   "133": {
     "mID": 133,
@@ -1827,7 +1948,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093354&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093354&app=itunes",
+    "lrc": "https://www.uta-net.com/song/258298/"
   },
   "134": {
     "mID": 134,
@@ -1842,7 +1964,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093355&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093355&app=itunes",
+    "lrc": "https://www.uta-net.com/song/258297/"
   },
   "135": {
     "mID": 135,
@@ -1857,7 +1980,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": ""
   },
   "136": {
     "mID": 136,
@@ -1872,7 +1996,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/5GoTwFDeeAjamT89TvFB1T",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1712428440?i=1712428442&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1712428440?i=1712428442&app=itunes",
+    "lrc": "https://www.uta-net.com/song/78824/"
   },
   "137": {
     "mID": 137,
@@ -1887,7 +2012,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/78823/"
   },
   "138": {
     "mID": 138,
@@ -1902,7 +2028,8 @@
     "lv": "https://www.youtube.com/watch?v=B009Nj-DzPU",
     "spf": "https://open.spotify.com/track/5x3Y7IScRTij6kgWmJOCUV",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041513&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041513&app=itunes",
+    "lrc": "https://www.uta-net.com/song/78822/"
   },
   "139": {
     "mID": 139,
@@ -1917,7 +2044,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/78821/"
   },
   "140": {
     "mID": 140,
@@ -1932,7 +2060,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/185437/"
   },
   "141": {
     "mID": 141,
@@ -1947,7 +2076,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/185435/"
   },
   "142": {
     "mID": 142,
@@ -1962,7 +2092,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/185434/"
   },
   "155": {
     "mID": 155,
@@ -1977,7 +2108,8 @@
     "lv": "https://www.youtube.com/watch?v=e9mkPCO1rxk",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093356&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093356&app=itunes",
+    "lrc": "https://www.uta-net.com/song/272291/"
   },
   "156": {
     "mID": 156,
@@ -1992,7 +2124,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/7tmRSzIL7JNYnIXCLTY1zF",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418215",
-    "itn": "https://itunes.apple.com/jp/album/1480479449?i=1480479450&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1480479449?i=1480479450&app=itunes",
+    "lrc": "https://www.uta-net.com/song/275519/"
   },
   "157": {
     "mID": 157,
@@ -2007,7 +2140,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1480479449?i=1480479451&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1480479449?i=1480479451&app=itunes",
+    "lrc": "https://www.uta-net.com/song/275518/"
   },
   "158": {
     "mID": 158,
@@ -2022,7 +2156,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1480479449?i=1480479452&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1480479449?i=1480479452&app=itunes",
+    "lrc": "https://www.uta-net.com/song/275517/"
   },
   "159": {
     "mID": 159,
@@ -2037,7 +2172,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/1onXbe3reEzSLvRfph6dzE",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418209",
-    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418209&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418209&app=itunes",
+    "lrc": "https://www.uta-net.com/song/291616/"
   },
   "160": {
     "mID": 160,
@@ -2052,7 +2188,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/5hSUr0FTrWvhGsXlxbsmLU",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418210",
-    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418210&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418210&app=itunes",
+    "lrc": "https://www.uta-net.com/song/291615/"
   },
   "161": {
     "mID": 161,
@@ -2067,7 +2204,8 @@
     "lv": "https://www.youtube.com/watch?v=P8dgRcuCbhM",
     "spf": "https://open.spotify.com/track/6h2qlrlBwZxhTQNivKqZ8f",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418211",
-    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418211&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418211&app=itunes",
+    "lrc": "https://www.uta-net.com/song/291614/"
   },
   "162": {
     "mID": 162,
@@ -2082,7 +2220,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/7HtyN9x8DGdxe80yGMdbBU",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418213",
-    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418213&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418213&app=itunes",
+    "lrc": "https://www.uta-net.com/song/291613/"
   },
   "163": {
     "mID": 163,
@@ -2097,7 +2236,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/0ISgaf4IDF5qnJFo3v8J9w",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418214",
-    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418214&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418214&app=itunes",
+    "lrc": "https://www.uta-net.com/song/291612/"
   },
   "164": {
     "mID": 164,
@@ -2112,7 +2252,8 @@
     "lv": "https://www.youtube.com/watch?v=P8dgRcuCbhM",
     "spf": "https://open.spotify.com/track/4pZ8zDEbWdMgKRck7cb0Dq",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418216",
-    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418216&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418216&app=itunes",
+    "lrc": "https://www.uta-net.com/song/291611/"
   },
   "165": {
     "mID": 165,
@@ -2127,7 +2268,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/0KqdJuzNS6NpAKu2zdRIxo",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418217",
-    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418217&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418217&app=itunes",
+    "lrc": "https://www.uta-net.com/song/291610/"
   },
   "166": {
     "mID": 166,
@@ -2142,7 +2284,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/6jVEBrLJrIloifud4KSd9i",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418219",
-    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418219&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418219&app=itunes",
+    "lrc": "https://www.uta-net.com/song/291609/"
   },
   "167": {
     "mID": 167,
@@ -2157,7 +2300,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/58U3YcWjHB2B613KkvillC",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418220",
-    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418220&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418220&app=itunes",
+    "lrc": "https://www.uta-net.com/song/291608/"
   },
   "168": {
     "mID": 168,
@@ -2172,7 +2316,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/3Gl8jfnr5qHzVoWCWc9tV3",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774507",
-    "itn": "https://itunes.apple.com/jp/album/1616993125?i=1616993126&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1616993125?i=1616993126&app=itunes",
+    "lrc": "https://www.uta-net.com/song/317221/"
   },
   "169": {
     "mID": 169,
@@ -2187,7 +2332,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/317220/"
   },
   "170": {
     "mID": 170,
@@ -2202,7 +2348,8 @@
     "lv": "https://www.youtube.com/watch?v=ixg-bJxY5gY",
     "spf": "https://open.spotify.com/track/3HOOzsN7ypLG53pyBq9eeL",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774049",
-    "itn": "https://itunes.apple.com/jp/album/1648654053?i=1648654054&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1648654053?i=1648654054&app=itunes",
+    "lrc": "https://www.uta-net.com/song/326437/"
   },
   "171": {
     "mID": 171,
@@ -2217,7 +2364,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/326436/"
   },
   "172": {
     "mID": 172,
@@ -2232,7 +2380,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/4bdSB9Ysz0DERAcwZ8DcfT",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679773785",
-    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679773785&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679773785&app=itunes",
+    "lrc": "https://www.uta-net.com/song/335760/"
   },
   "173": {
     "mID": 173,
@@ -2247,7 +2396,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/5aSItqgApJoIaIZu77L9Zu",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774039",
-    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774039&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774039&app=itunes",
+    "lrc": "https://www.uta-net.com/song/335759/"
   },
   "174": {
     "mID": 174,
@@ -2262,7 +2412,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/4QeoZcK6Qyi4RpKfkYuB5H",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774041",
-    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774041&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774041&app=itunes",
+    "lrc": "https://www.uta-net.com/song/335758/"
   },
   "175": {
     "mID": 175,
@@ -2277,7 +2428,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/5XdnqJxxh0M535ALwUYkBd",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774054",
-    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774054&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774054&app=itunes",
+    "lrc": "https://www.uta-net.com/song/335757/"
   },
   "176": {
     "mID": 176,
@@ -2292,7 +2444,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/5qko3Om0sSANw6k1pe97GT",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774362",
-    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774362&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774362&app=itunes",
+    "lrc": "https://www.uta-net.com/song/308699/"
   },
   "177": {
     "mID": 177,
@@ -2307,7 +2460,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/6WmH150zngZw8mNenyWY5o",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774368",
-    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774368&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774368&app=itunes",
+    "lrc": "https://www.uta-net.com/song/335756/"
   },
   "178": {
     "mID": 178,
@@ -2322,7 +2476,8 @@
     "lv": "https://www.youtube.com/watch?v=K2CU5pwqQy8",
     "spf": "https://open.spotify.com/track/5QXfKCYswvbgEXYY4yzpJo",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774372",
-    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774372&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774372&app=itunes",
+    "lrc": "https://www.uta-net.com/song/335755/"
   },
   "179": {
     "mID": 179,
@@ -2337,7 +2492,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/4NhvNRtcVMChZMs66EE1eq",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774382",
-    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774382&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774382&app=itunes",
+    "lrc": "https://www.uta-net.com/song/335754/"
   },
   "180": {
     "mID": 180,
@@ -2352,7 +2508,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/42x1LIKLFOzMcYWIsS5CEr",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774511",
-    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774511&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774511&app=itunes",
+    "lrc": "https://www.uta-net.com/song/335753/"
   },
   "181": {
     "mID": 181,
@@ -2367,7 +2524,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/7bssqLtlFKC3DZXoUCzsAo",
     "apl": "https://music.apple.com/jp/album/1758029307?i=1758030098",
-    "itn": "https://itunes.apple.com/jp/album/1707507238?i=1707507240&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1707507238?i=1707507240&app=itunes",
+    "lrc": "https://www.uta-net.com/song/344421/"
   },
   "182": {
     "mID": 182,
@@ -2382,7 +2540,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/344420/"
   },
   "183": {
     "mID": 183,
@@ -2397,7 +2556,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/357660/"
   },
   "184": {
     "mID": 184,
@@ -2412,7 +2572,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/357659/"
   },
   "185": {
     "mID": 185,
@@ -2427,7 +2588,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/357658/"
   },
   "186": {
     "mID": 186,
@@ -2442,7 +2604,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/357657/"
   },
   "187": {
     "mID": 187,
@@ -2457,7 +2620,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/357656/"
   },
   "188": {
     "mID": 188,
@@ -2472,7 +2636,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/357655/"
   },
   "189": {
     "mID": 189,
@@ -2487,7 +2652,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/357654/"
   },
   "190": {
     "mID": 190,
@@ -2502,7 +2668,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/357653/"
   },
   "191": {
     "mID": 191,
@@ -2517,7 +2684,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/357652/"
   },
   "192": {
     "mID": 192,
@@ -2532,7 +2700,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/357651/"
   },
   "193": {
     "mID": 193,
@@ -2547,7 +2716,8 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/357650/"
   },
   "194": {
     "mID": 194,
@@ -2562,7 +2732,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/3XkGAnx7i8OcFTIEcmVOUP",
     "apl": "https://music.apple.com/jp/album/1758029307?i=1758029313",
-    "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029313&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029313&app=itunes",
+    "lrc": "https://www.uta-net.com/song/357649/"
   },
   "202": {
     "mID": 202,
@@ -2577,7 +2748,8 @@
     "lv": "",
     "spf": "https://open.spotify.com/track/6ubI9ALQi6TQYZm7tVPDAi",
     "apl": "",
-    "itn": "https://itunes.apple.com/jp/album/1769179790?i=1769179797&app=itunes"
+    "itn": "https://itunes.apple.com/jp/album/1769179790?i=1769179797&app=itunes",
+    "lrc": "https://www.uta-net.com/song/361244/"
   },
   "203": {
     "mID": 203,
@@ -2592,6 +2764,7 @@
     "lv": "",
     "spf": "",
     "apl": "",
-    "itn": ""
+    "itn": "",
+    "lrc": "https://www.uta-net.com/song/361243/"
   }
 }

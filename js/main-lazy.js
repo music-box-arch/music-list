@@ -98,8 +98,8 @@ async function toggleSm(showStyle, showMix) {
         headers: [], // ヘッダー不要
         data: toAdd,
         context: 'ml',
-        columns: ['title', 'yt', 'lv', 'spf', 'apl', 'itn', 'exsm', 'firstCd', 'order', 'cdDate'],
-        textOnlyColumns: [0, 6, 7, 8, 9], // title, exsm, firstCd, order, cdDate
+        columns: ['title', 'yt', 'lv', 'spf', 'apl', 'itn', 'lrc', 'exsm', 'firstCd', 'order', 'cdDate'],
+        textOnlyColumns: [0, 7, 8, 9, 10], // title, exsm, firstCd, order, cdDate
         cstmRow: (tr, song) => {
             if (song.mID === 93) tr.cells[1].classList.add('small');
             tr.classList.add('sm-row');

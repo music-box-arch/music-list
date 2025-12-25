@@ -133,6 +133,10 @@ export function createTable(config) {
       columns.forEach((prop, columnIndex) => {
         const td = document.createElement('td');
 
+        if ([8, 9, 10].includes(columnIndex)) {
+          td.classList.add('small');
+        }
+
         // textOnlyColumnsに含まれていない場合は音楽リンク処理
         if (textOnlyColumns.includes(columnIndex)) {
           td.textContent = item[prop] || '';

@@ -89,11 +89,11 @@ document.addEventListener('DOMContentLoaded', function () {
       const { createTable } = await import('./tbl.js?v=${window.updVer}');
 
       const tableConfig = {
-        headers: ['✔︎', '曲名', 'YT', 'LV', 'Spf', 'Apl', 'iTn', 's/m', '初収録', '曲順', '発売日'],
+        headers: ['✔︎', '曲名', 'YT', 'LV', 'Spf', 'Apl', 'iTn', '歌詞', 's/m', '初収録', '順', '発売日'],
         data: initBch,
         context: 'ml',
-        columns: ['title', 'yt', 'lv', 'spf', 'apl', 'itn', 'exsm', 'firstCd', 'order', 'cdDate'],
-        textOnlyColumns: [0, 6, 7, 8, 9] // title, exsm, firstCd, order, cdDate
+        columns: ['title', 'yt', 'lv', 'spf', 'apl', 'itn', 'lrc', 'exsm', 'firstCd', 'order', 'cdDate'],
+        textOnlyColumns: [0, 7, 8, 9, 10] // title, exsm, firstCd, order, cdDate
       };
 
       const { table } = createTable(tableConfig);
@@ -153,8 +153,8 @@ document.addEventListener('DOMContentLoaded', function () {
       headers: [],
       data: batch,
       context: 'ml',
-      columns: ['title', 'yt', 'lv', 'spf', 'apl', 'itn', 'exsm', 'firstCd', 'order', 'cdDate'],
-      textOnlyColumns: [0, 6, 7, 8, 9] // title, exsm, firstCd, order, cdDate
+      columns: ['title', 'yt', 'lv', 'spf', 'apl', 'itn', 'lrc', 'exsm', 'firstCd', 'order', 'cdDate'],
+      textOnlyColumns: [0, 7, 8, 9, 10] // title, exsm, firstCd, order, cdDate
     };
 
     const { table } = createTable(config);
