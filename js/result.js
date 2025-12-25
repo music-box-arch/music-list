@@ -179,7 +179,7 @@ export async function buildMatrix(songIDs, discs, musicMap) {
             return {
                 cdName,
                 songCount,
-                amznUrl: d.Amzn && isValidUrl(d.Amzn) ? d.Amzn : null
+                amznUrl: d.A && isValidUrl(d.A) ? d.A : null
             };
         })
     );
