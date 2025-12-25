@@ -3,6 +3,7 @@
 
 # エディタ・IDE
 .vscode/
+.eslintrc.json
 
 # 言語やツールごとの依存ファイル・ログ
 node_modules/

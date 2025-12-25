@@ -5,10 +5,10 @@ let smData = null;
 // サブスク無しデータの読み込み
 async function loadSubNo() {
     if (!subNoMap) {
-        const { isValidResource } = await import('./tbl.js?v=${window.updVer}');
+        const { canFetch } = await import('./tbl.js?v=${window.updVer}');
         const url = 'data/sub-no.json?v=${window.updVer}';
 
-        if (!isValidResource(url)) {
+        if (!canFetch(url)) {
             throw new Error('Invalid resource URL detected');
         }
 
@@ -21,10 +21,10 @@ async function loadSubNo() {
 // style/mixデータの読み込み
 async function loadSm() {
     if (!smData) {
-        const { isValidResource } = await import('./tbl.js?v=${window.updVer}');
+        const { canFetch } = await import('./tbl.js?v=${window.updVer}');
         const url = 'data/music-list-sm.json?v=${window.updVer}';
 
-        if (!isValidResource(url)) {
+        if (!canFetch(url)) {
             throw new Error('Invalid resource URL detected');
         }
 

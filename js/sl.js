@@ -24,12 +24,12 @@ function sanitizeFilename(filename) {
 export async function initSL() {
   try {
     // リソース完全性検証
-    const { isValidResource } = await import('./tbl.js?v=${window.updVer}');
+    const { canFetch } = await import('./tbl.js?v=${window.updVer}');
     const musicUrl = 'data/music-list-SL.json?v=${window.updVer}';
 
     const indexUrl = `setlist/index.json?v=${window.updVer}`;
 
-    if (!isValidResource(musicUrl) || !isValidResource(indexUrl)) {
+    if (!canFetch(musicUrl) || !canFetch(indexUrl)) {
       throw new Error('Invalid resource URLs detected');
     }
 
@@ -271,12 +271,9 @@ async function buildOneSl(container, setlistData, setlistIndex) {
 
   // 正しい位置に挿入
   const containerChildren = Array.from(container.children);
-  //console.log('buildOneSl setlistIndex:', setlistIndex, 'containerChildren.length:', containerChildren.length);
   if (setlistIndex < containerChildren.length) {
-    //console.log('insertBefore at index:', setlistIndex);
     container.insertBefore(details, containerChildren[setlistIndex]);
   } else {
-    //console.log('appendChild');
     container.appendChild(details);
   }
 

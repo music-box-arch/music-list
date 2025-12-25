@@ -7,19 +7,6 @@ let slLazy = false; // sl-lazy.js読込済フラグ
 let tblProg = false; // tbl作成中フラグ
 let remains = []; // 残りの曲データ
 
-// DOM表でリンクを作る関数を定義（安全化）
-const makeLink = async (label, url) => {
-  const { isValidUrl } = await import('./tbl.js?v=${window.updVer}');
-  if (!url || !isValidUrl(url)) return '';
-
-  const a = document.createElement('a');
-  a.href = url;
-  a.target = '_blank';
-  a.rel = 'noopener noreferrer';
-  a.textContent = label;
-  return a.outerHTML;
-};
-
 // 初回btn押時のlazyload
 async function initLazy() {
   if (lazy) return;
@@ -66,10 +53,10 @@ function shwShare() {
 document.addEventListener('DOMContentLoaded', function () {
   // 2-1. 曲リスト表生成
   // リソース完全性検証
-  import('./tbl.js?v=${window.updVer}').then(({ isValidResource }) => {
+  import('./tbl.js?v=${window.updVer}').then(({ canFetch }) => {
     const musicUrl = 'data/music-list.json?v=${window.updVer}';
 
-    if (!isValidResource(musicUrl)) {
+    if (!canFetch(musicUrl)) {
       throw new Error('Invalid resource URL detected');
     }
 
@@ -140,10 +127,6 @@ document.addEventListener('DOMContentLoaded', function () {
   async function addRows(count = 0) {
     if (remains.length === 0) return;
 
-    const isFullTable = count === 0;
-    const timeLabel = isFullTable ? 'Table completion' : `Add ${count} rows`;
-    //console.time(timeLabel);
-
     const tbody = document.querySelector('#musicTbl tbody');
     const { createTable } = await import('./tbl.js?v=${window.updVer}');
 
@@ -160,8 +143,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const { table } = createTable(config);
     const newRows = Array.from(table.querySelector('tbody').children);
     newRows.forEach(row => tbody.appendChild(row));
-
-    //console.timeEnd(timeLabel);
   }
 
   // 表完成の確保
@@ -170,11 +151,6 @@ document.addEventListener('DOMContentLoaded', function () {
       tblProg = false;
       await addRows(); // 全行追加
     }
-
-    // 現在の表の行数をログ出力
-    const tbody = document.querySelector('#musicTbl tbody');
-    const rowCount = tbody ? tbody.querySelectorAll('tr').length : 0;
-    //console.log(`Table rows: ${rowCount}, Remains: ${remains.length}`);
   }
 
   // slタブ用の40行追加

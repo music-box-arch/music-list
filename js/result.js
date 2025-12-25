@@ -71,12 +71,12 @@ function truncate(str, maxW, suffix = '') {
 export async function loadData() {
     if (!allDiscs || !musicMap) {
         // リソース完全性検証を追加
-        const { isValidResource } = await import('./tbl.js?v=${window.updVer}');
+        const { canFetch } = await import('./tbl.js?v=${window.updVer}');
 
         const discUrl = 'data/all-discs.json?v=${window.updVer}';
         const mapUrl = 'data/music-map.json?v=${window.updVer}';
 
-        if (!isValidResource(discUrl) || !isValidResource(mapUrl)) {
+        if (!canFetch(discUrl) || !canFetch(mapUrl)) {
             throw new Error('Invalid resource URLs detected');
         }
 

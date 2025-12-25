@@ -1,13 +1,6 @@
-// リソース完全性検証
-export function isValidResource(url) {
+// リソース検証
+export function canFetch(url) {
   if (!url || typeof url !== 'string') return false;
-
-  // 自己ドメイン/相対パスのみ許可
-  const allowedOrigins = [
-    window.location.origin, // 現在のドメイン
-    '', // 相対パス
-    '.' // 相対パス
-  ];
 
   try {
     const parsedUrl = new URL(url, window.location.href);
@@ -18,7 +11,7 @@ export function isValidResource(url) {
   }
 }
 
-// URL検証 XSS防止
+// URL検証
 export function isValidUrl(url) {
   if (!url || typeof url !== 'string') return false;
 
@@ -70,19 +63,19 @@ function genMscLink(item, prop) {
     case 'itn':
       return item.itn ? genLink(item.itn, 'iTn') : '';
     case 'lrc':
-      return item.lrc ? genLink(item.lrc, '歌詞') : '';
+      return item.lrc ? genLink(item.lrc, '詞') : '';
     default:
       return item[prop] || '';
   }
 }
 
 // td要素作成ヘルパー関数
-export function createTd(content, style = '') {
-  const td = document.createElement('td');
-  td.textContent = content;
-  if (style) td.style.cssText = style;
-  return td;
-}
+// export function createTd(content, style = '') {
+//   const td = document.createElement('td');
+//   td.textContent = content;
+//   if (style) td.style.cssText = style;
+//   return td;
+// }
 
 // 汎用テーブル作成
 export function createTable(config) {
@@ -92,7 +85,6 @@ export function createTable(config) {
     context,          // 'ml' or 'sl'
     rowProcessor,     // 行処理関数（チェックボックス以外の部分を返す）
     className = 'tbl', // テーブルクラス
-    htmlColumns = [],  // HTMLとして扱う列のインデックス配列（旧方式）
     columns = [],      // プロパティ名配列（新方式）
     textOnlyColumns = [], // テキストのみの列のインデックス配列（新方式）
     cstmRow
@@ -162,25 +154,7 @@ export function createTable(config) {
       });
 
       if (cstmRow) cstmRow(tr, item, index);
-    } else {
-      // 旧方式: rowProcessor使用
-      const customResult = rowProcessor(item, index, context);
-
-      if (customResult.tds) {
-        customResult.tds.forEach((td, tdIndex) => {
-          // innerHTML使用を廃止：すべてDOM APIで処理
-          tr.appendChild(td);
-        });
-      }
-
-      // 属性設定
-      if (customResult.attributes) {
-        Object.entries(customResult.attributes).forEach(([key, value]) => {
-          tr.setAttribute(key, value);
-        });
-      }
     }
-
     tbody.appendChild(tr);
   });
 
