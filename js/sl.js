@@ -88,14 +88,13 @@ export async function buildSL() {
 // MC行を作成
 function createMCRow(colCount = 12) {
   const tr = document.createElement('tr');
-  tr.style.backgroundColor = '#f0f0f0';
+  tr.classList.add('sl-mc');
 
   const td = document.createElement('td');
   td.setAttribute('colspan', colCount.toString());
-  td.style.cssText = 'text-align: center; color: #666; font-size: 12px; padding: 2px;';
   td.textContent = 'MC';
-  tr.appendChild(td);
 
+  tr.appendChild(td);
   return tr;
 }
 
@@ -167,7 +166,7 @@ function setupEvents() {
 
 // チェック付き行のみ表示の処理
 export function hdlSlChkOnly(showChkOnly) {
-  const rows = document.querySelectorAll('.setlistTbl tbody tr');
+  const rows = document.querySelectorAll('.sl-tbl tbody tr');
 
   rows.forEach(row => {
     const checkbox = row.querySelector('.chk[data-context="sl"]');
@@ -191,7 +190,7 @@ export function hdlSlChkOnly(showChkOnly) {
 // セットリスト用曲名検索の処理
 export function hdlSlSrch(event) {
   const searchTerm = event.target.value.toLowerCase();
-  const rows = document.querySelectorAll('.setlistTbl tbody tr');
+  const rows = document.querySelectorAll('.sl-tbl tbody tr');
 
   rows.forEach(row => {
     const titleCell = row.cells[2]; // セットリストでは曲名は3番目のセル（✔︎、セトリ順の次）
@@ -227,18 +226,24 @@ function rmBtn(setlistData) {
   return -1;
 }
 
-
 // 単一セットリストの表を構築
 async function buildOneSl(container, setlistData, setlistIndex) {
   if (setlistData.isPlaceholder === true) {
-    // プレースホルダの場合はボタンとして表示
     const dateText = formatDateForDisplay(setlistData.date);
     const button = document.createElement('button');
+
     button.textContent = `${dateText}のセットリストを表示`;
-    button.style.cssText = `display: block; margin: ${setlistIndex > 0 ? '2em' : '1em'} 0 0.5em; padding: 4px 8px; background: white; color: #2564ad; border: 1px solid #2564ad; border-radius: 4px; cursor: pointer; font-size: 14px;`;
-    button.addEventListener('click', () => loadSetlistOnDemand(setlistData.filename));
+    button.classList.add('sl-plc-btn');
+
+    button.style.marginTop = setlistIndex > 0 ? '2em' : '1em';
+    button.style.marginBottom = '0.5em';
+
+    button.addEventListener('click', () =>
+      loadSetlistOnDemand(setlistData.filename)
+    );
+
     container.appendChild(button);
-    return; // プレースホルダの場合は表を作らずに終了
+    return;
   }
 
   let titleText = `${setlistData.date} - ${setlistData.site}`;
@@ -249,25 +254,18 @@ async function buildOneSl(container, setlistData, setlistIndex) {
 
   // detailsとsummaryを使った開閉可能な表
   const details = document.createElement('details');
-  details.open = true; // デフォルトで開いた状態
-  details.style.cssText = `margin: ${setlistIndex > 0 ? '2em' : '1em'} 0 1em;`;
+  details.open = true;
 
   const summary = document.createElement('summary');
-  summary.style.cssText = 'color: #2564ad; cursor: pointer; margin: 0 0 0.5em 8px; font-size: 16px; list-style: none;';
+  summary.classList.add('sl-sumry');
 
   const iconSpan = document.createElement('span');
-  iconSpan.style.cssText = 'font-weight: bold; margin-right: 8px; transform: rotate(90deg); display: inline-block;';
+  iconSpan.classList.add('sl-sumry-icon');
   iconSpan.textContent = '＞';
 
   summary.appendChild(iconSpan);
   summary.appendChild(document.createTextNode(titleText));
   details.appendChild(summary);
-
-  // 開閉時にアイコンを切り替え
-  details.addEventListener('toggle', () => {
-    const icon = summary.querySelector('span');
-    icon.style.transform = details.open ? 'rotate(90deg)' : 'rotate(-90deg)';
-  });
 
   // 正しい位置に挿入
   const containerChildren = Array.from(container.children);
@@ -307,13 +305,14 @@ async function buildOneSl(container, setlistData, setlistIndex) {
     headers: ['✔︎', 'セトリ順', '曲名', 'YT', 'LV', 'Spf', 'Apl', 'iTn', 'テンポ', '特徴・ハイライト', '歌詞'],
     data: songData,
     context: 'sl',
-    className: 'setlistTbl tbl',
+    className: 'sl-tbl tbl',
     columns: ['orderNum', 'title', 'yt', 'lv', 'spf', 'apl', 'itn', 'tmp', 'hlt', 'lrc'],
-    textOnlyColumns: [0, 1, 7, 8], // orderNum, title, tmp, hlt
+    textOnlyColumns: [0, 1, 7, 8],
     cstmRow: (tr, song) => {
-      tr.cells[1].style.cssText = 'text-align: center; font-weight: bold; color: #2564ad;';
-      tr.cells[8].classList.add('smltxt');
-      tr.cells[10].classList.add('smltxt');
+      tr.cells[1].classList.add('sl-order');
+      tr.cells[8].classList.add('small');
+      tr.cells[10].classList.add('small');
+
       tr.setAttribute('data-song-id', song.songId);
       tr.setAttribute('data-setlist-order', song.orderNum);
     }

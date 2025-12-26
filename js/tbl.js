@@ -63,7 +63,7 @@ function genMscLink(item, prop) {
     case 'itn':
       return item.itn ? genLink(item.itn, 'iTn') : '';
     case 'lrc':
-      return item.lrc ? genLink(item.lrc, '詞') : '';
+      return item.lrc ? genLink(item.lrc, '歌詞') : '';
     default:
       return item[prop] || '';
   }
@@ -125,7 +125,7 @@ export function createTable(config) {
       columns.forEach((prop, columnIndex) => {
         const td = document.createElement('td');
 
-        if ([8, 9, 10].includes(columnIndex)) {
+        if ([6, 8, 9, 10].includes(columnIndex)) {
           td.classList.add('small');
         }
 

@@ -1,5 +1,64 @@
-/* sl.css */
-.slAm {
-    color: #0066cc;
-    text-decoration: underline;
+/* setlist 全体：縦積み＋間隔制御 */
+#setlist-tab .table-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+/* セットリスト用テーブル */
+.sl-tbl {
+    margin-top: 0.5em;
+}
+
+/* MC 行 */
+.sl-tbl tr.sl-mc {
+    background-color: #f0f0f0;
+}
+
+.sl-tbl tr.sl-mc td {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    padding: 2px;
+}
+
+/* プレースホルダボタン */
+.sl-plc-btn {
+    display: block;
+    padding: 4px 8px;
+    background: #fff;
+    color: #2564ad;
+    border: 1px solid #2564ad;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* summary（details 見出し） */
+.sl-sumry {
+    color: #2564ad;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 16px;
+    list-style: none;
+}
+
+/* summary 内のアイコン */
+.sl-sumry-icon {
+    font-weight: bold;
+    margin-right: 8px;
+    display: inline-block;
+    transform: rotate(0deg);
+}
+
+/* details が open のときだけ回転 */
+details[open] .sl-sumry-icon {
+    transform: rotate(90deg);
+}
+
+/* セトリ順（太字・中央） */
+.sl-tbl td.sl-order {
+    text-align: center;
+    font-weight: bold;
+    color: #2564ad;
 }

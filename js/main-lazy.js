@@ -269,6 +269,18 @@ export function clrDispFilt() {
     }
 }
 
+// 汎用関数
+export function loadCss(href) {
+    const id = `css-${href.replace(/[^a-z0-9]/gi, '_')}`;
+    if (document.getElementById(id)) return;
+
+    const link = document.createElement('link');
+    link.id = id;
+    link.rel = 'stylesheet';
+    link.href = href;
+    document.head.appendChild(link);
+}
+
 // グローバル関数を公開
 export function setupGlb() {
     // グローバルアクセス用
