@@ -21,7 +21,7 @@ function sanitizeFilename(filename) {
 }
 
 // セットリスト機能の初期化
-export async function initSL() {
+export async function buildSL() {
   try {
     // リソース完全性検証
     const { canFetch } = await import('./tbl.js?v=${window.updVer}');
