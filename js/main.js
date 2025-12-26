@@ -1,9 +1,9 @@
 // バージョン定義
-window.updVer = '20251224';
+window.updVer = '20251225';
 
 // 1. グローバル変数（最小限）
 let lazy = false; // lazyload済フラグ
-let slLazy = false; // sl-lazy.js読込済フラグ
+let slLazy = false; // sl.js読込済フラグ
 let tblProg = false; // tbl作成中フラグ
 let remains = []; // 残りの曲データ
 
@@ -34,7 +34,7 @@ async function initLazy() {
 async function initSlLazy() {
   if (slLazy) return;
 
-  const { initSL } = await import('./sl-lazy.js?v=${window.updVer}');
+  const { initSL } = await import('./sl.js?v=${window.updVer}');
 
   // セットリスト機能を初期化
   await initSL();

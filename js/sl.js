@@ -3,6 +3,23 @@ let slMusicData = {}; // 曲データをキャッシュ
 let slFiles = []; // 読み込むセットリストファイル一覧
 let loadedSetlists = new Map(); // 読み込み済みセットリストのキャッシュ
 
+import { loadCss } from './main-lazy.js';
+
+// セットリスト機能の初期化
+export async function initSL() {
+  try {
+    loadCss(`css/sl.css?v=${window.updVer}`);
+
+    // セットリスト機能を初期化
+    await buildSL();
+
+    // グローバル関数を設定
+    setupGlb();
+
+  } catch (error) {
+  }
+}
+
 // ファイル名サニタイズ関数（パストラバーサル攻撃防止）
 function sanitizeFilename(filename) {
   if (!filename || typeof filename !== 'string') {
