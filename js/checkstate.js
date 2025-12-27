@@ -186,7 +186,7 @@ export function setGlobals() {
     window.clrCS = clear;
     window.aplCsCxt = aplCsCxt;
     window.applyActv = applyActv;
-    window.updCS = update;
+    //window.updCS = update;
     window.getCS = getCurrent;
     window.setCSsub = setSubNo;
     window.rstCS = restore;
