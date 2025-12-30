@@ -2766,5 +2766,37 @@
     "apl": "",
     "itn": "",
     "lrc": "https://www.uta-net.com/song/361243/"
+  },
+  "204": {
+    "mID": 204,
+    "title": "うるわし",
+    "cdDate": "2026-01-21",
+    "firstCd": "うるわし／アザレアの風",
+    "subNo": "",
+    "order": 1,
+    "exsm": "",
+    "yt": "",
+    "ytUrl": "",
+    "lv": "",
+    "spf": "",
+    "apl": "",
+    "itn": "",
+    "lrc": ""
+  },
+  "205": {
+    "mID": 205,
+    "title": "アザレアの風",
+    "cdDate": "2026-01-21",
+    "firstCd": "うるわし／アザレアの風",
+    "subNo": "",
+    "order": 2,
+    "exsm": "",
+    "yt": "",
+    "ytUrl": "",
+    "lv": "",
+    "spf": "",
+    "apl": "",
+    "itn": "",
+    "lrc": ""
   }
 }
