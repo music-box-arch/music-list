@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // DOMContentLoadedで行われる一連の関数
 
+// mTblReadyの値を確認して、trueになるまで待つ関数
 async function waitMTblReady() {
     while (!mTblReady) {
         await new Promise(resolve => setTimeout(resolve, 30));
@@ -36,6 +37,7 @@ function initControls() {
     // 既存の「押されたらキュー or 即実行」ロジックをここに
 }
 
+// jsonのpath(バージョン抜き)を送って中を読み取って配列やオブジェクトを返す関数
 async function readJson(path) {
     const url = `${path}?v=${window.updVer}`;
     const res = await fetch(url, { cache: 'no-store' });
@@ -43,7 +45,7 @@ async function readJson(path) {
     return await res.json();
 }
 
-
+// 複数行（最大40行）をtplに入れて表に追加する関数
 async function addChunk(tbody, tpl, mlJson, limit = 40) {
     const fragment = document.createDocumentFragment();
     const added = [];

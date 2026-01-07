@@ -107,8 +107,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // 初期表示後の行数をログ出力
       const tbody = document.querySelector('#musicTbl tbody');
-      const initialRows = tbody ? tbody.querySelectorAll('tr').length : 0;
-      //console.log(`Initial table rows: ${initialRows}, Remains: ${remains.length}`);
 
       // 表作成完了フラグ
       tblProg = true;
