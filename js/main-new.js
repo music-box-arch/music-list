@@ -1,14 +1,40 @@
 // バージョン定義
 window.updVer = '20251229';
 
+function addVer(path) {
+    if (!path) return path;
+    // すでに ? があれば &v=、なければ ?v=
+    const sep = path.includes('?') ? '&' : '?';
+    return `${path}${sep}v=${window.updVer}`;
+}
+
 let mTblReady = false;
 let isDrawing = false;
 const hasMIds = new Set();
 
-document.addEventListener('DOMContentLoaded', async () => {
-    initControls();
+const featEvents = [
+    { selector: '.showDiscsButton', module: './result.js', export: 'buildMatrix' },
+    { selector: '.clearAllChecksBtn', module: '', export: '' }
+];
+const tabEvents = [
+    { selector: '.tab-btn[data-tab="songlist"]', module: '', export: '' },
+    { selector: '.tab-btn[data-tab="setlist"]', module: '', export: '', wait: false }
+];
+const searchEvents = [{ id: 'sngSrch', module: '', export: '' }];
+const filterEvents = [
+    { id: 'chkSb', module: './main-lazy.js', export: 'SubNoFn' },
+    { id: 'shStChk', module: './main-lazy.js', export: 'toggleSm' },
+    { id: 'shMxChk', module: './main-lazy.js', export: 'toggleSm' },
+    { id: 'shChkOnly', module: './main-lazy.js', export: 'hdlMlChkOnly' }
+];
+const audModeEvents = [{ id: 'audioInfoMode', module: '', export: '' }];
+const eventDefs = [...featEvents, ...tabEvents, ...searchEvents, ...filterEvents, ...audModeEvents];
 
-    const tbody = document.querySelector('#music-table tbody');
+document.addEventListener('DOMContentLoaded', async () => {
+    //イベントリスナー設置、ハンドラ登録
+    initControls(eventDefs);
+
+    const tbody = document.querySelector('#musicTbl tbody');
     const tpl = document.getElementById('tmp-main-row');
     const mlJson = await readJson('data/music-list-new.json');
 
@@ -24,17 +50,53 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
-// DOMContentLoadedで行われる一連の関数
+function initControls(defs) {
+    setType([featEvents, tabEvents], 'click');
+    setType(searchEvents, 'input');
+    setType([filterEvents, audModeEvents], 'change');
 
-// mTblReadyの値を確認して、trueになるまで待つ関数
+    bindEvents(defs);
+}
+// 以下、initControlsで使われる関数
+function setType(targets, type) {
+    const lists = Array.isArray(targets[0]) ? targets : [targets];
+    lists.forEach(list => {
+        list.forEach(item => {
+            item.type = type;
+        });
+    });
+}
+function bindEvents(defs) {
+    defs.forEach(def => {
+        const elements = def.selector
+            ? document.querySelectorAll(def.selector)
+            : def.id
+                ? [document.getElementById(def.id)]
+                : [];
+
+        elements.forEach(el => {
+            if (!el) return;
+            el.addEventListener(def.type, createHandler(def));
+        });
+    });
+}
+function createHandler(def) {
+    return async (e) => {
+        if (def.wait !== false) {
+            await waitMTblReady();
+        }
+        if (!def.module || !def.export) return;
+        const mod = await import(addVer(def.module));
+        const fn = mod[def.export];
+        if (typeof fn === 'function') {
+            await fn(e);
+        }
+    };
+}
 async function waitMTblReady() {
     while (!mTblReady) {
         await new Promise(resolve => setTimeout(resolve, 30));
     }
-}
-
-function initControls() {
-    // 既存の「押されたらキュー or 即実行」ロジックをここに
 }
 
 // jsonのpath(バージョン抜き)を送って中を読み取って配列やオブジェクトを返す関数
@@ -68,7 +130,6 @@ async function addChunk(tbody, tpl, mlJson, limit = 40) {
 
 
 // 以下、addChunkで使う関数たち
-
 function addOneRow(fragment, item, tpl) {
     const tr = tpl.content.firstElementChild.cloneNode(true);
 
@@ -96,7 +157,6 @@ function addOneRow(fragment, item, tpl) {
     deleteProps(item, ['ytNd', 'lvNd', 'spfNd', 'aplNd', 'itnNd', 'lrcNd']);
 }
 
-
 const mkLink = (url, text) => {
     if (!url) return null;
 
@@ -110,11 +170,10 @@ const mkLink = (url, text) => {
 };
 
 const fill = (tr, item, tplKey, dataKey = tplKey) => {
-    const td = tr.querySelector(`.${tplKey}`);
+    const td = tr.querySelector(`[data-fld="${tplKey}"]`);
     if (!td) return;
 
     td.textContent = '';
-
     const value = item[dataKey];
 
     if (value instanceof Node) {
@@ -123,6 +182,7 @@ const fill = (tr, item, tplKey, dataKey = tplKey) => {
         td.textContent = value ?? '';
     }
 };
+
 
 function deleteProps(item, keys) {
     keys.forEach(k => delete item[k]);

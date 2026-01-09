@@ -121,8 +121,6 @@ async function toggleSm(showStyle, showMix) {
     reapplySearch();
 }
 
-
-
 // 適切な位置に行を挿入
 export function insertRow(tbody, newRow, place, compareBy = 'mID') {
     const rows = Array.from(tbody.querySelectorAll('tr'));
