@@ -1,6 +1,10 @@
 // バージョン定義
 window.updVer = '20251229';
 
+let mTblReady = false;
+let isDrawing = false;
+const rowMap = new Map(); // mID -> tr
+
 function addVer(path) {
     if (!path) return path;
     // すでに ? があれば &v=、なければ ?v=
@@ -8,13 +12,9 @@ function addVer(path) {
     return `${path}${sep}v=${window.updVer}`;
 }
 
-let mTblReady = false;
-let isDrawing = false;
-const hasMIds = new Set();
-
 const featEvents = [
-    { selector: '.showDiscsButton', module: './result.js', export: 'buildMatrix' },
-    { selector: '.clearAllChecksBtn', module: '', export: '' }
+    { selector: '.showDiscsBtn', module: '', export: 'showDiscs' },
+    { selector: '.clearAllBtn', module: '', export: 'clearAll' }
 ];
 const tabEvents = [
     { selector: '.tab-btn[data-tab="songlist"]', module: '', export: '' },
@@ -38,15 +38,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     const tpl = document.getElementById('tmp-main-row');
     const mlJson = await readJson('data/music-list-new.json');
 
-    // 初期HTML分を hasMIds に登録（1回だけ）
-    tbody.querySelectorAll('.chk[data-id]').forEach(chk => {
-        hasMIds.add(Number(chk.dataset.id));
+    // 初期HTML分を rowMap に登録（1回だけ）
+    tbody.querySelectorAll('tr').forEach(tr => {
+        const chk = tr.querySelector('.chk[data-id]');
+        if (!chk) return;
+
+        const id = Number(chk.dataset.id);
+        rowMap.set(id, tr);
     });
 
     // まず40行、必要なら続けて
     while (!mTblReady) {
         await addChunk(tbody, tpl, mlJson, 40);
-        await new Promise(resolve => setTimeout(resolve, 0)); // ← これが必要
+        await new Promise(resolve => setTimeout(resolve, 0));
     }
 });
 
@@ -83,7 +87,7 @@ function bindEvents(defs) {
 function createHandler(def) {
     return async (e) => {
         if (def.wait !== false) {
-            await waitMTblReady();
+            await waitReady(() => mTblReady);
         }
         if (!def.module || !def.export) return;
         const mod = await import(addVer(def.module));
@@ -93,9 +97,11 @@ function createHandler(def) {
         }
     };
 }
-async function waitMTblReady() {
-    while (!mTblReady) {
-        await new Promise(resolve => setTimeout(resolve, 30));
+
+// 実行する時は await waitReady(() => mTblReady); の形
+async function waitReady(flag, interval = 30) {
+    while (!flag()) {
+        await new Promise(r => setTimeout(r, interval));
     }
 }
 
@@ -109,52 +115,50 @@ async function readJson(path) {
 
 // 複数行（最大40行）をtplに入れて表に追加する関数
 async function addChunk(tbody, tpl, mlJson, limit = 40) {
-    const fragment = document.createDocumentFragment();
-    const added = [];
-
-    for (const item of mlJson) {
-        if (hasMIds.has(item.mID)) continue;
-        addOneRow(fragment, item, tpl);
-        added.push(item.mID);
-        if (added.length >= limit) break;
-    }
-
-    if (added.length === 0) {
+    const targets = mlJson
+        .filter(item => !rowMap.has(item.mID))
+        .slice(0, limit);
+    if (targets.length === 0) {
         mTblReady = true;
         return;
     }
 
+    const fragment = document.createDocumentFragment();
+    targets.forEach(item => {
+        const tr = mkRow(item, tpl);
+        fragment.appendChild(tr);
+        rowMap.set(item.mID, tr);
+    });
     tbody.appendChild(fragment);
-    added.forEach(id => hasMIds.add(id));
 }
-
-
 // 以下、addChunkで使う関数たち
 function addOneRow(fragment, item, tpl) {
+    const tr = mkRow(item, tpl);
+    fragment.appendChild(tr);
+    rowMap.set(item.mID, tr);
+}
+function mkRow(item, tpl) {
     const tr = tpl.content.firstElementChild.cloneNode(true);
 
     const chk = tr.querySelector('.chk');
     if (chk) chk.dataset.id = item.mID;
 
-    [
-        ['ytNd', item.ytUrl, item.yt || '♪'],
-        ['lvNd', item.lv, 'LV'],
-        ['spfNd', item.spf, 'Spf'],
-        ['aplNd', item.apl, 'Apl'],
-        ['itnNd', item.itn, 'iTn'],
-        ['lrcNd', item.lrc, '歌詞']
+    [['ytNd', item.ytUrl, item.yt || '♪'],
+    ['lvNd', item.lv, 'LV'],
+    ['spfNd', item.spf, 'Spf'],
+    ['aplNd', item.apl, 'Apl'],
+    ['itnNd', item.itn, 'iTn'],
+    ['lrcNd', item.lrc, '歌詞']
     ].forEach(([k, url, label]) => {
         item[k] = mkLink(url, label);
     });
 
-    [
-        'title', 'ytNd', 'lvNd', 'spfNd', 'aplNd', 'itnNd', 'lrcNd',
+    ['title', 'ytNd', 'lvNd', 'spfNd', 'aplNd', 'itnNd', 'lrcNd',
         'exsm', 'firstCd', 'order', 'cdDate'
     ].forEach(k => fill(tr, item, k));
 
-    fragment.appendChild(tr);
-
     deleteProps(item, ['ytNd', 'lvNd', 'spfNd', 'aplNd', 'itnNd', 'lrcNd']);
+    return tr;
 }
 
 const mkLink = (url, text) => {
@@ -168,7 +172,6 @@ const mkLink = (url, text) => {
 
     return a;
 };
-
 const fill = (tr, item, tplKey, dataKey = tplKey) => {
     const td = tr.querySelector(`[data-fld="${tplKey}"]`);
     if (!td) return;
@@ -182,8 +185,6 @@ const fill = (tr, item, tplKey, dataKey = tplKey) => {
         td.textContent = value ?? '';
     }
 };
-
-
 function deleteProps(item, keys) {
     keys.forEach(k => delete item[k]);
 }
