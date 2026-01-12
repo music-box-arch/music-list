@@ -1,10 +1,18 @@
 // バージョン定義
 window.updVer = '20251229';
 
+
 let mTblReady = false;
 let isDrawing = false;
 const rowMap = new Map(); // mID -> tr
 
+/* a.js の中から myFunction を取ってきてFunctionA という名前で使いたい
+ const { myFunction: FunctionA } = await import(addVer('./a.js'));
+ a.js を単に importしたいとき
+ 副作用目的（イベント登録など）→ await import(addVer('./a.js'));
+ 中身を変数として持ちたいとき
+ const moduleA = await import(addVer('./a.js'));
+ moduleA.myFunction(); */
 function addVer(path) {
     if (!path) return path;
     // すでに ? があれば &v=、なければ ?v=
@@ -87,13 +95,18 @@ function bindEvents(defs) {
 function createHandler(def) {
     return async (e) => {
         if (def.wait !== false) {
-            await waitReady(() => mTblReady);
+            await waitReady(() => mTblReady);    //イベント発火後に待つかどうか
         }
         if (!def.module || !def.export) return;
         const mod = await import(addVer(def.module));
         const fn = mod[def.export];
         if (typeof fn === 'function') {
-            await fn(e);
+            // mode があれば第2引数として渡す
+            if ('mode' in def) {
+                await fn(e, def.mode);
+            } else {
+                await fn(e);
+            }
         }
     };
 }
@@ -107,7 +120,7 @@ async function waitReady(flag, interval = 30) {
 
 // jsonのpath(バージョン抜き)を送って中を読み取って配列やオブジェクトを返す関数
 async function readJson(path) {
-    const url = `${path}?v=${window.updVer}`;
+    const url = addVer(path);
     const res = await fetch(url, { cache: 'no-store' });
     if (!res.ok) throw new Error(`load failed: ${url}`);
     return await res.json();
