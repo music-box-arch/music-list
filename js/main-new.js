@@ -1,23 +1,38 @@
-// バージョン定義
-window.updVer = '20251229';
+// main-new.js
+window.MLAPP = {
+    VER: '20251229',
+    addVer(path) {
+        if (!path) return path;
+        const sep = path.includes('?') ? '&' : '?';
+        return `${path}${sep}v=${window.MLAPP.VER}`;
+    }
+};
+// main-new.js 内で使う短縮名
+const { addVer } = window.MLAPP;
 
+export const state = { isDrawing: false, isSyncing: false };
+export const chkStates = { cs: [], csBk: [] };
+// const { cs, csBk } = chkStates;
+
+export const mTbl = {
+    map: new Map(),
+    tbody: document.querySelector('#musicTbl tbody')
+};
 
 let mTblReady = false;
-let isDrawing = false;
-const rowMap = new Map(); // mID -> tr
 
-/* a.js の中から myFunction を取ってきてFunctionA という名前で使いたい
- const { myFunction: FunctionA } = await import(addVer('./a.js'));
- a.js を単に importしたいとき
- 副作用目的（イベント登録など）→ await import(addVer('./a.js'));
- 中身を変数として持ちたいとき
- const moduleA = await import(addVer('./a.js'));
- moduleA.myFunction(); */
-function addVer(path) {
-    if (!path) return path;
-    // すでに ? があれば &v=、なければ ?v=
-    const sep = path.includes('?') ? '&' : '?';
-    return `${path}${sep}v=${window.updVer}`;
+export function logMapKeys(label, map, max = 10) {
+    const keys = Array.from(map.keys());
+    const head = keys.slice(0, max).join(',');
+    const tail = keys.length > max ? ` ... (+${keys.length - max})` : '';
+    console.log(`${label} size=${map.size} keys=[${head}${tail}]`);
+}
+
+export async function readJson(path) {
+    const url = addVer(path);
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`load failed: ${url}`);
+    return await res.json();
 }
 
 const featEvents = [
@@ -30,36 +45,37 @@ const tabEvents = [
 ];
 const searchEvents = [{ id: 'sngSrch', module: '', export: '' }];
 const filterEvents = [
-    { id: 'chkSb', module: './main-lazy.js', export: 'SubNoFn' },
-    { id: 'shStChk', module: './main-lazy.js', export: 'toggleSm' },
-    { id: 'shMxChk', module: './main-lazy.js', export: 'toggleSm' },
+    { id: 'chkSb', module: './func-new.js', export: 'subNoFn' },
+    { id: 'shStChk', module: './func-new.js', export: 'toggleSm', mode: 'style' },
+    { id: 'shMxChk', module: './func-new.js', export: 'toggleSm', mode: 'mix' },
     { id: 'shChkOnly', module: './main-lazy.js', export: 'hdlMlChkOnly' }
 ];
-const audModeEvents = [{ id: 'audioInfoMode', module: '', export: '' }];
+const audModeEvents = [{ id: 'audioInfoMode', module: './all-audio-btn-new.js', export: 'handleAudioMode' }];
 const eventDefs = [...featEvents, ...tabEvents, ...searchEvents, ...filterEvents, ...audModeEvents];
 
 document.addEventListener('DOMContentLoaded', async () => {
+    logMapKeys('[mTbl.map] (DOMContentLoaded START)', mTbl.map);
     //イベントリスナー設置、ハンドラ登録
     initControls(eventDefs);
 
-    const tbody = document.querySelector('#musicTbl tbody');
     const tpl = document.getElementById('tmp-main-row');
     const mlJson = await readJson('data/music-list-new.json');
 
-    // 初期HTML分を rowMap に登録（1回だけ）
-    tbody.querySelectorAll('tr').forEach(tr => {
+    // 初期HTML分を mTbl.tbody に登録（1回だけ）
+    mTbl.tbody.querySelectorAll('tr').forEach(tr => {
         const chk = tr.querySelector('.chk[data-id]');
         if (!chk) return;
 
         const id = Number(chk.dataset.id);
-        rowMap.set(id, tr);
+        mTbl.map.set(id, tr);
     });
-
+    logMapKeys('[mTbl.map] (DOMContentLoaded START)', mTbl.map);
     // まず40行、必要なら続けて
     while (!mTblReady) {
-        await addChunk(tbody, tpl, mlJson, 40);
+        await addChunk(mTbl.tbody, tpl, mlJson, 40);
         await new Promise(resolve => setTimeout(resolve, 0));
     }
+    logMapKeys('[mTbl.map] (DOMContentLoaded START)', mTbl.map);
 });
 
 function initControls(defs) {
@@ -118,18 +134,10 @@ async function waitReady(flag, interval = 30) {
     }
 }
 
-// jsonのpath(バージョン抜き)を送って中を読み取って配列やオブジェクトを返す関数
-async function readJson(path) {
-    const url = addVer(path);
-    const res = await fetch(url, { cache: 'no-store' });
-    if (!res.ok) throw new Error(`load failed: ${url}`);
-    return await res.json();
-}
-
 // 複数行（最大40行）をtplに入れて表に追加する関数
 async function addChunk(tbody, tpl, mlJson, limit = 40) {
     const targets = mlJson
-        .filter(item => !rowMap.has(item.mID))
+        .filter(item => !mTbl.map.has(item.mID))
         .slice(0, limit);
     if (targets.length === 0) {
         mTblReady = true;
@@ -140,17 +148,12 @@ async function addChunk(tbody, tpl, mlJson, limit = 40) {
     targets.forEach(item => {
         const tr = mkRow(item, tpl);
         fragment.appendChild(tr);
-        rowMap.set(item.mID, tr);
+        mTbl.map.set(item.mID, tr);
     });
     tbody.appendChild(fragment);
 }
 // 以下、addChunkで使う関数たち
-function addOneRow(fragment, item, tpl) {
-    const tr = mkRow(item, tpl);
-    fragment.appendChild(tr);
-    rowMap.set(item.mID, tr);
-}
-function mkRow(item, tpl) {
+export function mkRow(item, tpl) {
     const tr = tpl.content.firstElementChild.cloneNode(true);
 
     const chk = tr.querySelector('.chk');

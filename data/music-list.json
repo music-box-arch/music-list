@@ -2776,12 +2776,12 @@
     "order": 1,
     "exsm": "",
     "yt": "",
-    "ytUrl": "",
+    "ytUrl": "https://www.youtube.com/watch?v=7Z4woFcxA6U",
     "lv": "",
-    "spf": "",
-    "apl": "",
-    "itn": "",
-    "lrc": ""
+    "spf": "https://open.spotify.com/track/5kvESVLeUE6ldAIYpBcstS",
+    "apl": "https://music.apple.com/jp/album/1861426433?i=1861426434",
+    "itn": "https://itunes.apple.com/jp/album/1861426433?i=1861426434&app=itunes",
+    "lrc": "https://www.uta-net.com/song/386215/"
   },
   "205": {
     "mID": 205,
