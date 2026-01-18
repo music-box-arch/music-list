@@ -36,19 +36,19 @@ export async function readJson(path) {
 }
 
 const featEvents = [
-    { selector: '.showDiscsBtn', module: '', export: 'showDiscs' },
-    { selector: '.clearAllBtn', module: '', export: 'clearAll' }
+    { selector: '.showDiscsBtn', module: './result-new.js', export: 'showDiscs' },
+    { selector: '.clearAllBtn', module: './func-new.js', export: 'clearAll' }
 ];
 const tabEvents = [
     { selector: '.tab-btn[data-tab="songlist"]', module: '', export: '' },
     { selector: '.tab-btn[data-tab="setlist"]', module: '', export: '', wait: false }
 ];
-const searchEvents = [{ id: 'sngSrch', module: '', export: '' }];
+const searchEvents = [{ id: 'sngSrch', module: './func-new.js', export: 'pfmSrch' }];
 const filterEvents = [
     { id: 'chkSb', module: './func-new.js', export: 'subNoFn' },
     { id: 'shStChk', module: './func-new.js', export: 'toggleSm', mode: 'style' },
     { id: 'shMxChk', module: './func-new.js', export: 'toggleSm', mode: 'mix' },
-    { id: 'shChkOnly', module: './main-lazy.js', export: 'hdlMlChkOnly' }
+    { id: 'shChkOnly', module: './func-new.js', export: 'dispChkOnly' }
 ];
 const audModeEvents = [{ id: 'audioInfoMode', module: './all-audio-btn-new.js', export: 'handleAudioMode' }];
 const eventDefs = [...featEvents, ...tabEvents, ...searchEvents, ...filterEvents, ...audModeEvents];

@@ -69,6 +69,9 @@ async function applyView() {
     await applyChk('shMxChk', applySm, 'mix');
     await applyChk('chkSb', applySubNo);
     // （この後にsearch / chkOnly を続けていく想定）
+    const shouldDisplay = calcShouldDisplay();
+    renderDisplay(shouldDisplay);
+
     console.log('applyViewの終わり');
 }
 async function applyChk(chkId, fn, mode) {
@@ -155,6 +158,8 @@ export function addOneRow(tbody, newTr, map, nextId) {
         tbody.appendChild(newTr);
     }
 }
+
+//サブスク無し曲のみチェック
 export async function subNoFn(e) {
     if (!state.isSyncing) { startSync(); }
 
@@ -198,4 +203,111 @@ async function applySubNo(isChecked) {
         });
     }
     console.log(`applySubNo is finished: csLen=${cs.length}, cs=[${cs}], csBk=[${csBk}]`);
+}
+
+export function pfmSrch(e) {
+    const word = e.target.value.trim();
+
+    // 入力が空になったら、全体の状態を再適用
+    if (!word) {
+        applyView();
+        return;
+    }
+
+    // 検索結果を計算
+    const shouldDisplay = trySearch(word);
+
+    // 表示だけ更新
+    renderDisplay(shouldDisplay);
+}
+
+function calcShouldDisplay() {
+    const q = document.getElementById('sngSrch')?.value?.trim();
+
+    if (q) {
+        console.log('検索結果を返します');
+        return trySearch(q); // Set or 空Set
+    }
+
+    if (document.getElementById('shChkOnly')?.checked) {
+        console.log('csのみを返します');
+        return new Set(cs);
+    }
+    console.log('nullを返します');
+    return null; // 全表示
+}
+
+function trySearch(word) {
+    const res = new Set();
+    const q = norm(word);
+    console.log(q);
+
+    mTbl.map.forEach((tr, id) => {
+        const title = tr.cells[1]?.textContent ?? '';
+        if (norm(title).includes(q)) {
+            res.add(id);
+        }
+    });
+
+    return res;
+}
+
+function renderDisplay(shouldDisplay) {
+    mTbl.map.forEach((tr, id) => {
+        if (shouldDisplay === null || shouldDisplay.has(id)) {
+            tr.style.display = '';
+        } else {
+            tr.style.display = 'none';
+        }
+    });
+}
+
+function norm(s) {
+    return s
+        .toLowerCase()
+        .replace(/　/g, ' ')        // 全角スペース → 半角
+        .replace(/[〜~]/g, '~')
+        .replace(/[（）]/g, '(')
+        .replace(/[、,]/g, ',')
+        .replace(/[。.]/g, '.')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+export function dispChkOnly(e) {
+    console.log('dispChkOnly が押された');
+    if (!state.isSyncing) startSync();
+
+    applyView();
+}
+
+export function clearAll() {
+    console.log('clearAll called');
+    // mID チェックを全解除
+    mTbl.map.forEach(tr => {
+        const chk = tr.querySelector('.chk');
+        if (chk) chk.checked = false;
+    });
+
+    // 機能チェックボックスを全解除
+    [
+        'shStChk',
+        'shMxChk',
+        'chkSb',
+        'shChkOnly'
+    ].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.checked = false;
+    });
+
+    // 検索窓クリア
+    const srch = document.getElementById('sngSrch');
+    if (srch) srch.value = '';
+
+    // cs / csBk 初期化
+    cs.length = 0;
+    csBk.length = 0;
+
+    // 表示再計算
+    applyView();
 }
