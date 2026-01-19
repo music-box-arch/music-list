@@ -14,6 +14,7 @@ export const state = { isDrawing: false, isSyncing: false };
 export const chkStates = { cs: [], csBk: [] };
 // const { cs, csBk } = chkStates;
 
+export const mlJsonData = readJson('data/music-list-new.json');
 export const mTbl = {
     map: new Map(),
     tbody: document.querySelector('#musicTbl tbody')
@@ -59,7 +60,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     initControls(eventDefs);
 
     const tpl = document.getElementById('tmp-main-row');
-    const mlJson = await readJson('data/music-list-new.json');
+    const mlJson = await mlJsonData;
 
     // 初期HTML分を mTbl.tbody に登録（1回だけ）
     mTbl.tbody.querySelectorAll('tr').forEach(tr => {

@@ -15,13 +15,13 @@ showResult
 // result-new.js
 const { addVer } = window.MLAPP;
 // addVer を使って main-new.js を import
-const { state, chkStates, mTbl, mkLink, readJson } = await import(addVer('./main-new.js'));
+const { state, chkStates, mTbl, mkLink, readJson, mlJsonData } = await import(addVer('./main-new.js'));
 // ローカル短縮
 const { cs, csBk } = chkStates;
 
 export async function showResult() {
     console.log('showResult is called');
-    const allDiscs = await readJson('data/all-discs.json');
+    const allDiscs = await readJson('data/all-discs-new.json');
     const { loadCss, startSync } = await import(addVer('./func-new.js'));
     loadCss('result-css', 'css/result.css');
 
@@ -38,13 +38,12 @@ export async function showResult() {
     measureEnv();
     getCdType();
 
-    mkResultData(cs, mTbl, allDiscs);
-
+    const resultData = mkResultData(cs, mTbl, allDiscs);
+    const resultTbl = mkMinTbl(resultData);
     // ↓ ここから先で
-    // mkResultData()
     // mkMinTbl()
     // adjustTbl()
-    // renderTbl()
+    renderTbl(resultTbl);
 
 }
 function measureEnv() {
@@ -71,8 +70,13 @@ function getCdType() {
 
     return el ? el.value : 'both';
 }
-function mkResultData(cs, mTbl, allDiscs) {
+async function mkResultData(cs, mTbl, allDiscs) {
     console.log('[result] mkResultData start', { cs: cs.length, discs: allDiscs.length });
+
+    const mlJson = await mlJsonData;
+    const musicMap = new Map(
+        mlJson.map(o => [Number(o.mID), o.title])
+    );
 
     // ===== 1. 使用されるCDだけ抽出 =====
     const usedDiscs = allDiscs.filter(disc =>
@@ -119,8 +123,7 @@ function mkResultData(cs, mTbl, allDiscs) {
 
     // ===== 5. rows 作成 =====
     const rows = rowsOrder.map(songId => {
-        const song = mTbl[songId];
-        const title = song ? song.title : `不明(ID:${songId})`;
+        const title = getTitle(songId, mTbl);
 
         const hitCnt = hitCdCnt(songId, cols);
 
@@ -131,6 +134,7 @@ function mkResultData(cs, mTbl, allDiscs) {
             hitCdCnt: hitCnt
         };
     });
+
 
     console.log(
         '[result] rows:',
@@ -167,6 +171,100 @@ function sortRows(cols, cs) {
 
         if (remain.size === 0) break;
     }
-
     return order;
+}
+function mkMinTbl(resultData) {
+    const { cols, rows } = resultData;
+
+    console.log('[result] mkMinTbl start', {
+        cols: cols.length,
+        rows: rows.length
+    });
+
+    // <table id="resultTbl" class="tbl"> は既にHTMLにある前提
+    const tbl = document.getElementById('resultTbl');
+    tbl.textContent = ''; // 中身クリア（再描画対応）
+
+    /* ===== thead ===== */
+    const thead = document.createElement('thead');
+    const trHead = document.createElement('tr');
+
+    // 左上（曲名ヘッダ・空）
+    const thBlank = document.createElement('th');
+    thBlank.textContent = '';
+    trHead.appendChild(thBlank);
+
+    // CD列ヘッダ
+    cols.forEach(col => {
+        const th = document.createElement('th');
+
+        let cdName;
+        if (Array.isArray(col.nameParts)) {
+            // cd-name-parts がある場合
+            cdName = col.nameParts.filter(Boolean).join('');
+        } else {
+            // フォールバック（旧データ）
+            cdName = col.cdName;
+        }
+
+        th.textContent = cdName;
+        trHead.appendChild(th);
+    });
+
+    thead.appendChild(trHead);
+    tbl.appendChild(thead);
+
+    /* ===== tbody ===== */
+    const tbody = document.createElement('tbody');
+
+    rows.forEach(row => {
+        const tr = document.createElement('tr');
+
+        // 曲名セル
+        const tdTitle = document.createElement('td');
+        tdTitle.textContent = row.title;
+        tr.appendChild(tdTitle);
+
+        // CDヒットセル
+        row.cells.forEach(hit => {
+            const td = document.createElement('td');
+            td.textContent = hit ? '○' : '';
+            tr.appendChild(td);
+        });
+
+        tbody.appendChild(tr);
+    });
+
+    tbl.appendChild(tbody);
+
+    console.log('[result] mkMinTbl done');
+
+    return tbl;
+}
+
+function getTitle(songId, mTbl) {
+    const tr = mTbl.map.get(Number(songId));
+    if (!tr) return `不明(ID:${songId})`;
+
+    const td = tr.querySelector('[data-fld="title"]');
+    const ttl = td ? td.textContent.trim() : '';
+    return ttl || `不明(ID:${songId})`;
+}
+
+
+function renderTbl(tbl) {
+    console.log('[result] renderTbl');
+
+    const wrapper = document.querySelector(
+        '#resultArea .table-wrapper'
+    );
+
+    // 念のため：wrapper が無いケースは無視
+    if (!wrapper) return;
+
+    // table は既に DOM 上にある前提なので、
+    // ここでは「見せる」だけ
+    wrapper.style.display = '';
+
+    return tbl;
 }
