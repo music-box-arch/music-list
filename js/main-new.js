@@ -36,7 +36,7 @@ export async function readJson(path) {
 }
 
 const featEvents = [
-    { selector: '.showDiscsBtn', module: './result-new.js', export: 'showDiscs' },
+    { selector: '.showResultBtn', module: './result-new.js', export: 'showResult' },
     { selector: '.clearAllBtn', module: './func-new.js', export: 'clearAll' }
 ];
 const tabEvents = [
@@ -177,7 +177,7 @@ export function mkRow(item, tpl) {
     return tr;
 }
 
-const mkLink = (url, text) => {
+export const mkLink = (url, text) => {
     if (!url) return null;
 
     const a = document.createElement('a');

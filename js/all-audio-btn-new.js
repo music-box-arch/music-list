@@ -1,7 +1,7 @@
 // グローバル管理用
 const { addVer } = window.MLAPP;
 const { state } = await import(addVer('./main-new.js'));
-const { startSync } = await import(addVer('./func-new.js'));
+
 // ローカル短縮
 // const { cs, csBk } = chkStates;
 
@@ -31,6 +31,8 @@ const AUD_UI_SELECTORS = [
 export async function handleAudioMode(e) {
     console.log('handleAudioMode is called');
     if (e.target.checked) {
+        const { loadCss, startSync } = await import(addVer('./func-new.js'));
+        loadCss('aud-css', 'css/aud.css');
         if (!state.isSyncing) {
             startSync();
         }

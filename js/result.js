@@ -341,7 +341,6 @@ export function createTtl(title, maxDispW) {
     return truncate(title, maxDispW, '…');
 }
 
-
 // HTML表生成
 export function generateHTMLTable(headers, rows, rowHeaderW, colHeaderW) {
     const table = document.createElement('table');

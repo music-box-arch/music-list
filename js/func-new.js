@@ -5,6 +5,38 @@ const { state, mTbl, chkStates, readJson, mkRow, logMapKeys } = await import(add
 // ローカル短縮
 const { cs, csBk } = chkStates;
 
+// 汎用関数applyView関連
+async function applyView() {
+    console.log('applyViewのはじまり');
+    if (!state.isSyncing) {
+        startSync();
+    }
+
+    // 2. style / mix のチェック状態を読む
+    await applyChk('shStChk', applySm, 'style');
+    await applyChk('shMxChk', applySm, 'mix');
+    await applyChk('chkSb', applySubNo);
+    // （この後にsearch / chkOnly を続けていく想定）
+    const shouldDisplay = calcShouldDisplay();
+    renderDisplay(shouldDisplay);
+
+    console.log('applyViewの終わり');
+}
+async function applyChk(chkId, fn, mode) {
+    const checked = !!document.getElementById(chkId)?.checked;
+    await fn(checked, mode);
+}
+
+export function loadCss(id, path) {
+    if (document.getElementById(id)) return;
+
+    const link = document.createElement('link');
+    link.id = id;
+    link.rel = 'stylesheet';
+    link.href = addVer(path);
+    document.head.appendChild(link);
+}
+
 export function startSync() {
     if (state.isSyncing) return;
 
@@ -58,26 +90,6 @@ function setEventListener() {
     });
 }
 
-async function applyView() {
-    console.log('applyViewのはじまり');
-    if (!state.isSyncing) {
-        startSync();
-    }
-
-    // 2. style / mix のチェック状態を読む
-    await applyChk('shStChk', applySm, 'style');
-    await applyChk('shMxChk', applySm, 'mix');
-    await applyChk('chkSb', applySubNo);
-    // （この後にsearch / chkOnly を続けていく想定）
-    const shouldDisplay = calcShouldDisplay();
-    renderDisplay(shouldDisplay);
-
-    console.log('applyViewの終わり');
-}
-async function applyChk(chkId, fn, mode) {
-    const checked = !!document.getElementById(chkId)?.checked;
-    await fn(checked, mode);
-}
 
 // style/mix 表示関係
 export async function toggleSm(e, mode) {
