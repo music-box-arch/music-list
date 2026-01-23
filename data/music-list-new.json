@@ -13,7 +13,12 @@
     "spf": "https://open.spotify.com/track/4f1zepqZ36gAWIQWWLIg21",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970402",
     "itn": "https://itunes.apple.com/jp/album/310970395?i=310970402&app=itunes",
-    "lrc": "https://www.uta-net.com/song/78826/"
+    "lrc": "https://www.uta-net.com/song/78826/",
+    "parts": [
+      "センチ",
+      "メンタルピリオド",
+      ""
+    ]
   },
   {
     "mID": 2,
@@ -29,7 +34,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/306069909?i=306069911&app=itunes",
-    "lrc": "https://www.uta-net.com/song/186599/"
+    "lrc": "https://www.uta-net.com/song/186599/",
+    "parts": [
+      "5分後",
+      "のスターダスト",
+      ""
+    ]
   },
   {
     "mID": 3,
@@ -45,7 +55,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041505&app=itunes",
-    "lrc": "https://www.uta-net.com/song/186598/"
+    "lrc": "https://www.uta-net.com/song/186598/",
+    "parts": [
+      "ガリレ",
+      "オのショーケース",
+      ""
+    ]
   },
   {
     "mID": 4,
@@ -61,7 +76,12 @@
     "spf": "https://open.spotify.com/track/3Jf00gsLxnRbrIavnAQU6f",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970421",
     "itn": "https://itunes.apple.com/jp/album/310970395?i=310970421&app=itunes",
-    "lrc": "https://www.uta-net.com/song/74488/"
+    "lrc": "https://www.uta-net.com/song/74488/",
+    "parts": [
+      "マスタ",
+      "ーボリューム",
+      ""
+    ]
   },
   {
     "mID": 5,
@@ -77,7 +97,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/306067779?i=306067782&app=itunes",
-    "lrc": "https://www.uta-net.com/song/74487/"
+    "lrc": "https://www.uta-net.com/song/74487/",
+    "parts": [
+      "一人",
+      "思うは雨の中",
+      ""
+    ]
   },
   {
     "mID": 6,
@@ -93,7 +118,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/306067779?i=306067783&app=itunes",
-    "lrc": "https://www.uta-net.com/song/74486/"
+    "lrc": "https://www.uta-net.com/song/74486/",
+    "parts": [
+      "スノウリ",
+      "バース",
+      ""
+    ]
   },
   {
     "mID": 7,
@@ -109,7 +139,12 @@
     "spf": "https://open.spotify.com/track/6Q0OKR3DhSs48Mk7yuwJfn",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970400",
     "itn": "https://itunes.apple.com/jp/album/310970395?i=310970400&app=itunes",
-    "lrc": "https://www.uta-net.com/song/78835/"
+    "lrc": "https://www.uta-net.com/song/78835/",
+    "parts": [
+      "カラク",
+      "リカルカレ",
+      ""
+    ]
   },
   {
     "mID": 8,
@@ -125,7 +160,12 @@
     "spf": "https://open.spotify.com/track/7bYyiOiLZi6mXXan4m09rU",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970404",
     "itn": "https://itunes.apple.com/jp/album/310970395?i=310970404&app=itunes",
-    "lrc": "https://www.uta-net.com/song/78834/"
+    "lrc": "https://www.uta-net.com/song/78834/",
+    "parts": [
+      "サンポ",
+      "サキマイライフ",
+      ""
+    ]
   },
   {
     "mID": 9,
@@ -141,7 +181,12 @@
     "spf": "https://open.spotify.com/track/7qg8xFrQnAr3gVYuWyA5Ju",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970417",
     "itn": "https://itunes.apple.com/jp/album/310970395?i=310970417&app=itunes",
-    "lrc": "https://www.uta-net.com/song/78833/"
+    "lrc": "https://www.uta-net.com/song/78833/",
+    "parts": [
+      "デイラ",
+      "イ協奏楽団",
+      ""
+    ]
   },
   {
     "mID": 10,
@@ -157,7 +202,12 @@
     "spf": "https://open.spotify.com/track/7LayWBcvsChldu9SbeEEBM",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970418",
     "itn": "https://itunes.apple.com/jp/album/310970395?i=310970418&app=itunes",
-    "lrc": "https://www.uta-net.com/song/78832/"
+    "lrc": "https://www.uta-net.com/song/78832/",
+    "parts": [
+      "等身",
+      "大の地球",
+      ""
+    ]
   },
   {
     "mID": 12,
@@ -173,7 +223,12 @@
     "spf": "https://open.spotify.com/track/2gP3OEEUlQktRjOrPHIEqX",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970420",
     "itn": "https://itunes.apple.com/jp/album/310970395?i=310970420&app=itunes",
-    "lrc": "https://www.uta-net.com/song/78830/"
+    "lrc": "https://www.uta-net.com/song/78830/",
+    "parts": [
+      "WIND",
+      "OW開ける",
+      ""
+    ]
   },
   {
     "mID": 13,
@@ -189,7 +244,12 @@
     "spf": "https://open.spotify.com/track/6wueFg5ZaydGTwvSaKN9Fa",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970423",
     "itn": "https://itunes.apple.com/jp/album/310970395?i=310970423&app=itunes",
-    "lrc": "https://www.uta-net.com/song/78829/"
+    "lrc": "https://www.uta-net.com/song/78829/",
+    "parts": [
+      "いつか",
+      "の少年",
+      ""
+    ]
   },
   {
     "mID": 14,
@@ -205,7 +265,12 @@
     "spf": "https://open.spotify.com/track/1GOwXY0yEwA8Uwal7h1JUV",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970424",
     "itn": "https://itunes.apple.com/jp/album/310970395?i=310970424&app=itunes",
-    "lrc": "https://www.uta-net.com/song/78828/"
+    "lrc": "https://www.uta-net.com/song/78828/",
+    "parts": [
+      "箱庭",
+      "ロック・ショー",
+      ""
+    ]
   },
   {
     "mID": 15,
@@ -221,7 +286,12 @@
     "spf": "https://open.spotify.com/track/5enVGk4woAT2f7LFGodS5W",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970425",
     "itn": "https://itunes.apple.com/jp/album/310970395?i=310970425&app=itunes",
-    "lrc": "https://www.uta-net.com/song/78827/"
+    "lrc": "https://www.uta-net.com/song/78827/",
+    "parts": [
+      "クロー",
+      "バー",
+      ""
+    ]
   },
   {
     "mID": 16,
@@ -237,7 +307,12 @@
     "spf": "https://open.spotify.com/track/2FPZxdQ9Ij6iE9jrHveyL0",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561976",
     "itn": "https://itunes.apple.com/jp/album/352924360?i=352924362&app=itunes",
-    "lrc": "https://www.uta-net.com/song/90298/"
+    "lrc": "https://www.uta-net.com/song/90298/",
+    "parts": [
+      "cody b",
+      "eats",
+      ""
+    ]
   },
   {
     "mID": 17,
@@ -253,7 +328,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093269&app=itunes",
-    "lrc": "https://www.uta-net.com/song/90297/"
+    "lrc": "https://www.uta-net.com/song/90297/",
+    "parts": [
+      "ギャク",
+      "テンサヨナラ",
+      ""
+    ]
   },
   {
     "mID": 18,
@@ -269,7 +349,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093270&app=itunes",
-    "lrc": "https://www.uta-net.com/song/90296/"
+    "lrc": "https://www.uta-net.com/song/90296/",
+    "parts": [
+      "空の飛",
+      "び方",
+      ""
+    ]
   },
   {
     "mID": 19,
@@ -285,7 +370,12 @@
     "spf": "https://open.spotify.com/track/6DUN82lS61zXWTp6Hw4k5e",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561925",
     "itn": "https://itunes.apple.com/jp/album/364561824?i=364561925&app=itunes",
-    "lrc": "https://www.uta-net.com/song/93439/"
+    "lrc": "https://www.uta-net.com/song/93439/",
+    "parts": [
+      "メッセ",
+      "ンジャーフロム全世界",
+      ""
+    ]
   },
   {
     "mID": 20,
@@ -301,7 +391,12 @@
     "spf": "https://open.spotify.com/track/1eWEZ4uaQcjVPFzptyh2oU",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561973",
     "itn": "https://itunes.apple.com/jp/album/364561824?i=364561973&app=itunes",
-    "lrc": "https://www.uta-net.com/song/93438/"
+    "lrc": "https://www.uta-net.com/song/93438/",
+    "parts": [
+      "コーヒ",
+      "ーカップシンドローム",
+      ""
+    ]
   },
   {
     "mID": 21,
@@ -317,7 +412,12 @@
     "spf": "https://open.spotify.com/track/11EHSjVU2JiydcW6mPqDGk",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561974",
     "itn": "https://itunes.apple.com/jp/album/364561824?i=364561974&app=itunes",
-    "lrc": "https://www.uta-net.com/song/93437/"
+    "lrc": "https://www.uta-net.com/song/93437/",
+    "parts": [
+      "チャイ",
+      "ルドフッド・スーパーノヴァ",
+      ""
+    ]
   },
   {
     "mID": 22,
@@ -333,7 +433,12 @@
     "spf": "https://open.spotify.com/track/3WmvwgGnDfLtv2uHiyEm3Z",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561977",
     "itn": "https://itunes.apple.com/jp/album/364561824?i=364561977&app=itunes",
-    "lrc": "https://www.uta-net.com/song/93436/"
+    "lrc": "https://www.uta-net.com/song/93436/",
+    "parts": [
+      "気まぐ",
+      "れ雑踏",
+      ""
+    ]
   },
   {
     "mID": 23,
@@ -349,7 +454,12 @@
     "spf": "https://open.spotify.com/track/054hqdZC73md5dZTRtmpTQ",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561979",
     "itn": "https://itunes.apple.com/jp/album/364561824?i=364561979&app=itunes",
-    "lrc": "https://www.uta-net.com/song/93435/"
+    "lrc": "https://www.uta-net.com/song/93435/",
+    "parts": [
+      "キライ",
+      "＝キライ",
+      ""
+    ]
   },
   {
     "mID": 24,
@@ -365,7 +475,12 @@
     "spf": "https://open.spotify.com/track/1ersqroFUaKJL1n2pCFcIb",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561980",
     "itn": "https://itunes.apple.com/jp/album/364561824?i=364561980&app=itunes",
-    "lrc": "https://www.uta-net.com/song/93434/"
+    "lrc": "https://www.uta-net.com/song/93434/",
+    "parts": [
+      "ライド",
+      "オンタイム",
+      ""
+    ]
   },
   {
     "mID": 25,
@@ -381,7 +496,12 @@
     "spf": "https://open.spotify.com/track/5EUsPuWSMOSXou4QWRS7Cf",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561981",
     "itn": "https://itunes.apple.com/jp/album/364561824?i=364561981&app=itunes",
-    "lrc": "https://www.uta-net.com/song/93433/"
+    "lrc": "https://www.uta-net.com/song/93433/",
+    "parts": [
+      "mee",
+      "t the world time",
+      ""
+    ]
   },
   {
     "mID": 26,
@@ -397,7 +517,12 @@
     "spf": "https://open.spotify.com/track/1le0RcQefOKjnvHo6vxbvP",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561982",
     "itn": "https://itunes.apple.com/jp/album/364561824?i=364561982&app=itunes",
-    "lrc": "https://www.uta-net.com/song/93432/"
+    "lrc": "https://www.uta-net.com/song/93432/",
+    "parts": [
+      "夜が",
+      "揺れている",
+      ""
+    ]
   },
   {
     "mID": 27,
@@ -413,7 +538,12 @@
     "spf": "https://open.spotify.com/track/1ZeQZ69r6u9QAZHgyHdRSd",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561983",
     "itn": "https://itunes.apple.com/jp/album/364561824?i=364561983&app=itunes",
-    "lrc": "https://www.uta-net.com/song/93431/"
+    "lrc": "https://www.uta-net.com/song/93431/",
+    "parts": [
+      "アイラ",
+      "ブニージュー",
+      ""
+    ]
   },
   {
     "mID": 28,
@@ -429,7 +559,12 @@
     "spf": "https://open.spotify.com/track/0VWx6FyvSCtNnw9AlGIuRR",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561984",
     "itn": "https://itunes.apple.com/jp/album/364561824?i=364561984&app=itunes",
-    "lrc": "https://www.uta-net.com/song/93430/"
+    "lrc": "https://www.uta-net.com/song/93430/",
+    "parts": [
+      "スノウア",
+      "ンサー",
+      ""
+    ]
   },
   {
     "mID": 29,
@@ -445,7 +580,12 @@
     "spf": "https://open.spotify.com/track/4efOA7G19lQc39m241X5pZ",
     "apl": "https://music.apple.com/jp/album/364561824?i=364561996",
     "itn": "https://itunes.apple.com/jp/album/364561824?i=364561996&app=itunes",
-    "lrc": "https://www.uta-net.com/song/93429/"
+    "lrc": "https://www.uta-net.com/song/93429/",
+    "parts": [
+      "23:25",
+      "",
+      ""
+    ]
   },
   {
     "mID": 30,
@@ -461,7 +601,12 @@
     "spf": "https://open.spotify.com/track/1OOLTJ1XzBHFSiy4TlwF8g",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040437",
     "itn": "https://itunes.apple.com/jp/album/404722001?i=404722015&app=itunes",
-    "lrc": "https://www.uta-net.com/song/105347/"
+    "lrc": "https://www.uta-net.com/song/105347/",
+    "parts": [
+      "スカー",
+      "スデイル",
+      ""
+    ]
   },
   {
     "mID": 31,
@@ -477,7 +622,12 @@
     "spf": "https://open.spotify.com/track/2f68MffIx8TcF9m71EI768",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/446040428?i=446040448&app=itunes",
-    "lrc": "https://www.uta-net.com/song/105346/"
+    "lrc": "https://www.uta-net.com/song/105346/",
+    "parts": [
+      "カウン",
+      "ターアイデンティティ",
+      ""
+    ]
   },
   {
     "mID": 32,
@@ -493,7 +643,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041536&app=itunes",
-    "lrc": "https://www.uta-net.com/song/185436/"
+    "lrc": "https://www.uta-net.com/song/185436/",
+    "parts": [
+      "さよなら第",
+      "九惑星",
+      ""
+    ]
   },
   {
     "mID": 33,
@@ -509,7 +664,12 @@
     "spf": "https://open.spotify.com/track/0opkjjC7nn6YO8NXzkDAPP",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040450",
     "itn": "https://itunes.apple.com/jp/album/432476549?i=432476550&app=itunes",
-    "lrc": "https://www.uta-net.com/song/112591/"
+    "lrc": "https://www.uta-net.com/song/112591/",
+    "parts": [
+      "オリオ",
+      "ンをなぞる",
+      ""
+    ]
   },
   {
     "mID": 34,
@@ -525,7 +685,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/432476549?i=432476551&app=itunes",
-    "lrc": "https://www.uta-net.com/song/112590/"
+    "lrc": "https://www.uta-net.com/song/112590/",
+    "parts": [
+      "僕は君",
+      "になりたい",
+      ""
+    ]
   },
   {
     "mID": 35,
@@ -541,7 +706,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093272&app=itunes",
-    "lrc": "https://www.uta-net.com/song/112589/"
+    "lrc": "https://www.uta-net.com/song/112589/",
+    "parts": [
+      "UNO",
+      "ストーリー",
+      ""
+    ]
   },
   {
     "mID": 36,
@@ -557,7 +727,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093273&app=itunes",
-    "lrc": "https://www.uta-net.com/song/112588/"
+    "lrc": "https://www.uta-net.com/song/112588/",
+    "parts": [
+      "over",
+      " driver",
+      ""
+    ]
   },
   {
     "mID": 37,
@@ -573,7 +748,12 @@
     "spf": "https://open.spotify.com/track/6zzJwGAriBiJbMGMoCVtPv",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040430",
     "itn": "https://itunes.apple.com/jp/album/446040428?i=446040430&app=itunes",
-    "lrc": "https://www.uta-net.com/song/115481/"
+    "lrc": "https://www.uta-net.com/song/115481/",
+    "parts": [
+      "3 min",
+      "utes replay",
+      ""
+    ]
   },
   {
     "mID": 38,
@@ -589,7 +769,12 @@
     "spf": "https://open.spotify.com/track/7CWKzHSwqBCaSXalAwKkC2",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040431",
     "itn": "https://itunes.apple.com/jp/album/446040428?i=446040431&app=itunes",
-    "lrc": "https://www.uta-net.com/song/115480/"
+    "lrc": "https://www.uta-net.com/song/115480/",
+    "parts": [
+      "kid,I l",
+      "ike quartet",
+      ""
+    ]
   },
   {
     "mID": 39,
@@ -605,7 +790,12 @@
     "spf": "https://open.spotify.com/track/7gBdtyfhffTRugKHcajuPY",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040433",
     "itn": "https://itunes.apple.com/jp/album/446040428?i=446040433&app=itunes",
-    "lrc": "https://www.uta-net.com/song/115479/"
+    "lrc": "https://www.uta-net.com/song/115479/",
+    "parts": [
+      "プロト",
+      "ラクト・カウントダウン",
+      ""
+    ]
   },
   {
     "mID": 40,
@@ -621,7 +811,12 @@
     "spf": "https://open.spotify.com/track/2Rbn9fr6Ff9laFzijyfckz",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040434",
     "itn": "https://itunes.apple.com/jp/album/446040428?i=446040434&app=itunes",
-    "lrc": "https://www.uta-net.com/song/115478/"
+    "lrc": "https://www.uta-net.com/song/115478/",
+    "parts": [
+      "きみの",
+      "もとへ",
+      ""
+    ]
   },
   {
     "mID": 41,
@@ -637,7 +832,12 @@
     "spf": "https://open.spotify.com/track/30iZob6RUJltjIQ95oWfUt",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040436",
     "itn": "https://itunes.apple.com/jp/album/446040428?i=446040436&app=itunes",
-    "lrc": "https://www.uta-net.com/song/115477/"
+    "lrc": "https://www.uta-net.com/song/115477/",
+    "parts": [
+      "僕らの",
+      "その先",
+      ""
+    ]
   },
   {
     "mID": 42,
@@ -653,7 +853,12 @@
     "spf": "https://open.spotify.com/track/3aYqLRugkDsNP6pzl5aNKD",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040441",
     "itn": "https://itunes.apple.com/jp/album/446040428?i=446040441&app=itunes",
-    "lrc": "https://www.uta-net.com/song/115476/"
+    "lrc": "https://www.uta-net.com/song/115476/",
+    "parts": [
+      "ワール",
+      "ドワイド・スーパーガール",
+      ""
+    ]
   },
   {
     "mID": 43,
@@ -669,7 +874,12 @@
     "spf": "https://open.spotify.com/track/0lCWLfnD36eAoe1iICU8HQ",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040442",
     "itn": "https://itunes.apple.com/jp/album/446040428?i=446040442&app=itunes",
-    "lrc": "https://www.uta-net.com/song/115475/"
+    "lrc": "https://www.uta-net.com/song/115475/",
+    "parts": [
+      "CAPA",
+      "CITY超える",
+      ""
+    ]
   },
   {
     "mID": 44,
@@ -685,7 +895,12 @@
     "spf": "https://open.spotify.com/track/6O4bcP0E4z0nq5WxLN8ski",
     "apl": "https://music.apple.com/jp/album/1476041503?i=1476041515",
     "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041515&app=itunes",
-    "lrc": "https://www.uta-net.com/song/115474/"
+    "lrc": "https://www.uta-net.com/song/115474/",
+    "parts": [
+      "場違い",
+      "ハミングバード",
+      ""
+    ]
   },
   {
     "mID": 45,
@@ -701,7 +916,12 @@
     "spf": "https://open.spotify.com/track/3z0huRfhLtwxaeErmwCIw0",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040449",
     "itn": "https://itunes.apple.com/jp/album/446040428?i=446040449&app=itunes",
-    "lrc": "https://www.uta-net.com/song/115473/"
+    "lrc": "https://www.uta-net.com/song/115473/",
+    "parts": [
+      "未完成",
+      "デイジー",
+      ""
+    ]
   },
   {
     "mID": 46,
@@ -717,7 +937,12 @@
     "spf": "https://open.spotify.com/track/7L1H9eWVLb727nLmlP1rPy",
     "apl": "https://music.apple.com/jp/album/446040428?i=446040451",
     "itn": "https://itunes.apple.com/jp/album/446040428?i=446040451&app=itunes",
-    "lrc": "https://www.uta-net.com/song/115472/"
+    "lrc": "https://www.uta-net.com/song/115472/",
+    "parts": [
+      "シュプ",
+      "レヒコール〜世界が終わる前に〜",
+      ""
+    ]
   },
   {
     "mID": 47,
@@ -733,7 +958,12 @@
     "spf": "https://open.spotify.com/track/1mLramLVll0UemJa6mvh1x",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/543515060?i=543515063&app=itunes",
-    "lrc": "https://www.uta-net.com/song/132912/"
+    "lrc": "https://www.uta-net.com/song/132912/",
+    "parts": [
+      "流星の",
+      "スコール",
+      ""
+    ]
   },
   {
     "mID": 48,
@@ -749,7 +979,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093274&app=itunes",
-    "lrc": "https://www.uta-net.com/song/132911/"
+    "lrc": "https://www.uta-net.com/song/132911/",
+    "parts": [
+      "さよならサ",
+      "マータイムマシン",
+      ""
+    ]
   },
   {
     "mID": 49,
@@ -765,7 +1000,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336581&app=itunes",
-    "lrc": "https://www.uta-net.com/song/132910/"
+    "lrc": "https://www.uta-net.com/song/132910/",
+    "parts": [
+      "誰かが",
+      "忘れているかもしれない僕らに大事な001のこと",
+      ""
+    ]
   },
   {
     "mID": 50,
@@ -781,7 +1021,12 @@
     "spf": "https://open.spotify.com/track/789qMWni5aMixbI4E5bSbN",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041530&app=itunes",
-    "lrc": "https://www.uta-net.com/song/78825/"
+    "lrc": "https://www.uta-net.com/song/78825/",
+    "parts": [
+      "フルカ",
+      "ラープログラム",
+      ""
+    ]
   },
   {
     "mID": 51,
@@ -797,7 +1042,12 @@
     "spf": "https://open.spotify.com/track/3pK2AiyPVlUMhEsMef1z3G",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575666",
     "itn": "https://itunes.apple.com/jp/album/560462902?i=560462903&app=itunes",
-    "lrc": "https://www.uta-net.com/song/135468/"
+    "lrc": "https://www.uta-net.com/song/135468/",
+    "parts": [
+      "リニア",
+      "ブルーを聴きながら",
+      ""
+    ]
   },
   {
     "mID": 52,
@@ -813,7 +1063,12 @@
     "spf": "https://open.spotify.com/track/4E6VpEnKgXIi0sFHYFEUtZ",
     "apl": "https://music.apple.com/jp/album/1016336570?i=1016336650",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093276&app=itunes",
-    "lrc": "https://www.uta-net.com/song/135588/"
+    "lrc": "https://www.uta-net.com/song/135588/",
+    "parts": [
+      "さわれ",
+      "ない歌",
+      ""
+    ]
   },
   {
     "mID": 53,
@@ -829,7 +1084,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093277&app=itunes",
-    "lrc": "https://www.uta-net.com/song/135587/"
+    "lrc": "https://www.uta-net.com/song/135587/",
+    "parts": [
+      "三日月",
+      "の夜の真ん中",
+      ""
+    ]
   },
   {
     "mID": 54,
@@ -845,7 +1105,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093278&app=itunes",
-    "lrc": "https://www.uta-net.com/song/135586/"
+    "lrc": "https://www.uta-net.com/song/135586/",
+    "parts": [
+      "ラブソ",
+      "ングは突然に ~What is the name of that mystery?~",
+      ""
+    ]
   },
   {
     "mID": 55,
@@ -861,7 +1126,12 @@
     "spf": "https://open.spotify.com/track/6E9u08JoTmobb2gRglkvKO",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575664",
     "itn": "https://itunes.apple.com/jp/album/595575657?i=595575664&app=itunes",
-    "lrc": "https://www.uta-net.com/song/141419/"
+    "lrc": "https://www.uta-net.com/song/141419/",
+    "parts": [
+      "to the C",
+      "IDER ROAD",
+      ""
+    ]
   },
   {
     "mID": 56,
@@ -877,7 +1147,12 @@
     "spf": "https://open.spotify.com/track/2pnAagSnHL3b9d7imVvDRi",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575665",
     "itn": "https://itunes.apple.com/jp/album/595575657?i=595575665&app=itunes",
-    "lrc": "https://www.uta-net.com/song/141418/"
+    "lrc": "https://www.uta-net.com/song/141418/",
+    "parts": [
+      "ため息",
+      " shooting the MOON",
+      ""
+    ]
   },
   {
     "mID": 57,
@@ -893,7 +1168,12 @@
     "spf": "https://open.spotify.com/track/4WMIpIlBVJIIUxZywSyqBi",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575667",
     "itn": "https://itunes.apple.com/jp/album/595575657?i=595575667&app=itunes",
-    "lrc": "https://www.uta-net.com/song/141417/"
+    "lrc": "https://www.uta-net.com/song/141417/",
+    "parts": [
+      "like c",
+      "offeeのおまじない",
+      ""
+    ]
   },
   {
     "mID": 58,
@@ -909,7 +1189,12 @@
     "spf": "https://open.spotify.com/track/2RGD9prgLDXkvp7ibgO4ar",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575668",
     "itn": "https://itunes.apple.com/jp/album/595575657?i=595575668&app=itunes",
-    "lrc": "https://www.uta-net.com/song/141416/"
+    "lrc": "https://www.uta-net.com/song/141416/",
+    "parts": [
+      "お人好",
+      "しカメレオン",
+      ""
+    ]
   },
   {
     "mID": 59,
@@ -925,7 +1210,12 @@
     "spf": "https://open.spotify.com/track/3gKiFYpMgtOWN7ewTtDGCd",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575729",
     "itn": "https://itunes.apple.com/jp/album/595575657?i=595575729&app=itunes",
-    "lrc": "https://www.uta-net.com/song/141415/"
+    "lrc": "https://www.uta-net.com/song/141415/",
+    "parts": [
+      "光のど",
+      "けき春の日に",
+      ""
+    ]
   },
   {
     "mID": 60,
@@ -941,7 +1231,12 @@
     "spf": "https://open.spotify.com/track/5DmreR05ybSXWVMTUD7tmd",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575730",
     "itn": "https://itunes.apple.com/jp/album/595575657?i=595575730&app=itunes",
-    "lrc": "https://www.uta-net.com/song/141414/"
+    "lrc": "https://www.uta-net.com/song/141414/",
+    "parts": [
+      "クロス",
+      "ハート1号線(advantage in a long time)",
+      ""
+    ]
   },
   {
     "mID": 61,
@@ -957,7 +1252,12 @@
     "spf": "https://open.spotify.com/track/3yLHETt2gGetPCMl1IswW5",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575731",
     "itn": "https://itunes.apple.com/jp/album/595575657?i=595575731&app=itunes",
-    "lrc": "https://www.uta-net.com/song/141413/"
+    "lrc": "https://www.uta-net.com/song/141413/",
+    "parts": [
+      "セレナ",
+      "ーデが止まらない",
+      ""
+    ]
   },
   {
     "mID": 62,
@@ -973,7 +1273,12 @@
     "spf": "https://open.spotify.com/track/1yqukkt1v000brrO1i1MGi",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575733",
     "itn": "https://itunes.apple.com/jp/album/595575657?i=595575733&app=itunes",
-    "lrc": "https://www.uta-net.com/song/141412/"
+    "lrc": "https://www.uta-net.com/song/141412/",
+    "parts": [
+      "Miss.",
+      "サンディ",
+      ""
+    ]
   },
   {
     "mID": 63,
@@ -989,7 +1294,12 @@
     "spf": "https://open.spotify.com/track/1Lllh1omCfYRJyRplujAFR",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575734",
     "itn": "https://itunes.apple.com/jp/album/595575657?i=595575734&app=itunes",
-    "lrc": "https://www.uta-net.com/song/141411/"
+    "lrc": "https://www.uta-net.com/song/141411/",
+    "parts": [
+      "craz",
+      "y birthday",
+      ""
+    ]
   },
   {
     "mID": 64,
@@ -1005,7 +1315,12 @@
     "spf": "https://open.spotify.com/track/22Zu1xTakRpyyH5iHeU8Cz",
     "apl": "https://music.apple.com/jp/album/595575657?i=595575735",
     "itn": "https://itunes.apple.com/jp/album/595575657?i=595575735&app=itunes",
-    "lrc": "https://www.uta-net.com/song/141410/"
+    "lrc": "https://www.uta-net.com/song/141410/",
+    "parts": [
+      "君はと",
+      "もだち",
+      ""
+    ]
   },
   {
     "mID": 65,
@@ -1021,7 +1336,12 @@
     "spf": "https://open.spotify.com/track/0fOq8IETOgXteHpm0sMMNq",
     "apl": "https://music.apple.com/jp/album/1476041503?i=1476041537",
     "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041537&app=itunes",
-    "lrc": "https://www.uta-net.com/song/141409/"
+    "lrc": "https://www.uta-net.com/song/141409/",
+    "parts": [
+      "シャン",
+      "デリア・ワルツ",
+      ""
+    ]
   },
   {
     "mID": 66,
@@ -1037,7 +1357,12 @@
     "spf": "https://open.spotify.com/track/11Dh1gTFD9QcmmzwNusHTk",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382322",
     "itn": "https://itunes.apple.com/jp/album/756450780?i=756450835&app=itunes",
-    "lrc": "https://www.uta-net.com/song/154661/"
+    "lrc": "https://www.uta-net.com/song/154661/",
+    "parts": [
+      "桜の",
+      "あと (all quartets lead to the?)",
+      ""
+    ]
   },
   {
     "mID": 67,
@@ -1053,7 +1378,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093279&app=itunes",
-    "lrc": "https://www.uta-net.com/song/154660/"
+    "lrc": "https://www.uta-net.com/song/154660/",
+    "parts": [
+      "ノンフ",
+      "ィクションコンパス",
+      ""
+    ]
   },
   {
     "mID": 68,
@@ -1069,7 +1399,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093280&app=itunes",
-    "lrc": "https://www.uta-net.com/song/154659/"
+    "lrc": "https://www.uta-net.com/song/154659/",
+    "parts": [
+      "セク",
+      " × カラ × シソンズール",
+      ""
+    ]
   },
   {
     "mID": 69,
@@ -1085,7 +1420,12 @@
     "spf": "https://open.spotify.com/track/2L7CbheAwtkzVdmlS3PIfQ",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382328",
     "itn": "https://itunes.apple.com/jp/album/805984247?i=805984250&app=itunes",
-    "lrc": "https://www.uta-net.com/song/158980/"
+    "lrc": "https://www.uta-net.com/song/158980/",
+    "parts": [
+      "harm",
+      "onized finale",
+      ""
+    ]
   },
   {
     "mID": 70,
@@ -1101,7 +1441,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093281&app=itunes",
-    "lrc": "https://www.uta-net.com/song/158979/"
+    "lrc": "https://www.uta-net.com/song/158979/",
+    "parts": [
+      "ピスト",
+      "ルギャラクシー",
+      ""
+    ]
   },
   {
     "mID": 71,
@@ -1117,7 +1462,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093282&app=itunes",
-    "lrc": "https://www.uta-net.com/song/158978/"
+    "lrc": "https://www.uta-net.com/song/158978/",
+    "parts": [
+      "三月",
+      "物語",
+      ""
+    ]
   },
   {
     "mID": 72,
@@ -1133,7 +1483,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/805984247?i=805984253&app=itunes",
-    "lrc": "https://www.uta-net.com/song/158977/"
+    "lrc": "https://www.uta-net.com/song/158977/",
+    "parts": [
+      "I wan",
+      "na believe、夜を行く",
+      ""
+    ]
   },
   {
     "mID": 73,
@@ -1149,7 +1504,12 @@
     "spf": "https://open.spotify.com/track/0k3dUdecwv2V9SejvxIBLb",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382319",
     "itn": "https://itunes.apple.com/jp/album/899382318?i=899382319&app=itunes",
-    "lrc": "https://www.uta-net.com/song/169164/"
+    "lrc": "https://www.uta-net.com/song/169164/",
+    "parts": [
+      "サイレ",
+      "ンインザスパイ",
+      ""
+    ]
   },
   {
     "mID": 74,
@@ -1165,7 +1525,12 @@
     "spf": "https://open.spotify.com/track/1maoYTEYZgVSHw1zAEZQ9i",
     "apl": "https://music.apple.com/jp/album/1476041503?i=1476041528",
     "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041528&app=itunes",
-    "lrc": "https://www.uta-net.com/song/169163/"
+    "lrc": "https://www.uta-net.com/song/169163/",
+    "parts": [
+      "シュー",
+      "ゲイザースピーカー",
+      ""
+    ]
   },
   {
     "mID": 75,
@@ -1181,7 +1546,12 @@
     "spf": "https://open.spotify.com/track/2lpsqnkobAaBQhaAPqbZBP",
     "apl": "https://music.apple.com/jp/album/1476041503?i=1476041512",
     "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041512&app=itunes",
-    "lrc": "https://www.uta-net.com/song/169162/"
+    "lrc": "https://www.uta-net.com/song/169162/",
+    "parts": [
+      "蒙昧",
+      "termination",
+      ""
+    ]
   },
   {
     "mID": 76,
@@ -1197,7 +1567,12 @@
     "spf": "https://open.spotify.com/track/395nnqivlA2UMaNTmRnwqt",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382324",
     "itn": "https://itunes.apple.com/jp/album/899382318?i=899382324&app=itunes",
-    "lrc": "https://www.uta-net.com/song/169161/"
+    "lrc": "https://www.uta-net.com/song/169161/",
+    "parts": [
+      "君が大",
+      "人になってしまう前に",
+      ""
+    ]
   },
   {
     "mID": 77,
@@ -1213,7 +1588,12 @@
     "spf": "https://open.spotify.com/track/62iWacK1qKL5ISm82OFggG",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382325",
     "itn": "https://itunes.apple.com/jp/album/899382318?i=899382325&app=itunes",
-    "lrc": "https://www.uta-net.com/song/169160/"
+    "lrc": "https://www.uta-net.com/song/169160/",
+    "parts": [
+      "メカト",
+      "ル時空探検隊",
+      ""
+    ]
   },
   {
     "mID": 78,
@@ -1229,7 +1609,12 @@
     "spf": "https://open.spotify.com/track/0ZEGYmVSPMIyAsdYun5W0u",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382326",
     "itn": "https://itunes.apple.com/jp/album/899382318?i=899382326&app=itunes",
-    "lrc": "https://www.uta-net.com/song/169159/"
+    "lrc": "https://www.uta-net.com/song/169159/",
+    "parts": [
+      "流れ星",
+      "を撃ち落せ",
+      ""
+    ]
   },
   {
     "mID": 79,
@@ -1245,7 +1630,12 @@
     "spf": "https://open.spotify.com/track/16znQXE8L2LT9c8i9krRNr",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382327",
     "itn": "https://itunes.apple.com/jp/album/899382318?i=899382327&app=itunes",
-    "lrc": "https://www.uta-net.com/song/169158/"
+    "lrc": "https://www.uta-net.com/song/169158/",
+    "parts": [
+      "何かが",
+      "変わりそう",
+      ""
+    ]
   },
   {
     "mID": 80,
@@ -1261,7 +1651,12 @@
     "spf": "https://open.spotify.com/track/61WIiThJRu8ses32U31dcM",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382330",
     "itn": "https://itunes.apple.com/jp/album/899382318?i=899382330&app=itunes",
-    "lrc": "https://www.uta-net.com/song/169157/"
+    "lrc": "https://www.uta-net.com/song/169157/",
+    "parts": [
+      "天国",
+      "と地獄",
+      ""
+    ]
   },
   {
     "mID": 81,
@@ -1277,7 +1672,12 @@
     "spf": "https://open.spotify.com/track/5WVuZDGVw0DPD9hHr9JCQm",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382331",
     "itn": "https://itunes.apple.com/jp/album/899382318?i=899382331&app=itunes",
-    "lrc": "https://www.uta-net.com/song/169156/"
+    "lrc": "https://www.uta-net.com/song/169156/",
+    "parts": [
+      "insta",
+      "nt EGOIST",
+      ""
+    ]
   },
   {
     "mID": 82,
@@ -1293,7 +1693,12 @@
     "spf": "https://open.spotify.com/track/3yiTCIyK8xCs3TjACtPawR",
     "apl": "https://music.apple.com/jp/album/899382318?i=899382335",
     "itn": "https://itunes.apple.com/jp/album/899382318?i=899382335&app=itunes",
-    "lrc": "https://www.uta-net.com/song/169155/"
+    "lrc": "https://www.uta-net.com/song/169155/",
+    "parts": [
+      "黄昏",
+      "インザスパイ",
+      ""
+    ]
   },
   {
     "mID": 83,
@@ -1309,7 +1714,12 @@
     "spf": "https://open.spotify.com/track/6bfjEGSR7DyC8MK8cp3ZCp",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654728",
     "itn": "https://itunes.apple.com/jp/album/993140033?i=993140034&app=itunes",
-    "lrc": "https://www.uta-net.com/song/186190/"
+    "lrc": "https://www.uta-net.com/song/186190/",
+    "parts": [
+      "シュガ",
+      "ーソングとビターステップ",
+      ""
+    ]
   },
   {
     "mID": 84,
@@ -1325,7 +1735,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/993140033?i=993140035&app=itunes",
-    "lrc": "https://www.uta-net.com/song/186189/"
+    "lrc": "https://www.uta-net.com/song/186189/",
+    "parts": [
+      "シグナ",
+      "ルABC",
+      ""
+    ]
   },
   {
     "mID": 85,
@@ -1341,7 +1756,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093285&app=itunes",
-    "lrc": "https://www.uta-net.com/song/186188/"
+    "lrc": "https://www.uta-net.com/song/186188/",
+    "parts": [
+      "東京",
+      "シナリオ",
+      ""
+    ]
   },
   {
     "mID": 86,
@@ -1357,7 +1777,12 @@
     "spf": "https://open.spotify.com/track/3VJGOtDuqfQ631RWvSYt1l",
     "apl": "https://music.apple.com/jp/album/1016336570?i=1016336574",
     "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336574&app=itunes",
-    "lrc": "https://www.uta-net.com/song/190613/"
+    "lrc": "https://www.uta-net.com/song/190613/",
+    "parts": [
+      "アンド",
+      "ロメダ",
+      ""
+    ]
   },
   {
     "mID": 88,
@@ -1373,7 +1798,12 @@
     "spf": "https://open.spotify.com/track/1KSeENRM4AI7AnguJjJZaV",
     "apl": "https://music.apple.com/jp/album/1454801516?i=1454801549",
     "itn": "https://itunes.apple.com/jp/album/1454801516?i=1454801549&app=itunes",
-    "lrc": "https://www.uta-net.com/song/190612/"
+    "lrc": "https://www.uta-net.com/song/190612/",
+    "parts": [
+      "徹頭",
+      "徹尾夜な夜なドライブ",
+      ""
+    ]
   },
   {
     "mID": 91,
@@ -1389,7 +1819,12 @@
     "spf": "https://open.spotify.com/track/6PgBfWNc9eFAOjICQtXKyx",
     "apl": "https://music.apple.com/jp/album/1016336570?i=1016336579",
     "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336579&app=itunes",
-    "lrc": "https://www.uta-net.com/song/190611/"
+    "lrc": "https://www.uta-net.com/song/190611/",
+    "parts": [
+      "夕凪",
+      "、アンサンブル",
+      ""
+    ]
   },
   {
     "mID": 98,
@@ -1405,7 +1840,12 @@
     "spf": "https://open.spotify.com/track/5iwFZriNHNlyIuyZk5Ounh",
     "apl": "https://music.apple.com/jp/album/1471093264?i=1471093356",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093356&app=itunes",
-    "lrc": "https://www.uta-net.com/song/190610/"
+    "lrc": "https://www.uta-net.com/song/190610/",
+    "parts": [
+      "プログ",
+      "ラムcontinu",
+      "ed"
+    ]
   },
   {
     "mID": 100,
@@ -1421,7 +1861,12 @@
     "spf": "https://open.spotify.com/track/6isLzwny8GICuIfSdqTIt9",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654722",
     "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654722&app=itunes",
-    "lrc": "https://www.uta-net.com/song/210569/"
+    "lrc": "https://www.uta-net.com/song/210569/",
+    "parts": [
+      "エアリ",
+      "アルエイリアン",
+      ""
+    ]
   },
   {
     "mID": 101,
@@ -1437,7 +1882,12 @@
     "spf": "https://open.spotify.com/track/6rXxRsIMIqdUmdaKZxa35j",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654723",
     "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654723&app=itunes",
-    "lrc": "https://www.uta-net.com/song/210568/"
+    "lrc": "https://www.uta-net.com/song/210568/",
+    "parts": [
+      "アトラ",
+      "クションがはじまる（they call it “NO.6”）",
+      ""
+    ]
   },
   {
     "mID": 102,
@@ -1453,7 +1903,12 @@
     "spf": "https://open.spotify.com/track/5XwQGXfBSDbUTjRyjl1Sla",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654729",
     "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654729&app=itunes",
-    "lrc": "https://www.uta-net.com/song/210567/"
+    "lrc": "https://www.uta-net.com/song/210567/",
+    "parts": [
+      "マイノ",
+      "リティ・リポート（darling, I love you）",
+      ""
+    ]
   },
   {
     "mID": 103,
@@ -1469,7 +1924,12 @@
     "spf": "https://open.spotify.com/track/5nxYL6AXPIok5Td6jLRRlJ",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654730",
     "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654730&app=itunes",
-    "lrc": "https://www.uta-net.com/song/210566/"
+    "lrc": "https://www.uta-net.com/song/210566/",
+    "parts": [
+      "オトノ",
+      "バ中間試験",
+      ""
+    ]
   },
   {
     "mID": 104,
@@ -1485,7 +1945,12 @@
     "spf": "https://open.spotify.com/track/4zXbI0HuAPp7ppOetJCKUT",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654731",
     "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654731&app=itunes",
-    "lrc": "https://www.uta-net.com/song/210565/"
+    "lrc": "https://www.uta-net.com/song/210565/",
+    "parts": [
+      "マジョ",
+      "リティ・リポート（darling, I love you）",
+      ""
+    ]
   },
   {
     "mID": 105,
@@ -1501,7 +1966,12 @@
     "spf": "https://open.spotify.com/track/6o0HGTE3EjQlZUlaEjybNH",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654732",
     "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654732&app=itunes",
-    "lrc": "https://www.uta-net.com/song/210564/"
+    "lrc": "https://www.uta-net.com/song/210564/",
+    "parts": [
+      "BUST",
+      "ER DICE MISERY",
+      ""
+    ]
   },
   {
     "mID": 106,
@@ -1517,7 +1987,12 @@
     "spf": "https://open.spotify.com/track/3OTaB74SN4Km2oF5Gt4KE1",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654733",
     "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654733&app=itunes",
-    "lrc": "https://www.uta-net.com/song/210563/"
+    "lrc": "https://www.uta-net.com/song/210563/",
+    "parts": [
+      "パンデ",
+      "ミックサドンデス",
+      ""
+    ]
   },
   {
     "mID": 107,
@@ -1533,7 +2008,12 @@
     "spf": "https://open.spotify.com/track/6x3BWYTKvA7RDYNMthiVZK",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654734",
     "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654734&app=itunes",
-    "lrc": "https://www.uta-net.com/song/210562/"
+    "lrc": "https://www.uta-net.com/song/210562/",
+    "parts": [
+      "8月、",
+      "昼中の流れ星と飛行機雲",
+      ""
+    ]
   },
   {
     "mID": 108,
@@ -1549,7 +2029,12 @@
     "spf": "https://open.spotify.com/track/76sl1YklCJYlVNsOJEKKQt",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654735",
     "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654735&app=itunes",
-    "lrc": "https://www.uta-net.com/song/210561/"
+    "lrc": "https://www.uta-net.com/song/210561/",
+    "parts": [
+      "フライ",
+      "デイノベルス",
+      ""
+    ]
   },
   {
     "mID": 109,
@@ -1565,7 +2050,12 @@
     "spf": "https://open.spotify.com/track/5VdrYyn9wFGnYAAVpM9bNi",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654736",
     "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654736&app=itunes",
-    "lrc": "https://www.uta-net.com/song/210560/"
+    "lrc": "https://www.uta-net.com/song/210560/",
+    "parts": [
+      "mix j",
+      "uiceのいうとおり",
+      ""
+    ]
   },
   {
     "mID": 110,
@@ -1581,7 +2071,12 @@
     "spf": "https://open.spotify.com/track/5PjrZoDfBXmMN0RDpdYuAp",
     "apl": "https://music.apple.com/jp/album/1128654606?i=1128654737",
     "itn": "https://itunes.apple.com/jp/album/1128654606?i=1128654737&app=itunes",
-    "lrc": "https://www.uta-net.com/song/210559/"
+    "lrc": "https://www.uta-net.com/song/210559/",
+    "parts": [
+      "Chea",
+      "p Cheap Endroll",
+      ""
+    ]
   },
   {
     "mID": 111,
@@ -1597,7 +2092,12 @@
     "spf": "https://open.spotify.com/track/28qFJh4a5a8sh96JkIFY8q",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044729",
     "itn": "https://itunes.apple.com/jp/album/1281389670?i=1281389673&app=itunes",
-    "lrc": "https://www.uta-net.com/song/234475/"
+    "lrc": "https://www.uta-net.com/song/234475/",
+    "parts": [
+      "10% r",
+      "oll, 10% romance",
+      ""
+    ]
   },
   {
     "mID": 112,
@@ -1613,7 +2113,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093346&app=itunes",
-    "lrc": "https://www.uta-net.com/song/234474/"
+    "lrc": "https://www.uta-net.com/song/234474/",
+    "parts": [
+      "RUN",
+      "NERS HIGH REPRISE",
+      ""
+    ]
   },
   {
     "mID": 113,
@@ -1629,7 +2134,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093347&app=itunes",
-    "lrc": "https://www.uta-net.com/song/234473/"
+    "lrc": "https://www.uta-net.com/song/234473/",
+    "parts": [
+      "flat s",
+      "ong",
+      ""
+    ]
   },
   {
     "mID": 114,
@@ -1645,7 +2155,12 @@
     "spf": "https://open.spotify.com/track/2bQ4E3XRBLBnJMd8iSm59b",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044727",
     "itn": "https://itunes.apple.com/jp/album/1304973334?i=1304973654&app=itunes",
-    "lrc": "https://www.uta-net.com/song/239225/"
+    "lrc": "https://www.uta-net.com/song/239225/",
+    "parts": [
+      "Invisi",
+      "ble Sensation",
+      ""
+    ]
   },
   {
     "mID": 115,
@@ -1661,7 +2176,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093348&app=itunes",
-    "lrc": "https://www.uta-net.com/song/239224/"
+    "lrc": "https://www.uta-net.com/song/239224/",
+    "parts": [
+      "スノウル",
+      "ープ",
+      ""
+    ]
   },
   {
     "mID": 116,
@@ -1677,7 +2197,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093349&app=itunes",
-    "lrc": "https://www.uta-net.com/song/239223/"
+    "lrc": "https://www.uta-net.com/song/239223/",
+    "parts": [
+      "サンタ",
+      "クロースは渋滞中",
+      ""
+    ]
   },
   {
     "mID": 117,
@@ -1693,7 +2218,12 @@
     "spf": "https://open.spotify.com/track/69U2Iv4hyQi3cGCEJ8LM0H",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044722",
     "itn": "https://itunes.apple.com/jp/album/1304978420?i=1304978423&app=itunes",
-    "lrc": "https://www.uta-net.com/song/239594/"
+    "lrc": "https://www.uta-net.com/song/239594/",
+    "parts": [
+      "fake t",
+      "own baby",
+      ""
+    ]
   },
   {
     "mID": 118,
@@ -1709,7 +2239,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093350&app=itunes",
-    "lrc": "https://www.uta-net.com/song/239593/"
+    "lrc": "https://www.uta-net.com/song/239593/",
+    "parts": [
+      "リトル",
+      "タイムストップ",
+      ""
+    ]
   },
   {
     "mID": 119,
@@ -1725,7 +2260,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093351&app=itunes",
-    "lrc": "https://www.uta-net.com/song/239592/"
+    "lrc": "https://www.uta-net.com/song/239592/",
+    "parts": [
+      "きみは",
+      "いい子",
+      ""
+    ]
   },
   {
     "mID": 120,
@@ -1741,7 +2281,12 @@
     "spf": "",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044719",
     "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044719&app=itunes",
-    "lrc": "https://www.uta-net.com/song/243087/"
+    "lrc": "https://www.uta-net.com/song/243087/",
+    "parts": [
+      "Own C",
+      "ivilization (nano-mile met)",
+      ""
+    ]
   },
   {
     "mID": 121,
@@ -1757,7 +2302,12 @@
     "spf": "https://open.spotify.com/track/6ARFjvAcg1zqxcVtHI5tZy",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044720",
     "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044720&app=itunes",
-    "lrc": "https://www.uta-net.com/song/243086/"
+    "lrc": "https://www.uta-net.com/song/243086/",
+    "parts": [
+      "Dizz",
+      "y Trickster",
+      ""
+    ]
   },
   {
     "mID": 122,
@@ -1773,7 +2323,12 @@
     "spf": "https://open.spotify.com/track/3TA5gzW0KWpowkuJ934nqo",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044721",
     "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044721&app=itunes",
-    "lrc": "https://www.uta-net.com/song/243085/"
+    "lrc": "https://www.uta-net.com/song/243085/",
+    "parts": [
+      "オーケ",
+      "ストラを観にいこう",
+      ""
+    ]
   },
   {
     "mID": 123,
@@ -1789,7 +2344,12 @@
     "spf": "https://open.spotify.com/track/5hFro351wW9rRBU4DZiSIs",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044723",
     "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044723&app=itunes",
-    "lrc": "https://www.uta-net.com/song/243084/"
+    "lrc": "https://www.uta-net.com/song/243084/",
+    "parts": [
+      "静謐",
+      "甘美秋暮抒情",
+      ""
+    ]
   },
   {
     "mID": 124,
@@ -1805,7 +2365,12 @@
     "spf": "https://open.spotify.com/track/7iRhjeX954hj3wSyfCV6Og",
     "apl": "https://music.apple.com/jp/album/1198102015?i=1198102017",
     "itn": "https://itunes.apple.com/jp/album/1198102015?i=1198102017&app=itunes",
-    "lrc": "https://www.uta-net.com/song/243083/"
+    "lrc": "https://www.uta-net.com/song/243083/",
+    "parts": [
+      "Silen",
+      "t Libre Mirage",
+      ""
+    ]
   },
   {
     "mID": 125,
@@ -1821,7 +2386,12 @@
     "spf": "https://open.spotify.com/track/7sMYLyMApHngtUjAGgFtTD",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044725",
     "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044725&app=itunes",
-    "lrc": "https://www.uta-net.com/song/243082/"
+    "lrc": "https://www.uta-net.com/song/243082/",
+    "parts": [
+      "MIDN",
+      "IGHT JUNGLE",
+      ""
+    ]
   },
   {
     "mID": 126,
@@ -1837,7 +2407,12 @@
     "spf": "https://open.spotify.com/track/6JVhKqqnBsRwTVgPgtVzLE",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044726",
     "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044726&app=itunes",
-    "lrc": "https://www.uta-net.com/song/243081/"
+    "lrc": "https://www.uta-net.com/song/243081/",
+    "parts": [
+      "フィク",
+      "ションフリーククライシス",
+      ""
+    ]
   },
   {
     "mID": 127,
@@ -1853,7 +2428,12 @@
     "spf": "https://open.spotify.com/track/7drM5HwTqNagGhn6QbZxEs",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044728",
     "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044728&app=itunes",
-    "lrc": "https://www.uta-net.com/song/243080/"
+    "lrc": "https://www.uta-net.com/song/243080/",
+    "parts": [
+      "夢が",
+      "覚めたら(at that river)",
+      ""
+    ]
   },
   {
     "mID": 128,
@@ -1869,7 +2449,12 @@
     "spf": "https://open.spotify.com/track/5pOkBPwiJmEsaubkCyAsne",
     "apl": "https://music.apple.com/jp/album/1339044581?i=1339044730",
     "itn": "https://itunes.apple.com/jp/album/1339044581?i=1339044730&app=itunes",
-    "lrc": "https://www.uta-net.com/song/243079/"
+    "lrc": "https://www.uta-net.com/song/243079/",
+    "parts": [
+      "君の瞳",
+      "に恋してない",
+      ""
+    ]
   },
   {
     "mID": 129,
@@ -1885,7 +2470,12 @@
     "spf": "https://open.spotify.com/track/4hSzDIzXXsyIWvAkwZtn7h",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418218",
     "itn": "https://itunes.apple.com/jp/album/1354852402?i=1354852404&app=itunes",
-    "lrc": "https://www.uta-net.com/song/245229/"
+    "lrc": "https://www.uta-net.com/song/245229/",
+    "parts": [
+      "春が",
+      "来てぼくら",
+      ""
+    ]
   },
   {
     "mID": 130,
@@ -1901,7 +2491,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093352&app=itunes",
-    "lrc": "https://www.uta-net.com/song/245228/"
+    "lrc": "https://www.uta-net.com/song/245228/",
+    "parts": [
+      "ラディ",
+      "アルナイトチェイサー",
+      ""
+    ]
   },
   {
     "mID": 131,
@@ -1917,7 +2512,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093353&app=itunes",
-    "lrc": "https://www.uta-net.com/song/245227/"
+    "lrc": "https://www.uta-net.com/song/245227/",
+    "parts": [
+      "Micro",
+      " Paradiso!",
+      ""
+    ]
   },
   {
     "mID": 132,
@@ -1933,7 +2533,12 @@
     "spf": "https://open.spotify.com/track/1OS3kgxIBgYqkCfUCkfakM",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418212",
     "itn": "https://itunes.apple.com/jp/album/1440580724?i=1440580725&app=itunes",
-    "lrc": "https://www.uta-net.com/song/258299/"
+    "lrc": "https://www.uta-net.com/song/258299/",
+    "parts": [
+      "Catc",
+      "h up, latency",
+      ""
+    ]
   },
   {
     "mID": 133,
@@ -1949,7 +2554,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093354&app=itunes",
-    "lrc": "https://www.uta-net.com/song/258298/"
+    "lrc": "https://www.uta-net.com/song/258298/",
+    "parts": [
+      "たられ",
+      "ばわたがし",
+      ""
+    ]
   },
   {
     "mID": 134,
@@ -1965,7 +2575,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093355&app=itunes",
-    "lrc": "https://www.uta-net.com/song/258297/"
+    "lrc": "https://www.uta-net.com/song/258297/",
+    "parts": [
+      "ここで",
+      "会ったがけもの道",
+      ""
+    ]
   },
   {
     "mID": 135,
@@ -1981,7 +2596,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "流星前夜",
+      "",
+      ""
+    ]
   },
   {
     "mID": 136,
@@ -1997,7 +2617,12 @@
     "spf": "https://open.spotify.com/track/5GoTwFDeeAjamT89TvFB1T",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1712428440?i=1712428442&app=itunes",
-    "lrc": "https://www.uta-net.com/song/78824/"
+    "lrc": "https://www.uta-net.com/song/78824/",
+    "parts": [
+      "水と雨",
+      "について",
+      ""
+    ]
   },
   {
     "mID": 137,
@@ -2013,7 +2638,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/78823/"
+    "lrc": "https://www.uta-net.com/song/78823/",
+    "parts": [
+      "2月、",
+      "白昼の流れ星と飛行機雲",
+      ""
+    ]
   },
   {
     "mID": 138,
@@ -2029,7 +2659,12 @@
     "spf": "https://open.spotify.com/track/5x3Y7IScRTij6kgWmJOCUV",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1476041503?i=1476041513&app=itunes",
-    "lrc": "https://www.uta-net.com/song/78822/"
+    "lrc": "https://www.uta-net.com/song/78822/",
+    "parts": [
+      "MR.",
+      "アンディ",
+      ""
+    ]
   },
   {
     "mID": 139,
@@ -2045,7 +2680,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/78821/"
+    "lrc": "https://www.uta-net.com/song/78821/",
+    "parts": [
+      "流星行路",
+      "",
+      ""
+    ]
   },
   {
     "mID": 140,
@@ -2061,7 +2701,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/185437/"
+    "lrc": "https://www.uta-net.com/song/185437/",
+    "parts": [
+      "アナザ",
+      "ーワー",
+      "ルド"
+    ]
   },
   {
     "mID": 141,
@@ -2077,7 +2722,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/185435/"
+    "lrc": "https://www.uta-net.com/song/185435/",
+    "parts": [
+      "サーチ",
+      "ライト",
+      ""
+    ]
   },
   {
     "mID": 142,
@@ -2093,7 +2743,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/185434/"
+    "lrc": "https://www.uta-net.com/song/185434/",
+    "parts": [
+      "ライト",
+      "フライト",
+      ""
+    ]
   },
   {
     "mID": 155,
@@ -2109,7 +2764,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093356&app=itunes",
-    "lrc": "https://www.uta-net.com/song/272291/"
+    "lrc": "https://www.uta-net.com/song/272291/",
+    "parts": [
+      "プログ",
+      "ラムcontinued",
+      " 15th style"
+    ]
   },
   {
     "mID": 156,
@@ -2125,7 +2785,12 @@
     "spf": "https://open.spotify.com/track/7tmRSzIL7JNYnIXCLTY1zF",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418215",
     "itn": "https://itunes.apple.com/jp/album/1480479449?i=1480479450&app=itunes",
-    "lrc": "https://www.uta-net.com/song/275519/"
+    "lrc": "https://www.uta-net.com/song/275519/",
+    "parts": [
+      "Phan",
+      "tom Joke",
+      ""
+    ]
   },
   {
     "mID": 157,
@@ -2141,7 +2806,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1480479449?i=1480479451&app=itunes",
-    "lrc": "https://www.uta-net.com/song/275518/"
+    "lrc": "https://www.uta-net.com/song/275518/",
+    "parts": [
+      "ぼくた",
+      "ちのしっぱい",
+      ""
+    ]
   },
   {
     "mID": 158,
@@ -2157,7 +2827,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1480479449?i=1480479452&app=itunes",
-    "lrc": "https://www.uta-net.com/song/275517/"
+    "lrc": "https://www.uta-net.com/song/275517/",
+    "parts": [
+      "mout",
+      "h to mouse(sent you)",
+      ""
+    ]
   },
   {
     "mID": 159,
@@ -2173,7 +2848,12 @@
     "spf": "https://open.spotify.com/track/1onXbe3reEzSLvRfph6dzE",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418209",
     "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418209&app=itunes",
-    "lrc": "https://www.uta-net.com/song/291616/"
+    "lrc": "https://www.uta-net.com/song/291616/",
+    "parts": [
+      "Hatc",
+      "h I need",
+      ""
+    ]
   },
   {
     "mID": 160,
@@ -2189,7 +2869,12 @@
     "spf": "https://open.spotify.com/track/5hSUr0FTrWvhGsXlxbsmLU",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418210",
     "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418210&app=itunes",
-    "lrc": "https://www.uta-net.com/song/291615/"
+    "lrc": "https://www.uta-net.com/song/291615/",
+    "parts": [
+      "マーメ",
+      "イドスキャンダラス",
+      ""
+    ]
   },
   {
     "mID": 161,
@@ -2205,7 +2890,12 @@
     "spf": "https://open.spotify.com/track/6h2qlrlBwZxhTQNivKqZ8f",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418211",
     "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418211&app=itunes",
-    "lrc": "https://www.uta-net.com/song/291614/"
+    "lrc": "https://www.uta-net.com/song/291614/",
+    "parts": [
+      "スロウ",
+      "カーヴは打てない (that made me crazy)",
+      ""
+    ]
   },
   {
     "mID": 162,
@@ -2221,7 +2911,12 @@
     "spf": "https://open.spotify.com/track/7HtyN9x8DGdxe80yGMdbBU",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418213",
     "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418213&app=itunes",
-    "lrc": "https://www.uta-net.com/song/291613/"
+    "lrc": "https://www.uta-net.com/song/291613/",
+    "parts": [
+      "摂食",
+      "ビジランテ",
+      ""
+    ]
   },
   {
     "mID": 163,
@@ -2237,7 +2932,12 @@
     "spf": "https://open.spotify.com/track/0ISgaf4IDF5qnJFo3v8J9w",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418214",
     "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418214&app=itunes",
-    "lrc": "https://www.uta-net.com/song/291612/"
+    "lrc": "https://www.uta-net.com/song/291612/",
+    "parts": [
+      "夏影",
+      "テールライト",
+      ""
+    ]
   },
   {
     "mID": 164,
@@ -2253,7 +2953,12 @@
     "spf": "https://open.spotify.com/track/4pZ8zDEbWdMgKRck7cb0Dq",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418216",
     "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418216&app=itunes",
-    "lrc": "https://www.uta-net.com/song/291611/"
+    "lrc": "https://www.uta-net.com/song/291611/",
+    "parts": [
+      "世界は",
+      "ファンシー",
+      ""
+    ]
   },
   {
     "mID": 165,
@@ -2269,7 +2974,12 @@
     "spf": "https://open.spotify.com/track/0KqdJuzNS6NpAKu2zdRIxo",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418217",
     "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418217&app=itunes",
-    "lrc": "https://www.uta-net.com/song/291610/"
+    "lrc": "https://www.uta-net.com/song/291610/",
+    "parts": [
+      "弥生町",
+      "ロンリープラネット",
+      ""
+    ]
   },
   {
     "mID": 166,
@@ -2285,7 +2995,12 @@
     "spf": "https://open.spotify.com/track/6jVEBrLJrIloifud4KSd9i",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418219",
     "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418219&app=itunes",
-    "lrc": "https://www.uta-net.com/song/291609/"
+    "lrc": "https://www.uta-net.com/song/291609/",
+    "parts": [
+      "Simpl",
+      "e Simple Anecdote",
+      ""
+    ]
   },
   {
     "mID": 167,
@@ -2301,7 +3016,12 @@
     "spf": "https://open.spotify.com/track/58U3YcWjHB2B613KkvillC",
     "apl": "https://music.apple.com/jp/album/1531418208?i=1531418220",
     "itn": "https://itunes.apple.com/jp/album/1531418208?i=1531418220&app=itunes",
-    "lrc": "https://www.uta-net.com/song/291608/"
+    "lrc": "https://www.uta-net.com/song/291608/",
+    "parts": [
+      "101",
+      "回目のプロローグ",
+      ""
+    ]
   },
   {
     "mID": 168,
@@ -2317,7 +3037,12 @@
     "spf": "https://open.spotify.com/track/3Gl8jfnr5qHzVoWCWc9tV3",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774507",
     "itn": "https://itunes.apple.com/jp/album/1616993125?i=1616993126&app=itunes",
-    "lrc": "https://www.uta-net.com/song/317221/"
+    "lrc": "https://www.uta-net.com/song/317221/",
+    "parts": [
+      "kalei",
+      "do proud fiesta",
+      ""
+    ]
   },
   {
     "mID": 169,
@@ -2333,7 +3058,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/317220/"
+    "lrc": "https://www.uta-net.com/song/317220/",
+    "parts": [
+      "ナノサ",
+      "イズスカイウォーク",
+      ""
+    ]
   },
   {
     "mID": 170,
@@ -2349,7 +3079,12 @@
     "spf": "https://open.spotify.com/track/3HOOzsN7ypLG53pyBq9eeL",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774049",
     "itn": "https://itunes.apple.com/jp/album/1648654053?i=1648654054&app=itunes",
-    "lrc": "https://www.uta-net.com/song/326437/"
+    "lrc": "https://www.uta-net.com/song/326437/",
+    "parts": [
+      "カオス",
+      "が極まる",
+      ""
+    ]
   },
   {
     "mID": 171,
@@ -2365,7 +3100,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/326436/"
+    "lrc": "https://www.uta-net.com/song/326436/",
+    "parts": [
+      "放課後",
+      "マリアージュ",
+      ""
+    ]
   },
   {
     "mID": 172,
@@ -2381,7 +3121,12 @@
     "spf": "https://open.spotify.com/track/4bdSB9Ysz0DERAcwZ8DcfT",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679773785",
     "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679773785&app=itunes",
-    "lrc": "https://www.uta-net.com/song/335760/"
+    "lrc": "https://www.uta-net.com/song/335760/",
+    "parts": [
+      "スペー",
+      "スシャトル・ララバイ",
+      ""
+    ]
   },
   {
     "mID": 173,
@@ -2397,7 +3142,12 @@
     "spf": "https://open.spotify.com/track/5aSItqgApJoIaIZu77L9Zu",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774039",
     "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774039&app=itunes",
-    "lrc": "https://www.uta-net.com/song/335759/"
+    "lrc": "https://www.uta-net.com/song/335759/",
+    "parts": [
+      "恋する",
+      "惑星",
+      ""
+    ]
   },
   {
     "mID": 174,
@@ -2413,7 +3163,12 @@
     "spf": "https://open.spotify.com/track/4QeoZcK6Qyi4RpKfkYuB5H",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774041",
     "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774041&app=itunes",
-    "lrc": "https://www.uta-net.com/song/335758/"
+    "lrc": "https://www.uta-net.com/song/335758/",
+    "parts": [
+      "ミレニ",
+      "アムハッピー・チェーンソーエッヂ",
+      ""
+    ]
   },
   {
     "mID": 175,
@@ -2429,7 +3184,12 @@
     "spf": "https://open.spotify.com/track/5XdnqJxxh0M535ALwUYkBd",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774054",
     "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774054&app=itunes",
-    "lrc": "https://www.uta-net.com/song/335757/"
+    "lrc": "https://www.uta-net.com/song/335757/",
+    "parts": [
+      "City p",
+      "eel",
+      ""
+    ]
   },
   {
     "mID": 176,
@@ -2445,7 +3205,12 @@
     "spf": "https://open.spotify.com/track/5qko3Om0sSANw6k1pe97GT",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774362",
     "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774362&app=itunes",
-    "lrc": "https://www.uta-net.com/song/308699/"
+    "lrc": "https://www.uta-net.com/song/308699/",
+    "parts": [
+      "Nihil",
+      " Pip Viper",
+      ""
+    ]
   },
   {
     "mID": 177,
@@ -2461,7 +3226,12 @@
     "spf": "https://open.spotify.com/track/6WmH150zngZw8mNenyWY5o",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774368",
     "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774368&app=itunes",
-    "lrc": "https://www.uta-net.com/song/335756/"
+    "lrc": "https://www.uta-net.com/song/335756/",
+    "parts": [
+      "Numb",
+      "ness like a ginger",
+      ""
+    ]
   },
   {
     "mID": 178,
@@ -2477,7 +3247,12 @@
     "spf": "https://open.spotify.com/track/5QXfKCYswvbgEXYY4yzpJo",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774372",
     "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774372&app=itunes",
-    "lrc": "https://www.uta-net.com/song/335755/"
+    "lrc": "https://www.uta-net.com/song/335755/",
+    "parts": [
+      "もう君",
+      "に会えない",
+      ""
+    ]
   },
   {
     "mID": 179,
@@ -2493,7 +3268,12 @@
     "spf": "https://open.spotify.com/track/4NhvNRtcVMChZMs66EE1eq",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774382",
     "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774382&app=itunes",
-    "lrc": "https://www.uta-net.com/song/335754/"
+    "lrc": "https://www.uta-net.com/song/335754/",
+    "parts": [
+      "アンチ",
+      "・トレンディ・クラブ",
+      ""
+    ]
   },
   {
     "mID": 180,
@@ -2509,7 +3289,12 @@
     "spf": "https://open.spotify.com/track/42x1LIKLFOzMcYWIsS5CEr",
     "apl": "https://music.apple.com/jp/album/1679773768?i=1679774511",
     "itn": "https://itunes.apple.com/jp/album/1679773768?i=1679774511&app=itunes",
-    "lrc": "https://www.uta-net.com/song/335753/"
+    "lrc": "https://www.uta-net.com/song/335753/",
+    "parts": [
+      "フレー",
+      "ズボトル・バイバイ",
+      ""
+    ]
   },
   {
     "mID": 181,
@@ -2525,7 +3310,12 @@
     "spf": "https://open.spotify.com/track/7bssqLtlFKC3DZXoUCzsAo",
     "apl": "https://music.apple.com/jp/album/1758029307?i=1758030098",
     "itn": "https://itunes.apple.com/jp/album/1707507238?i=1707507240&app=itunes",
-    "lrc": "https://www.uta-net.com/song/344421/"
+    "lrc": "https://www.uta-net.com/song/344421/",
+    "parts": [
+      "いけな",
+      "いfool logic",
+      ""
+    ]
   },
   {
     "mID": 182,
@@ -2541,7 +3331,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/344420/"
+    "lrc": "https://www.uta-net.com/song/344420/",
+    "parts": [
+      "あまり",
+      "に写実的な",
+      ""
+    ]
   },
   {
     "mID": 183,
@@ -2557,7 +3352,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/357660/"
+    "lrc": "https://www.uta-net.com/song/357660/",
+    "parts": [
+      "星追い",
+      "達の祈り",
+      ""
+    ]
   },
   {
     "mID": 184,
@@ -2573,7 +3373,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/357659/"
+    "lrc": "https://www.uta-net.com/song/357659/",
+    "parts": [
+      "空の在処",
+      "",
+      ""
+    ]
   },
   {
     "mID": 185,
@@ -2589,7 +3394,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/357658/"
+    "lrc": "https://www.uta-net.com/song/357658/",
+    "parts": [
+      "レボリ",
+      "ューションナンバーミー",
+      ""
+    ]
   },
   {
     "mID": 186,
@@ -2605,7 +3415,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/357657/"
+    "lrc": "https://www.uta-net.com/song/357657/",
+    "parts": [
+      "ミカエ",
+      "ルは雲の上",
+      ""
+    ]
   },
   {
     "mID": 187,
@@ -2621,7 +3436,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/357656/"
+    "lrc": "https://www.uta-net.com/song/357656/",
+    "parts": [
+      "ナツノ",
+      "ヒ",
+      ""
+    ]
   },
   {
     "mID": 188,
@@ -2637,7 +3457,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/357655/"
+    "lrc": "https://www.uta-net.com/song/357655/",
+    "parts": [
+      "メロウ",
+      "",
+      ""
+    ]
   },
   {
     "mID": 189,
@@ -2653,7 +3478,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/357654/"
+    "lrc": "https://www.uta-net.com/song/357654/",
+    "parts": [
+      "カナシ",
+      "ミトレイン",
+      ""
+    ]
   },
   {
     "mID": 190,
@@ -2669,7 +3499,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/357653/"
+    "lrc": "https://www.uta-net.com/song/357653/",
+    "parts": [
+      "愛は",
+      "きっと",
+      ""
+    ]
   },
   {
     "mID": 191,
@@ -2685,7 +3520,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/357652/"
+    "lrc": "https://www.uta-net.com/song/357652/",
+    "parts": [
+      "月と",
+      "天秤",
+      ""
+    ]
   },
   {
     "mID": 192,
@@ -2701,7 +3541,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/357651/"
+    "lrc": "https://www.uta-net.com/song/357651/",
+    "parts": [
+      "bad m",
+      "usic disco",
+      ""
+    ]
   },
   {
     "mID": 193,
@@ -2717,7 +3562,12 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/357650/"
+    "lrc": "https://www.uta-net.com/song/357650/",
+    "parts": [
+      "ラズベ",
+      "リー、my dear",
+      ""
+    ]
   },
   {
     "mID": 194,
@@ -2733,7 +3583,12 @@
     "spf": "https://open.spotify.com/track/3XkGAnx7i8OcFTIEcmVOUP",
     "apl": "https://music.apple.com/jp/album/1758029307?i=1758029313",
     "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029313&app=itunes",
-    "lrc": "https://www.uta-net.com/song/357649/"
+    "lrc": "https://www.uta-net.com/song/357649/",
+    "parts": [
+      "アナザ",
+      "ーワールド",
+      "エンド"
+    ]
   },
   {
     "mID": 202,
@@ -2749,7 +3604,12 @@
     "spf": "https://open.spotify.com/track/6ubI9ALQi6TQYZm7tVPDAi",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1769179790?i=1769179797&app=itunes",
-    "lrc": "https://www.uta-net.com/song/361244/"
+    "lrc": "https://www.uta-net.com/song/361244/",
+    "parts": [
+      "傍若の",
+      "カリスマ",
+      ""
+    ]
   },
   {
     "mID": 203,
@@ -2765,6 +3625,53 @@
     "spf": "",
     "apl": "",
     "itn": "",
-    "lrc": "https://www.uta-net.com/song/361243/"
+    "lrc": "https://www.uta-net.com/song/361243/",
+    "parts": [
+      "憂鬱",
+      "はプリンセス",
+      ""
+    ]
+  },
+  {
+    "mID": 204,
+    "title": "うるわし",
+    "cdDate": "2026-01-21",
+    "firstCd": "うるわし／アザレアの風",
+    "subNo": "",
+    "order": 1,
+    "exsm": "",
+    "yt": "",
+    "ytUrl": "https://www.youtube.com/watch?v=7Z4woFcxA6U",
+    "lv": "",
+    "spf": "https://open.spotify.com/track/5kvESVLeUE6ldAIYpBcstS",
+    "apl": "https://music.apple.com/jp/album/1861426433?i=1861426434",
+    "itn": "https://itunes.apple.com/jp/album/1861426433?i=1861426434&app=itunes",
+    "lrc": "https://www.uta-net.com/song/386215/",
+    "parts": [
+      "うるわ",
+      "し",
+      ""
+    ]
+  },
+  {
+    "mID": 205,
+    "title": "アザレアの風",
+    "cdDate": "2026-01-21",
+    "firstCd": "うるわし／アザレアの風",
+    "subNo": "",
+    "order": 2,
+    "exsm": "",
+    "yt": "",
+    "ytUrl": "",
+    "lv": "",
+    "spf": "",
+    "apl": "",
+    "itn": "",
+    "lrc": "",
+    "parts": [
+      "アザレ",
+      "アの風",
+      ""
+    ]
   }
 ]

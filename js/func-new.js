@@ -90,7 +90,6 @@ function setEventListener() {
     });
 }
 
-
 // style/mix 表示関係
 export async function toggleSm(e, mode) {
     console.log('toggleSmが押された！');
@@ -185,23 +184,19 @@ async function applySubNo(isChecked) {
     const subNoArray = await readJson(addVer('./data/sub-no-new.json'));
 
     if (isChecked) {
-        // subNoArray の値を cs に追加
         subNoArray.forEach(id => {
+            const tr = mTbl.map.get(id);
+            if (!tr) return; // mapに無いものは無視
+
+            // cs に追加してチェックをつける
             if (!cs.includes(id)) {
                 cs.push(id);
             }
-        });
-        // cs の全要素について、map に存在すればチェックを付ける
-        cs.forEach(id => {
-            const tr = mTbl.map.get(id);
-            if (!tr) return;
-
             const chk = tr.querySelector('.chk');
             if (chk && !chk.checked) {
                 chk.checked = true;
             }
         });
-
     } else {
         // OFF 時：cs にあって csBk にないものだけ戻す
         const toRemove = cs.filter(id => !csBk.includes(id));

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+        省略
+</head>
+
+<body>
+        <header>
+                <div id="tp">
+                        <h1>サイト名仮(非公式)</h1>
+                </div>
+                <p>UNISON SQUARE GARDENの全曲リストをサブスクの有無を含めて一覧でまとめています。サブスクにない曲の一覧も。詳しい使い方は<a
+                                href="about.html">こちら</a>をご覧ください。<a href="articles.html">ブログ記事</a>もあるよ。（<a
+                                href="about.html#policy">運営ポリシー</a>）<br>
+                        [PR表記]当サイトは一部にアフィリエイトを含みます。</p>
+        </header>
+        <main>
+                <div id="audMdTgl">
+                        <label><input type="checkbox" id="audioInfoMode">全ライブ音源情報モード(β版)</label>
+                </div>
+
+                <section id="checklistArea">
+                        <div id="btns-wrap">
+                                <button class="btn showResultBtn">チェックした曲を含むCDを見る</button>
+                                <button class="btn clearAllBtn">チェックをオールクリア</button>
+                        </div>
+                        <p>※ 表は横にスクロールできます</p>
+                        <section class="tab-container">
+                                <div class="tab-buttons">
+                                        <button class="tab-btn active" data-tab="songlist">曲一覧から探す</button>
+                                        <button class="tab-btn" data-tab="setlist">セトリから探す</button>
+                                </div>
+
+                                <section id="songlist-tab" class="tab-content active">
+                                        <div class="auf">
+                                                <div><label>
+                                                                <input type="checkbox" id="chkSb">サブスク無しにチェック</label>を追加
+                                                        <label>　
+                                                                <input type="checkbox"
+                                                                        id="shStChk">style(再録音)を表示</label>
+                                                        <label>　
+                                                                <input type="checkbox" id="shMxChk">
+                                                                mix(リミックス)を表示</label>　
+                                                </div>
+                                                <div><label>
+                                                                <input type="checkbox"
+                                                                        id="shChkOnly">チェック付き行のみ表示</label>
+                                                </div>
+                                                <div>
+                                                        <label for="sngSrch">曲名検索: </label>
+                                                        <input type="text" id="sngSrch" placeholder="曲名で絞り込み...">
+                                                </div>
+                                        </div>
+                                        <div class="table-wrapper">
+                                                <table id="musicTbl" class="tbl">
+                                                        <thead>
+                                                                <tr>
+                                                                        <th>✔︎</th>
+                                                                        <th>曲名</th>
+                                                                        <th>YT</th>
+                                                                        <th>LV</th>
+                                                                        <th>Spf</th>
+                                                                        <th>Apl</th>
+                                                                        <th>iTn</th>
+                                                                        <th>歌詞</th>
+                                                                        <th>s/m</th>
+                                                                        <th>初収録</th>
+                                                                        <th>順</th>
+                                                                        <th>発売日</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr>
+                                                                        <td><input type="checkbox" class="chk"
+                                                                                        data-context="ml" data-id="1">
+                                                                        </td>
+                                                                        <td data-fld="title">センチメンタルピリオド</td>
+                                                                        <td><a href="https://www.youtube.com/watch?v=SjwMTno8IKc"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">MV</a>
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td><a href="https://open.spotify.com/track/4f1zepqZ36gAWIQWWLIg21"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">Spf</a>
+                                                                        </td>
+                                                                        <td><a href="https://music.apple.com/jp/album/310970395?i=310970402"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">Apl</a>
+                                                                        </td>
+                                                                        <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970402&app=itunes"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">iTn</a>
+                                                                        </td>
+                                                                        <td class="small"><a
+                                                                                        href="https://www.uta-net.com/song/78826/"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">歌詞</a>
+                                                                        </td>
+                                                                        <td>S.B style</td>
+                                                                        <td class="small">センチメンタルピリオド</td>
+                                                                        <td class="small">1</td>
+                                                                        <td class="small">2008-07-23</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                        <td><input type="checkbox" class="chk"
+                                                                                        data-context="ml" data-id="2">
+                                                                        </td>
+                                                                        <td data-fld="title">5分後のスターダスト</td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td><a href="https://itunes.apple.com/jp/album/306069909?i=306069911&app=itunes"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">iTn</a>
+                                                                        </td>
+                                                                        <td class="small"><a
+                                                                                        href="https://www.uta-net.com/song/186599/"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">歌詞</a>
+                                                                        </td>
+                                                                        <td>B.C style</td>
+                                                                        <td class="small">センチメンタルピリオド</td>
+                                                                        <td class="small">2</td>
+                                                                        <td class="small">2008-07-23</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                        <td><input type="checkbox" class="chk"
+                                                                                        data-context="ml" data-id="3">
+                                                                        </td>
+                                                                        <td data-fld="title">ガリレオのショーケース</td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td><a href="https://itunes.apple.com/jp/album/1476041503?i=1476041505&app=itunes"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">iTn</a>
+                                                                        </td>
+                                                                        <td class="small"><a
+                                                                                        href="https://www.uta-net.com/song/186598/"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">歌詞</a>
+                                                                        </td>
+                                                                        <td>D.A style</td>
+                                                                        <td class="small">センチメンタルピリオド</td>
+                                                                        <td class="small">3</td>
+                                                                        <td class="small">2008-07-23</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                        <td><input type="checkbox" class="chk"
+                                                                                        data-context="ml" data-id="4">
+                                                                        </td>
+                                                                        <td data-fld="title">マスターボリューム</td>
+                                                                        <td><a href="https://www.youtube.com/watch?v=06Y5m8ZODXo"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">MV</a>
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td><a href="https://open.spotify.com/track/3Jf00gsLxnRbrIavnAQU6f"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">Spf</a>
+                                                                        </td>
+                                                                        <td><a href="https://music.apple.com/jp/album/310970395?i=310970421"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">Apl</a>
+                                                                        </td>
+                                                                        <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970421&app=itunes"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">iTn</a>
+                                                                        </td>
+                                                                        <td class="small"><a
+                                                                                        href="https://www.uta-net.com/song/74488/"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">歌詞</a>
+                                                                        </td>
+                                                                        <td>S.B style</td>
+                                                                        <td class="small">マスターボリューム</td>
+                                                                        <td class="small">1</td>
+                                                                        <td class="small">2009-01-28</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                        <td><input type="checkbox" class="chk"
+                                                                                        data-context="ml" data-id="5">
+                                                                        </td>
+                                                                        <td data-fld="title">一人思うは雨の中</td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td><a href="https://itunes.apple.com/jp/album/306067779?i=306067782&app=itunes"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">iTn</a>
+                                                                        </td>
+                                                                        <td class="small"><a
+                                                                                        href="https://www.uta-net.com/song/74487/"
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer">歌詞</a>
+                                                                        </td>
+                                                                        <td>B.C mix</td>
+                                                                        <td class="small">マスターボリューム</td>
+                                                                        <td class="small">2</td>
+                                                                        <td class="small">2009-01-28</td>
+                                                                </tr>
+
+
+                                                        </tbody>
+                                                </table>
+                                                <template id="tmp-main-row">
+                                                        <tr>
+                                                                <td><input type="checkbox" class="chk"
+                                                                                data-context="ml"></td>
+                                                                <td data-fld="title"></td>
+                                                                <td data-fld="ytNd"></td>
+                                                                <td data-fld="lvNd"></td>
+                                                                <td data-fld="spfNd"></td>
+                                                                <td data-fld="aplNd"></td>
+                                                                <td data-fld="itnNd"></td>
+                                                                <td data-fld="lrcNd" class="small"></td>
+                                                                <td data-fld="exsm"></td>
+                                                                <td data-fld="firstCd" class="small"></td>
+                                                                <td data-fld="order" class="small"></td>
+                                                                <td data-fld="cdDate" class="small"></td>
+                                                        </tr>
+                                                </template>
+                                        </div>
+                                        <p>2026/01/21発売「うるわし／アザレアの風」のサブスク情報は未解禁です。追って更新予定です。</p>
+
+                                </section>
+
+                                <section id="setlist-tab" class="tab-content">
+                                        <div id="setlist-controls">
+                                                <p>特徴・ハイライトは一部曲に試験導入中。</p>
+                                                <div><label>
+                                                                <input type="checkbox" id="slShChk">チェック付き行のみ表示</label>
+                                                </div>
+                                                <div>
+                                                        <label for="slSngSrch">曲名検索: </label>
+                                                        <input type="text" id="slSngSrch" placeholder="曲名で絞り込み...">
+                                                </div>
+                                        </div>
+                                        <div class="table-wrapper">
+                                                <table id="setlistTbl" class="tbl">
+                                                        <thead></thead>
+                                                        <tbody></tbody>
+                                                </table>
+                                        </div>
+                                </section>
+                        </section>
+                </section>
+                <button class="showResultBtn">チェックした曲を含むCDを見る</button>
+                <div class="shareWrap">
+                        <p>もしよかったら
+                                <a href="https://twitter.com/intent/tweet?url=https://site-domain.com&text=サイト名仮(非公式)&hashtags=サイト名仮"
+                                        class="shareBtn" target="_blank" rel="noopener noreferrer">Twitter(X)でシェア</a>
+                                をお願いします！
+                        </p>
+                </div>
+                <section id="resultArea">
+                        <h2>含まれるCD一覧：</h2>
+                        <p>※ 一部のリンクにアフィリエイトを使用しています。</p>
+                        <div id="resultCdTypeFilter">
+                                <label><input type="radio" name="resultCdType" value="both" checked> 両方表示</label>
+                                <label><input type="radio" name="resultCdType" value="album"> アルバムのみ</label>
+                                <label><input type="radio" name="resultCdType" value="single"> シングルのみ</label>
+                        </div>
+                        <div class="table-wrapper">
+                                <table id="resultTbl" class="tbl"></table>
+                        </div>
+                </section>
+
+        </main>
+        <!-- バージョン定義：js/main.jsの最上行のバージョン記載も忘れずに -->
+        <script type="module" src="js/main-new.js?v=20251229"></script>
+</body>
+
+</html>

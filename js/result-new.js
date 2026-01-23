@@ -22,6 +22,7 @@ const { cs, csBk } = chkStates;
 export async function showResult() {
     console.log('showResult is called');
     const allDiscs = await readJson('data/all-discs-new.json');
+    const mlJson = await mlJsonData;
     const { loadCss, startSync } = await import(addVer('./func-new.js'));
     loadCss('result-css', 'css/result.css');
 
@@ -35,16 +36,39 @@ export async function showResult() {
         return;
     }
 
-    measureEnv();
-    getCdType();
+    // ★ ここからパーツ用Mapの構築と判定
+    // 1. mlJsonData (main-new.jsより) から基礎Mapを作成
+    // mID -> { full, part } の Map を作成
+    const titleMap = new Map(
+        mlJson.map(item => [
+            item.mID,
+            {
+                full: item.title,
+                part: item.hasOwnProperty('parts') ? item.parts : null
+            }
+        ])
+    );
+    // 2. csの中にMapに存在しないIDがあるかチェック
+    const hasMissing = cs.some(id => !titleMap.has(id));
+    // 3. 不足があれば smJson を取得して、そのまま titleMap に統合
+    if (hasMissing) {
+        const smData = await getSmJson();
+        for (const item of smData) {
+            titleMap.set(item.mID, {
+                full: item.title,
+                part: item.hasOwnProperty('parts') ? item.parts : null
+            });
+        }
+    }
 
-    const resultData = mkResultData(cs, mTbl, allDiscs);
-    const resultTbl = mkMinTbl(resultData);
-    // ↓ ここから先で
-    // mkMinTbl()
-    // adjustTbl()
-    renderTbl(resultTbl);
+    const env = measureEnv();
+    const cdType = getCdType();
 
+    const resultData = await mkResultData(cs, mTbl, allDiscs);
+    const cdTypeData = applyCdType(resultData, cdType);
+    const resultMinTbl = mkMinTbl(cdTypeData);
+    const adjustedTbl = adjustTbl(resultMinTbl, cdTypeData.cols, env, partsMap);
+    renderTbl(adjustedTbl);
 }
 function measureEnv() {
     // テーブルを置くラッパー
@@ -73,11 +97,6 @@ function getCdType() {
 async function mkResultData(cs, mTbl, allDiscs) {
     console.log('[result] mkResultData start', { cs: cs.length, discs: allDiscs.length });
 
-    const mlJson = await mlJsonData;
-    const musicMap = new Map(
-        mlJson.map(o => [Number(o.mID), o.title])
-    );
-
     // ===== 1. 使用されるCDだけ抽出 =====
     const usedDiscs = allDiscs.filter(disc =>
         Array.isArray(disc.tracks) &&
@@ -100,46 +119,41 @@ async function mkResultData(cs, mTbl, allDiscs) {
         return {
             cdId: disc['cd-group-id'],
             cdName: disc['cd-name'],
+            cdNameParts: disc['cd-name-parts'] || null,
             cdType: disc['cd-type'],
             tracks: disc.tracks,
             amznUrl: disc.A || null,
+            TRUrl: disc.TR || null,
             hitCnt
         };
     });
 
     // ★ cols ログ（cd-group-id + ヒット曲数 + mID一覧）
-    console.log(
-        '[result] cols:',
-        cols.map(col => {
-            const hits = col.tracks.filter(id => cs.includes(id));
-            return `${col.cdId}(${hits.length} : ${hits.join(',')})`;
-        }).join(', ')
-    );
+    console.log('[result] cols:', cols.map(col => { const hits = col.tracks.filter(id => cs.includes(id)); return `${col.cdId}(${hits.length} : ${hits.join(',')})`; }).join(', '));
 
     // ===== 4. 行順決定 =====
     const rowsOrder = sortRows(cols, cs);
     console.log('[result] rowsOrder:', rowsOrder.join(', '));
 
-
     // ===== 5. rows 作成 =====
-    const rows = rowsOrder.map(songId => {
+    const rows = [];
+    rowsOrder.forEach(songId => {
         const title = getTitle(songId, mTbl);
 
-        const hitCnt = hitCdCnt(songId, cols);
+        if (!title) {
+            console.warn('[result] title not found, skip songId:', songId);
+            return;
+        }
 
-        return {
+        const hitCnt = hitCdCnt(songId, cols);
+        rows.push({
             songId,
             title,
             cells: cols.map(col => col.tracks.includes(songId)),
             hitCdCnt: hitCnt
-        };
+        });
     });
-
-
-    console.log(
-        '[result] rows:',
-        rows.map(r => `${r.songId}(${r.hitCdCnt})`).join(', ')
-    );
+    console.log('[result] rows:', rows.map(r => `${r.songId}(${r.hitCdCnt})`).join(', '));
     console.log('[result] mkResultData done');
 
     return { cols, rows };
@@ -173,13 +187,43 @@ function sortRows(cols, cs) {
     }
     return order;
 }
+function getTitle(songId, mTbl) {
+    const tr = mTbl.map.get(Number(songId));
+    if (!tr) return null;
+
+    const td = tr.querySelector('[data-fld="title"]');
+    const title = td?.textContent.trim();
+
+    return title || null;
+}
+
+function applyCdType(resultData, cdType) {
+    if (cdType === 'both') {
+        return resultData;
+    }
+
+    const filteredCols = resultData.cols.filter(
+        col => col.cdType === cdType
+    );
+
+    // cols が変わるので rows の cells も合わせて削る
+    const colIndexes = filteredCols.map(col =>
+        resultData.cols.indexOf(col)
+    );
+
+    const filteredRows = resultData.rows.map(row => {
+        return {
+            ...row,
+            cells: colIndexes.map(i => row.cells[i])
+        };
+    });
+
+    return { cols: filteredCols, rows: filteredRows };
+}
+
 function mkMinTbl(resultData) {
     const { cols, rows } = resultData;
-
-    console.log('[result] mkMinTbl start', {
-        cols: cols.length,
-        rows: rows.length
-    });
+    console.log('[result] mkMinTbl start', { cols: cols.length, rows: rows.length });
 
     // <table id="resultTbl" class="tbl"> は既にHTMLにある前提
     const tbl = document.getElementById('resultTbl');
@@ -197,17 +241,38 @@ function mkMinTbl(resultData) {
     // CD列ヘッダ
     cols.forEach(col => {
         const th = document.createElement('th');
+        th.dataset.cdid = col.cdId; // ★ これを追加
 
-        let cdName;
-        if (Array.isArray(col.nameParts)) {
-            // cd-name-parts がある場合
-            cdName = col.nameParts.filter(Boolean).join('');
-        } else {
-            // フォールバック（旧データ）
-            cdName = col.cdName;
+        /* --- CD名 --- */
+        const cdNameDiv = document.createElement('div');
+        cdNameDiv.textContent = col.cdNameParts
+            ? mkNameByParts(col.cdNameParts, 0) // 省略あり
+            : col.cdName;                       // フル表示
+        th.appendChild(cdNameDiv);
+
+        /* --- ヒット曲数 --- */
+        const hitCntDiv = document.createElement('div');
+        hitCntDiv.textContent = `(${col.hitCnt})`;
+        th.appendChild(hitCntDiv);
+
+        /* --- リンク群 --- */
+        const linksDiv = document.createElement('div');
+        const links = [];
+
+        if (col.amznUrl) { links.push(mkLink(col.amznUrl, 'Amz')); }
+        if (col.TRUrl) { links.push(mkLink(col.TRUrl, 'TR')); }
+
+        // 配列を " / " で結合して append
+        links.forEach((link, i) => {
+            if (i > 0) {
+                linksDiv.appendChild(document.createTextNode('/'));
+            }
+            linksDiv.appendChild(link);
+        });
+
+        if (links.length > 0) {
+            th.appendChild(linksDiv);
         }
-
-        th.textContent = cdName;
         trHead.appendChild(th);
     });
 
@@ -223,6 +288,7 @@ function mkMinTbl(resultData) {
         // 曲名セル
         const tdTitle = document.createElement('td');
         tdTitle.textContent = row.title;
+        tdTitle.classList.add('row-head');
         tr.appendChild(tdTitle);
 
         // CDヒットセル
@@ -236,35 +302,155 @@ function mkMinTbl(resultData) {
     });
 
     tbl.appendChild(tbody);
-
     console.log('[result] mkMinTbl done');
-
     return tbl;
 }
+function mkNameByParts(parts, n = 0) {
+    const p0 = parts[0] ?? '';
+    const p1 = parts[1] ?? '';
+    const p2 = parts[2] ?? '';
 
-function getTitle(songId, mTbl) {
-    const tr = mTbl.map.get(Number(songId));
-    if (!tr) return `不明(ID:${songId})`;
-
-    const td = tr.querySelector('[data-fld="title"]');
-    const ttl = td ? td.textContent.trim() : '';
-    return ttl || `不明(ID:${songId})`;
+    if (!p1 || n === 0) {
+        return `${p0}…${p2}`;
+    }
+    if (p1.length <= n) {
+        return `${p0}${p1}${p2}`;
+    }
+    return `${p0}${p1.slice(0, n)}…${p2}`;
 }
 
+/**
+ * テーブル幅の自動調整（3フェーズ）
+ * @param {HTMLElement} tbl - mkMinTblで生成されたテーブル
+ * @param {Array} cols - CD列の情報(cdNamePartsを含む)
+ * @param {Object} env - 画面幅(limitW)など
+ * @param {Map} partsMap - mIDからpartsを引き出すためのMap
+ */
+function adjustTbl(tbl, cols, env, partsMap) {
+    const { limitW } = env;
+    const styleObj = window.getComputedStyle(tbl);
+    const padX = parseFloat(styleObj.getPropertyValue('--th-padx')) || 8;
+
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+
+    const thStyle = window.getComputedStyle(tbl.querySelector('th'));
+    const rowTds = Array.from(tbl.querySelectorAll('tbody td.row-head'));
+    const tdStyle = window.getComputedStyle(rowTds[0]);
+
+    /* =========================
+     * フェーズ1：共通基準幅
+     * ========================= */
+
+    ctx.font = `${tdStyle.fontWeight} ${tdStyle.fontSize} ${tdStyle.fontFamily}`;
+    const minRowW = fixMaxRowW(displayRows, 0, ctx) + padX;
+
+    // ★ minRowW の値
+    console.log('[adjustTbl][phase1] minRowW =', minRowW);
+
+    ctx.font = `${thStyle.fontWeight} ${thStyle.fontSize} ${thStyle.fontFamily}`;
+    let bestW = 0;
+    let bestN = 0;
+
+    for (let n = 0; n <= 15; n++) {
+        const maxW = fixMaxW(cols, n, ctx);
+        const tw = minRowW + (maxW + padX) * cols.length;
+
+        // ★ n と maxW のペア
+        console.log('[adjustTbl][phase1] n / maxW =', n, maxW);
+
+        if (tw > limitW && n > 0) {
+            console.log('[adjustTbl][phase1] break: tw > limitW', { n, tw, limitW });
+            break;
+        }
+
+        bestW = maxW;
+        bestN = n;
+
+        if (cols.every(c => !c.cdNameParts || n >= c.cdNameParts[1].length)) {
+            console.log('[adjustTbl][phase1] break: all cdNameParts satisfied at n =', n);
+            break;
+        }
+    }
+
+    // ★ bestN / bestW
+    console.log('[adjustTbl][phase1] bestN / bestW =', bestN, bestW);
+
+    /* =========================
+     * フェーズ2：CD列個別最適化
+     * ========================= */
+
+    let currentTw = minRowW;
+    console.log('[adjustTbl][phase2] start currentTw =', currentTw);
+
+    cols.forEach(col => {
+        const th = tbl.querySelector(`th[data-cdid="${col.cdId}"]`);
+        if (!th) return;
+
+        const individualN = col.cdNameParts
+            ? findBestN(col.cdNameParts, bestW, ctx)
+            : 0;
+
+        const cw = col.cdNameParts
+            ? msrWithN(col.cdNameParts, individualN, ctx)
+            : msrW(col.cdName, ctx);
+
+        currentTw += cw + padX;
+
+        console.log('[adjustTbl][phase2] col result', { cdId: col.cdId, individualN, cw, currentTw });
+
+        th.querySelector('div').textContent = col.cdNameParts
+            ? mkNameByParts(col.cdNameParts, individualN)
+            : col.cdName;
+    });
+
+    /* =========================
+     * フェーズ3：曲名側へ余白還元
+     * ========================= */
+
+    ctx.font = `${tdStyle.fontWeight} ${tdStyle.fontSize} ${tdStyle.fontFamily}`;
+    let finalRowMaxW = minRowW - padX;
+
+    for (let n = 1; n <= 15; n++) {
+        const rowMaxW = fixMaxRowW(displayRows, n, ctx);
+        const totalW = currentTw - (minRowW - padX) + rowMaxW;
+        const ok = totalW <= limitW;
+
+        // ★ 各値と判定結果
+        console.log('[adjustTbl][phase3] check', { n, rowMaxW, totalW, limitW, ok });
+
+        if (!ok) break;
+
+        finalRowMaxW = rowMaxW;
+
+        if (displayRows.every(r => !r.parts || n >= r.parts[1].length)) {
+            console.log('[adjustTbl][phase3] break: all row parts satisfied at n =', n);
+            break;
+        }
+    }
+
+    rowTds.forEach(td => {
+        const mID = Number(td.dataset.mid);
+        const parts = partsMap.get(mID);
+        if (parts) {
+            const indN = findBestN(parts, finalRowMaxW, ctx);
+            td.textContent = mkNameByParts(parts, indN);
+        }
+    });
+    return tbl;
+}
 
 function renderTbl(tbl) {
     console.log('[result] renderTbl');
 
-    const wrapper = document.querySelector(
-        '#resultArea .table-wrapper'
-    );
+    const wrapper = document.querySelector('#resultArea .table-wrapper');
 
-    // 念のため：wrapper が無いケースは無視
-    if (!wrapper) return;
-
-    // table は既に DOM 上にある前提なので、
-    // ここでは「見せる」だけ
+    // DOM上にあるtblを「見せる」だけ
     wrapper.style.display = '';
+
+    // 結果エリアまで自動スクロール
+    document.getElementById('resultArea')
+        .scrollIntoView({ behavior: 'smooth' });
 
     return tbl;
 }

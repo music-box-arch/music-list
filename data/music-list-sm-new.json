@@ -14,7 +14,12 @@
     "spf": "https://open.spotify.com/track/0PsWoWbnsjQWnak0ESfYTB",
     "apl": "https://music.apple.com/jp/album/310970395?i=310970419",
     "itn": "https://itunes.apple.com/jp/album/310970395?i=310970419&app=itunes",
-    "lrc": "https://www.uta-net.com/song/78831/"
+    "lrc": "https://www.uta-net.com/song/78831/",
+    "parts": [
+      "MR.",
+      "アンディ -",
+      "party style-"
+    ]
   },
   {
     "mID": 87,
@@ -31,7 +36,12 @@
     "spf": "https://open.spotify.com/track/789qMWni5aMixbI4E5bSbN",
     "apl": "https://music.apple.com/jp/album/1016336570?i=1016336575",
     "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336575&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "フルカ",
+      "ラープログラム",
+      " DAstyle"
+    ]
   },
   {
     "mID": 89,
@@ -48,7 +58,12 @@
     "spf": "https://open.spotify.com/track/75s2DIRY0jFfkJRI0VwIVJ",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093266&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "ガリレ",
+      "オのショーケース",
+      " DAstyle"
+    ]
   },
   {
     "mID": 90,
@@ -65,7 +80,12 @@
     "spf": "https://open.spotify.com/track/2fhHVtxrKSSo2riQU69bjB",
     "apl": "https://music.apple.com/jp/album/1016336570?i=1016336578",
     "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336578&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "23:",
+      "25",
+      " DAmix"
+    ]
   },
   {
     "mID": 92,
@@ -82,7 +102,12 @@
     "spf": "https://open.spotify.com/track/7rHfpEp66AMucKxNnzD3PN",
     "apl": "https://music.apple.com/jp/album/1016336570?i=1016336580",
     "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336580&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "kid, I l",
+      "ike quartet",
+      " DAmix"
+    ]
   },
   {
     "mID": 93,
@@ -99,7 +124,12 @@
     "spf": "https://open.spotify.com/track/4lsr2reyebKMrEI6MygShD",
     "apl": "https://music.apple.com/jp/album/1016336570?i=1016336581",
     "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336581&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "誰かが",
+      "忘れているかもしれない僕らに大事な001のこと",
+      " DAmix"
+    ]
   },
   {
     "mID": 94,
@@ -116,7 +146,12 @@
     "spf": "https://open.spotify.com/track/03XdlVWevtlnwyor1V0gOy",
     "apl": "https://music.apple.com/jp/album/1016336570?i=1016336584",
     "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336584&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "未完成",
+      "デイジー",
+      " DAmix"
+    ]
   },
   {
     "mID": 95,
@@ -133,7 +168,12 @@
     "spf": "https://open.spotify.com/track/3fS9dpr9PhIx4cGelrlaQl",
     "apl": "https://music.apple.com/jp/album/1016336570?i=1016336646",
     "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336646&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "場違い",
+      "ハミングバード",
+      " DAmix"
+    ]
   },
   {
     "mID": 96,
@@ -150,7 +190,12 @@
     "spf": "https://open.spotify.com/track/089OV4ewKgjWZYSmXq0ZMF",
     "apl": "https://music.apple.com/jp/album/1016336570?i=1016336647",
     "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336647&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "箱庭",
+      "ロック・ショー",
+      " DAstyle"
+    ]
   },
   {
     "mID": 97,
@@ -167,7 +212,12 @@
     "spf": "https://open.spotify.com/track/2Yh6S9FecdKx4inmBGJ2Zj",
     "apl": "https://music.apple.com/jp/album/1016336570?i=1016336648",
     "itn": "https://itunes.apple.com/jp/album/1016336570?i=1016336648&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "クロー",
+      "バー",
+      " DAmix"
+    ]
   },
   {
     "mID": 143,
@@ -184,7 +234,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093265&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "5分後",
+      "のスターダスト",
+      " BCstyle"
+    ]
   },
   {
     "mID": 144,
@@ -201,7 +256,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093267&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "一人",
+      "思うは雨の中",
+      " BCmix"
+    ]
   },
   {
     "mID": 145,
@@ -218,7 +278,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093268&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "スノウリ",
+      "バース",
+      " BCstyle"
+    ]
   },
   {
     "mID": 146,
@@ -235,7 +300,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093269&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "ギャク",
+      "テンサヨナラ",
+      " BCstyle"
+    ]
   },
   {
     "mID": 147,
@@ -252,7 +322,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093270&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "空の飛",
+      "び方",
+      " BCmix"
+    ]
   },
   {
     "mID": 148,
@@ -269,7 +344,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093271&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "僕は君",
+      "になりたい",
+      " BCmix"
+    ]
   },
   {
     "mID": 149,
@@ -286,7 +366,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093272&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "UNO",
+      "ストーリー",
+      " BCmix"
+    ]
   },
   {
     "mID": 150,
@@ -303,7 +388,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093273&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "over",
+      " driver",
+      " BCmix"
+    ]
   },
   {
     "mID": 151,
@@ -320,7 +410,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093274&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "さよならサ",
+      "マータイムマシン",
+      " BCmix"
+    ]
   },
   {
     "mID": 152,
@@ -337,7 +432,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093277&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "三日月",
+      "の夜の真ん中",
+      " BCmix"
+    ]
   },
   {
     "mID": 153,
@@ -354,7 +454,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093279&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "ノンフ",
+      "ィクションコンパス",
+      " BCmix"
+    ]
   },
   {
     "mID": 154,
@@ -371,7 +476,12 @@
     "spf": "",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1471093264?i=1471093283&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "I wan",
+      "na believe、夜を行く",
+      " BCmix"
+    ]
   },
   {
     "mID": 195,
@@ -388,7 +498,12 @@
     "spf": "https://open.spotify.com/track/3XMVfayU5fdOonT3VCJ5uq",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029320&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "センチ",
+      "メンタルピリオド",
+      " SBstyle"
+    ]
   },
   {
     "mID": 196,
@@ -405,7 +520,12 @@
     "spf": "https://open.spotify.com/track/0UYflwgkLU7voQxgksOwPC",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029323&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "マスタ",
+      "ーボリューム",
+      " SBstyle"
+    ]
   },
   {
     "mID": 197,
@@ -422,7 +542,12 @@
     "spf": "https://open.spotify.com/track/5x3Y7IScRTij6kgWmJOCUV",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029612&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "MR.",
+      "アンディ",
+      " SBstyle"
+    ]
   },
   {
     "mID": 198,
@@ -439,7 +564,12 @@
     "spf": "https://open.spotify.com/track/1CWJqdXIS7tAasX0DNhF12",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029617&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "cody b",
+      "eats",
+      " SBstyle"
+    ]
   },
   {
     "mID": 199,
@@ -456,7 +586,12 @@
     "spf": "https://open.spotify.com/track/1WDV68IWZ8ZU0B5knIxBR2",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029619&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "スカー",
+      "スデイル",
+      " SBstyle"
+    ]
   },
   {
     "mID": 200,
@@ -473,7 +608,12 @@
     "spf": "https://open.spotify.com/track/3vteFL2S37THxzPyKB6fOI",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029624&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "オリオ",
+      "ンをなぞる",
+      " SBstyle"
+    ]
   },
   {
     "mID": 201,
@@ -490,6 +630,11 @@
     "spf": "https://open.spotify.com/track/4dssz7UzzrhydlshdsTrB9",
     "apl": "",
     "itn": "https://itunes.apple.com/jp/album/1758029307?i=1758029693&app=itunes",
-    "lrc": ""
+    "lrc": "",
+    "parts": [
+      "流星の",
+      "スコール",
+      " SBmix"
+    ]
   }
 ]
