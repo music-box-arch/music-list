@@ -129,7 +129,7 @@ function createHandler(def) {
 }
 
 // 実行する時は await waitReady(() => mTblReady); の形
-async function waitReady(flag, interval = 30) {
+export async function waitReady(flag, interval = 20) {
     while (!flag()) {
         await new Promise(r => setTimeout(r, interval));
     }

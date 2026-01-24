@@ -5,6 +5,9 @@ const { state, mTbl, chkStates, readJson, mkRow, logMapKeys } = await import(add
 // ローカル短縮
 const { cs, csBk } = chkStates;
 
+// result-new.jsに出荷するsmJsonをキャッシュして時間短縮
+let cachedSmJson = null;
+
 // 汎用関数applyView関連
 async function applyView() {
     console.log('applyViewのはじまり');
@@ -109,7 +112,7 @@ async function applySm(isChecked, mode) {
 async function addSm(mode) {
     console.log('addSm');
 
-    const mlSmJson = await readJson('data/music-list-sm-new.json');
+    const mlSmJson = await getSmJson();
     const tpl = document.getElementById('tmp-main-row');
 
     mlSmJson.forEach(item => {
@@ -125,6 +128,13 @@ async function addSm(mode) {
         mTbl.map.set(item.mID, newTr);
     });
     logMapKeys('[mTbl.map] after ON', mTbl.map);
+}
+// DIはここでしかしないので敢えて汎用性のない名前
+export async function getSmJson() {
+    if (!cachedSmJson) {
+        cachedSmJson = await readJson('data/music-list-sm-new.json');
+    }
+    return cachedSmJson;
 }
 function removeSm(mode) {
     console.log('removeSm');

@@ -96,7 +96,7 @@ adjustTbl設計
 ### 準備フェーズ←けっこうそのまま
 ただし、
 5. 表示対象行データ作成 で作成するmapは `titleMap` という名前にする。
-6. また、CD名のほうも、colsからcd-group-idで引けるように同じ形のmapを作り、cdPartsMapとする。
+6. また、CD名のほうも、colsからcd-group-idで引けるように同じ形のmapを作り、cdNameMapとする。
 
 ### フェーズ1：行ヘッダの最小表示での幅を求める
 - csに入ってる各mIDについて、「曲名(行ヘッダになる)の最小表示」を求める。
@@ -144,40 +144,14 @@ adjustTbl は以下の6フェーズで構成される。
 フェーズ4（行ヘッダ表示の決定）
 フェーズ5（DOM反映・return）
 
+## 注意事項
+各ステップで「0-1 limitW = XXX」みたいな数値がログに出るようにしてほしい。
+ログは一行で収まるようにお願いします。
+
 ## ヘルパー関数
 - mkNameByN(parts, n)：今までのmkNameByPartsを、mkNameByNに変更。
-    疑似コード```
-        // parts と n から表示用文字列を作る
-        function mkNameByN(parts, n) {
-            p0 = parts[0] or ''
-            p1 = parts[1] or ''
-            p2 = parts[2] or ''
 
-            if p1 is empty or n == 0:
-                return p0 + '…' + p2
-
-            if length(p1) <= n:
-                return p0 + p1 + p2
-
-            return p0 + slice(p1, 0, n) + '…' + p2
-        }```
-
-- msrMaxNameW(idsOrMap, partsMap, n, ctx)：複数のidの束、map、nの値を渡して、渡されたすべてのidについて、mapのpartsとnの値からmkNameByNをして幅を測り、最大の値を返す関数。
-    疑似コード```
-        // 複数IDについて、n指定時の最大文字幅を返す
-        function msrMaxNameW(idsOrMap, partsMap, n, ctx) {
-            maxW = 0
-
-            for each id in idsOrMap:
-                parts = partsMap.get(id)
-                if parts is null: continue
-
-                name = mkNameByN(parts, n)
-                w = ctx.measureText(name).width
-                maxW = max(maxW, w)
-
-            return maxW
-        }```
+- msrMaxNameW(ids, partsMap, n, ctx)：複数のidの束、map、nの値を渡して、渡されたすべてのidについて、mapのpartsとnの値からmkNameByNをして幅を測り、最大の値を返す関数。
 
 - findBestName(parts, limitW, ctx)：1つのparts(CD名partsや曲名parts)と限界幅を渡して、mkNameByNを回し、「限界幅にぎりぎり収まる文字列」を返す関数。
     疑似コード```
@@ -225,25 +199,25 @@ adjustTbl は以下の6フェーズで構成される。
                 part: item.hasOwnProperty('parts') ? item.parts : null
             }
 
-0-6. 列ヘッダ用 map 作成（CD名）cdPartsMap
+0-6. 列ヘッダ用 map 作成（CD名）cdNameMap
 - allDiscs から cd-group-id を key にした map を作成
   value:
     - cdName（フル文字列）
     - parts（cd-name-parts）
-- この map を cdPartsMap とする
+- この map を cdNameMap とする
 
 ## フェーズ1（行ヘッダ最小表示幅の算出）
 
-1-1. baseRowHW を 0 で初期化
+1-1. baseTitleW を 0 で初期化
 
 1-2. cs に含まれる各 mID についてループ
 - titleMap から parts を取得
 - mkNameByN(parts, 0) で最小表示文字列を生成
 - ctx で文字幅を計測
-- 最大値を baseRowHW に保持
+- 最大値を baseTitleW に保持
 
-1-3. baseRowHW に thPadX を加算
-- baseRowHW += thPadX
+1-3. baseTitleW に thPadX を加算
+- baseRowHW = baseTitleW + thPadX;
 
 1-4. baseRowHW をログ出力
 
@@ -253,7 +227,7 @@ adjustTbl は以下の6フェーズで構成される。
 
 2-2. n = 0 から 15 までループ
 - n をログ出力
-- cdPartsMap 全体に対して msrMaxNameW を実行
+- cdNameMap 全体に対して msrMaxNameW を実行
   - n を指定して最大文字幅 maxCdNameW を取得
 - maxCdNameW をログ出力
 - curTblW = baseRowHW + (maxCdNameW + thPadX) * 列ヘッダ数
@@ -267,12 +241,12 @@ adjustTbl は以下の6フェーズで構成される。
 
 ## フェーズ3（列ヘッダ表示の決定）
 
-3-1. 空の map cdNamesMap を作成
+3-1. 空の map cdNameDispMap を作成
 
 3-2. 各列ヘッダ（cd-group-id）について
-- cdPartsMap から parts を取得
-- findBestName(parts, bestCdNameW) を実行
-- 戻り値の文字列を cdNamesMap に保存
+- cd-group-idでcdNameMapをひく
+- findBestName(obj, bestCdNameW, ctx) を実行
+- 戻り値の文字列を cdNameDispMap(cd-group-idをkeyとして、文字列をひけるように) に保存
 
 ## フェーズ4（行ヘッダ表示の決定）
 
@@ -282,20 +256,20 @@ adjustTbl は以下の6フェーズで構成される。
 4-2. 行ヘッダ用の限界幅 rowHW を算出
 - rowHW = limitW - colsW - thPadX
 
-4-3. 空の map titlesMap を作成
+4-3. 空の map titleDispMap を作成
 
 4-4. cs に含まれる各 mID について
-- titleMap から parts を取得
-- findBestName(parts, rowHW) を実行
-- 戻り値の文字列を titlesMap に保存
+- mIDでtitleMapをひく
+- findBestName(obj, rowHW, ctx) を実行
+- 戻り値の文字列を titleDispMap(mIDをkeyとして、文字列をひけるように) に保存
 
 ## フェーズ5（DOM反映・return）
 
 5-1. 列ヘッダ（th）に表示を反映
-- 各 th に対して cdNamesMap の文字列を textContent に設定
+- 各 th(thがdata-cdidとしてcd-group-idを持ってるので) に対して cdNameDispMap の文字列を textContent に設定
 
 5-2. 行ヘッダ（td.row-head）に表示を反映
-- 各 td.row-head に対して titlesMap の文字列を textContent に設定
+- 各 td.row-head (thがdata-midとしてmIDを持ってるので) に対して titleDispMap の文字列を textContent に設定
 
 5-3. 調整済み table を return
 
