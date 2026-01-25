@@ -19,7 +19,7 @@ const { state, chkStates, mTbl, mkLink, readJson, mlJsonData, waitReady } = awai
 // ローカル短縮
 const { cs, csBk } = chkStates;
 
-let resultContext = null;
+let resultCtx = null;
 
 export async function showResult() {
     console.log('showResult is called');
@@ -68,19 +68,18 @@ export async function showResult() {
     });
 
     const resultData = await mkResultData(cs, mTbl, allDiscs);
-
     const env = await measureEnv();
-
-    resultContext = { resultData, titleMap, cdNameMap, env };
-
-    const cdType = getCdType();
-    const cdTypeData = applyCdType(resultData, cdType);
-    const resultMinTbl = mkMinTbl(cdTypeData, cdNameMap);
-
-    const adjustedTbl = adjustTbl(resultMinTbl, cdTypeData.cols, env, titleMap, cdNameMap);
-    renderTbl(adjustedTbl);
+    resultCtx = { resultData, titleMap, cdNameMap, env };
+    drawByCdType();
 }
 function drawByCdType() {
+    const cdType = getCdType();
+    const cdTypeData = applyCdType(resultCtx.resultData, cdType);
+
+    const resultMinTbl = mkMinTbl(cdTypeData, resultCtx.cdNameMap);
+
+    const adjustedTbl = adjustTbl(resultMinTbl, cdTypeData.cols, resultCtx.env, resultCtx.titleMap, resultCtx.cdNameMap);
+    renderTbl(adjustedTbl);
 
 }
 async function measureEnv() {
