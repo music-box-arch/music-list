@@ -18,8 +18,7 @@ async function applyView() {
     // 2. style / mix のチェック状態を読む
     await applyChk('shStChk', applySm, 'style');
     await applyChk('shMxChk', applySm, 'mix');
-    await applyChk('chkSb', applySubNo);
-    // （この後にsearch / chkOnly を続けていく想定）
+    // await applyChk('chkSb', applySubNo);
     const shouldDisplay = calcShouldDisplay();
     renderDisplay(shouldDisplay);
 
@@ -81,7 +80,7 @@ function getCs() {
     console.log(`getCs : ${cs}`);
 }
 function setEventListener() {
-    document.addEventListener('change', async (e) => {
+    document.addEventListener('change', e => {
         const el = e.target;
         if (!el.classList.contains('chk')) return;
 
@@ -90,7 +89,6 @@ function setEventListener() {
 
         updCs(id, el.checked);
         console.log(`cs updated : ${cs} `);
-        await new Promise(resolve => setTimeout(resolve, 200));
         applyView();
     });
 }
@@ -187,6 +185,7 @@ export async function subNoFn(e) {
     if (!state.isSyncing) { startSync(); }
 
     console.log(`subNoFn is called: csLen=${cs.length}, cs=[${cs}], csBk=[${csBk}]`);
+    await applySubNo(e.target.checked);
     applyView();
 }
 async function applySubNo(isChecked) {
@@ -250,7 +249,7 @@ function calcShouldDisplay() {
 
     if (document.getElementById('shChkOnly')?.checked) {
         console.log('csのみを返します');
-        //return new Set(cs);
+        // return new Set(cs);
         //下の部分は、上1行のデバッグバージョン
         const resultSet = new Set(cs);
         console.log(Array.from(resultSet)); // Setの内容を配列として出力
