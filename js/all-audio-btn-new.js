@@ -20,7 +20,9 @@ const AUD_UI_IDS = [
 
 const AUD_UI_SELECTORS = [
     '.clearAllChecksBtn',                 // チェックをオールクリア
+    '.clearAllBtn',
     '.showDiscsButton',                   // チェックした曲を含むCDを見る（上下）
+    '.showResultBtn',
     '.tab-btn[data-tab="setlist"]',       // セトリタブ
     '#musicTbl .chk',                     // 曲チェックボックス群
     '#shStChk',                           // style(再録音)

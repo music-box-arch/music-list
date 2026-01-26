@@ -81,7 +81,7 @@ function getCs() {
     console.log(`getCs : ${cs}`);
 }
 function setEventListener() {
-    document.addEventListener('change', e => {
+    document.addEventListener('change', async (e) => {
         const el = e.target;
         if (!el.classList.contains('chk')) return;
 
@@ -90,6 +90,8 @@ function setEventListener() {
 
         updCs(id, el.checked);
         console.log(`cs updated : ${cs} `);
+        await new Promise(resolve => setTimeout(resolve, 200));
+        applyView();
     });
 }
 
@@ -248,7 +250,11 @@ function calcShouldDisplay() {
 
     if (document.getElementById('shChkOnly')?.checked) {
         console.log('csのみを返します');
-        return new Set(cs);
+        //return new Set(cs);
+        //下の部分は、上1行のデバッグバージョン
+        const resultSet = new Set(cs);
+        console.log(Array.from(resultSet)); // Setの内容を配列として出力
+        return resultSet;
     }
     console.log('nullを返します');
     return null; // 全表示

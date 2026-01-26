@@ -1,5 +1,5 @@
 // バージョン定義
-window.updVer = '20260120';
+window.updVer = '20260125';
 
 // 1. グローバル変数（最小限）
 let lazy = false; // lazyload済フラグ

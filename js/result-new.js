@@ -68,10 +68,22 @@ export async function showResult() {
     });
 
     const resultData = await mkResultData(cs, mTbl, allDiscs);
+    setupCdType();
     const env = await measureEnv();
     resultCtx = { resultData, titleMap, cdNameMap, env };
     drawByCdType();
 }
+const setupCdType = (() => {
+    let done = false;
+    return () => {
+        if (done) return;
+
+        document.querySelectorAll('#resultCdTypeFilter input[name="resultCdType"]')
+            .forEach(r => r.addEventListener('change', drawByCdType));
+        done = true;
+    };
+})();
+
 function drawByCdType() {
     const cdType = getCdType();
     const cdTypeData = applyCdType(resultCtx.resultData, cdType);
@@ -444,7 +456,9 @@ async function adjustTbl(tbl, cols, env, titleMap, cdNameMap) {
     console.log(`[adjustTbl][4] titleDispMap size=${titleDispMap.size}`);
 
     // ===== フェーズ5：DOM反映・return =====
-
+    // 5-0. ここでCSSを反映
+    tbl.style.setProperty('--rowH-width', `${rowHW}px`);
+    tbl.style.setProperty('--col-width', `${bestCdNameW + thPadX}px`);
     // 5-1. 列ヘッダ（th）に表示を反映
     const thList = tbl.querySelectorAll('thead th[data-cdid]');
     thList.forEach(th => {

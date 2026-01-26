@@ -59,6 +59,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: var(--rowHW);
 }
 
 #resultTbl thead th:not(:first-child) {
@@ -66,6 +67,6 @@
        具体的な数値ではなく 1% のような小さな値を指定すると、
        table-layout: fixed の性質により、残りの幅を各列が均等に分け合います。
     */
-    width: 30px;
+    width: var(--col-width);
     /* ある程度の幅を確保しつつ等間隔にする */
 }
