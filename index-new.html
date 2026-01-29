@@ -2,953 +2,636 @@
 <html lang="ja">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>ユニゾン曲リスト(非公式)</title>
+    <title>ユニゾン曲リスト(非公式)</title>
 
-        <meta name="description" content="UNISON SQUARE GARDENの聴きたい曲がどこで入手できるか調べられるサイト。サブスクにない曲のみも検索可能。">
+    <meta name="description" content="UNISON SQUARE GARDENの聴きたい曲がどこで入手できるか調べられるサイト。サブスクにない曲のみも検索可能。">
 
-        <!-- OGP / Twitter -->
-        <meta property="og:title" content="ユニゾン曲リスト(非公式)">
-        <meta property="og:description" content="UNISON SQUARE GARDENの聴きたい曲がどこで入手できるか調べられるサイト。サブスクにない曲のみも検索可能。">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://music-list.com/">
-        <meta property="og:image" content="https://music-list.com/img/og-image.png">
-        <meta property="og:site_name" content="ユニゾン曲リスト(非公式)">
-        <meta name="twitter:card" content="summary_large_image">
+    <!-- OGP / Twitter -->
+    <meta property="og:title" content="ユニゾン曲リスト(非公式)">
+    <meta property="og:description" content="UNISON SQUARE GARDENの聴きたい曲がどこで入手できるか調べられるサイト。サブスクにない曲のみも検索可能。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://music-list.com/">
+    <meta property="og:image" content="https://music-list.com/img/og-image.png">
+    <meta property="og:site_name" content="ユニゾン曲リスト(非公式)">
+    <meta name="twitter:card" content="summary_large_image">
 
-        <link rel="canonical" href="https://music-list.com/">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="canonical" href="https://music-list.com/">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "ユニゾン曲リスト(非公式)",
-            "url": "https://music-list.com",
-            "description": "UNISON SQUARE GARDENの全曲リスト。サブスク配信情報、CD収録情報を網羅",
-            "inLanguage": "ja",
-            "author": {
-                "@type": "Organization",
-                "name": "ユニゾン曲リスト(非公式)"
-            },
-            "about": {
-                "@type": "MusicGroup",
-                "name": "UNISON SQUARE GARDEN",
-                "genre": ["Rock", "J-Pop"]
-            }
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ユニゾン曲リスト(非公式)",
+        "url": "https://music-list.com",
+        "description": "UNISON SQUARE GARDENの全曲リスト。サブスク配信情報、CD収録情報を網羅",
+        "inLanguage": "ja",
+        "author": {
+            "@type": "Organization",
+            "name": "ユニゾン曲リスト(非公式)"
+        },
+        "about": {
+            "@type": "MusicGroup",
+            "name": "UNISON SQUARE GARDEN",
+            "genre": ["Rock", "J-Pop"]
         }
+    }
     </script>
 
-        <style>
-                /* === ベースレイアウト === */
-                html {
-                        font-size: 14px;
-                        line-height: 1.8;
-                        font-family: system-ui, sans-serif;
-                        color: #333;
-                }
+    <style>
+        /* === ベースレイアウト === */
+        html {
+            font-size: 14px;
+            line-height: 1.8;
+            font-family: system-ui, sans-serif;
+            color: #333;
+        }
 
-                body {
-                        min-height: 100vh;
-                        margin: 2em;
-                        padding: 0 .5rem;
-                        background-color: #fafcff;
-                }
+        body {
+            min-height: 100vh;
+            margin: 2em;
+            padding: 0 .5rem;
+            background-color: #fafcff;
+        }
 
-                header {
-                        padding-bottom: 1.5em;
-                }
+        header { padding-bottom: 1.5em;}
 
-                a {
-                        color: #005DEA;
-                }
+        a { color: #005DEA;}
+        a:visited { color: #8A74A5; }
 
-                a:visited {
-                        color: #8A74A5;
-                }
+        .btn,
+        p {
+                margin: 2px 0;
+        }
 
-                .btn,
-                p {
-                        margin: 2px 0;
-                }
+        h1 {
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 500;
+                color: #555d65;
+                flex-shrink: 0;
+                padding: 1.1em .9em;
+                border-top: 1.5px solid #ccc;
+                border-bottom: 1.5px solid #ccc;
+        }
 
-                h1 {
-                        display: inline-block;
-                        font-size: 16px;
-                        font-weight: 500;
-                        color: #555d65;
-                        flex-shrink: 0;
-                        padding: 1.1em .9em;
-                        border-top: 1.5px solid #ccc;
-                        border-bottom: 1.5px solid #ccc;
-                }
+        h2 {
+            font-size: 14px;
+            margin: 5px 0;
+        }
 
-                h2 {
-                        font-size: 14px;
-                        margin: 5px 0;
-                }
+        .tbl {
+            border-collapse: collapse;
+            width: 100%;
+            background: #fff;
+            min-width: 600px;
 
-                .tbl {
-                        border-collapse: collapse;
-                        width: 100%;
-                        background: #fff;
-                        min-width: 600px;
-                }
+            & th, & td {
+                border: 1px solid #ccd;
+                padding: .4em;
+                text-align: left;
+            }
+            & th {
+                background: #f3f8fc;
+                font-weight: normal;
+            }
+            & tr:nth-child(even) { background: #f7fafd; }
+            /* 小さいフォント用クラス（.tbl .small） */
+            & .small { font-size: 12px; }
+        }
 
-                .tbl th,
-                .tbl td {
-                        border: 1px solid #ccd;
-                        padding: .4em;
-                        text-align: left;
-                }
+        input[type="checkbox"] {
+                width: 16px;
+                height: 16px;
+                vertical-align: middle;
+        }
 
-                .tbl th {
-                        background: #f3f8fc;
-                        font-weight: normal;
-                }
+        .table-wrapper {
+            overflow-x: auto;
+            width: 100%;
+        }
 
-                .tbl tr:nth-child(even) {
-                        background: #f7fafd;
-                }
+        .tab-container { margin: 1em 0; }
 
-                /* 小さいフォント用クラス */
-                .tbl .small {
-                        font-size: 12px;
-                }
+        .tab-buttons {
+                display: flex;
+                border-bottom: 2px solid #ccd;
+                margin-bottom: 1em;
+        }
 
-                input[type="checkbox"] {
-                        width: 16px;
-                        height: 16px;
-                        vertical-align: middle;
-                }
+        .tab-btn {
+            padding: 8px 16px;
+            border: 1px solid #ccd;
+            border-bottom: none;
+            background: #f3f8fc;
+            color: #2564ad;
+            cursor: pointer;
+            margin-right: 2px;
+            font-size: 14px;
+        }
 
-                .table-wrapper {
-                        overflow-x: auto;
-                        width: 100%;
-                }
+        .tab-btn.active {
+            background: #fff;
+            border-bottom: 2px solid #fff;
+            margin-bottom: -2px;
+            font-weight: bold;
+        }
 
-                .tab-container {
-                        margin: 1em 0;
-                }
+        .tab-btn:hover:not(.active) {
+            background: #e8f0fa;
+        }
 
-                .tab-buttons {
-                        display: flex;
-                        border-bottom: 2px solid #ccd;
-                        margin-bottom: 1em;
-                }
+        .tab-content {
+            display: none;
+        }
 
-                .tab-btn {
-                        padding: 8px 16px;
-                        border: 1px solid #ccd;
-                        border-bottom: none;
-                        background: #f3f8fc;
-                        color: #2564ad;
-                        cursor: pointer;
-                        margin-right: 2px;
-                        font-size: 14px;
-                }
+        .tab-content.active {
+            display: block;
+        }
+        
+         /* #musicTbl {
+            table-layout: fixed;
+            & th:nth-child(1) { width: 3ch; }
+            & th:nth-child(2) { width: 40vw;}
+            & th:nth-child(3) { width: 3ch; }
+            & th:nth-child(4) { width: 3ch; }
+            & th:nth-child(5), & th:nth-child(6), & th:nth-child(7) { width: 3ch; }
+            & th:nth-child(8) { width: 2ch; }
+            & th:nth-child(9) { width: 7ch; }
+            & th:nth-child(10) { width: 10ch; }
+            & th:nth-child(11) { width: 2ch; }
+            & th:nth-child(12) { width: 6ch; }
+            & th, & td {
+                padding: 4px;
+                white-space: normal;
+                overflow-wrap: break-word;
+                word-break: break-all;
+                vertical-align: middle;
+                line-height: 1.6;
+            }
+        } */
 
-                .tab-btn.active {
-                        background: #fff;
-                        border-bottom: 2px solid #fff;
-                        margin-bottom: -2px;
-                        font-weight: bold;
-                }
+        #audMdTgl {
+            padding-bottom: 1em;
+        }
 
-                .tab-btn:hover:not(.active) {
-                        background: #e8f0fa;
-                }
+        #btns-wrap {
+            display: flex;
+            gap: 12px;
+        }
 
-                .tab-content {
-                        display: none;
-                }
+        #setlist-controls { margin-bottom: 1em; }
 
-                .tab-content.active {
-                        display: block;
-                }
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #007cba;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 16px;
+            display: none;
+            z-index: 999;
+            opacity: .8;
+        }
 
-                #audMdTgl {
-                        padding-bottom: 1em;
-                }
+        #back-to-top.show { display: inline-block; }
 
-                #btns-wrap {
-                        display: flex;
-                        gap: 12px;
-                }
+        .shareWrap {
+            text-align: right;
+            font-size: 13px;
+        }
 
-                #setlist-controls {
-                        margin-bottom: 1em;
-                }
+        .hidden { display: none; }
 
-                #back-to-top {
-                        position: fixed;
-                        bottom: 20px;
-                        right: 20px;
-                        background: #007cba;
-                        color: white;
-                        padding: 8px 12px;
-                        border-radius: 4px;
-                        text-decoration: none;
-                        font-size: 16px;
-                        display: none;
-                        z-index: 999;
-                        opacity: .8;
-                }
+        .shareWrap .shareBtn {
+            display: inline-block;
+            background-color: #4ca7e0;
+            color: white;
+            padding: .4em .6em;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 12px;
+        }
 
-                #back-to-top.show {
-                        display: inline-block;
-                }
+        @media (max-width: 600px) {
+            body {
+                margin: 0;
+                padding: .2em;
+            }
 
-                .shareWrap {
-                        text-align: right;
-                        font-size: 13px;
-                }
+            .tbl th,
+            .tbl td {
+                padding: .2em .4em;
+            }
+        }
 
-                .hidden {
-                        display: none;
-                }
-
-                .shareWrap .shareBtn {
-                        display: inline-block;
-                        background-color: #4ca7e0;
-                        color: white;
-                        padding: .4em .6em;
-                        border-radius: 4px;
-                        text-decoration: none;
-                        font-size: 12px;
-                }
-
-                @media (max-width: 600px) {
-                        body {
-                                margin: 0;
-                                padding: .2em;
-                        }
-
-                        .tbl th,
-                        .tbl td {
-                                padding: .2em .4em;
-                        }
-                }
-
-                @media (max-width: 400px) {
-                        #btns-wrap {
-                                flex-direction: column;
-                                gap: 8px;
-                        }
-                }
-        </style>
+        @media (max-width: 400px) {
+            #btns-wrap {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-        <header>
-                <div id="tp">
-                        <h1>ユニゾン曲リスト(非公式)</h1>
+    <header>
+        <div id="tp">
+            <h1>ユニゾン曲リスト(非公式)</h1>
+        </div>
+            <p>UNISON SQUARE GARDENの全曲リストをサブスクの有無を含めて一覧でまとめています。サブスクにない曲の一覧も。詳しい使い方は<a href="about.html">こちら</a>をご覧ください。<a href="articles.html">ブログ記事</a>もあるよ。（<a href="about.html#policy">運営ポリシー</a>）<br>[PR表記]当サイトは一部にアフィリエイトを含みます。</p>
+    </header>
+    <main>
+        <div id="audMdTgl">
+            <label><input type="checkbox" id="audioInfoMode">全ライブ音源情報モード(β版)</label>
+        </div>
+
+        <section id="checklistArea">
+            <div id="btns-wrap">
+                <button class="btn showResultBtn">チェックした曲を含むCDを見る</button>
+                <button class="btn clearAllBtn">チェックをオールクリア</button>
+            </div>
+            <p>※ 表は横にスクロールできます</p>
+            <section class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="songlist">曲一覧から探す</button>
+                    <button class="tab-btn" data-tab="setlist">セトリから探す</button>
                 </div>
-                <p>UNISON SQUARE GARDENの全曲リストをサブスクの有無を含めて一覧でまとめています。サブスクにない曲の一覧も。詳しい使い方は<a
-                                href="about.html">こちら</a>をご覧ください。<a href="articles.html">ブログ記事</a>もあるよ。（<a
-                                href="about.html#policy">運営ポリシー</a>）<br>
-                        [PR表記]当サイトは一部にアフィリエイトを含みます。</p>
-        </header>
-        <main>
-                <div id="audMdTgl">
-                        <label><input type="checkbox" id="audioInfoMode">全ライブ音源情報モード(β版)</label>
-                </div>
 
-                <section id="checklistArea">
-                        <div id="btns-wrap">
-                                <button class="btn showResultBtn">チェックした曲を含むCDを見る</button>
-                                <button class="btn clearAllBtn">チェックをオールクリア</button>
+                <section id="songlist-tab" class="tab-content active">
+                    <div class="auf">
+                        <div>
+                            <label><input type="checkbox" id="chkSb">サブスク無しにチェック</label>を追加
+                            <label>　<input type="checkbox" id="shStChk">style(再録音)を表示</label>
+                            <label>　<input type="checkbox" id="shMxChk">mix(リミックス)を表示</label>　
                         </div>
-                        <p>※ 表は横にスクロールできます</p>
-                        <section class="tab-container">
-                                <div class="tab-buttons">
-                                        <button class="tab-btn active" data-tab="songlist">曲一覧から探す</button>
-                                        <button class="tab-btn" data-tab="setlist">セトリから探す</button>
-                                </div>
-
-                                <section id="songlist-tab" class="tab-content active">
-                                        <div class="auf">
-                                                <div><label>
-                                                                <input type="checkbox" id="chkSb">サブスク無しにチェック</label>を追加
-                                                        <label>　
-                                                                <input type="checkbox"
-                                                                        id="shStChk">style(再録音)を表示</label>
-                                                        <label>　
-                                                                <input type="checkbox" id="shMxChk">
-                                                                mix(リミックス)を表示</label>　
-                                                </div>
-                                                <div><label>
-                                                                <input type="checkbox"
-                                                                        id="shChkOnly">チェック付き行のみ表示</label>
-                                                </div>
-                                                <div>
-                                                        <label for="sngSrch">曲名検索: </label>
-                                                        <input type="text" id="sngSrch" placeholder="曲名で絞り込み...">
-                                                </div>
-                                        </div>
-                                        <div class="table-wrapper">
-                                                <table id="musicTbl" class="tbl">
-                                                        <thead>
-                                                                <tr>
-                                                                        <th>✔︎</th>
-                                                                        <th>曲名</th>
-                                                                        <th>YT</th>
-                                                                        <th>LV</th>
-                                                                        <th>Spf</th>
-                                                                        <th>Apl</th>
-                                                                        <th>iTn</th>
-                                                                        <th>歌詞</th>
-                                                                        <th>s/m</th>
-                                                                        <th>初収録</th>
-                                                                        <th>順</th>
-                                                                        <th>発売日</th>
-                                                                </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="1">
-                                                                        </td>
-                                                                        <td data-fld="title">センチメンタルピリオド</td>
-                                                                        <td><a href="https://www.youtube.com/watch?v=SjwMTno8IKc"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">MV</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td><a href="https://open.spotify.com/track/4f1zepqZ36gAWIQWWLIg21"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Spf</a>
-                                                                        </td>
-                                                                        <td><a href="https://music.apple.com/jp/album/310970395?i=310970402"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Apl</a>
-                                                                        </td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970402&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/78826/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td>S.B style</td>
-                                                                        <td class="small">センチメンタルピリオド</td>
-                                                                        <td class="small">1</td>
-                                                                        <td class="small">2008-07-23</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="2">
-                                                                        </td>
-                                                                        <td data-fld="title">5分後のスターダスト</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/306069909?i=306069911&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/186599/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td>B.C style</td>
-                                                                        <td class="small">センチメンタルピリオド</td>
-                                                                        <td class="small">2</td>
-                                                                        <td class="small">2008-07-23</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="3">
-                                                                        </td>
-                                                                        <td data-fld="title">ガリレオのショーケース</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/1476041503?i=1476041505&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/186598/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td>D.A style</td>
-                                                                        <td class="small">センチメンタルピリオド</td>
-                                                                        <td class="small">3</td>
-                                                                        <td class="small">2008-07-23</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="4">
-                                                                        </td>
-                                                                        <td data-fld="title">マスターボリューム</td>
-                                                                        <td><a href="https://www.youtube.com/watch?v=06Y5m8ZODXo"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">MV</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td><a href="https://open.spotify.com/track/3Jf00gsLxnRbrIavnAQU6f"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Spf</a>
-                                                                        </td>
-                                                                        <td><a href="https://music.apple.com/jp/album/310970395?i=310970421"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Apl</a>
-                                                                        </td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970421&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/74488/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td>S.B style</td>
-                                                                        <td class="small">マスターボリューム</td>
-                                                                        <td class="small">1</td>
-                                                                        <td class="small">2009-01-28</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="5">
-                                                                        </td>
-                                                                        <td data-fld="title">一人思うは雨の中</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/306067779?i=306067782&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/74487/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td>B.C mix</td>
-                                                                        <td class="small">マスターボリューム</td>
-                                                                        <td class="small">2</td>
-                                                                        <td class="small">2009-01-28</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="6">
-                                                                        </td>
-                                                                        <td data-fld="title">スノウリバース</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/306067779?i=306067783&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/74486/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td>B.C style</td>
-                                                                        <td class="small">マスターボリューム</td>
-                                                                        <td class="small">3</td>
-                                                                        <td class="small">2009-01-28</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="7">
-                                                                        </td>
-                                                                        <td data-fld="title">カラクリカルカレ</td>
-                                                                        <td><a href="https://www.youtube.com/watch?v=zTB_n9nVGL0"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">♪</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td><a href="https://open.spotify.com/track/6Q0OKR3DhSs48Mk7yuwJfn"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Spf</a>
-                                                                        </td>
-                                                                        <td><a href="https://music.apple.com/jp/album/310970395?i=310970400"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Apl</a>
-                                                                        </td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970400&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/78835/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td class="small">UNISON SQUARE GARDEN</td>
-                                                                        <td class="small">1</td>
-                                                                        <td class="small">2009-04-15</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="8">
-                                                                        </td>
-                                                                        <td data-fld="title">サンポサキマイライフ</td>
-                                                                        <td><a href="https://www.youtube.com/watch?v=2efiC2AV1X4"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">♪</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td><a href="https://open.spotify.com/track/7bYyiOiLZi6mXXan4m09rU"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Spf</a>
-                                                                        </td>
-                                                                        <td><a href="https://music.apple.com/jp/album/310970395?i=310970404"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Apl</a>
-                                                                        </td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970404&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/78834/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td class="small">UNISON SQUARE GARDEN</td>
-                                                                        <td class="small">3</td>
-                                                                        <td class="small">2009-04-15</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="9">
-                                                                        </td>
-                                                                        <td data-fld="title">デイライ協奏楽団</td>
-                                                                        <td><a href="https://www.youtube.com/watch?v=UJFE3bM8hWU"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">♪</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td><a href="https://open.spotify.com/track/7qg8xFrQnAr3gVYuWyA5Ju"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Spf</a>
-                                                                        </td>
-                                                                        <td><a href="https://music.apple.com/jp/album/310970395?i=310970417"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Apl</a>
-                                                                        </td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970417&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/78833/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td class="small">UNISON SQUARE GARDEN</td>
-                                                                        <td class="small">4</td>
-                                                                        <td class="small">2009-04-15</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="10">
-                                                                        </td>
-                                                                        <td data-fld="title">等身大の地球</td>
-                                                                        <td><a href="https://www.youtube.com/watch?v=OPSzOCG8F5k"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">♪</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td><a href="https://open.spotify.com/track/7LayWBcvsChldu9SbeEEBM"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Spf</a>
-                                                                        </td>
-                                                                        <td><a href="https://music.apple.com/jp/album/310970395?i=310970418"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Apl</a>
-                                                                        </td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970418&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/78832/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td class="small">UNISON SQUARE GARDEN</td>
-                                                                        <td class="small">5</td>
-                                                                        <td class="small">2009-04-15</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="12">
-                                                                        </td>
-                                                                        <td data-fld="title">WINDOW開ける</td>
-                                                                        <td><a href="https://www.youtube.com/watch?v=o9_tSRZYJ0I"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">♪</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td><a href="https://open.spotify.com/track/2gP3OEEUlQktRjOrPHIEqX"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Spf</a>
-                                                                        </td>
-                                                                        <td><a href="https://music.apple.com/jp/album/310970395?i=310970420"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Apl</a>
-                                                                        </td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970420&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/78830/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td class="small">UNISON SQUARE GARDEN</td>
-                                                                        <td class="small">7</td>
-                                                                        <td class="small">2009-04-15</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="13">
-                                                                        </td>
-                                                                        <td data-fld="title">いつかの少年</td>
-                                                                        <td><a href="https://www.youtube.com/watch?v=WmStbOGVDMg"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">♪</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td><a href="https://open.spotify.com/track/6wueFg5ZaydGTwvSaKN9Fa"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Spf</a>
-                                                                        </td>
-                                                                        <td><a href="https://music.apple.com/jp/album/310970395?i=310970423"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Apl</a>
-                                                                        </td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970423&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/78829/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td class="small">UNISON SQUARE GARDEN</td>
-                                                                        <td class="small">9</td>
-                                                                        <td class="small">2009-04-15</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="14">
-                                                                        </td>
-                                                                        <td data-fld="title">箱庭ロック・ショー</td>
-                                                                        <td><a href="https://www.youtube.com/watch?v=MCgoNcksoMo"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">♪</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td><a href="https://open.spotify.com/track/1GOwXY0yEwA8Uwal7h1JUV"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Spf</a>
-                                                                        </td>
-                                                                        <td><a href="https://music.apple.com/jp/album/310970395?i=310970424"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Apl</a>
-                                                                        </td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970424&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/78828/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td>D.A style</td>
-                                                                        <td class="small">UNISON SQUARE GARDEN</td>
-                                                                        <td class="small">10</td>
-                                                                        <td class="small">2009-04-15</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="15">
-                                                                        </td>
-                                                                        <td data-fld="title">クローバー</td>
-                                                                        <td><a href="https://www.youtube.com/watch?v=MR3RKPdIJpo"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">♪</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td><a href="https://open.spotify.com/track/5enVGk4woAT2f7LFGodS5W"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Spf</a>
-                                                                        </td>
-                                                                        <td><a href="https://music.apple.com/jp/album/310970395?i=310970425"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Apl</a>
-                                                                        </td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970425&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/78827/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td>D.A mix</td>
-                                                                        <td class="small">UNISON SQUARE GARDEN</td>
-                                                                        <td class="small">11</td>
-                                                                        <td class="small">2009-04-15</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="16">
-                                                                        </td>
-                                                                        <td data-fld="title">cody beats</td>
-                                                                        <td><a href="https://www.youtube.com/watch?v=uW3ItcV9MLE"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">MV</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td><a href="https://open.spotify.com/track/2FPZxdQ9Ij6iE9jrHveyL0"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Spf</a>
-                                                                        </td>
-                                                                        <td><a href="https://music.apple.com/jp/album/364561824?i=364561976"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Apl</a>
-                                                                        </td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/352924360?i=352924362&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/90298/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td>S.B style</td>
-                                                                        <td class="small">cody beats</td>
-                                                                        <td class="small">1</td>
-                                                                        <td class="small">2010-02-10</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="17">
-                                                                        </td>
-                                                                        <td data-fld="title">ギャクテンサヨナラ</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/1471093264?i=1471093269&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/90297/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td>B.C style</td>
-                                                                        <td class="small">cody beats</td>
-                                                                        <td class="small">2</td>
-                                                                        <td class="small">2010-02-10</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="18">
-                                                                        </td>
-                                                                        <td data-fld="title">空の飛び方</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/1471093264?i=1471093270&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/90296/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td>B.C mix</td>
-                                                                        <td class="small">cody beats</td>
-                                                                        <td class="small">3</td>
-                                                                        <td class="small">2010-02-10</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="19">
-                                                                        </td>
-                                                                        <td data-fld="title">メッセンジャーフロム全世界</td>
-                                                                        <td><a href="https://www.youtube.com/watch?v=fKSWp2a4LDM"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">♪</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td><a href="https://open.spotify.com/track/6DUN82lS61zXWTp6Hw4k5e"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Spf</a>
-                                                                        </td>
-                                                                        <td><a href="https://music.apple.com/jp/album/364561824?i=364561925"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Apl</a>
-                                                                        </td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/364561824?i=364561925&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/93439/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td class="small">JET CO.</td>
-                                                                        <td class="small">1</td>
-                                                                        <td class="small">2010-04-07</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                        <td><input type="checkbox" class="chk"
-                                                                                        data-context="ml" data-id="20">
-                                                                        </td>
-                                                                        <td data-fld="title">コーヒーカップシンドローム</td>
-                                                                        <td><a href="https://www.youtube.com/watch?v=PcKVmnJULHk"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">♪</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td><a href="https://open.spotify.com/track/1eWEZ4uaQcjVPFzptyh2oU"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Spf</a>
-                                                                        </td>
-                                                                        <td><a href="https://music.apple.com/jp/album/364561824?i=364561973"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">Apl</a>
-                                                                        </td>
-                                                                        <td><a href="https://itunes.apple.com/jp/album/364561824?i=364561973&app=itunes"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">iTn</a>
-                                                                        </td>
-                                                                        <td class="small"><a
-                                                                                        href="https://www.uta-net.com/song/93438/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer">歌詞</a>
-                                                                        </td>
-                                                                        <td></td>
-                                                                        <td class="small">JET CO.</td>
-                                                                        <td class="small">2</td>
-                                                                        <td class="small">2010-04-07</td>
-                                                                </tr>
-
-                                                        </tbody>
-                                                </table>
-                                                <template id="tmp-main-row">
-                                                        <tr>
-                                                                <td><input type="checkbox" class="chk"
-                                                                                data-context="ml"></td>
-                                                                <td data-fld="title"></td>
-                                                                <td data-fld="ytNd"></td>
-                                                                <td data-fld="lvNd"></td>
-                                                                <td data-fld="spfNd"></td>
-                                                                <td data-fld="aplNd"></td>
-                                                                <td data-fld="itnNd"></td>
-                                                                <td data-fld="lrcNd" class="small"></td>
-                                                                <td data-fld="exsm"></td>
-                                                                <td data-fld="firstCd" class="small"></td>
-                                                                <td data-fld="order" class="small"></td>
-                                                                <td data-fld="cdDate" class="small"></td>
-                                                        </tr>
-                                                </template>
-                                        </div>
-                                        <p>2026/01/21発売「うるわし／アザレアの風」のサブスク情報は未解禁です。追って更新予定です。</p>
-
-                                </section>
-
-                                <section id="setlist-tab" class="tab-content">
-                                        <div id="setlist-controls">
-                                                <p>特徴・ハイライトは一部曲に試験導入中。</p>
-                                                <div><label>
-                                                                <input type="checkbox" id="slShChk">チェック付き行のみ表示</label>
-                                                </div>
-                                                <div>
-                                                        <label for="slSngSrch">曲名検索: </label>
-                                                        <input type="text" id="slSngSrch" placeholder="曲名で絞り込み...">
-                                                </div>
-                                        </div>
-                                        <div class="table-wrapper">
-                                                <table id="setlistTbl" class="tbl">
-                                                        <thead></thead>
-                                                        <tbody></tbody>
-                                                </table>
-                                        </div>
-                                </section>
-                        </section>
-                </section>
-                <button class="showResultBtn">チェックした曲を含むCDを見る</button>
-                <div class="shareWrap">
-                        <p>もしよかったら
-                                <a href="https://twitter.com/intent/tweet?url=https://music-list.com&text=ユニゾン曲リスト(非公式)&hashtags=ユニゾン曲リスト"
-                                        class="shareBtn" target="_blank" rel="noopener noreferrer">Twitter(X)でシェア</a>
-                                をお願いします！
-                        </p>
-                </div>
-                <section id="resultArea">
-                        <h2>含まれるCD一覧：</h2>
-                        <p>※ 一部のリンクにアフィリエイトを使用しています。</p>
-                        <div id="resultCdTypeFilter">
-                                <label><input type="radio" name="resultCdType" value="both" checked> 両方表示</label>
-                                <label><input type="radio" name="resultCdType" value="album"> アルバムのみ</label>
-                                <label><input type="radio" name="resultCdType" value="single"> シングルのみ</label>
+                        <div>
+                            <label><input type="checkbox" id="shChkOnly">チェック付き行のみ表示</label>
                         </div>
-                        <div class="table-wrapper">
-                                <table id="resultTbl" class="tbl"></table>
+                        <div>
+                                <label for="sngSrch">曲名検索: </label>
+                                <input type="text" id="sngSrch" placeholder="曲名で絞り込み...">
                         </div>
+                    </div>
+                    <div class="table-wrapper">
+                        <table id="musicTbl" class="tbl">
+                            <thead>
+                                <tr><th>✔︎</th><th>曲名</th><th>YT</th><th>LV</th><th>Spf</th><th>Apl</th><th>iTn</th><th>歌詞</th><th>s/m</th><th>初収録</th><th>順</th><th>発売日</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="1"></td>
+                                    <td data-fld="title">センチメンタルピリオド</td>
+                                    <td><a href="https://www.youtube.com/watch?v=SjwMTno8IKc" target="_blank" rel="noopener noreferrer">MV</a></td>
+                                    <td></td>
+                                    <td><a href="https://open.spotify.com/track/4f1zepqZ36gAWIQWWLIg21" target="_blank" rel="noopener noreferrer">Spf</a></td>
+                                    <td><a href="https://music.apple.com/jp/album/310970395?i=310970402" target="_blank" rel="noopener noreferrer">Apl</a></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970402&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/78826/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td>S.B style</td>
+                                    <td class="small">センチメンタルピリオド</td>
+                                    <td class="small">1</td>
+                                    <td class="small">2008-07-23</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="2"></td>
+                                    <td data-fld="title">5分後のスターダスト</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/306069909?i=306069911&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/186599/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td>B.C style</td>
+                                    <td class="small">センチメンタルピリオド</td>
+                                    <td class="small">2</td>
+                                    <td class="small">2008-07-23</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="3"></td>
+                                    <td data-fld="title">ガリレオのショーケース</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/1476041503?i=1476041505&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/186598/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td>D.A style</td>
+                                    <td class="small">センチメンタルピリオド</td>
+                                    <td class="small">3</td>
+                                    <td class="small">2008-07-23</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="4"></td>
+                                    <td data-fld="title">マスターボリューム</td>
+                                    <td><a href="https://www.youtube.com/watch?v=06Y5m8ZODXo" target="_blank" rel="noopener noreferrer">MV</a></td>
+                                    <td></td>
+                                    <td><a href="https://open.spotify.com/track/3Jf00gsLxnRbrIavnAQU6f" target="_blank" rel="noopener noreferrer">Spf</a></td>
+                                    <td><a href="https://music.apple.com/jp/album/310970395?i=310970421" target="_blank" rel="noopener noreferrer">Apl</a></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970421&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/74488/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td>S.B style</td>
+                                    <td class="small">マスターボリューム</td>
+                                    <td class="small">1</td>
+                                    <td class="small">2009-01-28</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="5"></td>
+                                    <td data-fld="title">一人思うは雨の中</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/306067779?i=306067782&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/74487/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td>B.C mix</td>
+                                    <td class="small">マスターボリューム</td>
+                                    <td class="small">2</td>
+                                    <td class="small">2009-01-28</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="6"></td>
+                                    <td data-fld="title">スノウリバース</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/306067779?i=306067783&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/74486/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td>B.C style</td>
+                                    <td class="small">マスターボリューム</td>
+                                    <td class="small">3</td>
+                                    <td class="small">2009-01-28</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="7"></td>
+                                    <td data-fld="title">カラクリカルカレ</td>
+                                    <td><a href="https://www.youtube.com/watch?v=zTB_n9nVGL0" target="_blank" rel="noopener noreferrer">♪</a></td>
+                                    <td></td>
+                                    <td><a href="https://open.spotify.com/track/6Q0OKR3DhSs48Mk7yuwJfn" target="_blank" rel="noopener noreferrer">Spf</a></td>
+                                    <td><a href="https://music.apple.com/jp/album/310970395?i=310970400" target="_blank" rel="noopener noreferrer">Apl</a></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970400&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/78835/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td></td>
+                                    <td class="small">UNISON SQUARE GARDEN</td>
+                                    <td class="small">1</td>
+                                    <td class="small">2009-04-15</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="8"></td>
+                                    <td data-fld="title">サンポサキマイライフ</td>
+                                    <td><a href="https://www.youtube.com/watch?v=2efiC2AV1X4" target="_blank" rel="noopener noreferrer">♪</a></td>
+                                    <td></td>
+                                    <td><a href="https://open.spotify.com/track/7bYyiOiLZi6mXXan4m09rU" target="_blank" rel="noopener noreferrer">Spf</a></td>
+                                    <td><a href="https://music.apple.com/jp/album/310970395?i=310970404" target="_blank" rel="noopener noreferrer">Apl</a></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970404&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/78834/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td></td>
+                                    <td class="small">UNISON SQUARE GARDEN</td>
+                                    <td class="small">3</td>
+                                    <td class="small">2009-04-15</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="9"></td>
+                                    <td data-fld="title">デイライ協奏楽団</td>
+                                    <td><a href="https://www.youtube.com/watch?v=UJFE3bM8hWU" target="_blank" rel="noopener noreferrer">♪</a></td>
+                                    <td></td>
+                                    <td><a href="https://open.spotify.com/track/7qg8xFrQnAr3gVYuWyA5Ju" target="_blank" rel="noopener noreferrer">Spf</a></td>
+                                    <td><a href="https://music.apple.com/jp/album/310970395?i=310970417" target="_blank" rel="noopener noreferrer">Apl</a></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970417&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/78833/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td></td>
+                                    <td class="small">UNISON SQUARE GARDEN</td>
+                                    <td class="small">4</td>
+                                    <td class="small">2009-04-15</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="10"></td>
+                                    <td data-fld="title">等身大の地球</td>
+                                    <td><a href="https://www.youtube.com/watch?v=OPSzOCG8F5k" target="_blank" rel="noopener noreferrer">♪</a></td>
+                                    <td></td>
+                                    <td><a href="https://open.spotify.com/track/7LayWBcvsChldu9SbeEEBM" target="_blank" rel="noopener noreferrer">Spf</a></td>
+                                    <td><a href="https://music.apple.com/jp/album/310970395?i=310970418" target="_blank" rel="noopener noreferrer">Apl</a></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970418&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/78832/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td></td>
+                                    <td class="small">UNISON SQUARE GARDEN</td>
+                                    <td class="small">5</td>
+                                    <td class="small">2009-04-15</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="12"></td>
+                                    <td data-fld="title">WINDOW開ける</td>
+                                    <td><a href="https://www.youtube.com/watch?v=o9_tSRZYJ0I" target="_blank" rel="noopener noreferrer">♪</a></td>
+                                    <td></td>
+                                    <td><a href="https://open.spotify.com/track/2gP3OEEUlQktRjOrPHIEqX" target="_blank" rel="noopener noreferrer">Spf</a></td>
+                                    <td><a href="https://music.apple.com/jp/album/310970395?i=310970420" target="_blank" rel="noopener noreferrer">Apl</a></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970420&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/78830/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td></td>
+                                    <td class="small">UNISON SQUARE GARDEN</td>
+                                    <td class="small">7</td>
+                                    <td class="small">2009-04-15</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="13"></td>
+                                    <td data-fld="title">いつかの少年</td>
+                                    <td><a href="https://www.youtube.com/watch?v=WmStbOGVDMg" target="_blank" rel="noopener noreferrer">♪</a></td>
+                                    <td></td>
+                                    <td><a href="https://open.spotify.com/track/6wueFg5ZaydGTwvSaKN9Fa" target="_blank" rel="noopener noreferrer">Spf</a></td>
+                                    <td><a href="https://music.apple.com/jp/album/310970395?i=310970423" target="_blank" rel="noopener noreferrer">Apl</a></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970423&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/78829/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td></td>
+                                    <td class="small">UNISON SQUARE GARDEN</td>
+                                    <td class="small">9</td>
+                                    <td class="small">2009-04-15</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="14"></td>
+                                    <td data-fld="title">箱庭ロック・ショー</td>
+                                    <td><a href="https://www.youtube.com/watch?v=MCgoNcksoMo" target="_blank" rel="noopener noreferrer">♪</a></td>
+                                    <td></td>
+                                    <td><a href="https://open.spotify.com/track/1GOwXY0yEwA8Uwal7h1JUV" target="_blank" rel="noopener noreferrer">Spf</a></td>
+                                    <td><a href="https://music.apple.com/jp/album/310970395?i=310970424" target="_blank" rel="noopener noreferrer">Apl</a></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970424&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/78828/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td>D.A style</td>
+                                    <td class="small">UNISON SQUARE GARDEN</td>
+                                    <td class="small">10</td>
+                                    <td class="small">2009-04-15</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="15"></td>
+                                    <td data-fld="title">クローバー</td>
+                                    <td><a href="https://www.youtube.com/watch?v=MR3RKPdIJpo" target="_blank" rel="noopener noreferrer">♪</a></td>
+                                    <td></td>
+                                    <td><a href="https://open.spotify.com/track/5enVGk4woAT2f7LFGodS5W" target="_blank" rel="noopener noreferrer">Spf</a></td>
+                                    <td><a href="https://music.apple.com/jp/album/310970395?i=310970425" target="_blank" rel="noopener noreferrer">Apl</a></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/310970395?i=310970425&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/78827/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td>D.A mix</td>
+                                    <td class="small">UNISON SQUARE GARDEN</td>
+                                    <td class="small">11</td>
+                                    <td class="small">2009-04-15</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="16"></td>
+                                    <td data-fld="title">cody beats</td>
+                                    <td><a href="https://www.youtube.com/watch?v=uW3ItcV9MLE" target="_blank" rel="noopener noreferrer">MV</a></td>
+                                    <td></td>
+                                    <td><a href="https://open.spotify.com/track/2FPZxdQ9Ij6iE9jrHveyL0" target="_blank" rel="noopener noreferrer">Spf</a></td>
+                                    <td><a href="https://music.apple.com/jp/album/364561824?i=364561976" target="_blank" rel="noopener noreferrer">Apl</a></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/352924360?i=352924362&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/90298/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td>S.B style</td>
+                                    <td class="small">cody beats</td>
+                                    <td class="small">1</td>
+                                    <td class="small">2010-02-10</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="17"></td>
+                                    <td data-fld="title">ギャクテンサヨナラ</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/1471093264?i=1471093269&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/90297/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td>B.C style</td>
+                                    <td class="small">cody beats</td>
+                                    <td class="small">2</td>
+                                    <td class="small">2010-02-10</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="18"></td>
+                                    <td data-fld="title">空の飛び方</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/1471093264?i=1471093270&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/90296/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td>B.C mix</td>
+                                    <td class="small">cody beats</td>
+                                    <td class="small">3</td>
+                                    <td class="small">2010-02-10</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="19"></td>
+                                    <td data-fld="title">メッセンジャーフロム全世界</td>
+                                    <td><a href="https://www.youtube.com/watch?v=fKSWp2a4LDM" target="_blank" rel="noopener noreferrer">♪</a></td>
+                                    <td></td>
+                                    <td><a href="https://open.spotify.com/track/6DUN82lS61zXWTp6Hw4k5e" target="_blank" rel="noopener noreferrer">Spf</a></td>
+                                    <td><a href="https://music.apple.com/jp/album/364561824?i=364561925" target="_blank" rel="noopener noreferrer">Apl</a></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/364561824?i=364561925&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/93439/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td></td>
+                                    <td class="small">JET CO.</td>
+                                    <td class="small">1</td>
+                                    <td class="small">2010-04-07</td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" class="chk" data-context="ml" data-id="20"></td>
+                                    <td data-fld="title">コーヒーカップシンドローム</td>
+                                    <td><a href="https://www.youtube.com/watch?v=PcKVmnJULHk" target="_blank" rel="noopener noreferrer">♪</a></td>
+                                    <td></td>
+                                    <td><a href="https://open.spotify.com/track/1eWEZ4uaQcjVPFzptyh2oU" target="_blank" rel="noopener noreferrer">Spf</a></td>
+                                    <td><a href="https://music.apple.com/jp/album/364561824?i=364561973" target="_blank" rel="noopener noreferrer">Apl</a></td>
+                                    <td><a href="https://itunes.apple.com/jp/album/364561824?i=364561973&app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
+                                    <td class="small"><a href="https://www.uta-net.com/song/93438/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
+                                    <td></td>
+                                    <td class="small">JET CO.</td>
+                                    <td class="small">2</td>
+                                    <td class="small">2010-04-07</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <template id="tmp-main-row">
+                            <tr>
+                                <td><input type="checkbox" class="chk" data-context="ml"></td>
+                                <td data-fld="title"></td>
+                                <td data-fld="ytNd"></td>
+                                <td data-fld="lvNd"></td>
+                                <td data-fld="spfNd"></td>
+                                <td data-fld="aplNd"></td>
+                                <td data-fld="itnNd"></td>
+                                <td data-fld="lrcNd" class="small"></td>
+                                <td data-fld="exsm"></td>
+                                <td data-fld="firstCd" class="small"></td>
+                                <td data-fld="order" class="small"></td>
+                                <td data-fld="cdDate" class="small"></td>
+                            </tr>
+                        </template>
+                    </div>
+                    <p>2026/01/21発売「うるわし／アザレアの風」のサブスク情報は未解禁です。追って更新予定です。</p>
+
                 </section>
 
-        </main>
-        <!-- バージョン定義：js/main.jsの最上行のバージョン記載も忘れずに -->
-        <script type="module" src="js/main-new.js?v=20251229"></script>
+                <section id="setlist-tab" class="tab-content">
+                    <div id="setlist-controls">
+                        <p>特徴・ハイライトは一部曲に試験導入中。</p>
+                        <div>
+                            <label><input type="checkbox" id="slShChk">チェック付き行のみ表示</label>
+                        </div>
+                        <div>
+                            <label for="slSngSrch">曲名検索: </label>
+                            <input type="text" id="slSngSrch" placeholder="曲名で絞り込み...">
+                        </div>
+                    </div>
+                    <div class="table-wrapper">
+                        <table id="setlistTbl" class="tbl">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <button class="showResultBtn">チェックした曲を含むCDを見る</button>
+        <div class="shareWrap">
+            <p>もしよかったら<a href="https://twitter.com/intent/tweet?url=https://music-list.com&text=ユニゾン曲リスト(非公式)&hashtags=ユニゾン曲リスト" class="shareBtn" target="_blank" rel="noopener noreferrer">Twitter(X)でシェア</a>をお願いします！</p>
+        </div>
+        <section id="resultArea">
+            <h2>含まれるCD一覧：</h2>
+            <p>※ 一部のリンクにアフィリエイトを使用しています。</p>
+            <div id="resultCdTypeFilter">
+                <label><input type="radio" name="resultCdType" value="both" checked> 両方表示</label>
+                <label><input type="radio" name="resultCdType" value="album"> アルバムのみ</label>
+                <label><input type="radio" name="resultCdType" value="single"> シングルのみ</label>
+            </div>
+            <div class="table-wrapper">
+                <table id="resultTbl" class="tbl"></table>
+            </div>
+        </section>
+    </main>
+    <!-- バージョン定義：js/main.jsの最上行のバージョン記載も忘れずに -->
+    <script type="module" src="js/main-new.js?v=20251229"></script>
 </body>
-
 </html>

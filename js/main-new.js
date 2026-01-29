@@ -42,7 +42,7 @@ const featEvents = [
 ];
 const tabEvents = [
     { selector: '.tab-btn[data-tab="songlist"]', module: '', export: '' },
-    { selector: '.tab-btn[data-tab="setlist"]', module: '', export: '', wait: false }
+    { selector: '.tab-btn[data-tab="setlist"]', module: './sl-new.js', export: 'dispSl', wait: false }
 ];
 const searchEvents = [{ id: 'sngSrch', module: './func-new.js', export: 'pfmSrch' }];
 const filterEvents = [

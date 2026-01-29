@@ -11,9 +11,7 @@ let cachedSmJson = null;
 // 汎用関数applyView関連
 async function applyView() {
     console.log('applyViewのはじまり');
-    if (!state.isSyncing) {
-        startSync();
-    }
+    if (!state.isSyncing) { startSync(); }
 
     // 2. style / mix のチェック状態を読む
     await applyChk('shStChk', applySm, 'style');
@@ -21,7 +19,7 @@ async function applyView() {
     // await applyChk('chkSb', applySubNo);
     const shouldDisplay = calcShouldDisplay();
     renderDisplay(shouldDisplay);
-
+    applyChks();
     console.log('applyViewの終わり');
 }
 async function applyChk(chkId, fn, mode) {
@@ -56,7 +54,6 @@ function updCs(id, isChecked) {
     } else {
         const i1 = cs.indexOf(id);
         if (i1 !== -1) cs.splice(i1, 1);
-
         const i2 = csBk.indexOf(id);
         if (i2 !== -1) csBk.splice(i2, 1);
     }
@@ -97,9 +94,7 @@ function setEventListener() {
 export async function toggleSm(e, mode) {
     console.log('toggleSmが押された！');
     // sync がまだ始まっていなければ起動
-    if (!state.isSyncing) {
-        startSync();
-    }
+    if (!state.isSyncing) { startSync(); }
     applyView();
 }
 async function applySm(isChecked, mode) {
@@ -111,10 +106,8 @@ async function applySm(isChecked, mode) {
 }
 async function addSm(mode) {
     console.log('addSm');
-
     const mlSmJson = await getSmJson();
     const tpl = document.getElementById('tmp-main-row');
-
     mlSmJson.forEach(item => {
         if (item.smType !== mode) return;
         if (mTbl.map.has(item.mID)) return; // ← 二重追加防止（重要）
@@ -138,7 +131,6 @@ export async function getSmJson() {
 }
 function removeSm(mode) {
     console.log('removeSm');
-
     for (const [id, tr] of mTbl.map) {
         const chk = tr.querySelector('.chk[data-id]');
         if (!chk) continue;
@@ -154,7 +146,6 @@ function removeSm(mode) {
 // toggleSmヘルパー
 function findNextId(map, newId) {
     let next = null;
-
     for (const id of map.keys()) {
         if (id > newId && (next === null || id < next)) {
             next = id;
@@ -197,12 +188,13 @@ async function applySubNo(isChecked) {
     if (isChecked) {
         subNoArray.forEach(id => {
             const tr = mTbl.map.get(id);
-            if (!tr) return; // mapに無いものは無視
+            // if (!tr) return; // mapに無いものは無視
 
             // cs に追加してチェックをつける
             if (!cs.includes(id)) {
                 cs.push(id);
             }
+            if (!tr) return; // mapに無いものはcsに追加だけして無視
             const chk = tr.querySelector('.chk');
             if (chk && !chk.checked) {
                 chk.checked = true;
@@ -225,16 +217,13 @@ async function applySubNo(isChecked) {
 
 export function pfmSrch(e) {
     const word = e.target.value.trim();
-
     // 入力が空になったら、全体の状態を再適用
     if (!word) {
         applyView();
         return;
     }
-
     // 検索結果を計算
     const shouldDisplay = trySearch(word);
-
     // 表示だけ更新
     renderDisplay(shouldDisplay);
 }
@@ -263,14 +252,12 @@ function trySearch(word) {
     const res = new Set();
     const q = norm(word);
     console.log(q);
-
     mTbl.map.forEach((tr, id) => {
         const title = tr.cells[1]?.textContent ?? '';
         if (norm(title).includes(q)) {
             res.add(id);
         }
     });
-
     return res;
 }
 
@@ -283,6 +270,27 @@ function renderDisplay(shouldDisplay) {
         }
     });
 }
+/**
+ * グローバル変数 cs (Array) の状態を 
+ * <main> 内の該当するチェックボックスに反映させる
+ */
+const applyChks = () => {
+    // 1. csをString型のSetに変換
+    const csSet = new Set(cs.map(String));
+
+    // 2. 対象となるチェックボックスをまとめて取得
+    const chks = document.querySelectorAll('main .tbl input[type="checkbox"][data-id]');
+
+    // 3. 各チェックボックスの状態を更新
+    chks.forEach(chk => {
+        const curState = csSet.has(chk.dataset.id);
+
+        // 現在の状態と異なる場合のみ更新
+        if (chk.checked !== curState) {
+            chk.checked = curState;
+        }
+    });
+};
 
 function norm(s) {
     return s
@@ -299,7 +307,6 @@ function norm(s) {
 export function dispChkOnly(e) {
     console.log('dispChkOnly が押された');
     if (!state.isSyncing) startSync();
-
     applyView();
 }
 
@@ -310,7 +317,6 @@ export function clearAll() {
         const chk = tr.querySelector('.chk');
         if (chk) chk.checked = false;
     });
-
     // 機能チェックボックスを全解除
     [
         'shStChk',
@@ -321,15 +327,12 @@ export function clearAll() {
         const el = document.getElementById(id);
         if (el) el.checked = false;
     });
-
     // 検索窓クリア
     const srch = document.getElementById('sngSrch');
     if (srch) srch.value = '';
-
     // cs / csBk 初期化
     cs.length = 0;
     csBk.length = 0;
-
     // 表示再計算
     applyView();
 }
