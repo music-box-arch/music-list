@@ -20,59 +20,67 @@
     ]
   },
   {
-    "name": "250913.json",
-    "flag": 1,
-    "date": "2025-09-13",
-    "site": "シーガイアスクエア1",
-    "event": "EBISU SHOJI presents UMK SEAGAIA JamNight 2025",
+    "name": "251108.json",
+    "flag": 0,
+    "date": "2025-11-08",
+    "site": "新潟・LOTS",
+    "event": "キュウソネコカミ結成15周年47都道府県ツアー「感謝の鼠回り」",
+    "guest": "",
+    "setlist": []
+  },
+  {
+    "name": "251103.json",
+    "flag": 0,
+    "date": "2025-11-03",
+    "site": "横浜アリーナ",
+    "event": "バズリズム LIVE 2025",
     "guest": "",
     "setlist": [
-      114,
-      128,
+      173,
       202,
+      57,
+      114,
       164,
-      79,
       170,
       83
     ]
   },
   {
-    "name": "250915.json",
+    "name": "251101.json",
     "flag": 1,
-    "date": "2025-09-15",
-    "site": "蘇我スポーツ公園",
-    "event": "ROCK IN JAPAN FESTIVAL 2025",
+    "date": "2025-11-01",
+    "site": "相模原ギオンフィールド",
+    "event": "[Alexandros] presents THIS FES'25 in Sagamihara",
     "guest": "",
     "setlist": [
-      114,
-      128,
-      202,
-      109,
-      24,
+      126,
       170,
+      4,
+      103,
       83,
-      3
+      69,
+      202,
+      80,
+      128
     ]
   },
   {
-    "name": "250919.json",
+    "name": "251011.json",
     "flag": 1,
-    "date": "2025-09-19",
-    "site": "KT Zepp Yokohama",
-    "event": "サンボマスター\"全員優勝VICTORY25 「全員優勝パレードツアー〜両校優勝〜」\"\n",
+    "date": "2025-10-11",
+    "site": "海の森公園",
+    "event": "TOKYO ISLAND 2025",
     "guest": "",
     "setlist": [
-      82,
-      33,
+      128,
       83,
       103,
       114,
-      78,
-      109,
-      129,
+      73,
       202,
       164,
-      170
+      170,
+      33
     ]
   },
   {
@@ -97,23 +105,69 @@
     ]
   },
   {
-    "name": "251011.json",
+    "name": "250919.json",
     "flag": 1,
-    "date": "2025-10-11",
-    "site": "海の森公園",
-    "event": "TOKYO ISLAND 2025",
+    "date": "2025-09-19",
+    "site": "KT Zepp Yokohama",
+    "event": "サンボマスター\"全員優勝VICTORY25 「全員優勝パレードツアー〜両校優勝〜」\"\n",
     "guest": "",
     "setlist": [
-      128,
+      82,
+      33,
       83,
       103,
       114,
-      73,
+      78,
+      109,
+      129,
       202,
       164,
-      170,
-      33
+      170
     ]
+  },
+  {
+    "name": "250915.json",
+    "flag": 1,
+    "date": "2025-09-15",
+    "site": "蘇我スポーツ公園",
+    "event": "ROCK IN JAPAN FESTIVAL 2025",
+    "guest": "",
+    "setlist": [
+      114,
+      128,
+      202,
+      109,
+      24,
+      170,
+      83,
+      3
+    ]
+  },
+  {
+    "name": "250913.json",
+    "flag": 1,
+    "date": "2025-09-13",
+    "site": "シーガイアスクエア1",
+    "event": "EBISU SHOJI presents UMK SEAGAIA JamNight 2025",
+    "guest": "",
+    "setlist": [
+      114,
+      128,
+      202,
+      164,
+      79,
+      170,
+      83
+    ]
+  },
+  {
+    "name": "250902.json",
+    "flag": 0,
+    "date": "2025-09-02",
+    "site": "なんばHatch",
+    "event": "fun time ACCIDENT 4",
+    "guest": "muque/レトロリロン",
+    "setlist": []
   },
   {
     "name": "250828.json",
@@ -138,69 +192,6 @@
       44,
       202,
       1
-    ]
-  },
-  {
-    "name": "250902.json",
-    "flag": 0,
-    "date": "2025-09-02",
-    "site": "なんばHatch",
-    "event": "fun time ACCIDENT 4",
-    "guest": "muque/レトロリロン",
-    "setlist": []
-  },
-  {
-    "name": "251101.json",
-    "flag": 1,
-    "date": "2025-11-01",
-    "site": "相模原ギオンフィールド",
-    "event": "[Alexandros] presents THIS FES'25 in Sagamihara",
-    "guest": "",
-    "setlist": [
-      126,
-      170,
-      4,
-      103,
-      83,
-      69,
-      202,
-      80,
-      128
-    ]
-  },
-  {
-    "name": "251103.json",
-    "flag": 1,
-    "date": "2025-11-03",
-    "site": "横浜アリーナ",
-    "event": "バズリズム LIVE 2025",
-    "guest": "",
-    "setlist": [
-      173,
-      202,
-      57,
-      114,
-      164,
-      170,
-      83
-    ]
-  },
-  {
-    "name": "251108.json",
-    "flag": 1,
-    "date": "2025-11-08",
-    "site": "新潟・LOTS",
-    "event": "キュウソネコカミ結成15周年47都道府県ツアー「感謝の鼠回り」",
-    "guest": "",
-    "setlist": [
-      12,
-      66,
-      202,
-      83,
-      78,
-      103,
-      80,
-      170
     ]
   }
 ]
