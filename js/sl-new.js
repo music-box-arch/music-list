@@ -38,10 +38,12 @@ export async function dispSl() {
     mkSlSummary();
     // 中身は後から足す
     slJson.forEach(setlistData => {
-        if (setlistData !== 0) {
-            const slTblId = setlistData.date;
-            const slTrs = mkSlTrs(setlistData.setlist);
+        //flagが1以上ならtableを作成
+        if (setlistObj.flag >= 1) {
+            const slTblId = setlistObj.date;
+            const slTrs = mkSlTrs(setlistObj.setlist);
             dispSlTbody(slTrs, slTblId);
+        //flagが0ならつくらない※
         } else {
             //
         }
