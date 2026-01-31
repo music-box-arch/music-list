@@ -112,7 +112,7 @@ async function addSm(mode) {
         if (item.smType !== mode) return;
         if (mTbl.map.has(item.mID)) return; // ← 二重追加防止（重要）
 
-        const newTr = mkRow(item, tpl);
+        const newTr = mkRow(item, tpl, mTbl.config);
         newTr.dataset.smType = item.smType; // style/mix行だということをtrに追加
 
         const nextId = findNextId(mTbl.map, item.mID);

@@ -1,11 +1,11 @@
+// data.js
+export const dataPromise = fetch('data.json')
+  .then(res => res.json())
+  .then(dataArray => {
+    const dataMap = new Map(dataArray.map(item => [item.mID, item]));
+    return { dataArray, dataMap };
+  });
 
-const object =
-    {
-    "name": "251116.json",
-    "flag": 1,
-    "date": "2025-11-16",
-    "site": "韓国・KINTEX HALL 7·8·10",
-    "event": "WONDERLIVET 2025",
-    "guest": "",
-    "setlist": [168,33,128,114,202,173,117,170,80,83]
-    }
+// main.js
+import { dataPromise } from './data.js';
+const { dataMap } = await dataPromise;

@@ -9,15 +9,39 @@ window.MLAPP = {
 };
 // main-new.js 内で使う短縮名
 const { addVer } = window.MLAPP;
+export async function readJson(path) {
+    const url = addVer(path);
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`load failed: ${url}`);
+    return await res.json();
+}
 
 export const state = { isDrawing: false, isSyncing: false };
 export const chkStates = { cs: [], csBk: [] };
 // const { cs, csBk } = chkStates;
 
 export const mlJsonData = readJson('data/music-list-new.json');
+// MapもPromiseとしてエクスポート
+export const mlMapData = mlJsonData.then(dataArray => {
+    return new Map(dataArray.map(item => [item.mID, item]));
+});
+
 export const mTbl = {
     map: new Map(),
-    tbody: document.querySelector('#musicTbl tbody')
+    tbody: document.querySelector('#musicTbl tbody'),
+    config: {
+        // 属性付与の定義
+        attr: {'.chk': { 'dataset.id': 'mID' } },
+        map: [
+            ['ytNd', 'ytUrl', 'yt', '♪'],
+            ['lvNd', 'lv', 'LV'],
+            ['spfNd', 'spf', 'Spf'],
+            ['aplNd', 'apl', 'Apl'],
+            ['itnNd', 'itn', 'iTn'],
+            ['lrcNd', 'lrc', '歌詞']
+        ],
+        fields: ['title', 'exsm', 'firstCd', 'order', 'cdDate']
+    }
 };
 
 let mTblReady = false;
@@ -27,13 +51,6 @@ export function logMapKeys(label, map, max = 10) {
     const head = keys.slice(0, max).join(',');
     const tail = keys.length > max ? ` ... (+${keys.length - max})` : '';
     console.log(`${label} size=${map.size} keys=[${head}${tail}]`);
-}
-
-export async function readJson(path) {
-    const url = addVer(path);
-    const res = await fetch(url, { cache: 'no-store' });
-    if (!res.ok) throw new Error(`load failed: ${url}`);
-    return await res.json();
 }
 
 const featEvents = [
@@ -146,62 +163,113 @@ async function addChunk(tbody, tpl, mlJson, limit = 40) {
     }
 
     const fragment = document.createDocumentFragment();
+
     targets.forEach(item => {
-        const tr = mkRow(item, tpl);
+        const tr = mkRow(item, tpl, mTbl.config);
         fragment.appendChild(tr);
         mTbl.map.set(item.mID, tr);
     });
     tbody.appendChild(fragment);
 }
 // 以下、addChunkで使う関数たち
-export function mkRow(item, tpl) {
+// export function mkRow(item, tpl) {
+//     const tr = tpl.content.firstElementChild.cloneNode(true);
+
+//     const chk = tr.querySelector('.chk');
+//     if (chk) chk.dataset.id = item.mID;
+
+//     [['ytNd', item.ytUrl, item.yt || '♪'],
+//     ['lvNd', item.lv, 'LV'],
+//     ['spfNd', item.spf, 'Spf'],
+//     ['aplNd', item.apl, 'Apl'],
+//     ['itnNd', item.itn, 'iTn'],
+//     ['lrcNd', item.lrc, '歌詞']
+//     ].forEach(([k, url, label]) => {
+//         item[k] = mkLink(url, label);
+//     });
+
+//     ['title', 'ytNd', 'lvNd', 'spfNd', 'aplNd', 'itnNd', 'lrcNd',
+//         'exsm', 'firstCd', 'order', 'cdDate'
+//     ].forEach(k => fill(tr, item, k));
+
+//     deleteProps(item, ['ytNd', 'lvNd', 'spfNd', 'aplNd', 'itnNd', 'lrcNd']);
+//     return tr;
+// }
+
+// export const mkLink = (url, text) => {
+//     if (!url) return null;
+
+//     const a = document.createElement('a');
+//     a.href = url;
+//     a.textContent = text;
+//     a.target = '_blank';
+//     a.rel = 'noopener noreferrer';
+
+//     return a;
+// };
+// const fill = (tr, item, tplKey, dataKey = tplKey) => {
+//     const td = tr.querySelector(`[data-fld="${tplKey}"]`);
+//     if (!td) return;
+
+//     td.textContent = '';
+//     const value = item[dataKey];
+
+//     if (value instanceof Node) {
+//         td.appendChild(value);
+//     } else {
+//         td.textContent = value ?? '';
+//     }
+// };
+// function deleteProps(item, keys) {
+//     keys.forEach(k => delete item[k]);
+// }
+
+export function mkRow(item, tpl, config) {
     const tr = tpl.content.firstElementChild.cloneNode(true);
-
-    const chk = tr.querySelector('.chk');
-    if (chk) chk.dataset.id = item.mID;
-
-    [['ytNd', item.ytUrl, item.yt || '♪'],
-    ['lvNd', item.lv, 'LV'],
-    ['spfNd', item.spf, 'Spf'],
-    ['aplNd', item.apl, 'Apl'],
-    ['itnNd', item.itn, 'iTn'],
-    ['lrcNd', item.lrc, '歌詞']
-    ].forEach(([k, url, label]) => {
-        item[k] = mkLink(url, label);
+    // 1. 属性の付与 (dataset.id 等)
+    addData(tr, item, config.attr);
+    // 2. 表示用データの作成
+    const displayData = {};
+    // リンク要素の生成 (config.map に基づく)
+    config.map.forEach(([k, urlKey, label, defaultLabel]) => {
+        displayData[k] = mkLink(item[urlKey], item[label] || defaultLabel);
     });
-
-    ['title', 'ytNd', 'lvNd', 'spfNd', 'aplNd', 'itnNd', 'lrcNd',
-        'exsm', 'firstCd', 'order', 'cdDate'
-    ].forEach(k => fill(tr, item, k));
-
-    deleteProps(item, ['ytNd', 'lvNd', 'spfNd', 'aplNd', 'itnNd', 'lrcNd']);
+    // テキストデータのコピー (config.fields に基づく)
+    config.fields.forEach(k => {
+        displayData[k] = item[k];
+    });
+    // 3. データの流し込み (data-fld への反映)
+    applyField(tr, displayData);
     return tr;
 }
-
 export const mkLink = (url, text) => {
     if (!url) return null;
-
     const a = document.createElement('a');
     a.href = url;
     a.textContent = text;
     a.target = '_blank';
     a.rel = 'noopener noreferrer';
-
     return a;
 };
-const fill = (tr, item, tplKey, dataKey = tplKey) => {
-    const td = tr.querySelector(`[data-fld="${tplKey}"]`);
-    if (!td) return;
-
-    td.textContent = '';
-    const value = item[dataKey];
-
-    if (value instanceof Node) {
-        td.appendChild(value);
-    } else {
-        td.textContent = value ?? '';
-    }
+export const applyField = (root, data) => {
+    Object.entries(data).forEach(([key, val]) => {
+        const el = root.querySelector(`[data-fld="${key}"]`);
+        if (!el) return;
+        el.textContent = '';
+        val instanceof Node ? el.appendChild(val) : el.textContent = val ?? '';
+    });
 };
-function deleteProps(item, keys) {
-    keys.forEach(k => delete item[k]);
-}
+export const addData = (root, item, attrMap) => {
+    Object.entries(attrMap).forEach(([sel, props]) => {
+        const el = sel === ':scope' ? root : root.querySelector(sel);
+        if (!el) return;
+        Object.entries(props).forEach(([path, key]) => {
+            const val = item[key];
+            if (path.startsWith('dataset.')) {
+                el.dataset[path.split('.')[1]] = val;
+            } else {
+                el[path] = val;
+            }
+        });
+    });
+};

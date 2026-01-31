@@ -7,20 +7,6 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td><input type="checkbox" class="chk" data-context="ml" data-id="65"></td>
-                <td data-fld="title">シャンデリア・ワルツ</td>
-                <td data-fld="ytNd"><a href="https://www.youtube.com/watch?v=TJZH4dofY-8" target="_blank" rel="noopener noreferrer">♪</a></td>
-                <td data-fld="lvNd"><a href="https://www.youtube.com/watch?v=ruwn5TqX87s" target="_blank" rel="noopener noreferrer">LV</a></td>
-                <td data-fld="spfNd"><a href="https://open.spotify.com/track/0fOq8IETOgXteHpm0sMMNq" target="_blank" rel="noopener noreferrer">Spf</a></td>
-                <td data-fld="aplNd"><a href="https://music.apple.com/jp/album/1476041503?i=1476041537" target="_blank" rel="noopener noreferrer">Apl</a></td>
-                <td data-fld="itnNd"><a href="https://itunes.apple.com/jp/album/1476041503?i=1476041537&amp;app=itunes" target="_blank" rel="noopener noreferrer">iTn</a></td>
-                <td data-fld="lrcNd" class="small"><a href="https://www.uta-net.com/song/141409/" target="_blank" rel="noopener noreferrer">歌詞</a></td>
-                <td data-fld="exsm"></td>
-                <td data-fld="firstCd" class="small">CIDER ROAD</td>
-                <td data-fld="order" class="small">13</td>
-                <td data-fld="cdDate" class="small">2013-02-06</td>
-            </tr>
             <tr data-song-id="173" data-setlist-order="1">
                 <td><input type="checkbox" class="chk" data-context="sl" data-id="173"></td>
                 <td class="sl-order">1</td>
@@ -145,9 +131,9 @@
             </tr>
         </tbody>
     </table>
-    <template id="sl-tr">
-        <tr data-song-id="173" data-setlist-order="1"><!-- data-song-id="1"等を付与 -->
-            <td><input type="checkbox" class="chk" data-context="sl" data-id="173"></td><!-- data-id="1"等を付与 -->
+    <template id="sl-tr-tpl">
+        <tr><!-- data-song-id="1",data-setlist-order="1"等を付与 -->
+            <td><input type="checkbox" class="chk" data-context="sl"></td><!-- data-id="1"等を付与 -->
             <td class="sl-order"><!-- セトリ順 --></td>
             <td data-fld="title"><!-- 曲名 --></td>
             <td data-fld="ytNd"><!-- 今まで通り --></td>
@@ -161,17 +147,24 @@
         </tr>
     </template>
 
-    <template id="sl-details">
-        <details open="">
+
+
+
+    <template id="sl-details-tpl">
+        <details><!-- idで識別子"YYYY-MM-DD"などを付与する -->
             <summary class="sl-sumry"><span class="sl-sumry-icon">＞</span><!-- "YYYY-MM-DD - イベント会場 - イベント名"の形 --></summary>
-            <table class="sl-tbl tbl">
-                <thead>
-                    <tr>
-                        <th>✔︎</th><th>セトリ順</th><th>曲名</th><th>YT</th><th>LV</th><th>Spf</th><th>Apl</th><th>iTn</th><th>テンポ</th><th>特徴・ハイライト</th><th>歌詞</th>
-                    </tr>
-                </thead>
-                <tbody><!-- trを集めたfragment --></tbody>
-            </table>
+            <div class="table-wrapper">
+                <table class="sl-tbl tbl">
+                    <thead>
+                        <tr>
+                            <th>✔︎</th><th>セトリ順</th><th>曲名</th><th>YT</th><th>LV</th><th>Spf</th><th>Apl</th><th>iTn</th><th>テンポ</th><th>特徴・ハイライト</th><th>歌詞</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- trを集めたfragment -->
+                    </tbody>
+                </table>
+            </div>
         </details>
     </template>
 
